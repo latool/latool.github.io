@@ -54,8 +54,8 @@
             position: 'right'
           },
           {
-            element: '.stepDownload',
-            intro: "Step 6: CLICK here to DOWNLOAD the selected Indicators, here you can download them as JSON along with their Metrics.",
+            element: '.stepDownloadVisualize',
+            intro: "Step 6: CLICK 'Download' to download the selected indicators as JSON or CLICK 'Visualize' to view the selected indicators in a dynamic dashboard",
             position: 'bottom'
           },
           {
