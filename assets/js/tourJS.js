@@ -15,12 +15,12 @@
           steps: [
           {
             element: '.step0',
-            intro: 'This guided tour will explain how the OpenLAIR can be used. <br> You can Exit the tour anytime you want.',
+            intro: 'This guided tour will explain how the [Tool] can be used. <br> You can Exit the tour anytime you want.',
             position: 'bottom'
           },
           {
             element: '.stepDefine',
-            intro: 'CLICK here for the definition of each filter item. i.e. <br> - Learning Objectives <br> - Learning Activites <br> - Indicators <br> - Metrics <br>',
+            intro: 'You can CLICK here anytime for the definition of each filter item. i.e. <br> - Learning Events <br> - Learning Activites <br> - Indicators <br> - Metrics <br>',
             position: 'bottom'
           },
           {
@@ -54,8 +54,8 @@
             position: 'right'
           },
           {
-            element: '.stepDownloadVisualize',
-            intro: "Step 6: CLICK 'Download' to download the selected indicators as JSON or CLICK 'Visualize' to view the selected indicators in a dynamic dashboard",
+            element: '.stepDownload',
+            intro: "Step 6: After the selection of indicator(s) CLICK here to DOWNLOAD the Indicator(s) as JSON along with their Metrics.",
             position: 'bottom'
           },
           {
