@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Student interaction patterns (Relation to performance)'\n    ) || dropdownItems.includes('Student Interaction Patterns')\n  \"\n>\n  <app-student-interaction-patterns></app-student-interaction-patterns>\n</div>\n\n<!-- Reading Analytics -->\n<div\n  *ngIf=\"\n    dropdownItems.includes('Reading analytics') ||\n    dropdownItems.includes('Reading Analytics  Ideal reading material') ||\n    dropdownItems.includes(\n      'Performance rating  Engagement rating  Active reading rating  Attendance rating'\n    )\n  \"\n>\n  <app-reading-analytics></app-reading-analytics>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Metacognitive Awareness  Competency') ||\n    dropdownItems.includes(\n      'Self regulation  Learning strategies  predict performance  procrastination'\n    ) ||\n    dropdownItems.includes(\n      'Predict performance (by self-regulation metrics)  Self-Regulated Learning'\n    )\n  \"\n>\n  <app-competency></app-competency>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Learning Progress (LMS Usage)  student efficiency'\n    ) ||\n    dropdownItems.includes('MOOC completion') ||\n    dropdownItems.includes('User knowledge level')\n  \"\n>\n  <app-learning-progress></app-learning-progress>\n</div>\n\n<!-- Writing Analytics -->\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Writing analytics  Collaboration network') ||\n    dropdownItems.includes('Writing Engagement') ||\n    dropdownItems.includes('Writing Analysis  Reflective Writing') ||\n    dropdownItems.includes('Affective State  Text Analysis')\n  \"\n>\n  <app-writing-analytics></app-writing-analytics>\n</div>\n\n<!-- Discourse Analytics -->\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Discussion Contribution Quantity & Quality  Reading analytics'\n    ) ||\n    dropdownItems.includes('Discussion forum quality') ||\n    dropdownItems.includes('Discussion Engagements') ||\n    dropdownItems.includes('Exploratory dialogue') ||\n    dropdownItems.includes('Discourse Analysis') ||\n    dropdownItems.includes(\n      'Social Network Analysis (Discussion Forum)  Discourse Analysis'\n    )\n  \"\n>\n  <app-discussion-quality></app-discussion-quality>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Clickstream Analysis  Student behavior')\">\n  <app-clickstream-analysis></app-clickstream-analysis>\n</div>\n\n<!-- Video Analytics -->\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Video engagements / analytics') ||\n    dropdownItems.includes('Video analytics (Self-reflection)') ||\n    dropdownItems.includes('Comment analytics (Youtube videos)') ||\n    dropdownItems.includes('Comment Analytics (Youtube Videos)') ||\n    dropdownItems.includes('Video analytics')\n  \"\n>\n  <app-video-engagements></app-video-engagements>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Productivity = (Initiative + Responsiveness) / Presence  Collaboration'\n    )\n  \"\n>\n  <app-initiative></app-initiative>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Social Network analysis')\">\n  <app-social-analysis></app-social-analysis>\n</div>\n\n<!--  Predictive analytics (Dropping out )-->\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Dropping out') ||\n    dropdownItems.includes('Early Warning  Dropout Prediction') ||\n    dropdownItems.includes('Course Planning  Early Warning') ||\n    dropdownItems.includes('At-Risk Students  Early warning') ||\n    dropdownItems.includes('At-Risk Students  Retention Prediction') ||\n    dropdownItems.includes('At-Risk students  Exam success prediction') ||\n    dropdownItems.includes('At-risk students  Performance')\n  \"\n>\n  <app-droppingout></app-droppingout>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Time Distribution  Resource Usage Awareness  Self-reflection'\n    ) ||\n    dropdownItems.includes(\n      'Time Distribution  Resource Usage Awareness  self-reflection'\n    )\n  \"\n>\n  <app-time-distribution></app-time-distribution>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Collaborative Learning  Time Planning') ||\n    dropdownItems.includes('Temporal Analysis') ||\n    dropdownItems.includes(\n      'Recommendations for successful course completion  Self-regulation  Timeline (status and goal)'\n    )\n  \"\n>\n  <app-time-planning></app-time-planning>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Student comparison  Grade prediction  Self-motivation'\n    ) ||\n    dropdownItems.includes('Student performance  Student comparison') ||\n    dropdownItems.includes('Academic performance  Learning strategies') ||\n    dropdownItems.includes('Performance') ||\n    dropdownItems.includes('At-risk students  performance')\n  \"\n>\n  <app-student-comparison></app-student-comparison>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Engagement and Performance') ||\n    dropdownItems.includes('Engagement')\n  \"\n>\n  <app-engagement-performance></app-engagement-performance>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Online change detection')\">\n  <app-online-change-detection></app-online-change-detection>\n</div>\n\n<!-- Game analytics -->\n<div\n  *ngIf=\"\n    dropdownItems.includes('Gamification') ||\n    dropdownItems.includes('Badges earned') ||\n    dropdownItems.includes(\n      'Game Based Learning  Learning Strategy (Game)  Predict Performance (Game)'\n    )\n  \"\n>\n  <app-gamification></app-gamification>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Predict course successful completion')\">\n  <app-predict-coursecompletion></app-predict-coursecompletion>\n</div>\n\n<!--  Procrastination  -->\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Procrastination  Performance') ||\n    dropdownItems.includes('Procrastination')\n  \"\n>\n  <app-procrastination></app-procrastination>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Group Participation')\">\n  <app-group-participation></app-group-participation>\n</div>\n\n<!-- Clustering -->\n<div\n  *ngIf=\"\n    dropdownItems.includes('Clustering (educational data mining)') ||\n    dropdownItems.includes('Pass-Fail Classification  Keystroke analytics')\n  \"\n>\n  <app-clustering></app-clustering>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Final Grade Prediction') ||\n    dropdownItems.includes(\n      'Grade prediction (by performance / Course difficulty level) , Performance , Course difficulty level'\n    ) ||\n    dropdownItems.includes('Predict exam grades') ||\n    dropdownItems.includes('Predict Student Grades') ||\n    dropdownItems.includes('Predict exam success') ||\n    dropdownItems.includes('Performance Prediction  Success Prediction') ||\n    dropdownItems.includes('Success Prediction') ||\n    dropdownItems.includes('Predict academic achievement')\n  \"\n>\n  <app-final-grade-prediction></app-final-grade-prediction>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Learning behavior')\">\n  <app-learning-behaviour></app-learning-behaviour>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Long Term Engagement  Social Network Analysis') ||\n    dropdownItems.includes('Online Discussion (forum) Behavior')\n  \"\n>\n  <app-social-network-analysis></app-social-network-analysis>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Self-motivation  Self-regulated Learning')\">\n  <app-self-motivation></app-self-motivation>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes('Learning Behavior Patterns') ||\n    dropdownItems.includes('Learning Patterns') ||\n    dropdownItems.includes('Learning Strategies')\n  \"\n>\n  <app-learning-behavior-patterns></app-learning-behavior-patterns>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Passing rate Prediction  Final Grade Prediction  Performance prediction  Awareness'\n    ) ||\n    dropdownItems.includes('predictive analytics (proposal)') ||\n    dropdownItems.includes('Prediction (A pilot study)')\n  \"\n>\n  <app-passing-rate-prediction></app-passing-rate-prediction>\n</div>\n\n<!--  Feedback (Self-regulation)-->\n<div *ngIf=\"dropdownItems.includes('Feedback')\">\n  <app-feedback></app-feedback>\n</div>\n\n<div *ngIf=\"dropdownItems.includes('Course Assessments')\">\n  <app-course-assessment></app-course-assessment>\n</div>\n\n<!-- Affective-State -->\n<div\n  *ngIf=\"\n    dropdownItems.includes('Self-Reported Affective State  Emotion') ||\n    dropdownItems.includes('Affective State') ||\n    dropdownItems.includes('Affective State  Text Analysis') ||\n    dropdownItems.includes('Self-Regulation  Emotional state') ||\n    dropdownItems.includes(\n      'Student progress (LMS activities)  Measure fixed mindset / belonging uncertainty / stereotype threat (Questionnaires)  Alerting  Self-reflection'\n    ) ||\n    dropdownItems.includes(\n      'Student progress (LMS activities)  Measure fixed mindset / Belonging uncertainty / Stereotype threat (Questionnaires)  Alerting  Self-reflection'\n    )\n  \"\n>\n  <app-affective-state></app-affective-state>\n</div>\n\n<!-- Course difficulty -->\n<div\n  *ngIf=\"\n    dropdownItems.includes('Course difficulty') ||\n    dropdownItems.includes(\n      'Perceived difficulty  Self-efficacy  Cognitive load'\n    )\n  \"\n>\n  <app-course-difficulty></app-course-difficulty>\n</div>\n\n<div\n  *ngIf=\"\n    dropdownItems.includes(\n      'Teacher curriculum usage  Curriculum Planning / designing'\n    ) || dropdownItems.includes('Content quality')\n  \"\n>\n  <app-curriculum-usage></app-curriculum-usage>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div\n  class=\"buttons\"\n  id=\"btn-menu\"\n  [ngClass]=\"{ 'mat-elevation-z5': true, sticky: isSticky }\"\n>\n  <button\n    class=\"backBtn\"\n    mat-raised-button\n    color=\"primary\"\n    routerLink=\"/display/data\"\n  >\n    Back\n  </button>\n\n  <button\n    class=\"downloadCharts\"\n    mat-raised-button\n    color=\"primary\"\n    (click)=\"downloadPage()\"\n  >\n    Download\n  </button>\n\n  <mat-form-field appearance=\"fill\">\n    <mat-select\n      [formControl]=\"indicators\"\n      multiple\n      placeholder=\"Indicators\"\n      [ngModel]=\"dropdownItems\"\n    >\n      <mat-select-trigger>\n        {{ indicators.value ? indicators.value[0] : \"\" }}\n        <span *ngIf=\"indicators.value?.length > 1\" class=\"selection\">\n          (+{{ indicators.value.length - 1 }}\n          {{ indicators.value?.length === 2 ? \"other\" : \"others\" }})\n        </span>\n      </mat-select-trigger>\n      <!-- These are the indicators that are not linked -->\n      <mat-option\n        *ngFor=\"let indicator of dropdownItems\"\n        [value]=\"indicator\"\n        [ngStyle]=\"{\n          color:\n            indicator.includes([73]) ||\n            indicator.includes([57]) ||\n            indicator.includes([75]) ||\n            indicator.includes([135])\n              ? 'red'\n              : ''\n        }\"\n        (onSelectionChange)=\"selectCharts($event, indicator)\"\n        >{{ indicator }}</mat-option\n      >\n    </mat-select>\n  </mat-form-field>\n</div>\n\n<div class=\"container\">\n  <!-- componenents on top get rendered first -->\n\n  <!-- Student interaction patterns -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[127]') || referenceNumbers.includes('[121]')\n    \"\n  >\n    <app-student-interaction-patterns></app-student-interaction-patterns>\n  </div>\n\n  <!-- Reading Analytics -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[134]') ||\n      referenceNumbers.includes('[114]') ||\n      referenceNumbers.includes('[128]')\n    \"\n  >\n    <app-reading-analytics></app-reading-analytics>\n  </div>\n\n  <!-- Competency -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[31]') ||\n      referenceNumbers.includes('[46]') ||\n      referenceNumbers.includes('[98]')\n    \"\n  >\n    <app-competency></app-competency>\n  </div>\n\n  <!-- Learning progress -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[62]') ||\n      referenceNumbers.includes('[110]') ||\n      referenceNumbers.includes('[51]')\n    \"\n  >\n    <app-learning-progress></app-learning-progress>\n  </div>\n\n  <!-- Writing Analytics -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[61]') ||\n      referenceNumbers.includes('[48]') ||\n      referenceNumbers.includes('[89]') ||\n      referenceNumbers.includes('[85]')\n    \"\n  >\n    <app-writing-analytics></app-writing-analytics>\n  </div>\n\n  <!-- Discourse Analytics -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[24]') ||\n      referenceNumbers.includes('[27]') ||\n      referenceNumbers.includes('[49]') ||\n      referenceNumbers.includes('[142]') ||\n      referenceNumbers.includes('[80]') ||\n      referenceNumbers.includes('[88]')\n    \"\n  >\n    <app-discussion-quality></app-discussion-quality>\n  </div>\n\n  <!-- Clickstream analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[103]')\">\n    <app-clickstream-analysis></app-clickstream-analysis>\n  </div>\n\n  <!-- Video Analytics -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[138]') ||\n      referenceNumbers.includes('[72]') ||\n      referenceNumbers.includes('[116]')\n    \"\n  >\n    <app-video-engagements></app-video-engagements>\n  </div>\n\n  <!-- Initiative -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[124]')\">\n    <app-initiative></app-initiative>\n  </div>\n\n  <!-- Social analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[63]')\">\n    <app-social-analysis></app-social-analysis>\n  </div>\n\n  <!--  Predictive analytics (Dropping out )-->\n\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[59]') ||\n      referenceNumbers.includes('[79]') ||\n      referenceNumbers.includes('[99]') ||\n      referenceNumbers.includes('[101]') ||\n      referenceNumbers.includes('[64]') ||\n      referenceNumbers.includes('[71]') ||\n      referenceNumbers.includes('[131]')\n    \"\n  >\n    <app-droppingout></app-droppingout>\n  </div>\n  <!-- Time distribution -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[39]')\">\n    <app-time-distribution></app-time-distribution>\n  </div>\n\n  <!-- Time Planning -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[47]') ||\n      referenceNumbers.includes('[68]') ||\n      referenceNumbers.includes('[125]')\n    \"\n  >\n    <app-time-planning></app-time-planning>\n  </div>\n\n  <!-- Student comparison -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[130]') ||\n      referenceNumbers.includes('[126]') ||\n      referenceNumbers.includes('[129]') ||\n      referenceNumbers.includes('[25]') ||\n      referenceNumbers.includes('[50]')\n    \"\n  >\n    <app-student-comparison></app-student-comparison>\n  </div>\n\n  <!-- Engagement and Performance -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[69]') || referenceNumbers.includes('[86]')\n    \"\n  >\n    <app-engagement-performance></app-engagement-performance>\n  </div>\n\n  <!-- Online change detection-->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[137]')\">\n    <app-online-change-detection></app-online-change-detection>\n  </div>\n\n  <!-- Game analytics -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[45]') ||\n      referenceNumbers.includes('[43]') ||\n      referenceNumbers.includes('[104]')\n    \"\n  >\n    <app-gamification></app-gamification>\n  </div>\n\n  <!-- Predict course completion -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[70]')\">\n    <app-predict-coursecompletion></app-predict-coursecompletion>\n  </div>\n\n  <!--  Procrastination  -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[102]') || referenceNumbers.includes('[107]')\n    \"\n  >\n    <app-procrastination></app-procrastination>\n  </div>\n\n  <!-- Group participation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[30]')\">\n    <app-group-participation></app-group-participation>\n  </div>\n\n  <!-- Clustering -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[66]') ||\n      referenceNumbers.includes('[120]') ||\n      referenceNumbers.includes('[113]') ||\n      referenceNumbers.includes('[29]')\n    \"\n  >\n    <app-clustering></app-clustering>\n  </div>\n\n  <!-- Final grade prediction -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[28]') ||\n      referenceNumbers.includes('[83]') ||\n      referenceNumbers.includes('[78]') ||\n      referenceNumbers.includes('[115]') ||\n      referenceNumbers.includes('[60]') ||\n      referenceNumbers.includes('[37]') ||\n      referenceNumbers.includes('[105]') ||\n      referenceNumbers.includes('[81]') ||\n      referenceNumbers.includes('[119]')\n    \"\n  >\n    <app-final-grade-prediction></app-final-grade-prediction>\n  </div>\n\n  <!-- Learning behaviour -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[76]')\">\n    <app-learning-behaviour></app-learning-behaviour>\n  </div>\n\n  <!-- Social network analysis -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[90]') || referenceNumbers.includes('[52]')\n    \"\n  >\n    <app-social-network-analysis></app-social-network-analysis>\n  </div>\n\n  <!-- Self motivation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[139]')\">\n    <app-self-motivation></app-self-motivation>\n  </div>\n\n  <!-- Learning behaviour patterns -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[111]') ||\n      referenceNumbers.includes('[132]') ||\n      referenceNumbers.includes('[118]')\n    \"\n  >\n    <app-learning-behavior-patterns></app-learning-behavior-patterns>\n  </div>\n\n  <!-- Passing rate prediction -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[26]') ||\n      referenceNumbers.includes('[56]') ||\n      referenceNumbers.includes('[96]') ||\n      referenceNumbers.includes('[100]') ||\n      referenceNumbers.includes('[117]') ||\n      referenceNumbers.includes('[143]') ||\n      referenceNumbers.includes('[144]')\n    \"\n  >\n    <app-passing-rate-prediction></app-passing-rate-prediction>\n  </div>\n\n  <!--  Feedback (Self-regulation)-->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[41]') || referenceNumbers.includes('[91]')\n    \"\n  >\n    <app-feedback></app-feedback>\n  </div>\n\n  <!-- Course assessment -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[55]')\">\n    <app-course-assessment></app-course-assessment>\n  </div>\n\n  <!-- Affective-State -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[32]') ||\n      referenceNumbers.includes('[84]') ||\n      referenceNumbers.includes('[36]') ||\n      referenceNumbers.includes('[87]')\n    \"\n  >\n    <app-affective-state></app-affective-state>\n  </div>\n\n  <!-- Course difficulty -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[77]') || referenceNumbers.includes('[133]')\n    \"\n  >\n    <app-course-difficulty></app-course-difficulty>\n  </div>\n\n  <!-- Teacher curriculum usage -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[65]') || referenceNumbers.includes('[58]')\n    \"\n  >\n    <app-curriculum-usage></app-curriculum-usage>\n  </div>\n\n  <!-- Presentation skills -->\n  <div\n    class=\"main-content\"\n    *ngIf=\"\n      referenceNumbers.includes('[35]') || referenceNumbers.includes('[40]')\n    \"\n  >\n    <app-presentation-skills></app-presentation-skills>\n  </div>\n</div>\n");
 
 /***/ }),
 
@@ -58,7 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -71,7 +71,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -84,7 +84,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%;  display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -97,7 +97,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -110,7 +110,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 25%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions2\"\n    style=\"width: 25%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions2\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -123,7 +123,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -136,7 +136,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<highcharts-chart\n  [Highcharts]=\"Highcharts\"\n  [options]=\"chartOptions\"\n  style=\"width: 50%; height: 400px; display: block; float: left\"\n></highcharts-chart>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<highcharts-chart\n  [Highcharts]=\"Highcharts\"\n  [options]=\"chartOptions\"\n  style=\"width: 100%; height: 400px; display: block; float: left\"\n></highcharts-chart>\n");
 
 /***/ }),
 
@@ -162,7 +162,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -175,7 +175,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -188,7 +188,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 300px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n\n<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions2\"\n    style=\"width: 50%; height: 300px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n\n<!-- \n<figure class=\"highcharts-figure\">\n  <div id=\"container-speed\" class=\"chart-container\"></div>\n  <div id=\"container-rpm\" class=\"chart-container\"></div>\n</figure>\n-->\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<SELECT id=\"list\" (change)=\"updateChart($event)\">\n  <option VALUE=\"A\">Video interactions</option>\n  <option VALUE=\"B\">Reading activities</option>\n  <option VALUE=\"C\">Assignment activities</option>\n  <option VALUE=\"D\">Dashboard access</option>\n</SELECT>\n<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n\n<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions2\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n\n<!-- \n<figure class=\"highcharts-figure\">\n  <div id=\"container-speed\" class=\"chart-container\"></div>\n  <div id=\"container-rpm\" class=\"chart-container\"></div>\n</figure>\n-->\n");
 
 /***/ }),
 
@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -214,7 +214,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -227,7 +227,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -240,7 +240,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -253,7 +253,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%;  display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -266,7 +266,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%;  display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -279,7 +279,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -292,7 +292,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -305,7 +305,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<SELECT id=\"list\" (change)=\"updateChart($event)\">\n  <option VALUE=\"A\">Average grade so far</option>\n  <option VALUE=\"B\">Lecture attendance</option>\n  <option VALUE=\"C\">\"Coursework\" clicks</option>\n  <option VALUE=\"D\">\"Practials\" clicks</option>\n  <option value=\"E\">Seen content</option>\n</SELECT>\n<div class=\"example\">\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 50%; height: 500px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 500px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -318,7 +318,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -331,7 +331,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/presentation-skills/presentation-skills.component.html":
+/*!*********************************************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/charts/presentation-skills/presentation-skills.component.html ***!
+  \*********************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div id=\"container\"></div>\n");
 
 /***/ }),
 
@@ -344,7 +357,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -357,7 +370,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 100%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -370,7 +383,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -383,7 +396,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -396,7 +409,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -409,7 +422,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<SELECT id=\"list\" (change)=\"updateChart($event)\">\n    <option VALUE=\"A\">Clicks</option>\n    <option VALUE=\"B\">\"Lectures\" clicks</option>\n    <option VALUE=\"C\">\"Coursework\" clicks</option>\n    <option VALUE=\"D\">\"Practials\" clicks</option>    \n    <option value=\"E\">Seen content</option>\n</SELECT>\n<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<SELECT id=\"list\" (change)=\"updateChart($event)\">\n  <option VALUE=\"A\">Clicks</option>\n  <option VALUE=\"B\">\"Lectures\" clicks</option>\n  <option VALUE=\"C\">\"Coursework\" clicks</option>\n  <option VALUE=\"D\">\"Practials\" clicks</option>\n  <option value=\"E\">Seen content</option>\n</SELECT>\n<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -422,7 +435,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -435,7 +448,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -448,7 +461,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -461,7 +474,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 100%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -474,7 +487,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\" *ngIf=\"loadChart\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float: left\"\n    ></highcharts-chart>\n  </div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -487,7 +500,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"example\">\n    <highcharts-chart\n      [Highcharts]=\"Highcharts\"\n      [options]=\"chartOptions\"\n      style=\"width: 50%; height: 400px; display: block; float:left;\"\n    ></highcharts-chart>\n  </div>\n  \n  ");
+/* harmony default export */ __webpack_exports__["default"] = ("<div>\n  <highcharts-chart\n    [Highcharts]=\"Highcharts\"\n    [options]=\"chartOptions\"\n    style=\"width: 100%; height: 400px; display: block; float: left\"\n  ></highcharts-chart>\n</div>\n");
 
 /***/ }),
 
@@ -500,7 +513,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!--Data Entry form -->\n\n<div>\n    <form [formGroup]=\"dataEntryForm\">\n    <label class=\"learningEvents\">Learning Events: </label>\n        <select formControlName=\"learningEvents\">\n            <option >Create</option>\n            <option >Explore</option>\n            <option >Practice</option>\n            <option >Imitate</option>\n            <option >Receive</option>\n            <option >Debate</option>\n            <option >Meta-learn</option>\n            <option >Experiment</option>\n        </select>\n<br>\n        <label class=\"learningActivities\">Learning Activities: </label>\n        <input type=\"text\" formControlName=\"learningActivities\">\n        <br>\n        <h4> Indicators </h4>\n        <div formArrayName = \"indicator\">\n           <div *ngFor = \"let indicator of indicatorControls; let i = index\" \n           [formGroupName] = \"i\">        \n           <label class=\"indicatorName\">Indicator: </label>\n                <input type=\"text\" size=\"50\" formControlName=\"indicatorName\">\n           <br>\n           <label class=\"metrics\">Meterics: </label>\n                <input type=\"text\" size=\"50\" formControlName=\"metrics\">\n            <br>\n            <br>\n            <br>\n            <button mat-raised-button color= \"primary\" (click) = \"addIndicator()\">Add Indicator</button>\n            <button mat-raised-button color=\"warn\" (click) =\"removeIndicator(i)\" > Delete</button>\n    </div> \n</div>\n    <br>\n    <br>\n        <button \n        type=\"submit\"\nmat-raised-button \ncolor='primary'\n(click)='addData(learningEvents,learningActivities,indicator,metrics)'>Save data</button>\n    \n    </form>\n\n</div>\n\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!--Data Entry form -->\n\n<div style=\"margin: auto;\">\n  <form [formGroup]=\"dataEntryForm\" novalidate>\n\n    <div id=\"title\">\n      Data Entry Form\n    </div>\n    <div id=\"dropdown\">\n      <label>Learning Events</label>\n      <mat-select placeholder=\"Learning Events\" (selectionChange)=\"learningValueChange($event.value)\"\n        formControlName=\"learningEvents\">\n        <mat-option *ngFor=\"let learningEvent of options\" [value]=\"learningEvent\">\n          {{ learningEvent }}\n        </mat-option>\n      </mat-select>\n\n\n    </div>\n\n\n    <div id=\"activities\">\n      <label for=\"\">Learning Activities</label>\n\n      <mat-select formControlName=\"learningActivities\" placeholder=\"Learning Activities\">\n\n        <mat-option *ngFor=\"let LearningAct of dropdownList\" [value]=\"LearningAct\">\n          {{ LearningAct}}\n        </mat-option>\n      </mat-select>\n\n\n\n\n\n    </div>\n\n    <div formArrayName=\"indicator\">\n      <div *ngFor=\"let indicator of indicatorControls; let i = index\" [formGroupName]=\"i\">\n\n        <div id=\"indicators\">\n          <label class=\"indicatorName\">Indicators</label>\n          <input type=\"text\" formControlName=\"indicatorName\" required>\n        </div>\n\n\n        <div class=\"formfield\">\n          <label class=\"metrics\">Metrics</label>\n          <textarea class=\"text\" cols=\"30\" rows=\"10\" type=\"text\" formControlName=\"metrics\" required\n            placeholder=\"Metrics must be comma seperated\"></textarea>\n        </div>\n\n      </div>\n      <!-- <div class=\"btn\">\n        <button id=\"btn1\" mat-raised-button color=\"primary\" (click)=\"addIndicator()\"\n          [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\">Add Indicator</button>\n        <button id=\"btn2\" mat-raised-button color=\"warn\" (click)=\"removeIndicator(i)\"\n          [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\"> Delete</button>\n      </div> -->\n\n\n    </div>\n    <div id=\"savebtn\">\n      <button type=\"submit\" mat-raised-button color='primary'\n        (click)='addData(learningEvents,learningActivities,indicator,metrics)'\n        [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\">Save data</button>\n    </div>\n\n  </form>\n  <div>\n    <label for=\"file\">Choose File</label>\n    <input (change)=\"onFileSelected($event.target.files)\" type=\"file\" id=\"file\">\n\n  </div>\n  <div>\n    <button [disabled]=\"!file\" (click)=\"upload()\">\n      Upload\n    </button>\n  </div>\n\n\n</div>\n");
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/admin/admin.component.html":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/component/admin/admin.component.html ***!
+  \********************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"container\">\n  <form [formGroup]=\"loginForm\" novalidate>\n    <div id=\"title\">\n      Login Form\n    </div>\n    <div id=\"username\">\n      <label>Username</label>\n      <input type=\"text\" formControlName=\"username\" required>\n    </div>\n\n    <div\n      *ngIf=\"loginForm.controls['username'].invalid && (loginForm.controls['username'].dirty || loginForm.controls['username'].touched)\"\n      class=\"alert\">\n      <div *ngIf=\"loginForm.controls['username'].errors.required\">\n        User Name is required.\n      </div>\n    </div>\n    <div id=\"password\">\n      <label class=\"learningActivities\">Password</label>\n      <input type=\"password\" formControlName=\"password\" required>\n    </div>\n    <div\n      *ngIf=\"loginForm.controls['password'].invalid && (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)\"\n      class=\"alert\">\n      <div *ngIf=\"loginForm.controls['password'].errors.required\">\n        Password is required.\n      </div>\n    </div>\n    <div id=\"submit\">\n\n      <button class=\"submitbtn\" mat-raised-button color=\"primary\" type=\"submit\" (click)=\"submit()\"\n        [disabled]=\"loginForm.pristine || loginForm.invalid\">Login</button>\n    </div>\n\n\n\n  </form>\n\n</div>\n");
 
 /***/ }),
 
@@ -513,7 +539,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<button\n  class=\"backBtn\"\n  mat-raised-button\n  color=\"primary\"\n  routerLink=\"/display/data\"\n>\n  Back\n</button>\n\n<mat-form-field appearance=\"fill\">\n  <mat-select\n    [formControl]=\"indicators\"\n    multiple\n    placeholder=\"Indicators\"\n    [ngModel]=\"dropdownItems\"\n  >\n    <mat-select-trigger>\n      {{ indicators.value ? indicators.value[0] : \"\" }}\n      <span *ngIf=\"indicators.value?.length > 1\" class=\"selection\">\n        (+{{ indicators.value.length - 1 }}\n        {{ indicators.value?.length === 2 ? \"other\" : \"others\" }})\n      </span>\n    </mat-select-trigger>\n    <mat-option *ngFor=\"let indicator of dropdownItems\" [value]=\"indicator\">{{\n      indicator\n    }}</mat-option>\n  </mat-select>\n</mat-form-field>\n\n<button\n  class=\"downloadCharts\"\n  mat-raised-button\n  color=\"primary\"\n  (click)=\"downloadPage()\"\n>\n  Download\n</button>\n<app-chart-manager *ngIf=\"components\" [component]=\"component\">\n</app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered from OpenLAIR.</p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-chart-manager> </app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered from OpenLAIR.</p>\n</div>\n");
 
 /***/ }),
 
@@ -526,7 +552,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<span class=\"OpenLAIR_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px;\">\n      <strong>Learning Events</strong><br>\n      <span style=\"font-size: 14px;\" id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n        <img width=\"16px\" src=\"assets/images/question.png\"> Click here for more details\n        <span class=\"toolBoxCss\" id=\"contentEvents\">\n          <p style=\"text-align:left;\">\n            <strong>Learning Events or Objectives</strong><br />\n            A learning objective is the desired outcome of a single or multiple learning event and is used to establish learning <br> \n            activities to achieve the overall learning outcome <a target=\"_blank\" href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\">[12]</a>.\n            Learning design literature identified eight learning events: <br>create, explore, practice, imitate, receive, debate, meta-learn/Elf-reflect, and experiment <a target=\"_blank\"\n            href=\"http://www.labset.net/media/prod/8LEM.pdf\">[1]</a>, <a target=\"_blank\" href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\">[2]</a>.\n            <br><br>\n            <img width=\"800px\" src=\"assets/images/events.png\">\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field>\n      <mat-select\n        class=\"step1\"\n        placeholder=\"Learning Events\"\n        name=\"Select\"\n        [(ngModel)]=\"selected\"\n        multiple\n        #selectionModel=\"ngModel\"\n        (valueChange)=\"learningValueChange($event)\"\n      >\n        <app-select-check-all\n          [model]=\"selectionModel\"\n          [values]=\"options\"\n          (sendCount)=\"learningValueChange($event)\"\n        >\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of options\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br>\n    <span style=\"font-size: 14px;\" id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\"> Click here for more details\n      <span class=\"toolBoxCss\" id=\"contentActivites\">\n        <p style=\"text-align:left;\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al. <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">[3]</a>\n          took the model of learning events and added learning activities<br>\n          to identify its outcomes in LD. Learning activities are split into in-class methods and tools,<br>\n          and online methods and tools [<a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">3</a>,\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\">9</a>].\n          Examples of in-class methods and tools are exercise, <br>exam,\n          presentation, discussion, demonstration, etc. On the other hand, online methods and <br>tools are\n          blogs, wikis, forums, photo and audio notes, online tests and quizzes, e-portfolios, <br>etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown class=\"dropdown-menu step2\" [placeholder]=\"'Learning Activities'\" [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedItems\" [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"checkvalue($event)\">\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br>\n    <span style=\"font-size: 14px;\" id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <span class=\"stepDefine\"><img width=\"16px\" src=\"assets/images/question.png\"> Click here for more details</span>\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px;\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is the result of the analysis of one<br>\n          or multiple metrics (e.g. number of views, login/logout frequency & time, number of posts, etc.) and gives <br>\n          a more comprehensive picture on a particular (abstract) learner status, e.g. reading comprehension, <br>\n          self-reflection, etc. An indicator covers a particular aspect of an abstract variable (e.g., student engagement)<br>\n           by using relevant (measurable) items.<br><br>\n           Here is an example of Student Engagement in Moodle. <br>\n           <img src=\"assets/images/engagement.jpg\">\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"step3\" matInput [(ngModel)]=\"searchInd\" placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\" />\n  </div>\n  <div>\n    <strong>Metrics</strong><br>\n    <span style=\"font-size: 14px;\" id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\"> Click here for more details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align:left;\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction between learners and LMSs.<br>\n          To make sense of these captured data, they need to be categorized in a corresponding unit of<br>\n          measurement (e.g. number of views, login/logout frequency & time, number of posts, etc.). In<br>\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"stepMetrics\" matInput [(ngModel)]=\"searchText\" placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchText)\" />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Selected Indicator(s)</label>\n    <ul\n      id=\"reset\"\n      style=\"line-height: 15%; font-size: 15px\"\n      *ngFor=\"let selectInd of ind_list\"\n    >\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span class=\"stepDownloadVisualize\" style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button\n        \n        mat-raised-button\n        color=\"primary\"\n        (click)=\"getSelectedind(mat_list)\"\n      >\n        Download\n      </button>\n      <button\n        mat-raised-button\n        color=\"primary\"\n        (click)=\"forwardIndicators(ind_list)\"\n      >\n        Visualize\n      </button>\n    </span>\n    <button mat-button (click)=\"reset()\">Reset</button>\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events/Objectives</th>\n      <div>\n        <th style=\"margin-left: 40px\">Learning Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\"><th>Indicators</th></div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n        <tr\n          class=\"activities\"\n          *ngFor=\"let LearningActivities of learningEvents.LearningActivities\"\n        >\n          <td style=\"width: 210px\">\n            {{ LearningActivities.Name }}\n          </td>\n          <td class=\"highlightIndicators\">\n            <!-- loop for indicators -->\n            <tr *ngFor=\"let indic of LearningActivities.indicator\">\n              <input\n                class=\"step4\"\n                #indicatorCheckbox\n                type=\"checkbox\"\n                value=\"indic\"\n                [checked]=\"indic.checked\"\n                (change)=\"Checkbox($event, indic)\"\n              />\n              <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n                {{ indic.indicatorName }}\n              </a>\n\n              <td *ngIf=\"searchText\">\n                <tr>\n                  <a class=\"sortable\">\n                    {{ indic.metrics }}\n                  </a>\n                </tr>\n              </td>\n            </tr>\n          </td>\n        </tr>\n      </td>\n    </tr>\n  </table>\n\n  <a\n    id=\"back-to-top\"\n    class=\"btn btn-top back-to-top\"\n    role=\"button\"\n    (click)=\"backToTop()\"\n  >\n    <i class=\"material-icons\">arrow_upward</i>\n  </a>\n</span>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<span class=\"OpenLAIR_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px\">\n      <strong>Learning Events</strong><br />\n      <span\n        class=\"stepDefine\"\n        style=\"font-size: 14px\"\n        id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'\n        title=\"\"\n      >\n        <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details\n        <span class=\"toolBoxCss\" id=\"contentEvents\">\n          <p style=\"text-align: left\">\n            <strong>Learning Events</strong><br />\n            A learning objective is the desired outcome of a single or multiple\n            learning event and is used to establish learning <br />\n            activities to achieve the overall learning outcome\n            <a\n              target=\"_blank\"\n              href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\"\n              >[13]</a\n            >. Learning design literature identified eight learning events:\n            <br />create, explore, practice, imitate, receive, debate,\n            meta-learn/Elf-reflect, and experiment\n            <a target=\"_blank\" href=\"http://www.labset.net/media/prod/8LEM.pdf\"\n              >[1]</a\n            >,\n            <a\n              target=\"_blank\"\n              href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\"\n              >[2]</a\n            >. <br /><br />\n            <img width=\"800px\" src=\"assets/images/events.png\" />\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field>\n      <mat-select\n        class=\"step1\"\n        placeholder=\"Learning Events\"\n        name=\"Select\"\n        [(ngModel)]=\"selected\"\n        multiple\n        #selectionModel=\"ngModel\"\n        (valueChange)=\"learningValueChange($event)\"\n      >\n        <app-select-check-all\n          [model]=\"selectionModel\"\n          [values]=\"options\"\n          (sendCount)=\"learningValueChange($event)\"\n        >\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of options\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br />\n    <span\n      style=\"font-size: 14px\"\n      id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'\n      title=\"\"\n    >\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentActivites\">\n        <p style=\"text-align: left\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al.\n          <a\n            target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\"\n            >[3]</a\n          >\n          took the model of learning events and added learning activities<br />\n          to identify its outcomes in LD. Learning activities are split into\n          in-class methods and tools,<br />\n          and online methods and tools [<a\n            target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\"\n            >3</a\n          >,\n          <a\n            target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\"\n            >9</a\n          >]. Examples of in-class methods and tools are exercise, <br />exam,\n          presentation, discussion, demonstration, etc. On the other hand,\n          online methods and <br />tools are blogs, wikis, forums, photo and\n          audio notes, online tests and quizzes, e-portfolios, <br />etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown\n      class=\"dropdown-menu step2\"\n      [placeholder]=\"'Learning Activities'\"\n      [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedItems\"\n      [settings]=\"dropdownSettings\"\n      (onSelect)=\"onItemSelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\"\n      (onDeSelect)=\"checkvalue($event)\"\n    >\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br />\n    <span\n      style=\"font-size: 14px\"\n      id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'\n      title=\"\"\n    >\n      <span\n        ><img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details</span\n      >\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is\n          the result of the analysis of one<br />\n          or multiple metrics (e.g. number of views, login/logout frequency &\n          time, number of posts, etc.) and gives\n          <br />\n          a more comprehensive picture on a particular (abstract) learner\n          status, e.g. reading comprehension, <br />\n          self-reflection, etc. An indicator covers a particular aspect of an\n          abstract variable (e.g., student engagement)<br />\n          by using relevant (measurable) items.<br /><br />\n          Here is an example of Student Engagement in Moodle. <br />\n          <img src=\"assets/images/engagement.jpg\" />\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input\n      class=\"step3\"\n      matInput\n      [(ngModel)]=\"searchInd\"\n      placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\"\n    />\n  </div>\n  <div>\n    <strong>Metrics</strong><br />\n    <span\n      style=\"font-size: 14px\"\n      id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'\n      title=\"\"\n    >\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align: left\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction\n          between learners and LMSs.<br />\n          To make sense of these captured data, they need to be categorized in a\n          corresponding unit of<br />\n          measurement (e.g. number of views, login/logout frequency & time,\n          number of posts, etc.). In<br />\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input\n      class=\"stepMetrics\"\n      matInput\n      [(ngModel)]=\"searchText\"\n      placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchText)\"\n    />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Seleted Indicator(s)</label>\n    <ul\n      id=\"reset\"\n      style=\"line-height: 15%; font-size: 15px\"\n      *ngFor=\"let selectInd of ind_list\"\n    >\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button\n        class=\"stepDownload\"\n        mat-raised-button\n        color=\"primary\"\n        (click)=\"getSelectedind(mat_list)\"\n      >\n        Download JSON\n      </button>\n      <button\n        mat-raised-button\n        color=\"primary\"\n        (click)=\"forwardIndicators(ind_list)\"\n      >\n        Visualize\n      </button>\n    </span>\n    <button mat-button (click)=\"reset()\">Reset</button>\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events</th>\n      <div>\n        <th style=\"margin-left: 40px\">(Learning) Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\">\n        <th>Indicators</th>\n      </div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n        <tr\n          class=\"activities\"\n          *ngFor=\"let LearningActivities of learningEvents.LearningActivities\"\n        >\n          <td style=\"width: 210px\">\n            {{ LearningActivities.Name }}\n          </td>\n          <td class=\"highlightIndicators\">\n            <!-- loop for indicators -->\n            <tr *ngFor=\"let indic of LearningActivities.indicator\">\n              <input\n                class=\"step4\"\n                #indicatorCheckbox\n                type=\"checkbox\"\n                value=\"indic\"\n                [checked]=\"indic.checked\"\n                (change)=\"Checkbox($event, indic)\"\n              />\n\n              <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n                <span\n                  [innerHTML]=\"indic.indicatorName | sanitizeHtml: searchInd\"\n                >\n                  {{ indic.indicatorName }}\n                </span>\n              </a>\n              <td *ngIf=\"searchText\">\n                <tr>\n                  <a class=\"sortable\">\n                    <span\n                      [innerHTML]=\"indic.metrics | sanitizeHtml: searchText\"\n                    >\n                      {{ indic.metrics }}\n                    </span>\n                  </a>\n                </tr>\n              </td>\n            </tr>\n          </td>\n        </tr>\n      </td>\n    </tr>\n  </table>\n\n  <a\n    id=\"back-to-top\"\n    class=\"btn btn-top back-to-top\"\n    role=\"button\"\n    (click)=\"backToTop()\"\n  >\n    <i class=\"material-icons\">arrow_upward</i>\n  </a>\n</span>\n");
 
 /***/ }),
 
@@ -552,20 +578,20 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n<div class=\"header\" id=\"header\">\n    <mat-toolbar color='primary'><span class=\"step0\">  <a  routerLink=\"display/data\"><img style=\"height: 58px;  padding-top: 8px;\" src=\"assets/images/logo.png\"></a></span> \n        <span class=\"example-spacer\"></span> \n        \n    \n   <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> --> \n    <a mat-button class=\"stepReferences\"  (click)='referances()'target=\"_blank\">Referances</a>\n    <button class=\"mat-button mat-button-base stepStartTour\" id=\"myTourBtn\">Start Tour<img width=\"15px\" src=\"assets/images/tour.png\"></button>\n</mat-toolbar>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\" id=\"header\">\r\n  <mat-toolbar color=\"primary\"\r\n    ><span class=\"step0\">\r\n      <a routerLink=\"display/data\"\r\n        ><img\r\n          style=\"height: 58px; padding-top: 8px\"\r\n          src=\"assets/images/logo.png\" /></a\r\n    ></span>\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <a mat-button class=\"stepReferences\"  (click)='references()'>References</a> \r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"mat-button mat-button-base stepStartTour\" id=\"myTourBtn\">\r\n      Start Tour <img width=\"15px\" src=\"assets/images/tour.png\" />\r\n    </button>\r\n  </mat-toolbar>\r\n</div>\r\n");
 
 /***/ }),
 
-/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/referance/referance.component.html":
+/***/ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/reference/referance.component.html":
 /*!****************************************************************************************************!*\
-  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/component/referance/referance.component.html ***!
+  !*** ./node_modules/raw-loader/dist/cjs.js!./src/app/component/reference/referance.component.html ***!
   \****************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<blockquote>\n    <p>\n        [1] Leclercq, D. & Poumay, M. (2005). The 8 learning Events Model. (2005).1. LabSET\n        <cite>\n            <a href=\"http://www.labset.net/media/prod/8LEM.pdf\">University of Liège</a>\n        </cite>\n    </p>\n    <p>\n       [2] Verpoorten, Dominique, Marianne Poumay, and Dieudonné Leclercq. (2007) \"The eight learning events model: A pedagogic conceptual tool supporting diversification of learning methods.\" Interactive Learning Environments 15.2 : 151-160.\n    </p>\n    <p>\n        [3] Gruber, Marion. (2019). Design Thinking for Technology Enhanced Learning\n        <cite>\n            <a href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">Retrieved link </a>\n        </cite> \n    </p>\n    <p>\n        [4] Lockyer, Lori, Elizabeth Heathcote, and Shane Dawson. \"Informing pedagogical action: Aligning learning analytics with learning design.\" American Behavioral Scientist 57.10 (2013): 1439-1459.\n    </p>\n    <p>\n        [5] Bakharia, Aneesha, et al. \"A conceptual framework linking learning design with learning analytics.\" Proceedings of the Sixth International Conference on Learning Analytics & Knowledge. ACM, 2016.\n    </p>\n    <p>\n        [6] Mangaroska, Katerina, and Michail Giannakos. \"Learning analytics for learning design: Towards evidence-driven decisions to enhance learning.\" European conference on technology enhanced learning. Springer, Cham, 2017.\n    </p>\n    <p>\n        [7] Mor, Yishay, and Brock Craft. \"Learning design: reflections on a snapshot of the current landscape.\" Research in learning technology 20 (2012): 85-94.\n    </p>\n    <p>\n        [8]  Hernández-Leo, D., Rodriguez Triana, M. J., Inventado, P. S., & Mor, Y. (2017). Preface: connecting learning design and learning analytics. Interaction Design and Architecture (s) Journal-IxD&A, 33(ARTICLE), 3-8.\n    </p>\n    <p>\n        [9] Kwakman, Kitty. \"Factors affecting teachers’ participation in professional learning activities.\" Teaching and teacher education 19.2 (2003): 149-170.\n    </p>\n    <p>\n        [10] K. Mangaroska and M. N. Giannakos, \"Learning analytics for learning design: A systematic literature review of analytics-driven design to enhance learning,\" in IEEE Transactions on Learning Technologies.\n    </p>\n    <p>\n        [11] F. Martin, A. Ndoye, and P. Wilkins, “Using learning analytics to enhance student learning in online courses based on quality matters standards,” Journal of Educational Technology Systems, vol. 45, no. 2, pp. 165–187, 2016.\n    </p>\n    <p>\n        [12] Morss, Kate, and Rowena Murray. Teaching at university: A guide for postgraduates and researchers. Sage, 2005\n    </p>\n    <p>\n        [13] Bakkenes, Inge, Jan D. Vermunt, and Theo Wubbels. \"Teacher learning in the context of educational innovation: Learning activities and learning outcomes of experienced teachers.\" Learning and instruction 20.6 (2010): 533-548.\n    </p>\n    <p>\n        [14] Call for Papers of the 1st International Conference on Learning Analytics & Knowledge (LAK 2011)\n    </p>\n    <p>\n        [15]  Park, Yeonjeong, and I-H. Jo. \"Development of the learning analytics dashboard to support students’ learning performance.\" Journal of Universal Computer Science 21.1 (2015): 110.\n    </p>\n    <p>\n        [16] Duval, Erik. \"Attention please!: learning analytics for visualization and recommendation.\" LAK 11 (2011): 9-17.\n    </p>\n    <p>\n        [17] Gašević, Dragan, Shane Dawson, and George Siemens. \"Let’s not forget: Learning analytics are about learning.\" TechTrends 59.1 (2015): 64-71.\n    </p>\n    <p>\n        [18] Ferguson, R. (2012). Learning analytics: drivers, developments and challenges. International Journal of Technology Enhanced Learning, 4(5/6), 304-317.\n    </p>\n    <p>\n        [19] Beetham, Helen, and Rhona Sharpe, eds. Rethinking pedagogy for a digital age: Designing for 21st century learning. routledge, 2013.\n    </p>\n    <p>\n        [20] Phillips, Rob, et al. \"Exploring learning analytics as indicators of study behavior.\" EdMedia+ Innovate Learning. Association for the Advancement of Computing in Education (AACE), 2012.  \n    </p>\n    <p>\n        [21] Mor, Yishay, Brock Craft, and Davinia Hernández-Leo. \"The art and science of learning design: Editoral.\" Research in Learning Technology 21 (2013).\n    </p>\n    <p>\n        [22] Craftb, Brock. \"Learning Design: reflections upon the current landscape.\" (2012).\n    </p>\n    <p>\n        [23] Koper, Rob. \"Current research in learning design.\" Educational Technology & Society 9.1 (2006): 13-22 \n    </p>\n    <p>\n        [24]  2 Tan, J. P. L., Koh, E., Jonathan, C., & Yang, S. (2017). Learner dashboards a double-edged sword? Students’ sense-making of a collaborative critical reading and learning analytics environment for fostering 21st-century literacies.\n    </p>\n    <p>\n        [25]  15  Park, Y., & Jo, I. H. (2015). Development of the learning analytics dashboard to support students’ learning performance. Journal of Universal Computer Science, 21(1), 110.\n    </p>\n    <p>\n        [26]  22 Brouwer, N., Bredeweg, B., Latour, S., Berg, A., & van der Huizen, G. (2016, September). Learning analytics pilot with coach2-Searching for effective mirroring. In European Conference on Technology Enhanced Learning (pp. 363-369). Springer, Cham.\n    </p>\n    <p>\n        [27]  23 Beheshitha, S. S., Hatala, M., Gašević, D., & Joksimović, S. (2016, April). The role of achievement goal orientations when studying effect of learning analytics visualizations. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 54-63). ACM.\n    </p>\n    <p>\n        [28]  26 Koulocheri, E., & Xenos, M. (2013, April). Considering formal assessment in learning analytics within a PLE: the HOU2LEARN case. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 28-32). ACM.\n    </p>\n    <p>\n        [29]  41 Håklev, S., Sharma, K., Slotta, J., & Dillenbourg, P. (2017, September). Contextualizing the co-creation of artefacts within the nested social structure of a collaborative MOOC. In European Conference on Technology Enhanced Learning (pp. 67-81). Springer, Cham.\n    </p>\n    <p>\n        [30]  42 Tervakari, A. M., Silius, K., Koro, J., Paukkeri, J., & Pirttilä, O. (2014, April). Usefulness of information visualizations based on educational data. In 2014 IEEE global engineering education conference (EDUCON) (pp. 142-151). IEEE.\n    </p>\n    <p>\n        [31]  50 Davis, D., Jivet, I., Kizilcec, R. F., Chen, G., Hauff, C., & Houben, G. J. (2017, March). Follow the successful crowd: raising MOOC completion rates through social comparison at scale. In Proceedings of the seventh international learning analytics & knowledge conference (pp. 454-463). ACM.\n    </p>\n    <p>\n        [32] 54 Sedrakyan, G., Leony, D., Muñoz-Merino, P. J., Kloos, C. D., & Verbert, K. (2017, September). Evaluating student-facing learning dashboards of affective states. In European Conference on Technology Enhanced Learning (pp. 224-237). Springer, Cham.\n    </p>\n    <p>\n        [33]  55 de-la-Fuente-Valentín, L., Pardo, A., Hernández, F. L., & Burgos, D. (2015). A Visual Analytics Method for Score Estimation in Learning Courses. J. UCS, 21(1), 134-155.\n    </p>\n    <p>\n        [34] 56 Venant, R., Sharma, K., Vidal, P., Dillenbourg, P., & Broisin, J. (2017, September). Using sequential pattern mining to explore learners’ behaviors and evaluate their correlation with performance in inquiry-based learning. In European Conference on Technology Enhanced Learning (pp. 286-299). Springer, Cham.\n\n    </p>\n    <p>\n        [35]  58 Schneider, J., Börner, D., Van Rosmalen, P., & Specht, M. (2016). Can you help me with my pitch? Studying a tool for real-time automated feedback. IEEE Transactions on Learning Technologies, 9(4), 318-327.\n    </p>\n    <p>\n        [36]  59 Ruiz, S., Charleer, S., Urretavizcaya, M., Klerkx, J., Fernández-Castro, I., & Duval, E. (2016, April). Supporting learning by considering emotions: tracking and visualization a case study. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 254-263). ACM.\n    </p>\n    <p>\n        [37]  60 Barber, R., & Sharkey, M. (2012, April). Course correction: Using analytics to predict course success. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 259-262). ACM.\n    </p>\n    <p>\n        [38]  62 Worsley, M. (2018, March). (Dis) engagement matters: Identifying efficacious learning practices with multimodal learning analytics. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 365-369). ACM.\n    </p>\n    <p>\n        [39]  63 Santos, J. L., Verbert, K., Govaerts, S., & Duval, E. (2013, April). Addressing learner issues with StepUp!: an evaluation. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 14-22). ACM.\n    </p>\n    <p>\n        [40]  66 Ochoa, X., Domínguez, F., Guamán, B., Maya, R., Falcones, G., & Castells, J. (2018, March). The rap system: automatic feedback of oral presentation skills using multimodal analysis and low-cost sensors. In Proceedings of the 8th international conference on learning analytics and knowledge (pp. 360-364). ACM.\n    </p>\n    <p>\n        [41]  Corrin, L., & de Barba, P. (2014). Exploring Students. Interpretation of Feedback Delivered through Learning Analytics Dashboards’, in Rhetoric and Reality: Critical Perspectives on Educational Technology, Eds. B. Hegarty, J. McDOnald and S. Loke (Dunedin: ascilite proceedings, 2014), 28. \n    </p>\n    <p>\n        [42]  Fougt, S. S., Siebert-Evenstone, A., Eagan, B., Tabatabai, S., & Misfeldt, M. (2018, March). Epistemic network analysis of students' longer written assignments as formative/summative evaluation. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 126-130). ACM.\n    </p>\n    <p>\n        [43]  Holman, C., Aguilar, S., & Fishman, B. (2013, April). GradeCraft: What can we learn from a game-inspired learning management system?. In Proceedings of the third international conference on learning analytics and knowledge (pp. 260-264). ACM.\n    </p>\n    <p>\n        [44]  Feild, J., Lewkow, N., Burns, S., & Gebhardt, K. (2018, March). A generalized classifier to identify online learning tool disengagement at scale. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 61-70). ACM.\n    </p>\n    <p>\n        [45]  Melero, J., Hernández‐Leo, D., Sun, J., Santos, P., & Blat, J. (2015). How was the activity? A visualization support for a case of location‐based learning design. British Journal of Educational Technology, 46(2), 317-329.\n    </p>\n    <p>\n        [46]  Davis, D., Kizilcec, R. F., Hauff, C., & Houben, G. J. (2018, March). The half-life of MOOC knowledge: a randomized trial evaluating knowledge retention and retrieval practice in MOOCs. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 1-10). ACM.\n    </p>\n    <p>\n        [47]  Harrer, A., & Göhnert, T. (2015, March). Integrated representations and small data: Towards contextualized and embedded analytics tools for learners. In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 406-407). ACM.\n    </p>\n    <p>\n        [48]  Liu, M., Calvo, R. A., Pardo, A., & Martin, A. (2014). Measuring and visualizing students’ behavioral engagement in writing activities. IEEE Transactions on learning technologies, 8(2), 215-224.\n    </p>\n    <p>\n        [49]  Wise, A., Zhao, Y., & Hausknecht, S. (2014). Learning analytics for online discussions: Embedded and extracted approaches. Journal of Learning Analytics, 1(2), 48-71. \n    </p>\n    <p>\n        [50]  Iandoli, L., Quinto, I., De Liddo, A., & Shum, S. B. (2014). Socially augmented argumentation tools: Rationale, design and evaluation of a debate dashboard. International Journal of Human-Computer Studies, 72(3), 298-319.\n    </p>\n    <p>\n        [51] Kump, B., Seifert, C., Beham, G., Lindstaedt, S. N., & Ley, T. (2012, April). Seeing what the system thinks you know: visualizing evidence in an open learner model. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 153-157). ACM.\n\n    </p>\n    <p>\n        [52]  McAuley, J., O'Connor, A., & Lewis, D. (2012, April). Exploring reflection in online communities. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 102-110). ACM.\n    </p>\n    <p>\n        [53]  Govaerts, S., Verbert, K., & Duval, E. (2011, December). Evaluating the student activity meter: two case studies. In International Conference on Web-Based Learning (pp. 188-197). Springer, Berlin, Heidelberg.\n\n    </p>\n    <p>\n        [54]  Arnold, K. E., & Pistilli, M. D. (2012, April). Course signals at Purdue: Using learning analytics to increase student success. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 267-270). ACM.\n    </p>\n    <p>\n        [55]  Cooper, K., & Khosravi, H. (2018, March). Graph-based visual topic dependency models: Supporting assessment design and delivery at scale. In Proceedings of the 8th international conference on learning analytics and knowledge (pp. 11-15). ACM.\n    </p>\n    <p>\n        [56]  McKay, T., Miller, K., & Tritz, J. (2012, April). What to do with actionable intelligence: E 2 Coach as an intervention engine. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 88-91). ACM.\n    </p>\n    <p>\n        [57]  Vesin, B., Klašnja-Milićević, A., Ivanović, M., & Budimac, Z. (2013). Applying recommender systems and adaptive hypermedia for e-learning personalization. Computing and Informatics, 32(3), 629-659.\n    </p>\n    <p>\n        [58]  Gunnarsson, B. L., & Alterman, R. (2014). Peer promotions as a method to identify quality content. Journal of Learning Analytics, 1(2), 126-150.\n    </p>\n    <p>\n        [59]  Aguiar, E., Ambrose, G. A. A., Chawla, N. V., Goodrich, V., & Brockman, J. (2014). Engagement vs performance: Using electronic portfolios to predict first semester engineering student persistence. Journal of Learning Analytics, 1(3), 7-33. \n    </p>\n    <p>\n        [60]  Lowes, S., Lin, P., & Kinghorn, B. (2015). Exploring the link between online behaviours and course performance in asynchronous online high school courses. Journal of Learning Analytics, 2(2), 169-194.\n    </p>\n    <p>\n        [61]  Southavilay, V., Yacef, K., Reimann, P., & Calvo, R. A. (2013, April). Analysis of collaborative writing processes using revision maps and probabilistic topic models. In Proceedings of the third international conference on learning analytics and knowledge (pp. 38-47). ACM.\n    </p>\n    <p>\n        [62]  Muñoz-Merino, P. J., Valiente, J. A. R., & Kloos, C. D. (2013, April). Inferring higher level learning information from low level data for the Khan Academy platform. In Proceedings of the third international conference on learning analytics and knowledge (pp. 112-116). ACM.\n    </p>\n    <p>\n        [63]  Ahn, J. (2013, April). What can we learn from Facebook activity?: using social learning analytics to observe new media literacy skills. In Proceedings of the third international conference on learning analytics and knowledge (pp. 135-144). ACM.\n    </p>\n    <p>\n        [64]  Wolff, A., Zdrahal, Z., Nikolov, A., & Pantucek, M. (2013, April). Improving retention: predicting at-risk students by analysing clicking behaviour in a virtual learning environment. In Proceedings of the third international conference on learning analytics and knowledge (pp. 145-149). ACM. \n    </p>\n    <p>\n        [65]  Monroy, C., Rangel, V. S., & Whitaker, R. (2013, April). STEMscopes: contextualizing learning analytics in a K-12 science curriculum. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 210-219). ACM.\n    </p>\n    <p>\n        [66]  Bogarín, A., Romero, C., Cerezo, R., & Sánchez-Santillán, M. (2014, March). Clustering for improving educational process mining. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 11-15). ACM.  \n    </p>\n    <p>\n        [67]  Nam, S., Lonn, S., Brown, T., Davis, C. S., & Koch, D. (2014, March). Customized course advising: investigating engineering student success with incoming profiles and patterns of concurrent course enrollment. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 16-25). ACM.\n    </p>\n    <p>\n        [68]  Papamitsiou, Z. K., Terzis, V., & Economides, A. A. (2014, March). Temporal learning analytics for computer based testing. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 31-35). ACM.\n    </p>\n    <p>\n        [69]  Coffrin, C., Corrin, L., de Barba, P., & Kennedy, G. (2014, March). Visualizing patterns of student engagement and performance in MOOCs. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 83-92). ACM.\n    </p>\n    <p>\n        [70]  Santos, J. L., Klerkx, J., Duval, E., Gago, D., & Rodríguez, L. (2014, March). Success, activity and drop-outs in MOOCs an exploratory study on the UNED COMA courses. In Proceedings of the Fourth International Conference on Learning Analytics and Knowledge (pp. 98-102). ACM.\n    </p>\n    <p>\n        [71]  Rogers, T., Colvin, C., & Chiera, B. (2014, March). Modest analytics: using the index method to identify students at risk of failure. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 118-122). ACM.\n    </p>\n    <p>\n        [72]  Gašević, D., Mirriahi, N., & Dawson, S. (2014, March). Analytics of the effects of video use and instruction to support reflective learning. In Proceedings of the fourth international conference on learning analytics and Knowledge (pp. 123-132). ACM.\n    </p>\n    <p>\n        [73]  Vozniuk, A., Holzer, A., & Gillet, D. (2014, March). Peer assessment based on ratings in a social media course. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 133-137). ACM. \n    </p>\n    <p>\n        [74]  Wang, Y., Heffernan, N. T., & Heffernan, C. (2015, March). Towards better affect detectors: effect of missing skills, class features and common wrong answers. In Proceedings of the Fifth International Conference on Learning Analytics and Knowledge (pp. 31-35). ACM.   \n    </p>\n    <p>\n        [75]  San Pedro, M. O., Baker, R. S., Heffernan, N. T., & Ocumpaugh, J. L. (2015, March). Exploring college major choice and middle school student behavior, affect and learning: what happens to students who game the system?. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 36-40). ACM. \n    </p>\n    <p>\n        [76]  Ferguson, R., & Clow, D. (2015, March). Examining engagement: analysing learner subpopulations in massive open online courses (MOOCs). In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 51-58). ACM.\n    </p>\n    <p>\n        [77]  Méndez, G., Ochoa, X., & Chiluiza, K. (2014, March). Techniques for data-driven curriculum analysis. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 148-157). ACM.\n    </p>\n    <p>\n        [78]  Jo, I. H., Kim, D., & Yoon, M. (2014, March). Analyzing the log patterns of adult learners in LMS using learning analytics. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 183-187). ACM.\n    </p>\n    <p>\n        [79]  Waddington, R. J., & Nam, S. (2014, March). Practice exams make perfect: incorporating course resource use into an early warning system. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 188-192). ACM. \n    </p>\n    <p>\n        [80]  Chiu, M. M., & Fujita, N. (2014, March). Statistical discourse analysis of online discussions: Informal cognition, social metacognition and knowledge creation. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 217-225). ACM.\n    </p>\n    <p>\n        [81]  Yu, T., & Jo, I. H. (2014, March). Educational technology approach toward learning analytics: Relationship between student online behavior and learning performance in higher education. In Proceedings of the Fourth International Conference on Learning Analytics and Knowledge (pp. 269-270). ACM.\n    </p>\n    <p>\n        [82] Aguiar, E., Lakkaraju, H., Bhanpuri, N., Miller, D., Yuhas, B., & Addison, K. L. (2015, March). Who, when, and why: a machine learning approach to prioritizing students at risk of not graduating high school on time. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 93-102). ACM.\n    </p>\n    <p>\n        [83]  Elbadrawy, A., Studham, R. S., & Karypis, G. (2015, March). Collaborative multi-regression models for predicting students' performance in course activities. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 103-107). ACM.\n    </p>\n    <p>\n        [84]  Grawemeyer, B., Mavrikis, M., Holmes, W., Gutierrez-Santos, S., Wiedmann, M., & Rummel, N. (2016, April). Affecting off-task behaviour: how affect-aware feedback can improve student learning. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 104-113). ACM.\n    </p>\n    <p>\n        [85]  Allen, L. K., Mills, C., Jacovina, M. E., Crossley, S., D'mello, S., & McNamara, D. S. (2016, April). Investigating boredom and engagement during writing using multiple sources of information: the essay, the writer, and keystrokes. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 114-123). ACM. \n    </p>\n    <p>\n        [86]  Papoušek, J., Stanislav, V., & Pelánek, R. (2016, April). Evaluation of an adaptive practice system for learning geography facts. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 134-142). ACM. \n    </p>\n    <p>\n        [87]  Manai, O., Yamada, H., & Thorn, C. (2016, April). Real-time indicators and targeted supports: Using online platform data to accelerate student learning. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 183-187). ACM.\n    </p>\n    <p>\n        [88]  Hecking, T., Chounta, I. A., & Hoppe, H. U. (2016, April). Investigating social and semantic user roles in MOOC discussion forums. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 198-207). ACM.   \n    </p>\n    <p>\n        [89]  Shum, S. B., Sándor, Á., Goldsmith, R., Wang, X., Bass, R., & McWilliams, M. (2016, April). Reflecting on reflective writing analytics: Assessment challenges and iterative evaluation of a prototype tool. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 213-222). ACM\n    </p>\n    <p>\n        [90]  Zhu, M., Bergner, Y., Zhang, Y., Baker, R., Wang, Y., & Paquette, L. (2016, April). Longitudinal engagement, performance, and social connectivity: a MOOC case study using exponential random graph models. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 223-230). ACM. \n    </p>\n    <p>\n        [91]  Khan, I., & Pardo, A. (2016, April). Data2U: Scalable real time student feedback in active learning environments. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 249-253). ACM. \n    </p>\n    <p>\n        [92] Papamitsiou, Z., Karapistoli, E., & Economides, A. A. (2016, April). Applying classification techniques on temporal trace data for shaping student behavior models. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 299-303). ACM.\n    </p>\n    <p>\n        [93] Joksimović, S., Manataki, A., Gašević, D., Dawson, S., Kovanović, V., & De Kereki, I. F. (2016, April). Translating network position into performance: importance of centrality in different network configurations. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 314-323). ACM.\n    </p>\n    <p>\n        [94]  Robinson, C., Yeomans, M., Reich, J., Hulleman, C., & Gehlbach, H. (2016, April). Forecasting student achievement in MOOCs with natural language processing. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 383-387). ACM.\n    </p>\n    <p>\n        [95]  Wang, X., Wen, M., & Rosé, C. P. (2016, April). Towards triggering higher-order thinking behaviors in MOOCs. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 398-407). ACM.\n    </p>\n    <p>\n        [96]  Kennedy, G., Coffrin, C., De Barba, P., & Corrin, L. (2015, March). Predicting success: how learners' prior knowledge, skills and activities predict MOOC performance. In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 136-140). ACM.\n    </p>\n    <p>\n        [97] Harrison, S., Villano, R., Lynch, G., & Chen, G. (2015, March). Likelihood analysis of student enrollment outcomes using learning environment variables: A case study approach. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 141-145). ACM. \n    </p>\n    <p>\n        [98]  Pardo, A., Han, F., & Ellis, R. A. (2016, April). Exploring the relation between self-regulation, online activities, and academic performance: A case study. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 422-429). ACM.\n    </p>\n    <p>\n        [99]  Brown, M. G., DeMonbrun, R. M., Lonn, S., Aguilar, S. J., & Teasley, S. D. (2016, April). What and when: the role of course type and timing in students' academic performance. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 459-468). ACM.\n    </p>\n    <p>\n        [100]  Pardo, A., Mirriahi, N., Martinez-Maldonado, R., Jovanovic, J., Dawson, S., & Gašević, D. (2016, April). Generating actionable predictive models of academic performance. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 474-478). ACM.\n    </p>\n    <p>\n        [101]  Hlosta, M., Zdrahal, Z., & Zendulka, J. (2017, March). Ouroboros: early identification of at-risk students without models based on legacy data. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 6-15). ACM.\n    </p>\n    <p>\n        [102]  Agnihotri, L., Essa, A., & Baker, R. (2017, March). Impact of student choice of content adoption delay on course outcomes. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 16-20). ACM.\n    </p>\n    <p>\n        [103]  Park, J., Denaro, K., Rodriguez, F., Smyth, P., & Warschauer, M. (2017, March). Detecting changes in student behavior from clickstream data. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 21-30). ACM.\n    </p>\n    <p>\n        [104]  Käser, T., Hallinen, N. R., & Schwartz, D. L. (2017, March). Modeling exploration strategies to predict student performance within a learning environment and beyond. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 31-40). ACM.\n    </p>\n    <p>\n        [105]  Conijn, R., Snijders, C., Kleingeld, A., & Matzat, U. (2016). Predicting student performance from LMS data: A comparison of 17 blended courses using Moodle LMS. IEEE Transactions on Learning Technologies, 10(1), 17-29.\n    </p>\n    <p>\n        [106]  Hershkovitz, A., de Baker, R. S. J., Gobert, J., Wixon, M., & Pedro, M. S. (2013). Discovery with models: A case study on carelessness in computer-based science inquiry. American Behavioral Scientist, 57(10), 1480-1499.\n    </p>\n    <p>\n        [107]  Paule Ruiz, M. P., Riestra González, M., Sánchez Santillán, M., & Pérez Pérez, J. R. (2015). The Procrastination related indicators in e-learning platforms. Journal of Universal Computer Science.\n    </p>\n    <p>\n        [108]  Paredes, W. C., & Chung, K. S. K. (2012, April). Modelling learning & performance: a social networks perspective. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 34-42). ACM.\n    </p>\n    <p>\n        [109]  Smolin, D., & Butakov, S. (2012, April). Applying artificial intelligence to the educational data: an example of syllabus quality analysis. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 164-169). ACM. \n    </p>\n    <p>\n        [110]  Pursel, B. K., Zhang, L., Jablokow, K. W., Choi, G. W., & Velegol, D. (2016). Understanding MOOC students: motivations and behaviours indicative of MOOC completion. Journal of Computer Assisted Learning, 32(3), 202-217.\n    </p>\n    <p>\n        [111]  Jovanović, J., Gašević, D., Dawson, S., Pardo, A., & Mirriahi, N. (2017). Learning analytics to unveil learning strategies in a flipped classroom. The Internet and Higher Education, 33(4), 74-85.\n    </p>\n    <p>\n        [112]  Chavarriaga, O., Florian-Gaviria, B., & Solarte, O. (2014, September). A recommender system for students based on social knowledge and assessment data of competences. In European Conference on Technology Enhanced Learning (pp. 56-69). Springer, Cham. \n    </p>\n    <p>\n        [113]  Li, N., Kidziński, Ł., Jermann, P., & Dillenbourg, P. (2015). MOOC video interaction patterns: What do they tell us?. In Design for teaching and learning in a networked world (pp. 197-210). Springer, Cham.\n    </p>\n    <p>\n        [114]  Sadallah, M., Encelle, B., Maredj, A. E., & Prié, Y. (2015). Towards reading session-based indicators in educational reading analytics. In Design for Teaching and Learning in a Networked World (pp. 297-310). Springer, Cham.\n    </p>\n    <p>\n        [115]  Figueira, A. (2015). Predicting results from interaction patterns during online group work. In Design for Teaching and Learning in a Networked World (pp. 414-419). Springer, Cham.\n    </p>\n    <p>\n        [116]  Abolkasim, E., Lau, L., & Dimitrova, V. (2016, September). A semantic-driven model for ranking digital learning objects based on diversity in the user comments. In European Conference on Technology Enhanced Learning (pp. 3-15). Springer, Cham.\n    </p>\n    <p>\n        [117]  You, J. W. (2016). Identifying significant indicators using LMS data to predict course achievement in online learning. The Internet and Higher Education, 29, 23-30. \n    </p>\n    <p>\n        [118]  Gasevic, D., Jovanovic, J., Pardo, A., & Dawson, S. (2017). Detecting learning strategies with analytics: Links with self-reported measures and academic performance. Journal of Learning Analytics, 4(2), 113-128.\n    </p>\n    <p>\n        [119]  Hart, S., Daucourt, M., & Ganley, C. (2017). Individual differences related to college students’ course performance in calculus II. Journal of Learning Analytics, 4(2), 129-153.\n    </p>\n    <p>\n        [120] Casey, K. (2017). Using keystroke analytics to improve pass-fail classifiers. Journal of Learning Analytics, 4(2), 189-211.\n    </p>\n    <p>\n        [121] Bakharia, A., & Dawson, S. (2011, February). SNAPP: a bird's-eye view of temporal participant interaction. In Proceedings of the 1st international conference on learning analytics and knowledge (pp. 168-173). ACM.\n    </p>\n    <p>\n        [122]  Lauría, E. J., Baron, J. D., Devireddy, M., Sundararaju, V., & Jayaprakash, S. M. (2012, April). Mining academic data to improve college student retention: An open source perspective. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 139-142). ACM. \n    </p>\n    <p>\n        [123] Boroujeni, M. S., Sharma, K., Kidziński, Ł., Lucignano, L., & Dillenbourg, P. (2016, September). How to quantify student’s regularity?. In European Conference on Technology Enhanced Learning (pp. 277-291). Springer, Cham.\n    </p>\n    <p>\n        [124] Scheffel, M., Drachsler, H., Kreijns, K., De Kraker, J., & Specht, M. (2017, March). Widget, widget as you lead, i am performing well indeed!: using results from an exploratory offline study to inform an empirical online study about a learning analytics widget in a collaborative learning environment. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 289-298). ACM.\n         \n    </p>\n    <p>\n        [125]  Schumacher, C., & Ifenthaler, D. (2018). Features students really expect from learning analytics. Computers in Human Behavior, 78, 397-407.\n    </p>\n    <p>\n        [126] Aljohani, N. R., Daud, A., Abbasi, R. A., Alowibdi, J. S., Basheri, M., & Aslam, M. A. (2019). An integrated framework for course adapted student learning analytics dashboard. Computers in Human Behavior, 92, 679-690.\n    </p>\n    <p>\n        [127] Saqr, M., Nouri, J., & Fors, U. (2018). Temporality matters: A learning analytics study of the patterns of interactions and its relation to performance,”. EDULEARN18: Proceedings, ser. EDULEARN proceedings, 5386-5393.  \n    </p>\n    <p>\n        [128] Majumdar, R., Akçapınar, A., Akçapınar, G., Flanagan, B., & Ogata, H. (2018). Learning Analytics Dashboard Widgets to Author Teaching-Learning Cases for Evidence-based Education. Companion Procs. of 9th LAK. \n    </p>\n    <p>\n        [129] Matcha, W., Gašević, D., Uzir, N. A. A., Jovanović, J., & Pardo, A. (2019, March). Analytics of Learning Strategies: Associations with Academic Performance and Feedback. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 461-470). ACM.    \n    </p>\n    <p>\n        [130] de Quincey, E., Briggs, C., Kyriacou, T., & Waller, R. (2019, March). Student Centred Design of a Learning Analytics System. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 353-362). ACM.\n    </p>\n    <p>\n        [131] Syed, M., Anggara, T., Lanski, A., Duan, X., Ambrose, G. A., & Chawla, N. V. (2019, March). Integrated Closed-loop Learning Analytics Scheme in a First Year Experience Course. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 521-530). ACM.\n    </p>\n    <p>\n        [132] Wang, Y., Law, N., Hemberg, E., & O'Reilly, U. M. (2019, March). Using Detailed Access Trajectories for Learning Behavior Analysis. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 290-299). ACM.  \n    </p>\n    <p>\n        [133] Jovanović, J., Gašević, D., Pardo, A., Dawson, S., & Whitelock-Wainwright, A. (2019, March). Introducing meaning to clicks: Towards traced-measures of self-efficacy and cognitive load. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 511-520). ACM.\n    </p>\n    <p>\n        [134] Klebanov, B. B., Loukina, A., Madnani, N., Sabatini, J., & Lentini, J. (2019, March). Would you?: Could you? On a tablet? Analytics of Children's eBook Reading. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 106-110). ACM.\n\n    </p>\n    <p>\n        [135] Niaki, S. A., George, C. P., Michailidis, G., & Beal, C. R. (2019, March). Investigating the Usage Patterns of Algebra Nation Tutoring Platform. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 481-490). ACM.\n    </p>\n    <p>\n        [136] Manrique, R., Nunes, B. P., Marino, O., Casanova, M. A., & Nurmikko-Fuller, T. (2019, March). An Analysis of Student Representation, Representative Features and Classification Algorithms to Predict Degree Dropout. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 401-410). ACM. \n    </p>\n    <p>\n        [137] Shimada, A., Taniguchi, Y., Okubo, F., Konomi, S. I., & Ogata, H. (2018, March). Online change detection for monitoring individual student behavior via clickstream data on E-book system. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 446-450). ACM.\n    </p>\n    <p>\n        [138] Van der Zee, T., Davis, D., Saab, N., Giesbers, B., Ginn, J., Van Der Sluis, F., ... & Admiraal, W. (2018, March). Evaluating retrieval practice in a MOOC: how writing and reading summaries of videos affects student learning. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 216-225). ACM.\n    </p>\n    <p>\n        [139] Chen, B., Fan, Y., Zhang, G., & Wang, Q. (2017, March). Examining motivations and self-regulated learning strategies of returning MOOCs learners. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 542-543). ACM.\n    </p>\n    <p>\n        [140] Dawson, S., Jovanovic, J., Gašević, D., & Pardo, A. (2017, March). From prediction to impact: Evaluation of a learning analytics retention program. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 474-478). ACM.\n    </p>\n    <p>\n        [141] Duval, E. (2011). Attention please!: learning analytics for visualization and recommendation. LAK, 11, 9-17.     \n    </p>\n    <p>\n        [142] Ferguson, R., & Shum, S. B. (2011, February). Learning analytics to identify exploratory dialogue within synchronous text chat. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 99-103). ACM.\n    </p>\n    <p>\n        [143] Sharkey, M. (2011, February). Academic analytics landscape at the University of Phoenix. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 122-126). ACM.\n    </p>\n    <p>\n        [144] Fancsali, S. E. (2011, February). Variable construction for predictive and causal modeling of online education data. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 54-63). ACM. \n    </p>\n    <p>\n        [145] Verbert, K., Drachsler, H., Manouselis, N., Wolpers, M., Vuorikari, R., & Duval, E. (2011, February). Dataset-driven research for improving recommender systems for learning. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 44-53). ACM.  \n    </p>\n    <p>\n        [146] Chatti, M. A., Lukarov, V., Thüs, H., Muslim, A., Yousef, A. M. F., Wahid, U., & Schroeder, U. (2014). Learning analytics: Challenges and future research directions. eleed, 10(1).\n    </p>\n    <p>\n        [147] Jivet, I., Scheffel, M., Drachsler, H., & Specht, M. (2017, September). Awareness is not enough: pitfalls of learning analytics dashboards in the educational practice. In European Conference on Technology Enhanced Learning (pp. 82-96). Springer, Cham.\n    </p>\n    <p>\n        [148] Jivet, I., Scheffel, M., Specht, M., & Drachsler, H. (2018, March). License to evaluate: preparing learning analytics dashboards for educational practice. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 31-40). ACM.\n    </p>\n</blockquote>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<blockquote>\n    <p>\n        [1] Leclercq, D. & Poumay, M. (2005). The 8 learning Events Model. (2005).1. LabSET\n        <cite>\n            <a href=\"http://www.labset.net/media/prod/8LEM.pdf\">University of Liège</a>\n        </cite>\n    </p>\n    <p>\n       [2] Verpoorten, Dominique, Marianne Poumay, and Dieudonné Leclercq. (2007) \"The eight learning events model: A pedagogic conceptual tool supporting diversification of learning methods.\" Interactive Learning Environments 15.2 : 151-160.\n       <a target = \"_blank\" href = \"https://doi.org/10.1080/10494820701343694\"> doi.org/10.1080/10494820701343694</a>\n    </p>\n    <p>\n        [3] Gruber, Marion. (2019). Design Thinking for Technology Enhanced Learning\n        <cite>\n            <a target = \"_blank\" href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">Retrieved link </a>\n        </cite> \n    </p>\n    <p>\n        [4] Lockyer, Lori, Elizabeth Heathcote, and Shane Dawson. \"Informing pedagogical action: Aligning learning analytics with learning design.\" American Behavioral Scientist 57.10 (2013): 1439-1459.\n        <a target = \"_blank\" href = \"https://www.doi.org/10.1177/0002764213479367\"> doi.org/10.1177/0002764213479367</a>\n    </p>\n    <p>\n        [5] Bakharia, Aneesha, et al. \"A conceptual framework linking learning design with learning analytics.\" Proceedings of the Sixth International Conference on Learning Analytics & Knowledge. ACM, 2016.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883944\"> doi.org/10.1145/2883851.2883944</a>\n    </p>\n    <p>\n        [6] Mangaroska, Katerina, and Michail Giannakos. \"Learning analytics for learning design: Towards evidence-driven decisions to enhance learning.\" European conference on technology enhanced learning. Springer, Cham, 2017.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-66610-5_38\"> doi.org/10.1007/978-3-319-66610-5_38</a>\n    </p>\n    <p>\n        [7] Mor, Yishay, and Brock Craft. \"Learning design: reflections on a snapshot of the current landscape.\" Research in learning technology 20 (2012): 85-94.\n        <a target = \"_blank\" href = \"https://doi.org/10.3402/rlt.v20i0.19196\"> doi.org/10.3402/rlt.v20i0.19196</a>\n    </p>\n    <p>\n        [8]  Hernández-Leo, D., Rodriguez Triana, M. J., Inventado, P. S., & Mor, Y. (2017). Preface: connecting learning design and learning analytics. Interaction Design and Architecture (s) Journal-IxD&A, 33(ARTICLE), 3-8.\n        <cite>\n            <a target = \"_blank\" href=\"https://infoscience.epfl.ch/record/231720\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [9] Kwakman, Kitty. \"Factors affecting teachers’ participation in professional learning activities.\" Teaching and teacher education 19.2 (2003): 149-170.\n        <a target = \"_blank\" href = \"https://doi.org/10.1016/S0742-051X(02)00101-4\"> doi.org/10.1016/S0742-051X(02)00101-4</a>\n    </p>\n    <p>\n        [10] K. Mangaroska and M. N. Giannakos, \"Learning analytics for learning design: A systematic literature review of analytics-driven design to enhance learning,\" in IEEE Transactions on Learning Technologies.\n        <a target = \"_blank\" href = \"https://doi.org/10.1109/TLT.2018.2868673\"> doi.org/10.1109/TLT.2018.2868673</a>\n    </p>\n    <p>\n        [11] F. Martin, A. Ndoye, and P. Wilkins, “Using learning analytics to enhance student learning in online courses based on quality matters standards,” Journal of Educational Technology Systems, vol. 45, no. 2, pp. 165–187, 2016.\n        <a target = \"_blank\" href = \"https://doi.org/10.1177/0047239516656369\"> doi.org/10.1177/0047239516656369</a>\n    </p>\n    <p>\n        [12] Morss, Kate, and Rowena Murray. Teaching at university: A guide for postgraduates and researchers. Sage, 2005\n    </p>\n    <p>\n        [13] Bakkenes, Inge, Jan D. Vermunt, and Theo Wubbels. \"Teacher learning in the context of educational innovation: Learning activities and learning outcomes of experienced teachers.\" Learning and instruction 20.6 (2010): 533-548.\n        <a target = \"_blank\" href = \"https://doi.org/10.1016/j.learninstruc.2009.09.001\"> doi.org/10.1016/j.learninstruc.2009.09.001</a>\n    </p>\n    <p>\n        [14] Call for Papers of the 1st International Conference on Learning Analytics & Knowledge (LAK 2011)\n    </p>\n    <p>\n        [15]  Park, Yeonjeong, and I-H. Jo. \"Development of the learning analytics dashboard to support students’ learning performance.\" Journal of Universal Computer Science 21.1 (2015): 110.\n         <cite>\n            <a target = \"_blank\" href=\"http://www.jucs.org/jucs_21_1/development_of_the_learning/jucs_21_01_0110_0133_park.pdf\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [16] Duval, Erik. \"Attention please!: learning analytics for visualization and recommendation.\" LAK 11 (2011): 9-17.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090118\"> doi.org/10.1145/2090116.2090118</a>\n    </p>\n    <p>\n        [17] Gašević, Dragan, Shane Dawson, and George Siemens. \"Let’s not forget: Learning analytics are about learning.\" TechTrends 59.1 (2015): 64-71.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/s11528-014-0822-x\"> doi.org/10.1007/s11528-014-0822-x</a>\n    </p>\n    <p>\n        [18] Ferguson, R. (2012). Learning analytics: drivers, developments and challenges. International Journal of Technology Enhanced Learning, 4(5/6), 304-317.\n        <cite>\n            <a target = \"_blank\" href=\"https://www.inderscienceonline.com/doi/abs/10.1504/IJTEL.2012.051816\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [19] Beetham, Helen, and Rhona Sharpe, eds. Rethinking pedagogy for a digital age: Designing for 21st century learning. routledge, 2013.\n        <cite>\n            <a target = \"_blank\" href=\"https://www.tcrecord.org/books/abstract.asp?ContentId=17261\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [20] Phillips, Rob, et al. \"Exploring learning analytics as indicators of study behavior.\" EdMedia+ Innovate Learning. Association for the Advancement of Computing in Education (AACE), 2012.\n        <cite>\n            <a target = \"_blank\" href=\"https://www.learntechlib.org/p/41174/\">Retrieved link </a>\n        </cite>\n\n    </p>\n    <p>\n        [21] Mor, Yishay, Brock Craft, and Davinia Hernández-Leo. \"The art and science of learning design: Editoral.\" Research in Learning Technology 21 (2013).\n        <a target = \"_blank\" href = \"https://doi.org/10.3402/rlt.v21i0.22513\"> doi.org/10.3402/rlt.v21i0.22513</a>\n    </p>\n    <p>\n        [22] Craftb, Brock. \"Learning Design: reflections upon the current landscape.\" (2012).\n        <cite>\n            <a target = \"_blank\" href=\"http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.689.2132\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [23] Koper, Rob. \"Current research in learning design.\" Educational Technology & Society 9.1 (2006): 13-22 \n        <cite>\n            <a target = \"_blank\" href=\"https://www.jstor.org/stable/jeductechsoci.9.1.13\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [24]  2 Tan, J. P. L., Koh, E., Jonathan, C., & Yang, S. (2017). Learner dashboards a double-edged sword? Students’ sense-making of a collaborative critical reading and learning analytics environment for fostering 21st-century literacies.\n        <a target = \"_blank\" href = \"https://doi.org/10.18608/jla.2017.41.7\"> doi.org/10.18608/jla.2017.41.7</a>\n    </p>\n    <p>\n        [25]  15  Park, Y., & Jo, I. H. (2015). Development of the learning analytics dashboard to support students’ learning performance. Journal of Universal Computer Science, 21(1), 110.\n        <cite>\n            <a target = \"_blank\" href=\"http://www.jucs.org/jucs_21_1/development_of_the_learning/jucs_21_01_0110_0133_park.pdf\">Retrieved link </a>\n        </cite> \n\n</p>\n    <p>\n        [26]  22 Brouwer, N., Bredeweg, B., Latour, S., Berg, A., & van der Huizen, G. (2016, September). Learning analytics pilot with coach2-Searching for effective mirroring. In European Conference on Technology Enhanced Learning (pp. 363-369). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-45153-4_28\"> doi.org/10.1007/978-3-319-45153-4_28</a>\n    </p>\n    <p>\n        [27]  23 Beheshitha, S. S., Hatala, M., Gašević, D., & Joksimović, S. (2016, April). The role of achievement goal orientations when studying effect of learning analytics visualizations. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 54-63). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883904\"> doi.org/10.1145/2883851.2883904</a>\n    </p>\n    <p>\n        [28]  26 Koulocheri, E., & Xenos, M. (2013, April). Considering formal assessment in learning analytics within a PLE: the HOU2LEARN case. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 28-32). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460304\"> doi.org/10.1145/2460296.2460304</a>\n    </p>\n    <p>\n        [29]  41 Håklev, S., Sharma, K., Slotta, J., & Dillenbourg, P. (2017, September). Contextualizing the co-creation of artefacts within the nested social structure of a collaborative MOOC. In European Conference on Technology Enhanced Learning (pp. 67-81). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-66610-5_6\"> doi.org/10.1007/978-3-319-66610-5_6</a>\n    </p>\n    <p>\n        [30]  42 Tervakari, A. M., Silius, K., Koro, J., Paukkeri, J., & Pirttilä, O. (2014, April). Usefulness of information visualizations based on educational data. In 2014 IEEE global engineering education conference (EDUCON) (pp. 142-151). IEEE.\n        <a target = \"_blank\" href = \"https://doi.org/10.1109/EDUCON.2014.6826081\"> doi.org/10.1109/EDUCON.2014.6826081</a>\n    </p>\n    <p>\n        [31]  50 Davis, D., Jivet, I., Kizilcec, R. F., Chen, G., Hauff, C., & Houben, G. J. (2017, March). Follow the successful crowd: raising MOOC completion rates through social comparison at scale. In Proceedings of the seventh international learning analytics & knowledge conference (pp. 454-463). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027411\"> doi.org/10.1145/3027385.3027411</a>\n    </p>\n    <p>\n        [32] 54 Sedrakyan, G., Leony, D., Muñoz-Merino, P. J., Kloos, C. D., & Verbert, K. (2017, September). Evaluating student-facing learning dashboards of affective states. In European Conference on Technology Enhanced Learning (pp. 224-237). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-66610-5_17\"> doi.org/10.1007/978-3-319-66610-5_17</a>\n    </p>\n    <p>\n        [33]  55 de-la-Fuente-Valentín, L., Pardo, A., Hernández, F. L., & Burgos, D. (2015). A Visual Analytics Method for Score Estimation in Learning Courses. J. UCS, 21(1), 134-155.\n        <cite>\n            <a target = \"_blank\" href=\"http://www.jucs.org/jucs_21_1/a_visual_analytics_method/jucs_21_01_0134_0155_valentin.pdf\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [34] 56 Venant, R., Sharma, K., Vidal, P., Dillenbourg, P., & Broisin, J. (2017, September). Using sequential pattern mining to explore learners’ behaviors and evaluate their correlation with performance in inquiry-based learning. In European Conference on Technology Enhanced Learning (pp. 286-299). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-66610-5_21\"> doi.org/10.1007/978-3-319-66610-5_21</a>\n    </p>\n    <p>\n        [35]  58 Schneider, J., Börner, D., Van Rosmalen, P., & Specht, M. (2016). Can you help me with my pitch? Studying a tool for real-time automated feedback. IEEE Transactions on Learning Technologies, 9(4), 318-327.\n        <a target = \"_blank\" href = \"https://doi.org/10.1109/TLT.2016.2627043\"> doi.org/10.1109/TLT.2016.2627043</a>\n    </p>\n    <p>\n        [36]  59 Ruiz, S., Charleer, S., Urretavizcaya, M., Klerkx, J., Fernández-Castro, I., & Duval, E. (2016, April). Supporting learning by considering emotions: tracking and visualization a case study. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 254-263). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883888\"> doi.org/10.1145/2883851.2883888</a>\n    </p>\n    <p>\n        [37]  60 Barber, R., & Sharkey, M. (2012, April). Course correction: Using analytics to predict course success. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 259-262). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330664\"> doi.org/10.1145/2330601.2330664</a>\n    </p>\n    <p>\n        [38]  62 Worsley, M. (2018, March). (Dis) engagement matters: Identifying efficacious learning practices with multimodal learning analytics. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 365-369). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170420\"> doi.org/10.1145/3170358.3170420</a>\n    </p>\n    <p>\n        [39]  63 Santos, J. L., Verbert, K., Govaerts, S., & Duval, E. (2013, April). Addressing learner issues with StepUp!: an evaluation. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 14-22). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460301\"> doi.org/10.1145/2460296.2460301</a>\n    </p>\n    <p>\n        [40]  66 Ochoa, X., Domínguez, F., Guamán, B., Maya, R., Falcones, G., & Castells, J. (2018, March). The rap system: automatic feedback of oral presentation skills using multimodal analysis and low-cost sensors. In Proceedings of the 8th international conference on learning analytics and knowledge (pp. 360-364). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170406\"> doi.org/10.1145/3170358.3170406</a>\n    </p>\n    <p>\n        [41]  Corrin, L., & de Barba, P. (2014). Exploring Students. Interpretation of Feedback Delivered through Learning Analytics Dashboards’, in Rhetoric and Reality: Critical Perspectives on Educational Technology, Eds. B. Hegarty, J. McDOnald and S. Loke (Dunedin: ascilite proceedings, 2014), 28.\n        <cite>\n            <a target = \"_blank\" href=\"https://researchbank.swinburne.edu.au/items/b81ec459-0eb4-4ccb-b221-e6876166e213/1/\">Retrieved link </a>\n        </cite> \n         \n    </p>\n    <p>\n        [42]  Fougt, S. S., Siebert-Evenstone, A., Eagan, B., Tabatabai, S., & Misfeldt, M. (2018, March). Epistemic network analysis of students' longer written assignments as formative/summative evaluation. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 126-130). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170414\"> doi.org/10.1145/3170358.3170414</a>\n    </p>\n    <p>\n        [43]  Holman, C., Aguilar, S., & Fishman, B. (2013, April). GradeCraft: What can we learn from a game-inspired learning management system?. In Proceedings of the third international conference on learning analytics and knowledge (pp. 260-264). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460350\"> doi.org/10.1145/2460296.2460350</a>\n    </p>\n    <p>\n        [44]  Feild, J., Lewkow, N., Burns, S., & Gebhardt, K. (2018, March). A generalized classifier to identify online learning tool disengagement at scale. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 61-70). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170370\"> doi.org/10.1145/3170358.3170370</a>\n    </p>\n    <p>\n        [45]  Melero, J., Hernández‐Leo, D., Sun, J., Santos, P., & Blat, J. (2015). How was the activity? A visualization support for a case of location‐based learning design. British Journal of Educational Technology, 46(2), 317-329.\n        <a target = \"_blank\" href = \"https://doi.org/10.1111/bjet.12238\"> doi.org/10.1111/bjet.12238</a>\n    </p>\n    <p>\n        [46]  Davis, D., Kizilcec, R. F., Hauff, C., & Houben, G. J. (2018, March). The half-life of MOOC knowledge: a randomized trial evaluating knowledge retention and retrieval practice in MOOCs. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 1-10). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170383\"> doi.org/10.1145/3170358.3170383</a>\n\n    </p>\n    <p>\n        [47]  Harrer, A., & Göhnert, T. (2015, March). Integrated representations and small data: Towards contextualized and embedded analytics tools for learners. In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 406-407). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723665\"> doi.org/10.1145/2723576.2723665</a>\n    </p>\n    <p>\n        [48]  Liu, M., Calvo, R. A., Pardo, A., & Martin, A. (2014). Measuring and visualizing students’ behavioral engagement in writing activities. IEEE Transactions on learning technologies, 8(2), 215-224.\n        <a target = \"_blank\" href = \"https://doi.org/10.1109/TLT.2014.2378786\"> doi.org/10.1109/TLT.2014.2378786</a>\n    </p>\n    <p>\n        [49]  Wise, A., Zhao, Y., & Hausknecht, S. (2014). Learning analytics for online discussions: Embedded and extracted approaches. Journal of Learning Analytics, 1(2), 48-71.\n        <cite>\n            <a target = \"_blank\" href=\"https://eric.ed.gov/?id=EJ1127052\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [50]  Iandoli, L., Quinto, I., De Liddo, A., & Shum, S. B. (2014). Socially augmented argumentation tools: Rationale, design and evaluation of a debate dashboard. International Journal of Human-Computer Studies, 72(3), 298-319.\n        <a target = \"_blank\" href = \"https://doi.org/10.1016/j.ijhcs.2013.08.006\"> doi.org/10.1016/j.ijhcs.2013.08.006</a>\n    </p>\n    <p>\n        [51] Kump, B., Seifert, C., Beham, G., Lindstaedt, S. N., & Ley, T. (2012, April). Seeing what the system thinks you know: visualizing evidence in an open learner model. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 153-157). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330640\"> doi.org/10.1145/2330601.2330640</a>\n    </p>\n    <p>\n        [52]  McAuley, J., O'Connor, A., & Lewis, D. (2012, April). Exploring reflection in online communities. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 102-110). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330630\"> doi.org/10.1145/2330601.2330630</a>\n    </p>\n    <p>\n        [53]  Govaerts, S., Verbert, K., & Duval, E. (2011, December). Evaluating the student activity meter: two case studies. In International Conference on Web-Based Learning (pp. 188-197). Springer, Berlin, Heidelberg.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-642-25813-8_20\"> doi.org/10.1007/978-3-642-25813-8_20</a>\n    </p>\n    <p>\n        [54]  Arnold, K. E., & Pistilli, M. D. (2012, April). Course signals at Purdue: Using learning analytics to increase student success. In Proceedings of the 2nd international conference on learning analytics and knowledge (pp. 267-270). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330666\"> doi.org/10.1145/2330601.2330666</a>\n    </p>\n    <p>\n        [55]  Cooper, K., & Khosravi, H. (2018, March). Graph-based visual topic dependency models: Supporting assessment design and delivery at scale. In Proceedings of the 8th international conference on learning analytics and knowledge (pp. 11-15). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170418\"> doi.org/10.1145/3170358.3170418</a>\n    </p>\n    <p>\n        [56]  McKay, T., Miller, K., & Tritz, J. (2012, April). What to do with actionable intelligence: E 2 Coach as an intervention engine. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 88-91). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330627\"> doi.org/10.1145/2330601.2330627</a>\n    </p>\n    <p>\n        [57]  Vesin, B., Klašnja-Milićević, A., Ivanović, M., & Budimac, Z. (2013). Applying recommender systems and adaptive hypermedia for e-learning personalization. Computing and Informatics, 32(3), 629-659.\n        <cite>\n            <a target = \"_blank\" href=\"http://www.cai2.sk/ojs/index.php/cai/article/view/1736/536\">Retrieved link </a>\n        </cite> \n\n    </p>\n    <p>\n        [58]  Gunnarsson, B. L., & Alterman, R. (2014). Peer promotions as a method to identify quality content. Journal of Learning Analytics, 1(2), 126-150.\n        <a target = \"_blank\" href = \"https://doi.org/10.18608/jla.2014.12.7\"> doi.org/10.18608/jla.2014.12.7</a>\n    </p>\n    <p>\n        [59]  Aguiar, E., Ambrose, G. A. A., Chawla, N. V., Goodrich, V., & Brockman, J. (2014). Engagement vs performance: Using electronic portfolios to predict first semester engineering student persistence. Journal of Learning Analytics, 1(3), 7-33. \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567583\"> doi.org/10.1145/2567574.2567583</a>\n    </p>\n    <p>\n        [60]  Lowes, S., Lin, P., & Kinghorn, B. (2015). Exploring the link between online behaviours and course performance in asynchronous online high school courses. Journal of Learning Analytics, 2(2), 169-194.\n        <a target = \"_blank\" href = \"https://doi.org/10.18608/jla.2015.22.13\"> doi.org/10.18608/jla.2015.22.13</a>\n    </p>\n    <p>\n        [61]  Southavilay, V., Yacef, K., Reimann, P., & Calvo, R. A. (2013, April). Analysis of collaborative writing processes using revision maps and probabilistic topic models. In Proceedings of the third international conference on learning analytics and knowledge (pp. 38-47). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460307\"> doi.org/10.1145/2460296.2460307</a>\n    </p>\n    <p>\n        [62]  Muñoz-Merino, P. J., Valiente, J. A. R., & Kloos, C. D. (2013, April). Inferring higher level learning information from low level data for the Khan Academy platform. In Proceedings of the third international conference on learning analytics and knowledge (pp. 112-116). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460318\"> doi.org/10.1145/2460296.2460318</a>\n    </p>\n    <p>\n        [63]  Ahn, J. (2013, April). What can we learn from Facebook activity?: using social learning analytics to observe new media literacy skills. In Proceedings of the third international conference on learning analytics and knowledge (pp. 135-144). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460323\"> doi.org/10.1145/2460296.2460323</a>\n    </p>\n    <p>\n        [64]  Wolff, A., Zdrahal, Z., Nikolov, A., & Pantucek, M. (2013, April). Improving retention: predicting at-risk students by analysing clicking behaviour in a virtual learning environment. In Proceedings of the third international conference on learning analytics and knowledge (pp. 145-149). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460324\"> doi.org/10.1145/2460296.2460324</a> \n    </p>\n    <p>\n        [65]  Monroy, C., Rangel, V. S., & Whitaker, R. (2013, April). STEMscopes: contextualizing learning analytics in a K-12 science curriculum. In Proceedings of the Third International Conference on Learning Analytics and Knowledge (pp. 210-219). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2460296.2460339\"> doi.org/10.1145/2460296.2460339</a> \n    </p>\n    <p>\n        [66]  Bogarín, A., Romero, C., Cerezo, R., & Sánchez-Santillán, M. (2014, March). Clustering for improving educational process mining. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 11-15). ACM.  \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567604\"> doi.org/10.1145/2567574.2567604</a>\n    </p>\n    <p>\n        [67]  Nam, S., Lonn, S., Brown, T., Davis, C. S., & Koch, D. (2014, March). Customized course advising: investigating engineering student success with incoming profiles and patterns of concurrent course enrollment. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 16-25). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567589\"> doi.org/10.1145/2567574.2567589</a>\n    </p>\n    <p>\n        [68]  Papamitsiou, Z. K., Terzis, V., & Economides, A. A. (2014, March). Temporal learning analytics for computer based testing. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 31-35). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567609\"> doi.org/10.1145/2567574.2567609</a>\n    </p>\n    <p>\n        [69]  Coffrin, C., Corrin, L., de Barba, P., & Kennedy, G. (2014, March). Visualizing patterns of student engagement and performance in MOOCs. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 83-92). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567586\"> doi.org/10.1145/2567574.2567586</a>\n    </p>\n    <p>\n        [70]  Santos, J. L., Klerkx, J., Duval, E., Gago, D., & Rodríguez, L. (2014, March). Success, activity and drop-outs in MOOCs an exploratory study on the UNED COMA courses. In Proceedings of the Fourth International Conference on Learning Analytics and Knowledge (pp. 98-102). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567627\"> doi.org/10.1145/2567574.2567627</a>\n    </p>\n    <p>\n        [71]  Rogers, T., Colvin, C., & Chiera, B. (2014, March). Modest analytics: using the index method to identify students at risk of failure. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 118-122). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567629\"> doi.org/10.1145/2567574.2567629</a>\n    </p>\n    <p>\n        [72]  Gašević, D., Mirriahi, N., & Dawson, S. (2014, March). Analytics of the effects of video use and instruction to support reflective learning. In Proceedings of the fourth international conference on learning analytics and Knowledge (pp. 123-132). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567590\"> doi.org/10.1145/2567574.2567590</a>\n    </p>\n    <p>\n        [73]  Vozniuk, A., Holzer, A., & Gillet, D. (2014, March). Peer assessment based on ratings in a social media course. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 133-137). ACM. \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567608\"> doi.org/10.1145/2567574.2567608</a>\n    </p>\n    <p>\n        [74]  Wang, Y., Heffernan, N. T., & Heffernan, C. (2015, March). Towards better affect detectors: effect of missing skills, class features and common wrong answers. In Proceedings of the Fifth International Conference on Learning Analytics and Knowledge (pp. 31-35). ACM.   \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723618\"> doi.org/10.1145/2723576.2723618</a>\n    </p>\n    <p>\n        [75]  San Pedro, M. O., Baker, R. S., Heffernan, N. T., & Ocumpaugh, J. L. (2015, March). Exploring college major choice and middle school student behavior, affect and learning: what happens to students who game the system?. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 36-40). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723610\"> doi.org/10.1145/2723576.2723610</a> \n    </p>\n    <p>\n        [76]  Ferguson, R., & Clow, D. (2015, March). Examining engagement: analysing learner subpopulations in massive open online courses (MOOCs). In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 51-58). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723606\"> doi.org/10.1145/2723576.2723606</a> \n    </p>\n    <p>\n        [77]  Méndez, G., Ochoa, X., & Chiluiza, K. (2014, March). Techniques for data-driven curriculum analysis. In Proceedings of the fourth international conference on learning analytics and knowledge (pp. 148-157). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567591\"> doi.org/10.1145/2567574.2567591</a>\n    </p>\n    <p>\n        [78]  Jo, I. H., Kim, D., & Yoon, M. (2014, March). Analyzing the log patterns of adult learners in LMS using learning analytics. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 183-187). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567616\"> doi.org/10.1145/2567574.2567616</a>\n    </p>\n    <p>\n        [79]  Waddington, R. J., & Nam, S. (2014, March). Practice exams make perfect: incorporating course resource use into an early warning system. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 188-192). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567623\"> doi.org/10.1145/2567574.2567623</a>\n    </p>\n    <p>\n        [80]  Chiu, M. M., & Fujita, N. (2014, March). Statistical discourse analysis of online discussions: Informal cognition, social metacognition and knowledge creation. In Proceedings of the Fourth International Conference on Learning Analytics And Knowledge (pp. 217-225). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567580\"> doi.org/10.1145/2567574.2567580</a>\n    </p>\n    <p>\n        [81]  Yu, T., & Jo, I. H. (2014, March). Educational technology approach toward learning analytics: Relationship between student online behavior and learning performance in higher education. In Proceedings of the Fourth International Conference on Learning Analytics and Knowledge (pp. 269-270). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2567574.2567594\"> doi.org/10.1145/2567574.2567594</a>\n    </p>\n    <p>\n        [82] Aguiar, E., Lakkaraju, H., Bhanpuri, N., Miller, D., Yuhas, B., & Addison, K. L. (2015, March). Who, when, and why: a machine learning approach to prioritizing students at risk of not graduating high school on time. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 93-102). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723619\"> doi.org/10.1145/2723576.2723619</a>\n    </p>\n    <p>\n        [83]  Elbadrawy, A., Studham, R. S., & Karypis, G. (2015, March). Collaborative multi-regression models for predicting students' performance in course activities. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 103-107). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723590\"> doi.org/10.1145/2723576.2723590</a>\n    </p>\n    <p>\n        [84]  Grawemeyer, B., Mavrikis, M., Holmes, W., Gutierrez-Santos, S., Wiedmann, M., & Rummel, N. (2016, April). Affecting off-task behaviour: how affect-aware feedback can improve student learning. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 104-113). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883936\"> doi.org/10.1145/2883851.2883936</a>\n    </p>\n    <p>\n        [85]  Allen, L. K., Mills, C., Jacovina, M. E., Crossley, S., D'mello, S., & McNamara, D. S. (2016, April). Investigating boredom and engagement during writing using multiple sources of information: the essay, the writer, and keystrokes. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 114-123). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883939\"> doi.org/10.1145/2883851.2883939</a> \n    </p>\n    <p>\n        [86]  Papoušek, J., Stanislav, V., & Pelánek, R. (2016, April). Evaluation of an adaptive practice system for learning geography facts. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 134-142). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883884\"> doi.org/10.1145/2883851.2883884</a> \n    </p>\n    <p>\n        [87]  Manai, O., Yamada, H., & Thorn, C. (2016, April). Real-time indicators and targeted supports: Using online platform data to accelerate student learning. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 183-187). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883942\"> doi.org/10.1145/2883851.2883942</a> \n    </p>\n    <p>\n        [88]  Hecking, T., Chounta, I. A., & Hoppe, H. U. (2016, April). Investigating social and semantic user roles in MOOC discussion forums. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 198-207). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883924\"> doi.org/10.1145/2883851.2883924</a>    \n    </p>\n    <p>\n        [89]  Shum, S. B., Sándor, Á., Goldsmith, R., Wang, X., Bass, R., & McWilliams, M. (2016, April). Reflecting on reflective writing analytics: Assessment challenges and iterative evaluation of a prototype tool. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 213-222). ACM\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883955\"> doi.org/10.1145/2883851.2883955</a>\n    </p>\n    <p>\n        [90]  Zhu, M., Bergner, Y., Zhang, Y., Baker, R., Wang, Y., & Paquette, L. (2016, April). Longitudinal engagement, performance, and social connectivity: a MOOC case study using exponential random graph models. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 223-230). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883934\"> doi.org/10.1145/2883851.2883934</a>\n    </p>\n    <p>\n        [91]  Khan, I., & Pardo, A. (2016, April). Data2U: Scalable real time student feedback in active learning environments. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 249-253). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883911\"> doi.org/10.1145/2883851.2883911</a> \n    </p>\n    <p>\n        [92] Papamitsiou, Z., Karapistoli, E., & Economides, A. A. (2016, April). Applying classification techniques on temporal trace data for shaping student behavior models. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 299-303). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883926\"> doi.org/10.1145/2883851.2883926</a> \n    </p>\n    <p>\n        [93] Joksimović, S., Manataki, A., Gašević, D., Dawson, S., Kovanović, V., & De Kereki, I. F. (2016, April). Translating network position into performance: importance of centrality in different network configurations. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 314-323). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883928\"> doi.org/10.1145/2883851.2883928</a>\n    </p>\n    <p>\n        [94]  Robinson, C., Yeomans, M., Reich, J., Hulleman, C., & Gehlbach, H. (2016, April). Forecasting student achievement in MOOCs with natural language processing. In Proceedings of the sixth international conference on learning analytics & knowledge (pp. 383-387). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883932\"> doi.org/10.1145/2883851.2883932</a>\n    </p>\n    <p>\n        [95]  Wang, X., Wen, M., & Rosé, C. P. (2016, April). Towards triggering higher-order thinking behaviors in MOOCs. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 398-407). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883964\"> doi.org/10.1145/2883851.2883964</a>\n    </p>\n    <p>\n        [96]  Kennedy, G., Coffrin, C., De Barba, P., & Corrin, L. (2015, March). Predicting success: how learners' prior knowledge, skills and activities predict MOOC performance. In Proceedings of the fifth international conference on learning analytics and knowledge (pp. 136-140). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723593\"> doi.org/10.1145/2723576.2723593</a>\n    </p>\n    <p>\n        [97] Harrison, S., Villano, R., Lynch, G., & Chen, G. (2015, March). Likelihood analysis of student enrollment outcomes using learning environment variables: A case study approach. In Proceedings of the Fifth International Conference on Learning Analytics And Knowledge (pp. 141-145). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2723576.2723621\"> doi.org/10.1145/2723576.2723621</a>\n    </p>\n    <p>\n        [98]  Pardo, A., Han, F., & Ellis, R. A. (2016, April). Exploring the relation between self-regulation, online activities, and academic performance: A case study. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 422-429). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883883\"> doi.org/10.1145/2883851.2883883</a>\n    </p>\n    <p>\n        [99]  Brown, M. G., DeMonbrun, R. M., Lonn, S., Aguilar, S. J., & Teasley, S. D. (2016, April). What and when: the role of course type and timing in students' academic performance. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 459-468). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883907\"> doi.org/10.1145/2883851.2883907</a>\n    </p>\n    <p>\n        [100]  Pardo, A., Mirriahi, N., Martinez-Maldonado, R., Jovanovic, J., Dawson, S., & Gašević, D. (2016, April). Generating actionable predictive models of academic performance. In Proceedings of the Sixth International Conference on Learning Analytics & Knowledge (pp. 474-478). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2883851.2883870\"> doi.org/10.1145/2883851.2883870</a>\n    </p>\n    <p>\n        [101]  Hlosta, M., Zdrahal, Z., & Zendulka, J. (2017, March). Ouroboros: early identification of at-risk students without models based on legacy data. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 6-15). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027449\"> doi.org/10.1145/3027385.3027449</a>\n    </p>\n    <p>\n        [102]  Agnihotri, L., Essa, A., & Baker, R. (2017, March). Impact of student choice of content adoption delay on course outcomes. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 16-20). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027437\"> doi.org/10.1145/3027385.3027437</a>\n    </p>\n    <p>\n        [103]  Park, J., Denaro, K., Rodriguez, F., Smyth, P., & Warschauer, M. (2017, March). Detecting changes in student behavior from clickstream data. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 21-30). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027430\"> doi.org/10.1145/3027385.3027430</a>\n    </p>\n    <p>\n        [104]  Käser, T., Hallinen, N. R., & Schwartz, D. L. (2017, March). Modeling exploration strategies to predict student performance within a learning environment and beyond. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 31-40). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027422\"> doi.org/10.1145/3027385.3027422</a>\n    </p>\n    <p>\n        [105]  Conijn, R., Snijders, C., Kleingeld, A., & Matzat, U. (2016). Predicting student performance from LMS data: A comparison of 17 blended courses using Moodle LMS. IEEE Transactions on Learning Technologies, 10(1), 17-29.\n        <a target = \"_blank\" href = \"https://doi.org/10.1109/TLT.2016.2616312\"> doi.org/10.1109/TLT.2016.2616312</a>\n    </p>\n    <p>\n        [106]  Hershkovitz, A., de Baker, R. S. J., Gobert, J., Wixon, M., & Pedro, M. S. (2013). Discovery with models: A case study on carelessness in computer-based science inquiry. American Behavioral Scientist, 57(10), 1480-1499.\n        <a target = \"_blank\" href = \"https://doi.org/10.1177/0002764213479365\"> doi.org/10.1177/0002764213479365</a>\n    </p>\n    <p>\n        [107]  Paule Ruiz, M. P., Riestra González, M., Sánchez Santillán, M., & Pérez Pérez, J. R. (2015). The Procrastination related indicators in e-learning platforms. Journal of Universal Computer Science.\n        <cite>\n            <a target = \"_blank\" href=\"http://www.jucs.org/jucs_21_1/the_procrastination_related_indicators/jucs_21_01_0007_0022_ruiz.pdf\">Retrieved link </a>\n        </cite>\n\n    </p>\n    <p>\n        [108]  Paredes, W. C., & Chung, K. S. K. (2012, April). Modelling learning & performance: a social networks perspective. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 34-42). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330617\"> doi.org/10.1145/2330601.2330617</a>\n    </p>\n    <p>\n        [109]  Smolin, D., & Butakov, S. (2012, April). Applying artificial intelligence to the educational data: an example of syllabus quality analysis. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 164-169). ACM. \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330644\"> doi.org/10.1145/2330601.2330644</a>\n    </p>\n    <p>\n        [110]  Pursel, B. K., Zhang, L., Jablokow, K. W., Choi, G. W., & Velegol, D. (2016). Understanding MOOC students: motivations and behaviours indicative of MOOC completion. Journal of Computer Assisted Learning, 32(3), 202-217.\n        <a target = \"_blank\" href = \"https://doi.org/10.1111/jcal.12131\"> doi.org/10.1111/jcal.12131</a>\n    </p>\n    <p>\n        [111]  Jovanović, J., Gašević, D., Dawson, S., Pardo, A., & Mirriahi, N. (2017). Learning analytics to unveil learning strategies in a flipped classroom. The Internet and Higher Education, 33(4), 74-85.\n        <a target = \"_blank\" href = \"http://dx.doi.org/10.1016/j.iheduc.2017.02.001 \"> dx.doi.org/10.1016/j.iheduc.2017.02.001 </a>\n    </p>\n    <p>\n        [112]  Chavarriaga, O., Florian-Gaviria, B., & Solarte, O. (2014, September). A recommender system for students based on social knowledge and assessment data of competences. In European Conference on Technology Enhanced Learning (pp. 56-69). Springer, Cham.\n         <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-11200-8_5 \"> doi.org/10.1007/978-3-319-11200-8_5 </a>\n    </p>\n    <p>\n        [113]  Li, N., Kidziński, Ł., Jermann, P., & Dillenbourg, P. (2015). MOOC video interaction patterns: What do they tell us?. In Design for teaching and learning in a networked world (pp. 197-210). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-24258-3_15 \"> doi.org/10.1007/978-3-319-24258-3_15 </a>\n    </p>\n    <p>\n        [114]  Sadallah, M., Encelle, B., Maredj, A. E., & Prié, Y. (2015). Towards reading session-based indicators in educational reading analytics. In Design for Teaching and Learning in a Networked World (pp. 297-310). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-24258-3_22 \"> doi.org/10.1007/978-3-319-24258-3_22 </a>\n    </p>\n    <p>\n        [115]  Figueira, A. (2015). Predicting results from interaction patterns during online group work. In Design for Teaching and Learning in a Networked World (pp. 414-419). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-24258-3_33 \"> doi.org/10.1007/978-3-319-24258-3_33 </a>\n    </p>\n    <p>\n        [116]  Abolkasim, E., Lau, L., & Dimitrova, V. (2016, September). A semantic-driven model for ranking digital learning objects based on diversity in the user comments. In European Conference on Technology Enhanced Learning (pp. 3-15). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-45153-4_1\"> doi.org/10.1007/978-3-319-45153-4_1 </a>\n    </p>\n    <p>\n        [117]  You, J. W. (2016). Identifying significant indicators using LMS data to predict course achievement in online learning. The Internet and Higher Education, 29, 23-30.\n         <a target = \"_blank\" href = \"https://doi.org/10.1016/j.iheduc.2015.11.003\"> doi.org/10.1016/j.iheduc.2015.11.003 </a>\n    </p>\n    <p>\n        [118]  Gasevic, D., Jovanovic, J., Pardo, A., & Dawson, S. (2017). Detecting learning strategies with analytics: Links with self-reported measures and academic performance. Journal of Learning Analytics, 4(2), 113-128.\n        <a target = \"_blank\" href = \"http://dx.doi.org/10.18608/jla.2017.42.10\"> dx.doi.org/10.18608/jla.2017.42.10 </a>\n    </p>\n    <p>\n        [119]  Hart, S., Daucourt, M., & Ganley, C. (2017). Individual differences related to college students’ course performance in calculus II. Journal of Learning Analytics, 4(2), 129-153.\n        <a target = \"_blank\" href = \"https://doi.org/10.18608/jla.2017.42.11\"> doi.org/10.18608/jla.2017.42.11 </a>\n    </p>\n    <p>\n        [120] Casey, K. (2017). Using keystroke analytics to improve pass-fail classifiers. Journal of Learning Analytics, 4(2), 189-211.\n        <a target = \"_blank\" href = \"https://doi.org/10.18608/jla.2017.42.14\"> doi.org/10.18608/jla.2017.42.14 </a>\n    </p>\n    <p>\n        [121] Bakharia, A., & Dawson, S. (2011, February). SNAPP: a bird's-eye view of temporal participant interaction. In Proceedings of the 1st international conference on learning analytics and knowledge (pp. 168-173). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090144\"> doi.org/10.1145/2090116.2090144 </a>\n    </p>\n    <p>\n        [122]  Lauría, E. J., Baron, J. D., Devireddy, M., Sundararaju, V., & Jayaprakash, S. M. (2012, April). Mining academic data to improve college student retention: An open source perspective. In Proceedings of the 2nd International Conference on Learning Analytics and Knowledge (pp. 139-142). ACM. \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2330601.2330637\"> doi.org/10.1145/2330601.2330637 </a>\n    </p>\n    <p>\n        [123] Boroujeni, M. S., Sharma, K., Kidziński, Ł., Lucignano, L., & Dillenbourg, P. (2016, September). How to quantify student’s regularity?. In European Conference on Technology Enhanced Learning (pp. 277-291). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-45153-4_21\"> doi.org/10.1007/978-3-319-45153-4_21 </a>\n    </p>\n    <p>\n        [124] Scheffel, M., Drachsler, H., Kreijns, K., De Kraker, J., & Specht, M. (2017, March). Widget, widget as you lead, i am performing well indeed!: using results from an exploratory offline study to inform an empirical online study about a learning analytics widget in a collaborative learning environment. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 289-298). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027428\"> doi.org/10.1145/3027385.3027428 </a>\n    </p>\n    <p>\n        [125]  Schumacher, C., & Ifenthaler, D. (2018). Features students really expect from learning analytics. Computers in Human Behavior, 78, 397-407.\n        <a target = \"_blank\" href = \"https://doi.org/10.1016/j.chb.2017.06.030\"> doi.org/10.1016/j.chb.2017.06.030 </a>\n    </p>\n    <p>\n        [126] Aljohani, N. R., Daud, A., Abbasi, R. A., Alowibdi, J. S., Basheri, M., & Aslam, M. A. (2019). An integrated framework for course adapted student learning analytics dashboard. Computers in Human Behavior, 92, 679-690.\n        <a target = \"_blank\" href = \"https://doi.org/10.1016/j.chb.2018.03.035\"> doi.org/10.1016/j.chb.2018.03.035 </a>\n    </p>\n    <p>\n        [127] Saqr, M., Nouri, J., & Fors, U. (2018). Temporality matters: A learning analytics study of the patterns of interactions and its relation to performance,”. EDULEARN18: Proceedings, ser. EDULEARN proceedings, 5386-5393.\n        <a target = \"_blank\" href = \"https://doi.org/10.21125/edulearn.2018.1305\"> doi.org/10.21125/edulearn.2018.1305 </a>  \n    </p>\n    <p>\n        [128] Majumdar, R., Akçapınar, A., Akçapınar, G., Flanagan, B., & Ogata, H. (2018). Learning Analytics Dashboard Widgets to Author Teaching-Learning Cases for Evidence-based Education. Companion Procs. of 9th LAK.\n        <cite>\n            <a target = \"_blank\" href=\"https://repository.kulib.kyoto-u.ac.jp/dspace/handle/2433/244167\">Retrieved link </a>\n        </cite>\n\n    </p>\n    <p>\n        [129] Matcha, W., Gašević, D., Uzir, N. A. A., Jovanović, J., & Pardo, A. (2019, March). Analytics of Learning Strategies: Associations with Academic Performance and Feedback. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 461-470). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303787\"> doi.org/10.1145/3303772.3303787 </a>    \n    </p>\n    <p>\n        [130] de Quincey, E., Briggs, C., Kyriacou, T., & Waller, R. (2019, March). Student Centred Design of a Learning Analytics System. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 353-362). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303793\"> doi.org/10.1145/3303772.3303793 </a>\n    </p>\n    <p>\n        [131] Syed, M., Anggara, T., Lanski, A., Duan, X., Ambrose, G. A., & Chawla, N. V. (2019, March). Integrated Closed-loop Learning Analytics Scheme in a First Year Experience Course. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 521-530). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303803\"> doi.org/10.1145/3303772.3303803 </a>\n    </p>\n    <p>\n        [132] Wang, Y., Law, N., Hemberg, E., & O'Reilly, U. M. (2019, March). Using Detailed Access Trajectories for Learning Behavior Analysis. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 290-299). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303781\"> doi.org/10.1145/3303772.3303781</a> \n    </p>\n    <p>\n        [133] Jovanović, J., Gašević, D., Pardo, A., Dawson, S., & Whitelock-Wainwright, A. (2019, March). Introducing meaning to clicks: Towards traced-measures of self-efficacy and cognitive load. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 511-520). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303782\"> doi.org/10.1145/3303772.3303782</a> \n    </p>\n    <p>\n        [134] Klebanov, B. B., Loukina, A., Madnani, N., Sabatini, J., & Lentini, J. (2019, March). Would you?: Could you? On a tablet? Analytics of Children's eBook Reading. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 106-110). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303833\"> doi.org/10.1145/3303772.3303833</a>\n    </p>\n    <p>\n        [135] Niaki, S. A., George, C. P., Michailidis, G., & Beal, C. R. (2019, March). Investigating the Usage Patterns of Algebra Nation Tutoring Platform. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 481-490). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303788\"> doi.org/10.1145/3303772.3303788</a>\n    </p>\n    <p>\n        [136] Manrique, R., Nunes, B. P., Marino, O., Casanova, M. A., & Nurmikko-Fuller, T. (2019, March). An Analysis of Student Representation, Representative Features and Classification Algorithms to Predict Degree Dropout. In Proceedings of the 9th International Conference on Learning Analytics & Knowledge (pp. 401-410). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/3303772.3303800\"> doi.org/10.1145/3303772.3303800</a>\n    </p>\n    <p>\n        [137] Shimada, A., Taniguchi, Y., Okubo, F., Konomi, S. I., & Ogata, H. (2018, March). Online change detection for monitoring individual student behavior via clickstream data on E-book system. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 446-450). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170412\"> doi.org/10.1145/3170358.3170412</a>\n    </p>\n    <p>\n        [138] Van der Zee, T., Davis, D., Saab, N., Giesbers, B., Ginn, J., Van Der Sluis, F., ... & Admiraal, W. (2018, March). Evaluating retrieval practice in a MOOC: how writing and reading summaries of videos affects student learning. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 216-225). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170382\"> doi.org/10.1145/3170358.3170382</a>\n    </p>\n    <p>\n        [139] Chen, B., Fan, Y., Zhang, G., & Wang, Q. (2017, March). Examining motivations and self-regulated learning strategies of returning MOOCs learners. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 542-543). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3029448\"> doi.org/10.1145/3027385.3029448</a>\n    </p>\n    <p>\n        [140] Dawson, S., Jovanovic, J., Gašević, D., & Pardo, A. (2017, March). From prediction to impact: Evaluation of a learning analytics retention program. In Proceedings of the Seventh International Learning Analytics & Knowledge Conference (pp. 474-478). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3027385.3027405\"> doi.org/10.1145/3027385.3027405</a>\n    </p>\n    <p>\n        [141] Duval, E. (2011). Attention please!: learning analytics for visualization and recommendation. LAK, 11, 9-17.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090118\"> doi.org/10.1145/2090116.2090118</a>     \n    </p>\n    <p>\n        [142] Ferguson, R., & Shum, S. B. (2011, February). Learning analytics to identify exploratory dialogue within synchronous text chat. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 99-103). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090130\"> doi.org/10.1145/2090116.2090130</a>\n    </p>\n    <p>\n        [143] Sharkey, M. (2011, February). Academic analytics landscape at the University of Phoenix. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 122-126). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090135\"> doi.org/10.1145/2090116.2090135</a>\n    </p>\n    <p>\n        [144] Fancsali, S. E. (2011, February). Variable construction for predictive and causal modeling of online education data. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 54-63). ACM. \n        <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090123\"> doi.org/10.1145/2090116.2090123</a>\n    </p>\n    <p>\n        [145] Verbert, K., Drachsler, H., Manouselis, N., Wolpers, M., Vuorikari, R., & Duval, E. (2011, February). Dataset-driven research for improving recommender systems for learning. In Proceedings of the 1st International Conference on Learning Analytics and Knowledge (pp. 44-53). ACM.\n         <a target = \"_blank\" href = \"https://doi.org/10.1145/2090116.2090122\"> doi.org/10.1145/2090116.2090122</a> \n    </p>\n    <p>\n        [146] Chatti, M. A., Lukarov, V., Thüs, H., Muslim, A., Yousef, A. M. F., Wahid, U., & Schroeder, U. (2014). Learning analytics: Challenges and future research directions. eleed, 10(1).\n        <cite>\n            <a target = \"_blank\" href=\"https://eleed.campussource.de/archive/10/4035\">Retrieved link </a>\n        </cite>\n\n    </p>\n    <p>\n        [147] Jivet, I., Scheffel, M., Drachsler, H., & Specht, M. (2017, September). Awareness is not enough: pitfalls of learning analytics dashboards in the educational practice. In European Conference on Technology Enhanced Learning (pp. 82-96). Springer, Cham.\n        <a target = \"_blank\" href = \"https://doi.org/10.1007/978-3-319-66610-5_7\"> https://doi.org/10.1007/978-3-319-66610-5_7</a>\n    </p>\n    <p>\n        [148] Jivet, I., Scheffel, M., Specht, M., & Drachsler, H. (2018, March). License to evaluate: preparing learning analytics dashboards for educational practice. In Proceedings of the 8th International Conference on Learning Analytics and Knowledge (pp. 31-40). ACM.\n        <a target = \"_blank\" href = \"https://doi.org/10.1145/3170358.3170421\"> doi.org/10.1145/3170358.3170421</a>\n    </p>\n</blockquote>\n");
 
 /***/ }),
 
@@ -927,45 +953,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
 /* harmony import */ var _component_display_display_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./component/display/display.component */ "./src/app/component/display/display.component.ts");
 /* harmony import */ var _component_dropdown_dropdown_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./component/dropdown/dropdown.component */ "./src/app/component/dropdown/dropdown.component.ts");
-/* harmony import */ var _component_referance_referance_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./component/referance/referance.component */ "./src/app/component/referance/referance.component.ts");
+/* harmony import */ var _component_reference_referance_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./component/reference/referance.component */ "./src/app/component/reference/referance.component.ts");
 /* harmony import */ var _component_display_select_check_all_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./component/display/select-check-all.component */ "./src/app/component/display/select-check-all.component.ts");
-/* harmony import */ var _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./component/dashboard/dashboard.component */ "./src/app/component/dashboard/dashboard.component.ts");
-/* harmony import */ var _chart_manager_chart_manager_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./chart-manager/chart-manager.component */ "./src/app/chart-manager/chart-manager.component.ts");
-/* harmony import */ var _charts_student_interaction_patterns_student_interaction_patterns_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./charts/student-interaction-patterns/student-interaction-patterns.component */ "./src/app/charts/student-interaction-patterns/student-interaction-patterns.component.ts");
-/* harmony import */ var _charts_competency_competency_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./charts/competency/competency.component */ "./src/app/charts/competency/competency.component.ts");
-/* harmony import */ var _chart_helper_service__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./chart-helper.service */ "./src/app/chart-helper.service.ts");
-/* harmony import */ var _charts_reading_analytics_reading_analytics_component__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./charts/reading-analytics/reading-analytics.component */ "./src/app/charts/reading-analytics/reading-analytics.component.ts");
-/* harmony import */ var _charts_video_analytics_video_analytics_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./charts/video-analytics/video-analytics.component */ "./src/app/charts/video-analytics/video-analytics.component.ts");
-/* harmony import */ var _charts_learning_progress_learning_progress_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./charts/learning-progress/learning-progress.component */ "./src/app/charts/learning-progress/learning-progress.component.ts");
-/* harmony import */ var _charts_writing_analytics_writing_analytics_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./charts/writing-analytics/writing-analytics.component */ "./src/app/charts/writing-analytics/writing-analytics.component.ts");
-/* harmony import */ var _charts_discussion_quality_discussion_quality_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./charts/discussion-quality/discussion-quality.component */ "./src/app/charts/discussion-quality/discussion-quality.component.ts");
-/* harmony import */ var _charts_clickstream_analysis_clickstream_analysis_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./charts/clickstream-analysis/clickstream-analysis.component */ "./src/app/charts/clickstream-analysis/clickstream-analysis.component.ts");
-/* harmony import */ var _charts_video_engagements_video_engagements_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./charts/video-engagements/video-engagements.component */ "./src/app/charts/video-engagements/video-engagements.component.ts");
-/* harmony import */ var _charts_initiative_initiative_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./charts/initiative/initiative.component */ "./src/app/charts/initiative/initiative.component.ts");
-/* harmony import */ var _charts_social_analysis_social_analysis_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./charts/social-analysis/social-analysis.component */ "./src/app/charts/social-analysis/social-analysis.component.ts");
-/* harmony import */ var _charts_droppingout_droppingout_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./charts/droppingout/droppingout.component */ "./src/app/charts/droppingout/droppingout.component.ts");
-/* harmony import */ var _charts_time_distribution_time_distribution_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./charts/time-distribution/time-distribution.component */ "./src/app/charts/time-distribution/time-distribution.component.ts");
-/* harmony import */ var _charts_time_planning_time_planning_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./charts/time-planning/time-planning.component */ "./src/app/charts/time-planning/time-planning.component.ts");
-/* harmony import */ var _charts_student_comparison_student_comparison_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./charts/student-comparison/student-comparison.component */ "./src/app/charts/student-comparison/student-comparison.component.ts");
-/* harmony import */ var _charts_engagement_performance_engagement_performance_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./charts/engagement-performance/engagement-performance.component */ "./src/app/charts/engagement-performance/engagement-performance.component.ts");
-/* harmony import */ var _charts_online_change_detection_online_change_detection_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./charts/online-change-detection/online-change-detection.component */ "./src/app/charts/online-change-detection/online-change-detection.component.ts");
-/* harmony import */ var _charts_gamification_gamification_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./charts/gamification/gamification.component */ "./src/app/charts/gamification/gamification.component.ts");
-/* harmony import */ var _charts_predict_coursecompletion_predict_coursecompletion_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./charts/predict-coursecompletion/predict-coursecompletion.component */ "./src/app/charts/predict-coursecompletion/predict-coursecompletion.component.ts");
-/* harmony import */ var _charts_procrastination_procrastination_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./charts/procrastination/procrastination.component */ "./src/app/charts/procrastination/procrastination.component.ts");
-/* harmony import */ var _charts_group_participation_group_participation_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./charts/group-participation/group-participation.component */ "./src/app/charts/group-participation/group-participation.component.ts");
-/* harmony import */ var _charts_clustering_clustering_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./charts/clustering/clustering.component */ "./src/app/charts/clustering/clustering.component.ts");
-/* harmony import */ var _charts_predict_exam_success_predict_exam_success_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./charts/predict-exam-success/predict-exam-success.component */ "./src/app/charts/predict-exam-success/predict-exam-success.component.ts");
-/* harmony import */ var _charts_final_grade_prediction_final_grade_prediction_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./charts/final-grade-prediction/final-grade-prediction.component */ "./src/app/charts/final-grade-prediction/final-grade-prediction.component.ts");
-/* harmony import */ var _charts_learning_behaviour_learning_behaviour_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./charts/learning-behaviour/learning-behaviour.component */ "./src/app/charts/learning-behaviour/learning-behaviour.component.ts");
-/* harmony import */ var _charts_social_network_analysis_social_network_analysis_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./charts/social-network-analysis/social-network-analysis.component */ "./src/app/charts/social-network-analysis/social-network-analysis.component.ts");
-/* harmony import */ var _charts_self_motivation_self_motivation_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./charts/self-motivation/self-motivation.component */ "./src/app/charts/self-motivation/self-motivation.component.ts");
-/* harmony import */ var _charts_learning_behavior_patterns_learning_behavior_patterns_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./charts/learning-behavior-patterns/learning-behavior-patterns.component */ "./src/app/charts/learning-behavior-patterns/learning-behavior-patterns.component.ts");
-/* harmony import */ var _charts_passing_rate_prediction_passing_rate_prediction_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./charts/passing-rate-prediction/passing-rate-prediction.component */ "./src/app/charts/passing-rate-prediction/passing-rate-prediction.component.ts");
-/* harmony import */ var _charts_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./charts/feedback/feedback.component */ "./src/app/charts/feedback/feedback.component.ts");
-/* harmony import */ var _charts_course_assessment_course_assessment_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./charts/course-assessment/course-assessment.component */ "./src/app/charts/course-assessment/course-assessment.component.ts");
-/* harmony import */ var _charts_affective_state_affective_state_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./charts/affective-state/affective-state.component */ "./src/app/charts/affective-state/affective-state.component.ts");
-/* harmony import */ var _charts_course_difficulty_course_difficulty_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./charts/course-difficulty/course-difficulty.component */ "./src/app/charts/course-difficulty/course-difficulty.component.ts");
-/* harmony import */ var _charts_curriculum_usage_curriculum_usage_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./charts/curriculum-usage/curriculum-usage.component */ "./src/app/charts/curriculum-usage/curriculum-usage.component.ts");
+/* harmony import */ var _auth_guard_service__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./auth-guard.service */ "./src/app/auth-guard.service.ts");
+/* harmony import */ var _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./component/dashboard/dashboard.component */ "./src/app/component/dashboard/dashboard.component.ts");
+/* harmony import */ var _chart_manager_chart_manager_component__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./chart-manager/chart-manager.component */ "./src/app/chart-manager/chart-manager.component.ts");
+/* harmony import */ var _charts_student_interaction_patterns_student_interaction_patterns_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./charts/student-interaction-patterns/student-interaction-patterns.component */ "./src/app/charts/student-interaction-patterns/student-interaction-patterns.component.ts");
+/* harmony import */ var _charts_competency_competency_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./charts/competency/competency.component */ "./src/app/charts/competency/competency.component.ts");
+/* harmony import */ var _chart_helper_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./chart-helper.service */ "./src/app/chart-helper.service.ts");
+/* harmony import */ var _charts_reading_analytics_reading_analytics_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./charts/reading-analytics/reading-analytics.component */ "./src/app/charts/reading-analytics/reading-analytics.component.ts");
+/* harmony import */ var _charts_video_analytics_video_analytics_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./charts/video-analytics/video-analytics.component */ "./src/app/charts/video-analytics/video-analytics.component.ts");
+/* harmony import */ var _charts_learning_progress_learning_progress_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./charts/learning-progress/learning-progress.component */ "./src/app/charts/learning-progress/learning-progress.component.ts");
+/* harmony import */ var _charts_writing_analytics_writing_analytics_component__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./charts/writing-analytics/writing-analytics.component */ "./src/app/charts/writing-analytics/writing-analytics.component.ts");
+/* harmony import */ var _charts_discussion_quality_discussion_quality_component__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./charts/discussion-quality/discussion-quality.component */ "./src/app/charts/discussion-quality/discussion-quality.component.ts");
+/* harmony import */ var _charts_clickstream_analysis_clickstream_analysis_component__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./charts/clickstream-analysis/clickstream-analysis.component */ "./src/app/charts/clickstream-analysis/clickstream-analysis.component.ts");
+/* harmony import */ var _charts_video_engagements_video_engagements_component__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./charts/video-engagements/video-engagements.component */ "./src/app/charts/video-engagements/video-engagements.component.ts");
+/* harmony import */ var _charts_initiative_initiative_component__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./charts/initiative/initiative.component */ "./src/app/charts/initiative/initiative.component.ts");
+/* harmony import */ var _charts_social_analysis_social_analysis_component__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./charts/social-analysis/social-analysis.component */ "./src/app/charts/social-analysis/social-analysis.component.ts");
+/* harmony import */ var _charts_droppingout_droppingout_component__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./charts/droppingout/droppingout.component */ "./src/app/charts/droppingout/droppingout.component.ts");
+/* harmony import */ var _charts_time_distribution_time_distribution_component__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./charts/time-distribution/time-distribution.component */ "./src/app/charts/time-distribution/time-distribution.component.ts");
+/* harmony import */ var _charts_time_planning_time_planning_component__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./charts/time-planning/time-planning.component */ "./src/app/charts/time-planning/time-planning.component.ts");
+/* harmony import */ var _charts_student_comparison_student_comparison_component__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./charts/student-comparison/student-comparison.component */ "./src/app/charts/student-comparison/student-comparison.component.ts");
+/* harmony import */ var _charts_engagement_performance_engagement_performance_component__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./charts/engagement-performance/engagement-performance.component */ "./src/app/charts/engagement-performance/engagement-performance.component.ts");
+/* harmony import */ var _charts_online_change_detection_online_change_detection_component__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./charts/online-change-detection/online-change-detection.component */ "./src/app/charts/online-change-detection/online-change-detection.component.ts");
+/* harmony import */ var _charts_gamification_gamification_component__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./charts/gamification/gamification.component */ "./src/app/charts/gamification/gamification.component.ts");
+/* harmony import */ var _charts_predict_coursecompletion_predict_coursecompletion_component__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./charts/predict-coursecompletion/predict-coursecompletion.component */ "./src/app/charts/predict-coursecompletion/predict-coursecompletion.component.ts");
+/* harmony import */ var _charts_procrastination_procrastination_component__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./charts/procrastination/procrastination.component */ "./src/app/charts/procrastination/procrastination.component.ts");
+/* harmony import */ var _charts_group_participation_group_participation_component__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./charts/group-participation/group-participation.component */ "./src/app/charts/group-participation/group-participation.component.ts");
+/* harmony import */ var _charts_clustering_clustering_component__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./charts/clustering/clustering.component */ "./src/app/charts/clustering/clustering.component.ts");
+/* harmony import */ var _charts_predict_exam_success_predict_exam_success_component__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./charts/predict-exam-success/predict-exam-success.component */ "./src/app/charts/predict-exam-success/predict-exam-success.component.ts");
+/* harmony import */ var _charts_final_grade_prediction_final_grade_prediction_component__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./charts/final-grade-prediction/final-grade-prediction.component */ "./src/app/charts/final-grade-prediction/final-grade-prediction.component.ts");
+/* harmony import */ var _charts_learning_behaviour_learning_behaviour_component__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./charts/learning-behaviour/learning-behaviour.component */ "./src/app/charts/learning-behaviour/learning-behaviour.component.ts");
+/* harmony import */ var _charts_social_network_analysis_social_network_analysis_component__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./charts/social-network-analysis/social-network-analysis.component */ "./src/app/charts/social-network-analysis/social-network-analysis.component.ts");
+/* harmony import */ var _charts_self_motivation_self_motivation_component__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./charts/self-motivation/self-motivation.component */ "./src/app/charts/self-motivation/self-motivation.component.ts");
+/* harmony import */ var _charts_learning_behavior_patterns_learning_behavior_patterns_component__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./charts/learning-behavior-patterns/learning-behavior-patterns.component */ "./src/app/charts/learning-behavior-patterns/learning-behavior-patterns.component.ts");
+/* harmony import */ var _charts_passing_rate_prediction_passing_rate_prediction_component__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./charts/passing-rate-prediction/passing-rate-prediction.component */ "./src/app/charts/passing-rate-prediction/passing-rate-prediction.component.ts");
+/* harmony import */ var _charts_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./charts/feedback/feedback.component */ "./src/app/charts/feedback/feedback.component.ts");
+/* harmony import */ var _charts_course_assessment_course_assessment_component__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./charts/course-assessment/course-assessment.component */ "./src/app/charts/course-assessment/course-assessment.component.ts");
+/* harmony import */ var _charts_affective_state_affective_state_component__WEBPACK_IMPORTED_MODULE_57__ = __webpack_require__(/*! ./charts/affective-state/affective-state.component */ "./src/app/charts/affective-state/affective-state.component.ts");
+/* harmony import */ var _charts_course_difficulty_course_difficulty_component__WEBPACK_IMPORTED_MODULE_58__ = __webpack_require__(/*! ./charts/course-difficulty/course-difficulty.component */ "./src/app/charts/course-difficulty/course-difficulty.component.ts");
+/* harmony import */ var _charts_curriculum_usage_curriculum_usage_component__WEBPACK_IMPORTED_MODULE_59__ = __webpack_require__(/*! ./charts/curriculum-usage/curriculum-usage.component */ "./src/app/charts/curriculum-usage/curriculum-usage.component.ts");
+/* harmony import */ var _charts_presentation_skills_presentation_skills_component__WEBPACK_IMPORTED_MODULE_60__ = __webpack_require__(/*! ./charts/presentation-skills/presentation-skills.component */ "./src/app/charts/presentation-skills/presentation-skills.component.ts");
+/* harmony import */ var _component_admin_admin_component__WEBPACK_IMPORTED_MODULE_61__ = __webpack_require__(/*! ./component/admin/admin.component */ "./src/app/component/admin/admin.component.ts");
+
+
+
 
 
 
@@ -1026,9 +1058,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: "add/data", component: _component_add_data_add_data_component__WEBPACK_IMPORTED_MODULE_13__["AddDataComponent"] },
-    { path: "referance", component: _component_referance_referance_component__WEBPACK_IMPORTED_MODULE_20__["ReferanceComponent"] },
-    { path: "dashboard", component: _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["DashboardComponent"] },
+    {
+        path: "add/data",
+        component: _component_add_data_add_data_component__WEBPACK_IMPORTED_MODULE_13__["AddDataComponent"],
+    },
+    //   canActivate: [AuthGuardService]
+    // },
+    { path: "reference", component: _component_reference_referance_component__WEBPACK_IMPORTED_MODULE_20__["ReferanceComponent"] },
+    { path: "login", component: _component_admin_admin_component__WEBPACK_IMPORTED_MODULE_61__["AdminComponent"] },
+    { path: "dashboard", component: _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_23__["DashboardComponent"] },
     { path: "display/data", component: _component_display_display_component__WEBPACK_IMPORTED_MODULE_18__["DisplayComponent"] },
     { path: "", redirectTo: "display/data", pathMatch: "full" },
 ];
@@ -1041,46 +1079,48 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             _component_add_data_add_data_component__WEBPACK_IMPORTED_MODULE_13__["AddDataComponent"],
             _component_header_header_component__WEBPACK_IMPORTED_MODULE_14__["HeaderComponent"],
             _component_display_display_component__WEBPACK_IMPORTED_MODULE_18__["DisplayComponent"],
-            _component_display_filter_pipe__WEBPACK_IMPORTED_MODULE_15__["FilterPipe"],
+            _component_display_filter_pipe__WEBPACK_IMPORTED_MODULE_15__["SanitizeHtmlPipe"],
             _component_dropdown_dropdown_component__WEBPACK_IMPORTED_MODULE_19__["DropdownComponent"],
             _component_display_select_check_all_component__WEBPACK_IMPORTED_MODULE_21__["SelectCheckAllComponent"],
-            _component_referance_referance_component__WEBPACK_IMPORTED_MODULE_20__["ReferanceComponent"],
-            _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_22__["DashboardComponent"],
-            _chart_manager_chart_manager_component__WEBPACK_IMPORTED_MODULE_23__["ChartManagerComponent"],
-            _charts_student_interaction_patterns_student_interaction_patterns_component__WEBPACK_IMPORTED_MODULE_24__["StudentInteractionPatternsComponent"],
-            _charts_competency_competency_component__WEBPACK_IMPORTED_MODULE_25__["CompetencyComponent"],
-            _charts_reading_analytics_reading_analytics_component__WEBPACK_IMPORTED_MODULE_27__["ReadingAnalyticsComponent"],
-            _charts_video_analytics_video_analytics_component__WEBPACK_IMPORTED_MODULE_28__["VideoAnalyticsComponent"],
-            _charts_learning_progress_learning_progress_component__WEBPACK_IMPORTED_MODULE_29__["LearningProgressComponent"],
-            _charts_writing_analytics_writing_analytics_component__WEBPACK_IMPORTED_MODULE_30__["WritingAnalyticsComponent"],
-            _charts_discussion_quality_discussion_quality_component__WEBPACK_IMPORTED_MODULE_31__["DiscussionQualityComponent"],
-            _charts_clickstream_analysis_clickstream_analysis_component__WEBPACK_IMPORTED_MODULE_32__["ClickstreamAnalysisComponent"],
-            _charts_video_engagements_video_engagements_component__WEBPACK_IMPORTED_MODULE_33__["VideoEngagementsComponent"],
-            _charts_initiative_initiative_component__WEBPACK_IMPORTED_MODULE_34__["InitiativeComponent"],
-            _charts_social_analysis_social_analysis_component__WEBPACK_IMPORTED_MODULE_35__["SocialAnalysisComponent"],
-            _charts_droppingout_droppingout_component__WEBPACK_IMPORTED_MODULE_36__["DroppingoutComponent"],
-            _charts_time_distribution_time_distribution_component__WEBPACK_IMPORTED_MODULE_37__["TimeDistributionComponent"],
-            _charts_time_planning_time_planning_component__WEBPACK_IMPORTED_MODULE_38__["TimePlanningComponent"],
-            _charts_student_comparison_student_comparison_component__WEBPACK_IMPORTED_MODULE_39__["StudentComparisonComponent"],
-            _charts_engagement_performance_engagement_performance_component__WEBPACK_IMPORTED_MODULE_40__["EngagementPerformanceComponent"],
-            _charts_online_change_detection_online_change_detection_component__WEBPACK_IMPORTED_MODULE_41__["OnlineChangeDetectionComponent"],
-            _charts_gamification_gamification_component__WEBPACK_IMPORTED_MODULE_42__["GamificationComponent"],
-            _charts_predict_coursecompletion_predict_coursecompletion_component__WEBPACK_IMPORTED_MODULE_43__["PredictCoursecompletionComponent"],
-            _charts_procrastination_procrastination_component__WEBPACK_IMPORTED_MODULE_44__["ProcrastinationComponent"],
-            _charts_group_participation_group_participation_component__WEBPACK_IMPORTED_MODULE_45__["GroupParticipationComponent"],
-            _charts_clustering_clustering_component__WEBPACK_IMPORTED_MODULE_46__["ClusteringComponent"],
-            _charts_predict_exam_success_predict_exam_success_component__WEBPACK_IMPORTED_MODULE_47__["PredictExamSuccessComponent"],
-            _charts_final_grade_prediction_final_grade_prediction_component__WEBPACK_IMPORTED_MODULE_48__["FinalGradePredictionComponent"],
-            _charts_learning_behaviour_learning_behaviour_component__WEBPACK_IMPORTED_MODULE_49__["LearningBehaviourComponent"],
-            _charts_social_network_analysis_social_network_analysis_component__WEBPACK_IMPORTED_MODULE_50__["SocialNetworkAnalysisComponent"],
-            _charts_self_motivation_self_motivation_component__WEBPACK_IMPORTED_MODULE_51__["SelfMotivationComponent"],
-            _charts_learning_behavior_patterns_learning_behavior_patterns_component__WEBPACK_IMPORTED_MODULE_52__["LearningBehaviorPatternsComponent"],
-            _charts_passing_rate_prediction_passing_rate_prediction_component__WEBPACK_IMPORTED_MODULE_53__["PassingRatePredictionComponent"],
-            _charts_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_54__["FeedbackComponent"],
-            _charts_course_assessment_course_assessment_component__WEBPACK_IMPORTED_MODULE_55__["CourseAssessmentComponent"],
-            _charts_affective_state_affective_state_component__WEBPACK_IMPORTED_MODULE_56__["AffectiveStateComponent"],
-            _charts_course_difficulty_course_difficulty_component__WEBPACK_IMPORTED_MODULE_57__["CourseDifficultyComponent"],
-            _charts_curriculum_usage_curriculum_usage_component__WEBPACK_IMPORTED_MODULE_58__["CurriculumUsageComponent"],
+            _component_reference_referance_component__WEBPACK_IMPORTED_MODULE_20__["ReferanceComponent"],
+            _component_admin_admin_component__WEBPACK_IMPORTED_MODULE_61__["AdminComponent"],
+            _component_dashboard_dashboard_component__WEBPACK_IMPORTED_MODULE_23__["DashboardComponent"],
+            _chart_manager_chart_manager_component__WEBPACK_IMPORTED_MODULE_24__["ChartManagerComponent"],
+            _charts_student_interaction_patterns_student_interaction_patterns_component__WEBPACK_IMPORTED_MODULE_25__["StudentInteractionPatternsComponent"],
+            _charts_competency_competency_component__WEBPACK_IMPORTED_MODULE_26__["CompetencyComponent"],
+            _charts_reading_analytics_reading_analytics_component__WEBPACK_IMPORTED_MODULE_28__["ReadingAnalyticsComponent"],
+            _charts_video_analytics_video_analytics_component__WEBPACK_IMPORTED_MODULE_29__["VideoAnalyticsComponent"],
+            _charts_learning_progress_learning_progress_component__WEBPACK_IMPORTED_MODULE_30__["LearningProgressComponent"],
+            _charts_writing_analytics_writing_analytics_component__WEBPACK_IMPORTED_MODULE_31__["WritingAnalyticsComponent"],
+            _charts_discussion_quality_discussion_quality_component__WEBPACK_IMPORTED_MODULE_32__["DiscussionQualityComponent"],
+            _charts_clickstream_analysis_clickstream_analysis_component__WEBPACK_IMPORTED_MODULE_33__["ClickstreamAnalysisComponent"],
+            _charts_video_engagements_video_engagements_component__WEBPACK_IMPORTED_MODULE_34__["VideoEngagementsComponent"],
+            _charts_initiative_initiative_component__WEBPACK_IMPORTED_MODULE_35__["InitiativeComponent"],
+            _charts_social_analysis_social_analysis_component__WEBPACK_IMPORTED_MODULE_36__["SocialAnalysisComponent"],
+            _charts_droppingout_droppingout_component__WEBPACK_IMPORTED_MODULE_37__["DroppingoutComponent"],
+            _charts_time_distribution_time_distribution_component__WEBPACK_IMPORTED_MODULE_38__["TimeDistributionComponent"],
+            _charts_time_planning_time_planning_component__WEBPACK_IMPORTED_MODULE_39__["TimePlanningComponent"],
+            _charts_student_comparison_student_comparison_component__WEBPACK_IMPORTED_MODULE_40__["StudentComparisonComponent"],
+            _charts_engagement_performance_engagement_performance_component__WEBPACK_IMPORTED_MODULE_41__["EngagementPerformanceComponent"],
+            _charts_online_change_detection_online_change_detection_component__WEBPACK_IMPORTED_MODULE_42__["OnlineChangeDetectionComponent"],
+            _charts_gamification_gamification_component__WEBPACK_IMPORTED_MODULE_43__["GamificationComponent"],
+            _charts_predict_coursecompletion_predict_coursecompletion_component__WEBPACK_IMPORTED_MODULE_44__["PredictCoursecompletionComponent"],
+            _charts_procrastination_procrastination_component__WEBPACK_IMPORTED_MODULE_45__["ProcrastinationComponent"],
+            _charts_group_participation_group_participation_component__WEBPACK_IMPORTED_MODULE_46__["GroupParticipationComponent"],
+            _charts_clustering_clustering_component__WEBPACK_IMPORTED_MODULE_47__["ClusteringComponent"],
+            _charts_predict_exam_success_predict_exam_success_component__WEBPACK_IMPORTED_MODULE_48__["PredictExamSuccessComponent"],
+            _charts_final_grade_prediction_final_grade_prediction_component__WEBPACK_IMPORTED_MODULE_49__["FinalGradePredictionComponent"],
+            _charts_learning_behaviour_learning_behaviour_component__WEBPACK_IMPORTED_MODULE_50__["LearningBehaviourComponent"],
+            _charts_social_network_analysis_social_network_analysis_component__WEBPACK_IMPORTED_MODULE_51__["SocialNetworkAnalysisComponent"],
+            _charts_self_motivation_self_motivation_component__WEBPACK_IMPORTED_MODULE_52__["SelfMotivationComponent"],
+            _charts_learning_behavior_patterns_learning_behavior_patterns_component__WEBPACK_IMPORTED_MODULE_53__["LearningBehaviorPatternsComponent"],
+            _charts_passing_rate_prediction_passing_rate_prediction_component__WEBPACK_IMPORTED_MODULE_54__["PassingRatePredictionComponent"],
+            _charts_feedback_feedback_component__WEBPACK_IMPORTED_MODULE_55__["FeedbackComponent"],
+            _charts_course_assessment_course_assessment_component__WEBPACK_IMPORTED_MODULE_56__["CourseAssessmentComponent"],
+            _charts_affective_state_affective_state_component__WEBPACK_IMPORTED_MODULE_57__["AffectiveStateComponent"],
+            _charts_course_difficulty_course_difficulty_component__WEBPACK_IMPORTED_MODULE_58__["CourseDifficultyComponent"],
+            _charts_curriculum_usage_curriculum_usage_component__WEBPACK_IMPORTED_MODULE_59__["CurriculumUsageComponent"],
+            _charts_presentation_skills_presentation_skills_component__WEBPACK_IMPORTED_MODULE_60__["PresentationSkillsComponent"],
         ],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
@@ -1103,10 +1143,55 @@ AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
             angular_font_awesome__WEBPACK_IMPORTED_MODULE_6__["AngularFontAwesomeModule"],
             highcharts_angular__WEBPACK_IMPORTED_MODULE_9__["HighchartsChartModule"],
         ],
-        providers: [_data_service__WEBPACK_IMPORTED_MODULE_17__["DataService"], _chart_helper_service__WEBPACK_IMPORTED_MODULE_26__["ChartHelperService"]],
+        providers: [_data_service__WEBPACK_IMPORTED_MODULE_17__["DataService"], _auth_guard_service__WEBPACK_IMPORTED_MODULE_22__["AuthGuardService"], _chart_helper_service__WEBPACK_IMPORTED_MODULE_27__["ChartHelperService"]],
         bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]],
     })
 ], AppModule);
+
+
+
+/***/ }),
+
+/***/ "./src/app/auth-guard.service.ts":
+/*!***************************************!*\
+  !*** ./src/app/auth-guard.service.ts ***!
+  \***************************************/
+/*! exports provided: AuthGuardService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuthGuardService", function() { return AuthGuardService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./data.service */ "./src/app/data.service.ts");
+
+
+
+
+let AuthGuardService = class AuthGuardService {
+    constructor(dataService, router) {
+        this.dataService = dataService;
+        this.router = router;
+    }
+    canActivate(route, state) {
+        if (this.dataService.loggedIn) {
+            return true;
+        }
+        else {
+            this.router.navigate(['/login']);
+            return false;
+        }
+    }
+};
+AuthGuardService.ctorParameters = () => [
+    { type: _data_service__WEBPACK_IMPORTED_MODULE_3__["DataService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] }
+];
+AuthGuardService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])()
+], AuthGuardService);
 
 
 
@@ -1127,24 +1212,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ChartHelperService = class ChartHelperService {
-    constructor() {
-        this.indicatorStorage = "indicators";
-    }
-    /*
-    findIndicator(array, indicatorName) {
-        return array.find(ind => ind.indicatorName = indicatorName)
-      }*/
-    /*
-    populateChart(metricArray): any[] {
-        let series = [];
-        for(let i = 0;i< metricArray.length;i++){
-          series.push({
-              name: metricArray[i]["metricName"],
-              data: metricArray[i]["value"],
-          });
-      }
-      return series;
-    }*/
+    constructor() { }
+    //Sets the indicators in the localstorage as a string
     setSettings(storageName, data) {
         localStorage.setItem(storageName, JSON.stringify(data));
     }
@@ -1168,7 +1237,7 @@ ChartHelperService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0LW1hbmFnZXIvY2hhcnQtbWFuYWdlci5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".container {\r\n  display: grid;\r\n  grid-template-columns: repeat(12, 1fr);\r\n}\r\n\r\n.main-content {\r\n  grid-column: span 6;\r\n}\r\n\r\n::ng-deep .mat-form-field-infix {\r\n  width: 250px !important;\r\n}\r\n\r\n::ng-deep .mat-form-field {\r\n  position: -webkit-sticky !important;\r\n  position: sticky !important;\r\n  z-index: 100;\r\n  top: 0;\r\n}\r\n\r\n.mat-elevation-z5 {\r\n  position: relative;\r\n}\r\n\r\n.sticky {\r\n  top: 0px;\r\n}\r\n\r\n@media screen and (max-width: 768px) {\r\n  .main-content {\r\n    grid-column: span 12;\r\n  }\r\n}\r\n\r\n@media screen and (max-width: 480px) {\r\n  .main-content {\r\n    grid-column: span 12;\r\n  }\r\n}\r\n\r\n.downloadCharts {\r\n  margin: 1rem;\r\n  float: right;\r\n  z-index: 100;\r\n  position: fixed;\r\n  right: 1%;\r\n}\r\n\r\n.backBtn {\r\n  float: right;\r\n  margin: 1rem;\r\n  z-index: 100;\r\n  position: fixed;\r\n  right: 8%;\r\n}\r\n\r\n.mat-elevation-z5 {\r\n  position: relative;\r\n}\r\n\r\n.sticky {\r\n  position: fixed;\r\n  top: 0px;\r\n}\r\n\r\n.buttons {\r\n  height: 70px;\r\n  background-color: #fff;\r\n  border: 2px solid #f5f5f5;\r\n  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;\r\n  position: fixed;\r\n  right: 0;\r\n  float: right;\r\n  z-index: 99;\r\n  width: 100%;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY2hhcnQtbWFuYWdlci9jaGFydC1tYW5hZ2VyLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxhQUFhO0VBQ2Isc0NBQXNDO0FBQ3hDOztBQUVBO0VBQ0UsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UsdUJBQXVCO0FBQ3pCOztBQUVBO0VBQ0UsbUNBQTJCO0VBQTNCLDJCQUEyQjtFQUMzQixZQUFZO0VBQ1osTUFBTTtBQUNSOztBQUVBO0VBQ0Usa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsUUFBUTtBQUNWOztBQUVBO0VBQ0U7SUFDRSxvQkFBb0I7RUFDdEI7QUFDRjs7QUFDQTtFQUNFO0lBQ0Usb0JBQW9CO0VBQ3RCO0FBQ0Y7O0FBRUE7RUFDRSxZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7RUFDWixlQUFlO0VBQ2YsU0FBUztBQUNYOztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixZQUFZO0VBQ1osZUFBZTtFQUNmLFNBQVM7QUFDWDs7QUFFQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixRQUFRO0FBQ1Y7O0FBRUE7RUFDRSxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLHlCQUF5QjtFQUN6QixtREFBbUQ7RUFDbkQsZUFBZTtFQUNmLFFBQVE7RUFDUixZQUFZO0VBQ1osV0FBVztFQUNYLFdBQVc7QUFDYiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0LW1hbmFnZXIvY2hhcnQtbWFuYWdlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNvbnRhaW5lciB7XHJcbiAgZGlzcGxheTogZ3JpZDtcclxuICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IHJlcGVhdCgxMiwgMWZyKTtcclxufVxyXG5cclxuLm1haW4tY29udGVudCB7XHJcbiAgZ3JpZC1jb2x1bW46IHNwYW4gNjtcclxufVxyXG5cclxuOjpuZy1kZWVwIC5tYXQtZm9ybS1maWVsZC1pbmZpeCB7XHJcbiAgd2lkdGg6IDI1MHB4ICFpbXBvcnRhbnQ7XHJcbn1cclxuXHJcbjo6bmctZGVlcCAubWF0LWZvcm0tZmllbGQge1xyXG4gIHBvc2l0aW9uOiBzdGlja3kgIWltcG9ydGFudDtcclxuICB6LWluZGV4OiAxMDA7XHJcbiAgdG9wOiAwO1xyXG59XHJcblxyXG4ubWF0LWVsZXZhdGlvbi16NSB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uc3RpY2t5IHtcclxuICB0b3A6IDBweDtcclxufVxyXG5cclxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcclxuICAubWFpbi1jb250ZW50IHtcclxuICAgIGdyaWQtY29sdW1uOiBzcGFuIDEyO1xyXG4gIH1cclxufVxyXG5AbWVkaWEgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA0ODBweCkge1xyXG4gIC5tYWluLWNvbnRlbnQge1xyXG4gICAgZ3JpZC1jb2x1bW46IHNwYW4gMTI7XHJcbiAgfVxyXG59XHJcblxyXG4uZG93bmxvYWRDaGFydHMge1xyXG4gIG1hcmdpbjogMXJlbTtcclxuICBmbG9hdDogcmlnaHQ7XHJcbiAgei1pbmRleDogMTAwO1xyXG4gIHBvc2l0aW9uOiBmaXhlZDtcclxuICByaWdodDogMSU7XHJcbn1cclxuXHJcbi5iYWNrQnRuIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbiAgbWFyZ2luOiAxcmVtO1xyXG4gIHotaW5kZXg6IDEwMDtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgcmlnaHQ6IDglO1xyXG59XHJcblxyXG4ubWF0LWVsZXZhdGlvbi16NSB7XHJcbiAgcG9zaXRpb246IHJlbGF0aXZlO1xyXG59XHJcblxyXG4uc3RpY2t5IHtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgdG9wOiAwcHg7XHJcbn1cclxuXHJcbi5idXR0b25zIHtcclxuICBoZWlnaHQ6IDcwcHg7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcclxuICBib3JkZXI6IDJweCBzb2xpZCAjZjVmNWY1O1xyXG4gIGJveC1zaGFkb3c6IHJnYmEoMCwgMCwgMCwgMC4xNSkgMS45NXB4IDEuOTVweCAyLjZweDtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgcmlnaHQ6IDA7XHJcbiAgZmxvYXQ6IHJpZ2h0O1xyXG4gIHotaW5kZXg6IDk5O1xyXG4gIHdpZHRoOiAxMDAlO1xyXG59XHJcbiJdfQ== */");
 
 /***/ }),
 
@@ -1184,23 +1253,101 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChartManagerComponent", function() { return ChartManagerComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
 
 
 let ChartManagerComponent = class ChartManagerComponent {
-    constructor() { }
+    constructor() {
+        this.indicators = new _angular_forms__WEBPACK_IMPORTED_MODULE_2__["FormControl"]();
+        this.components = [];
+        this.isSticky = false;
+        this.unselectedIndicator = [];
+        this.regex = /\[[0-9]+\]/; // We will check if the array contains a string in the format [XX] where X = 0-9
+    }
+    checkScroll() {
+        this.isSticky = window.pageYOffset >= 50;
+    }
+    /*
+      This component renders all the charts.
+      Parse all the indicators from local Storage into the dropdownItems variable, referenceNumbers contains only the numbers in brackets.
+      The HTML template checks if referenceNumbers includes an indicator number in brackets and renders it.
+    */
     ngOnInit() {
-        // this.component = this.component.replace(/\[\d*\]/g, "").trim();
-        console.log(this.component);
-        this.dropdownItems = JSON.parse(localStorage.getItem("selectedIndicators"));
-        //  console.log(this.component.replace(/\[\d*\]/g, "").trim())
+        this.dropdownItems = JSON.parse(localStorage.getItem("selectedIndicators")); //For the dropdown menu
+        this.referenceNumbers = JSON.parse(localStorage.getItem("referenceNumbers")); //To render the charts
+    }
+    //Selecting and unselecting charts in the drop down menu
+    selectCharts(event, state) {
+        if (event.isUserInput) {
+            if (!event.source.selected) {
+                let num = state.match(this.regex)[0]; //E.G. state = Course difficulty [77] => num = [77]
+                let index = this.referenceNumbers.indexOf(num);
+                this.referenceNumbers.splice(index, 1)[0];
+            }
+            else {
+                let num = state.match(this.regex)[0];
+                if (state.match(this.regex)[0]) {
+                    this.referenceNumbers.push(num); //push the reference into the referenceNumbers array after selecting it
+                }
+            }
+        }
+    }
+    /*
+      When the user presses the download button this function
+      writes all the HTML content of the current page into a html file
+      The excludeStyle variable sets css properties which should not be seen in the local file to none
+    */
+    downloadPage() {
+        var htmlContent = [document.querySelector("html").innerHTML];
+        var excludeStyle = `
+      <style>
+      .downloadCharts{
+        display: none;
+      }
+  
+      .header {
+        display: none;
+      }
+  
+      .mat-form-field {
+        display: none;
+      }
+  
+      .footer {
+        display: block !important;
+      }
+      
+      .backBtn {
+        display:none;
+      }
+
+      .buttons {
+        display:none;
+      }
+  
+      .highcharts-subtitle {
+        display:none;
+      }
+     
+      </style>`;
+        //add style sheet to the html
+        htmlContent = [htmlContent[0].concat(excludeStyle)];
+        var bl = new Blob(htmlContent, { type: "text/html" });
+        var a = document.createElement("a");
+        a.href = URL.createObjectURL(bl);
+        a.download = "Indicator Visualizations.html";
+        a.hidden = true;
+        document.body.appendChild(a);
+        a.click();
     }
 };
 tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
-    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Input"])()
-], ChartManagerComponent.prototype, "component", void 0);
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["HostListener"])("window:scroll", ["$event"])
+], ChartManagerComponent.prototype, "checkScroll", null);
 ChartManagerComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-chart-manager',
+        selector: "app-chart-manager",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./chart-manager.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/chart-manager/chart-manager.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./chart-manager.component.css */ "./src/app/chart-manager/chart-manager.component.css")).default]
     })
@@ -1250,11 +1397,9 @@ highcharts_highcharts_more__WEBPACK_IMPORTED_MODULE_4___default()(highcharts__WE
 let AffectiveStateComponent = class AffectiveStateComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -1263,6 +1408,9 @@ let AffectiveStateComponent = class AffectiveStateComponent {
             },
             title: {
                 text: "Affective state",
+            },
+            subtitle: {
+                text: "Self-Reported Affective State [32] Emotion [32], Affective State [84], Self-Regulation [36] Emotional state [36], Student progress (LMS activities) [87] Measure fixed mindset / Belonging uncertainty / Stereotype threat (Questionnaires) [87] Alerting [87] Self-reflection [87]",
             },
             xAxis: {
                 categories: [
@@ -1361,16 +1509,17 @@ __webpack_require__.r(__webpack_exports__);
 let ClickstreamAnalysisComponent = class ClickstreamAnalysisComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             title: {
                 text: "Clickstream Analysis",
+            },
+            subtitle: {
+                text: "Clickstream Analysis [103] Student behavior [103]",
             },
             xAxis: {
                 tickInterval: 1,
@@ -1449,14 +1598,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const drilldown = __webpack_require__(/*! highcharts/modules/drilldown.js */ "./node_modules/highcharts/modules/drilldown.js");
+drilldown(highcharts__WEBPACK_IMPORTED_MODULE_2__);
 let ClusteringComponent = class ClusteringComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -1467,9 +1616,15 @@ let ClusteringComponent = class ClusteringComponent {
             title: {
                 text: "Clustering",
             },
+            subtitle: {
+                text: "Clustering (educational data mining) [66], Pass-Fail Classification [120] Keystroke analytics [120], Student Classification [113] Video analytics [113], Classifying Student behavior [29]",
+            },
             tooltip: {
                 useHTML: true,
-                pointFormat: "<b>{point.name}:</b><br> {point.timetheory}:{point.value} hours<br>{point.timetasks}:{point:value} hours<br>{point.timeforums}:{point.value} minutes<br>{point.timesubmit}:{point.value} days<br>{point.forumwords}:{point.value}",
+                pointFormat: "<b>{point.name}:</b><br>",
+            },
+            xAxis: {
+                type: "category",
             },
             plotOptions: {
                 packedbubble: {
@@ -1502,246 +1657,141 @@ let ClusteringComponent = class ClusteringComponent {
             },
             series: [
                 {
-                    name: "Cluster 1",
+                    name: "Cluster 1 (High performers)",
                     data: [
                         {
                             name: "User 1",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 2",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 3",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 4",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 5",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 6",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                         {
                             name: "User 7",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 8",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 9",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 10",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 11",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 12",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "high",
                         },
                     ],
                 },
                 {
-                    name: "Cluster 2",
+                    name: "Cluster 2 (Average performers)",
                     data: [
                         {
                             name: "User 13",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                         {
                             name: "User 14",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                         {
                             name: "User 15",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                         {
                             name: "User 16",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                         {
                             name: "User 17",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                         {
                             name: "User 18",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 19",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 20",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 21",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
-                        },
-                        {
-                            name: "User 22",
-                            value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "avg",
                         },
                     ],
                 },
                 {
-                    name: "Cluster 3",
+                    name: "Cluster 3 (Low performers)",
                     data: [
                         {
                             name: "User 23",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "low",
                         },
                         {
                             name: "User 24",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "low",
                         },
                         {
                             name: "User 25",
                             value: Math.floor(Math.random() * 30),
-                            timetheory: "Time spent on theoretical contents",
-                            timetasks: "Time spent on practical tasks",
-                            timeforums: "Time spent on forum",
-                            timesubmit: "Time until task is submitted",
-                            forumwords: "# words in forum ",
+                            drilldown: "low",
                         },
                     ],
                 },
             ],
+            drilldown: {
+                series: [
+                    {
+                        name: "High performers",
+                        id: "high",
+                        type: "column",
+                        data: [
+                            { name: "Time spent on theoretical contents", y: 22 },
+                            { name: "Time spent on forum", y: 35 },
+                            { name: "Time spent on practical tasks", y: 32 },
+                            { name: "Time until task is submitted", y: 25 },
+                            { name: "# words in forum", y: 21 },
+                        ],
+                    },
+                    {
+                        name: "Average performers",
+                        id: "avg",
+                        type: "column",
+                        data: [
+                            { name: "Time spent on theoretical contents", y: 14 },
+                            { name: "Time spent on forum", y: 25 },
+                            { name: "Time spent on practical tasks", y: 22 },
+                            { name: "Time until task is submitted", y: 35 },
+                            { name: "# words in forum", y: 15 },
+                        ],
+                    },
+                    {
+                        name: "Low performers",
+                        id: "low",
+                        type: "column",
+                        data: [
+                            { name: "Time spent on theoretical contents", y: 7 },
+                            { name: "Time spent on forum", y: 12 },
+                            { name: "Time spent on practical tasks", y: 10 },
+                            { name: "Time until task is submitted", y: 50 },
+                            { name: "# words in forum", y: 8 },
+                        ],
+                    },
+                ],
+            },
         }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
@@ -1798,7 +1848,6 @@ highcharts_highcharts_more__WEBPACK_IMPORTED_MODULE_4___default()(highcharts__WE
 let CompetencyComponent = class CompetencyComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     // time watching videos
     // time on platform
@@ -1812,9 +1861,7 @@ let CompetencyComponent = class CompetencyComponent {
     // # visited video lectures
     // # forum contributions
     ngOnInit() {
-        //Set the chart data after we get the indicator and metrics
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -1824,6 +1871,9 @@ let CompetencyComponent = class CompetencyComponent {
             },
             title: {
                 text: "Competency",
+            },
+            subtitle: {
+                text: "Metacognitive Awareness [31] Competency [31], Self regulation [46] Learning strategies [46] predict performance [46] procrastination [46], Predict performance (by self-regulation metrics) [98] Self-Regulated Learning [98] ",
             },
             xAxis: {
                 categories: [
@@ -1923,17 +1973,18 @@ highcharts_modules_networkgraph__WEBPACK_IMPORTED_MODULE_4___default()(highchart
 let CourseAssessmentComponent = class CourseAssessmentComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             chart: {},
             title: {
                 text: "Course Assessment (Student X on Assignment 1)",
+            },
+            subtitle: {
+                text: "Course Assessments [55]",
             },
             plotOptions: {
                 networkgraph: {
@@ -2127,7 +2178,6 @@ __webpack_require__.r(__webpack_exports__);
 let CourseDifficultyComponent = class CourseDifficultyComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.chartOptions = {
@@ -2136,6 +2186,9 @@ let CourseDifficultyComponent = class CourseDifficultyComponent {
             },
             title: {
                 text: "Course difficulty",
+            },
+            subtitle: {
+                text: "Course difficulty [77], Perceived difficulty [133] Self-efficacy [133] Cognitive load [133]",
             },
             xAxis: {
                 categories: [
@@ -2236,11 +2289,9 @@ __webpack_require__.r(__webpack_exports__);
 let CurriculumUsageComponent = class CurriculumUsageComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -2250,6 +2301,9 @@ let CurriculumUsageComponent = class CurriculumUsageComponent {
             },
             title: {
                 text: "Teacher curriculum usage",
+            },
+            subtitle: {
+                text: "Teacher curriculum usage [65] Curriculum Planning / designing [65], Content quality [58]",
             },
             xAxis: {
                 title: {
@@ -2430,6 +2484,9 @@ let DiscussionQualityComponent = class DiscussionQualityComponent {
             title: {
                 text: "Discussion forum quality",
             },
+            subtitle: {
+                text: "Discussion Contribution Quantity & Quality [24] Reading analytics [24], Discussion forum quality [27], Discussion Engagements [49], Exploratory dialogue [142], Discourse Analysis [80], Social Network Analysis (Discussion Forum) [88] Discourse Analysis [88]",
+            },
             xAxis: {
                 categories: ["# comments", "# likes", "# replies"],
                 tickmarkPlacement: "on",
@@ -2519,12 +2576,10 @@ __webpack_require__.r(__webpack_exports__);
 let DroppingoutComponent = class DroppingoutComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         //Set the chart data after we get the indicator and metrics
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -2534,6 +2589,9 @@ let DroppingoutComponent = class DroppingoutComponent {
             },
             title: {
                 text: "Dropping out",
+            },
+            subtitle: {
+                text: "Dropping out [59], Early Warning [79] Dropout Prediction [79], Course Planning [99] Early Warning [99], At-Risk Students [101] Early warning [101], At-Risk Students [64] Retention Prediction [64], At-Risk students [71] Exam success prediction [71], At-risk students [131] performance [131]",
             },
             tooltip: { enabled: false },
             xAxis: {
@@ -2712,59 +2770,64 @@ __webpack_require__.r(__webpack_exports__);
 let EngagementPerformanceComponent = class EngagementPerformanceComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        this.chartOptions = {
+        (this.chartOptions = {
             chart: {
-                type: 'column'
+                type: "column",
             },
             title: {
-                text: 'Engagement and Performance'
+                text: "Engagement and Performance",
+            },
+            subtitle: {
+                text: "Engagement and Performance [69], Engagement [86]",
             },
             xAxis: {
-                categories: ['WK 1', 'WK 2', 'WK 3', 'WK 4', 'WK 5']
+                categories: ["WK 1", "WK 2", "WK 3", "WK 4", "WK 5"],
             },
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Student Participation'
-                }
+                    text: "Student Participation",
+                },
             },
             tooltip: {
                 pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.y}</b> ({point.percentage:.0f}%)<br/>',
-                shared: true
+                shared: true,
             },
             plotOptions: {
                 column: {
-                    stacking: 'percent',
+                    stacking: "percent",
                     dataLabels: {
                         enabled: true,
-                        format: '{y} %'
-                    }
-                }
+                        format: "{y} %",
+                    },
+                },
             },
-            series: [{
+            series: [
+                {
                     name: '"Auditors" (Watched video but did not participate)',
-                    data: [79, 69, 64, 55, 57]
-                }, {
+                    data: [79, 69, 64, 55, 57],
+                },
+                {
                     name: '"Active" (Participated in an assessment this week)',
-                    data: [11, 13, 10, 17, 12]
-                }, {
+                    data: [11, 13, 10, 17, 12],
+                },
+                {
                     name: '"Qualified" (Grades in 60th percentile in first two weeks)',
-                    data: [10, 18, 26, 28, 31]
-                }]
-        },
+                    data: [10, 18, 26, 28, 31],
+                },
+            ],
+        }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
 };
 EngagementPerformanceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-engagement-performance',
+        selector: "app-engagement-performance",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./engagement-performance.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/engagement-performance/engagement-performance.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./engagement-performance.component.css */ "./src/app/charts/engagement-performance/engagement-performance.component.css")).default]
     })
@@ -2818,11 +2881,9 @@ highcharts_modules_solid_gauge__WEBPACK_IMPORTED_MODULE_5___default()(highcharts
 let FeedbackComponent = class FeedbackComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
@@ -2831,6 +2892,9 @@ let FeedbackComponent = class FeedbackComponent {
             },
             title: {
                 text: "You",
+            },
+            subtitle: {
+                text: "Feedback [41], Feedback [91]",
             },
             pane: {
                 center: ["50%", "85%"],
@@ -2888,9 +2952,7 @@ let FeedbackComponent = class FeedbackComponent {
                     data: [70],
                     dataLabels: {
                         format: '<div style="text-align:center">' +
-                            '<span style="font-size:25px">{y}</span><br/>' +
-                            '<span style="font-size:12px;opacity:0.4">video <br>interactions</span>' +
-                            "</div>",
+                            '<span style="font-size:25px">{y}%</span><br/></div>',
                     },
                 },
             ],
@@ -2959,13 +3021,33 @@ let FeedbackComponent = class FeedbackComponent {
                     data: [83],
                     dataLabels: {
                         format: '<div style="text-align:center">' +
-                            '<span style="font-size:25px">{y}</span><br/>' +
-                            '<span style="font-size:12px;opacity:0.4">video <br>interactions</span>' +
-                            "</div>",
+                            '<span style="font-size:25px">{y}%</span><br/></div>',
                     },
                 },
             ],
         };
+    }
+    updateChart(event) {
+        var selVal = event.target.value;
+        if (selVal == "A" || selVal == "") {
+            this.chartOptions["series"] = { name: "You", data: [70] };
+            this.chartOptions2["series"] = { name: "Class", data: [83] };
+        }
+        else if (selVal == "B") {
+            this.chartOptions["series"] = { name: "You", data: [11] };
+            this.chartOptions2["series"] = { name: "Class", data: [50] };
+        }
+        else if (selVal == "C") {
+            this.chartOptions["series"] = { name: "You", data: [92] };
+            this.chartOptions2["series"] = { name: "Class", data: [76] };
+        }
+        else if (selVal == "D") {
+            this.chartOptions["series"] = { name: "You", data: [67] };
+            this.chartOptions2["series"] = { name: "Class", data: [63] };
+        }
+        //Make a copy of the new object so the changes are visible
+        this.chartOptions = Object.assign({}, this.chartOptions);
+        this.chartOptions2 = Object.assign({}, this.chartOptions2);
     }
 };
 FeedbackComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -3016,11 +3098,9 @@ __webpack_require__.r(__webpack_exports__);
 let FinalGradePredictionComponent = class FinalGradePredictionComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
@@ -3029,6 +3109,9 @@ let FinalGradePredictionComponent = class FinalGradePredictionComponent {
             },
             title: {
                 text: "Final grade prediction",
+            },
+            subtitle: {
+                text: "Final Grade Prediction [28], Grade prediction (by performance / Course difficulty level) [83], Performance [83], Course difficulty level [83], Predict exam grades [78], Predict Student Grades [115], Predict exam success [60], Performance Prediction [37] Success Prediction [37], Success Prediction [105], Predict academic achievement [81], Predict Final Grade [119]",
             },
             xAxis: {
                 categories: [
@@ -3136,46 +3219,57 @@ __webpack_require__.r(__webpack_exports__);
 let GamificationComponent = class GamificationComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        this.chartOptions = {
+        (this.chartOptions = {
             title: {
-                text: 'Gamification'
+                text: "Gamification",
+            },
+            subtitle: {
+                text: "Gamification [45], Badges earned [43], Game Based Learning [104] Learning Strategy (Game) [104] Predict Performance (Game) [104]",
             },
             xAxis: {
-                categories: ['Quiz 1', 'Quiz 2', 'Quiz 3', 'Quiz 4', 'Quiz 5', 'Quiz 6', 'Quiz 7']
+                categories: [
+                    "Quiz 1",
+                    "Quiz 2",
+                    "Quiz 3",
+                    "Quiz 4",
+                    "Quiz 5",
+                    "Quiz 6",
+                    "Quiz 7",
+                ],
             },
             yAxis: {
                 title: {
-                    text: 'Points'
-                }
+                    text: "Points",
+                },
             },
-            series: [{
-                    type: 'area',
-                    name: 'Achieved points',
-                    data: [93, 72, 100, 64, 78, 90]
+            series: [
+                {
+                    type: "area",
+                    name: "Achieved points",
+                    data: [93, 72, 100, 64, 78, 90],
                 },
                 {
-                    name: 'Maximum possible points',
-                    type: 'spline',
+                    name: "Maximum possible points",
+                    type: "spline",
                     data: [100, 100, 100, 100, 100, 100],
                     marker: {
-                        enabled: false
+                        enabled: false,
                     },
-                    dashStyle: 'shortdot',
-                }]
-        },
+                    dashStyle: "shortdot",
+                },
+            ],
+        }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
 };
 GamificationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-gamification',
+        selector: "app-gamification",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./gamification.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/gamification/gamification.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./gamification.component.css */ "./src/app/charts/gamification/gamification.component.css")).default]
     })
@@ -3226,16 +3320,17 @@ highcharts_modules_dependency_wheel__WEBPACK_IMPORTED_MODULE_4___default()(highc
 let GroupParticipationComponent = class GroupParticipationComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             title: {
                 text: "Group Participation",
+            },
+            subtitle: {
+                text: "Group Participation [30]",
             },
             tooltip: {
                 pointFormatter: function () {
@@ -3330,11 +3425,9 @@ highcharts_highcharts_more__WEBPACK_IMPORTED_MODULE_4___default()(highcharts__WE
 let InitiativeComponent = class InitiativeComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -3344,6 +3437,9 @@ let InitiativeComponent = class InitiativeComponent {
             },
             title: {
                 text: "Initiative",
+            },
+            subtitle: {
+                text: "Productivity = (Initiative + Responsiveness) / Presence [124] Collaboration [124]",
             },
             xAxis: {
                 categories: [
@@ -3449,78 +3545,86 @@ __webpack_require__.r(__webpack_exports__);
 let LearningBehaviorPatternsComponent = class LearningBehaviorPatternsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        this.chartOptions = {
+        (this.chartOptions = {
             chart: {
-                type: 'area'
+                type: "area",
             },
             title: {
-                text: 'Learning behavior patterns'
+                text: "Learning behavior patterns",
+            },
+            subtitle: {
+                text: "Learning Behavior Patterns [111], Learning Patterns [132], Learning Strategies [118]",
             },
             xAxis: {
-                tickmarkPlacement: 'on',
+                tickmarkPlacement: "on",
                 labels: {
-                    enabled: false
+                    enabled: false,
                 },
                 title: {
-                    text: 'Learning Sequence'
-                }
+                    text: "Learning Sequence",
+                },
             },
             yAxis: {
                 labels: {
-                    format: '{value}%'
+                    format: "{value}%",
                 },
                 title: {
-                    enabled: false
-                }
+                    enabled: false,
+                },
             },
             tooltip: {
                 pointFormat: '<span style="color:{series.color}">{series.name}</span>: <b>{point.percentage:.1f}%</b><br/>',
-                split: true
+                split: true,
             },
             plotOptions: {
                 area: {
-                    stacking: 'percent',
-                    lineColor: '#ffffff',
+                    stacking: "percent",
+                    lineColor: "#ffffff",
                     lineWidth: 1,
                     marker: {
                         lineWidth: 1,
-                        lineColor: '#ffffff'
+                        lineColor: "#ffffff",
                     },
-                }
+                },
             },
-            series: [{
-                    name: 'Video views',
-                    data: [50, 63, 89, 94, 14, 36, 52]
-                }, {
-                    name: 'Incorrectly solved assessment item',
-                    data: [10, 10, 11, 13, 21, 76, 17]
-                }, {
-                    name: 'Correctly solved MCQ',
-                    data: [16, 20, 27, 48, 54, 79, 62]
-                }, {
-                    name: 'Incorrectly solved MCQ',
-                    data: [18, 31, 54, 15, 33, 81, 11]
-                }, {
-                    name: 'Reading material page views',
-                    data: [63, 32, 22, 16, 13, 30, 46]
-                }, {
-                    name: 'Correctly solved assessment item',
-                    data: [22, 18, 12, 16, 13, 30, 46]
-                }]
-        },
+            series: [
+                {
+                    name: "Video views",
+                    data: [50, 63, 89, 94, 14, 36, 52],
+                },
+                {
+                    name: "Incorrectly solved assessment item",
+                    data: [10, 10, 11, 13, 21, 76, 17],
+                },
+                {
+                    name: "Correctly solved MCQ",
+                    data: [16, 20, 27, 48, 54, 79, 62],
+                },
+                {
+                    name: "Incorrectly solved MCQ",
+                    data: [18, 31, 54, 15, 33, 81, 11],
+                },
+                {
+                    name: "Reading material page views",
+                    data: [63, 32, 22, 16, 13, 30, 46],
+                },
+                {
+                    name: "Correctly solved assessment item",
+                    data: [22, 18, 12, 16, 13, 30, 46],
+                },
+            ],
+        }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
 };
 LearningBehaviorPatternsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-learning-behavior-patterns',
+        selector: "app-learning-behavior-patterns",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./learning-behavior-patterns.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/learning-behavior-patterns/learning-behavior-patterns.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./learning-behavior-patterns.component.css */ "./src/app/charts/learning-behavior-patterns/learning-behavior-patterns.component.css")).default]
     })
@@ -3566,11 +3670,9 @@ __webpack_require__.r(__webpack_exports__);
 let LearningBehaviourComponent = class LearningBehaviourComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
@@ -3580,6 +3682,9 @@ let LearningBehaviourComponent = class LearningBehaviourComponent {
             },
             title: {
                 text: "Learning behavior",
+            },
+            subtitle: {
+                text: "Learning behavior [76]",
             },
             tooltip: {
                 useHTML: true,
@@ -3808,16 +3913,17 @@ __webpack_require__.r(__webpack_exports__);
 let LearningProgressComponent = class LearningProgressComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
             chart: {
                 type: "line",
+                zoomType: "xy",
+                panning: true,
+                panKey: "shift",
             },
             title: {
                 text: "Learning Progress",
@@ -3921,16 +4027,14 @@ __webpack_require__.r(__webpack_exports__);
 let OnlineChangeDetectionComponent = class OnlineChangeDetectionComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        this.chartOptions = {
+        (this.chartOptions = {
             chart: {
-                type: 'spline',
+                type: "spline",
                 animation: highcharts__WEBPACK_IMPORTED_MODULE_2__["SVGElement"],
                 marginRight: 10,
                 events: {
@@ -3938,18 +4042,21 @@ let OnlineChangeDetectionComponent = class OnlineChangeDetectionComponent {
                         // set up the updating of the chart every 3 seconds
                         var series = this.series[0];
                         setInterval(function () {
-                            var x = (new Date()).getTime(), // current time
+                            var x = new Date().getTime(), // current time
                             y = Math.random();
                             series.addPoint([x, y], true, true);
                         }, 3000);
-                    }
-                }
+                    },
+                },
             },
             time: {
-                useUTC: false
+                useUTC: false,
             },
             title: {
-                text: 'Online Change Detection'
+                text: "Online Change Detection",
+            },
+            subtitle: {
+                text: "Online change detection [137]",
             },
             accessibility: {
                 announceNewData: {
@@ -3957,57 +4064,61 @@ let OnlineChangeDetectionComponent = class OnlineChangeDetectionComponent {
                     minAnnounceInterval: 15000,
                     announcementFormatter: function (allSeries, newSeries, newPoint) {
                         if (newPoint) {
-                            return 'New point added. Value: ' + newPoint.y;
+                            return "New point added. Value: " + newPoint.y;
                         }
                         return false;
-                    }
-                }
+                    },
+                },
             },
             xAxis: {
-                type: 'datetime',
-                tickPixelInterval: 150
+                type: "datetime",
+                tickPixelInterval: 150,
             },
             yAxis: {
                 title: {
-                    text: 'Click Behaviour'
+                    text: "Click Behaviour",
                 },
-                plotLines: [{
+                plotLines: [
+                    {
                         value: 0,
                         width: 1,
-                        color: '#808080'
-                    }]
+                        color: "#808080",
+                    },
+                ],
             },
             tooltip: {
-                headerFormat: '<b>{series.name}</b><br/>',
-                pointFormat: '{point.x:%Y-%m-%d %H:%M:%S}<br/>{point.y:.2f}'
+                headerFormat: "<b>{series.name}</b><br/>",
+                pointFormat: "{point.x:%Y-%m-%d %H:%M:%S}<br/>{point.y:.2f}",
             },
             legend: {
-                enabled: false
+                enabled: false,
             },
             exporting: {
-                enabled: false
+                enabled: false,
             },
-            series: [{
-                    name: 'Random data',
+            series: [
+                {
+                    name: "Click events",
                     data: (function () {
                         // generate an array of random data
-                        var data = [], time = (new Date()).getTime(), i;
+                        var data = [], time = new Date().getTime(), i;
                         for (i = -19; i <= 0; i += 1) {
                             data.push({
                                 x: time + i * 3000,
-                                y: Math.random() * 10
+                                y: Math.random() * 10,
                             });
                         }
                         return data;
-                    }())
-                }]
-        },
+                    })(),
+                },
+            ],
+        }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
 };
 OnlineChangeDetectionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-online-change-detection',
+        selector: "app-online-change-detection",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./online-change-detection.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/online-change-detection/online-change-detection.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./online-change-detection.component.css */ "./src/app/charts/online-change-detection/online-change-detection.component.css")).default]
     })
@@ -4050,7 +4161,6 @@ __webpack_require__.r(__webpack_exports__);
 let PassingRatePredictionComponent = class PassingRatePredictionComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.selectedOption = "Clicks";
@@ -4069,14 +4179,16 @@ let PassingRatePredictionComponent = class PassingRatePredictionComponent {
             },
         ];
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             chart: {
                 type: "column",
             },
-            title: { text: "simple chart" },
+            title: { text: "Final Grade Prediction" },
+            subtitle: {
+                text: "Passing rate Prediction [26] Final Grade Prediction [26] Performance prediction [26] Awareness [26], Success Prediction [56, 96], Performance Prediction [100, 117], predictive analytics (proposal) [143], Prediction (A pilot study) [144]",
+            },
             tooltip: {
                 shared: true,
             },
@@ -4139,89 +4251,22 @@ let PassingRatePredictionComponent = class PassingRatePredictionComponent {
                     lineWidth: 2,
                 },
             ],
-            plotOptions: {
-                series: {
-                    cursor: "pointer",
-                    point: {
-                        events: {
-                            click: function () {
-                                if (this.category == 5) {
-                                    console.log(this.series);
-                                }
-                            },
-                        },
-                    },
-                },
-            },
             series: [
                 {
                     data: [10, 0, 5, 0, 5, 5, 10, { y: 25, color: "red" }, 20, 15],
                     yAxis: 0,
                     xAxis: 0,
+                    name: "Avg. grade assessments",
                 },
                 {
                     type: "spline",
                     data: [0, 0, 0, 0, 0, 0, 0, 50, 100, 70],
                     yAxis: 1,
                     xAxis: 1,
+                    name: "Grade prediction",
                 },
             ],
         };
-    }
-    updateChart(event) {
-        var selVal = event.target.value;
-        if (selVal == "A" || selVal == "") {
-            this.chartOptions["series"] = [
-                {
-                    data: [10, 0, 5, 0, 5, 5, 10, 25, 20, 15],
-                    yAxis: 0,
-                    xAxis: 0,
-                },
-                {
-                    type: "spline",
-                    data: [0, 0, 0, 0, 0, 0, 0, 50, 100, 70],
-                    yAxis: 1,
-                    xAxis: 1,
-                },
-            ];
-        }
-        else if (selVal == "B") {
-            this.chartOptions["series"] = [
-                {
-                    data: [10, 0, 5, 0, 5, 5, 10, 25, 20, 15],
-                    yAxis: 0,
-                    xAxis: 0,
-                },
-                {
-                    type: "spline",
-                    data: [0, 0, 0, 0, 0, 0, 0, 50, 100, 70],
-                    yAxis: 1,
-                    xAxis: 1,
-                },
-            ];
-        }
-        else if (selVal == "C") {
-            this.chartOptions["series"] = [
-                { name: "You", data: [31, 22, 33, 32, 11] },
-                { name: "Avg. class data", data: [32, 31, 11, 2, 15] },
-            ];
-        }
-        else if (selVal == "D") {
-            this.chartOptions["series"] = [
-                { name: "You", data: [54, 33, 44, 12, 32] },
-                { name: "Avg. class data", data: [22, 43, 13, 12, 133] },
-            ];
-        }
-        else {
-            this.chartOptions["series"] = [
-                { name: "You", data: [24, 13, 14, 32, 22] },
-                { name: "Avg. class data", data: [32, 43, 33, 52, 33] },
-            ];
-        }
-        this.selectedOption =
-            event.target.options[event.target.options.selectedIndex].text;
-        this.chartOptions["xAxis"][0]["title"]["text"] = this.selectedOption;
-        this.chartOptions = Object.assign({}, this.chartOptions);
     }
 };
 PassingRatePredictionComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -4272,22 +4317,20 @@ __webpack_require__.r(__webpack_exports__);
 let PredictCoursecompletionComponent = class PredictCoursecompletionComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
             chart: {
                 type: "area",
             },
-            accessibility: {
-                description: "Image description: An area chart compares the nuclear stockpiles of the USA and the USSR/Russia between 1945 and 2017. The number of nuclear weapons is plotted on the Y-axis and the years on the X-axis. The chart is interactive, and the year-on-year stockpile levels can be traced for each country. The US has a stockpile of 6 nuclear weapons at the dawn of the nuclear age in 1945. This number has gradually increased to 369 by 1950 when the USSR enters the arms race with 6 weapons. At this point, the US starts to rapidly build its stockpile culminating in 32,040 warheads by 1966 compared to the USSR’s 7,089. From this peak in 1966, the US stockpile gradually decreases as the USSR’s stockpile expands. By 1978 the USSR has closed the nuclear gap at 25,393. The USSR stockpile continues to grow until it reaches a peak of 45,000 in 1986 compared to the US arsenal of 24,401. From 1986, the nuclear stockpiles of both countries start to fall. By 2000, the numbers have fallen to 10,577 and 21,000 for the US and Russia, respectively. The decreases continue until 2017 at which point the US holds 4,018 weapons compared to Russia’s 4,500.",
-            },
             title: {
                 text: "Predict course succesful completion",
+            },
+            subtitle: {
+                text: "Predict course successful completion [70]",
             },
             xAxis: {
                 allowDecimals: false,
@@ -4308,9 +4351,7 @@ let PredictCoursecompletionComponent = class PredictCoursecompletionComponent {
                     text: "Passing Rate",
                 },
             },
-            tooltip: {
-                pointFormat: "{series.name}  <b>{point.y:,.0f}</b><br/>  {point.x}",
-            },
+            tooltip: { enabled: false },
             plotOptions: {
                 area: {
                     pointStart: 0,
@@ -4385,84 +4426,515 @@ __webpack_require__.r(__webpack_exports__);
 let PredictExamSuccessComponent = class PredictExamSuccessComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             chart: {
-                type: 'column'
+                type: "column",
             },
             title: {
-                text: 'Predict exam success'
+                text: "Predict exam success",
             },
             xAxis: {
                 categories: [
-                    '# days of access',
-                    '# of logins',
-                    '# hours',
-                    '# posts viewed',
-                    '# posts created',
+                    "# days of access",
+                    "# of logins",
+                    "# hours",
+                    "# posts viewed",
+                    "# posts created",
                 ],
-                crosshair: true
+                crosshair: true,
             },
             yAxis: {
                 min: 0,
                 title: {
-                    text: 'Frequency'
+                    text: "Frequency",
                 },
-                plotLines: [{
+                plotLines: [
+                    {
                         value: 3,
                         width: 1,
-                        color: 'red',
-                        zIndex: 10
+                        color: "red",
+                        zIndex: 10,
                     },
                     {
                         value: 6,
                         width: 1,
-                        color: 'green',
-                        zIndex: 10
-                    }],
+                        color: "green",
+                        zIndex: 10,
+                    },
+                ],
             },
             tooltip: {
                 headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
                 pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
                     '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-                footerFormat: '</table>',
+                footerFormat: "</table>",
                 shared: true,
-                useHTML: true
+                useHTML: true,
             },
             plotOptions: {
                 column: {
                     pointPadding: 0.2,
-                    borderWidth: 0
-                }
+                    borderWidth: 0,
+                },
             },
-            series: [{
-                    name: 'Student 1',
-                    data: [4, 9, 7, 18, 4]
-                }, {
-                    name: 'Student 2',
-                    data: [3, 6, 3, 8, 1]
+            series: [
+                {
+                    name: "Student 1",
+                    data: [4, 9, 7, 18, 4],
                 },
                 {
-                    name: 'Student 3',
-                    data: [3, 2, 1, 2, 1]
-                }
-            ]
+                    name: "Student 2",
+                    data: [3, 6, 3, 8, 1],
+                },
+                {
+                    name: "Student 3",
+                    data: [3, 2, 1, 2, 1],
+                },
+            ],
         };
     }
 };
 PredictExamSuccessComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-predict-exam-success',
+        selector: "app-predict-exam-success",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./predict-exam-success.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/predict-exam-success/predict-exam-success.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./predict-exam-success.component.css */ "./src/app/charts/predict-exam-success/predict-exam-success.component.css")).default]
     })
 ], PredictExamSuccessComponent);
+
+
+
+/***/ }),
+
+/***/ "./src/app/charts/presentation-skills/presentation-skills.component.css":
+/*!******************************************************************************!*\
+  !*** ./src/app/charts/presentation-skills/presentation-skills.component.css ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NoYXJ0cy9wcmVzZW50YXRpb24tc2tpbGxzL3ByZXNlbnRhdGlvbi1za2lsbHMuY29tcG9uZW50LmNzcyJ9 */");
+
+/***/ }),
+
+/***/ "./src/app/charts/presentation-skills/presentation-skills.component.ts":
+/*!*****************************************************************************!*\
+  !*** ./src/app/charts/presentation-skills/presentation-skills.component.ts ***!
+  \*****************************************************************************/
+/*! exports provided: PresentationSkillsComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PresentationSkillsComponent", function() { return PresentationSkillsComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js");
+/* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+const More = __webpack_require__(/*! highcharts/highcharts-more */ "./node_modules/highcharts/highcharts-more.js");
+More(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+const Exporting = __webpack_require__(/*! highcharts/modules/exporting */ "./node_modules/highcharts/modules/exporting.js");
+Exporting(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+const ExportData = __webpack_require__(/*! highcharts/modules/export-data */ "./node_modules/highcharts/modules/export-data.js");
+ExportData(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+const Accessibility = __webpack_require__(/*! highcharts/modules/accessibility */ "./node_modules/highcharts/modules/accessibility.js");
+Accessibility(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+let PresentationSkillsComponent = class PresentationSkillsComponent {
+    constructor() {
+        this.TimeChartData = {
+            xData: [
+                0.001567, 0.011765, 0.022194, 0.032316, 0.04266, 0.063668, 0.074477,
+                0.085323, 0.09576, 0.106078, 0.116096, 0.137524, 0.148342, 0.159059,
+                0.170005, 0.180716, 0.191407, 0.212538, 0.222819, 0.233929, 0.244239,
+                0.255301, 0.266081, 0.287527, 0.298115, 0.309392, 0.320217, 0.330928,
+                0.341401, 0.361717, 0.372173, 0.382337, 0.39294, 0.403072, 0.413454,
+                0.434618, 0.444845, 0.455745, 0.465785, 0.475987, 0.486064, 0.507086,
+                0.517517, 0.527961, 0.538242, 0.548414, 0.558444, 0.578941, 0.589212,
+                0.599472, 0.60977, 0.620178, 0.630189, 0.650782, 0.661001, 0.671137,
+                0.681175, 0.691235, 0.702012, 0.722644, 0.733166, 0.743824, 0.754059,
+                0.764109, 0.774519, 0.795597, 0.805721, 0.81592, 0.826139, 0.836369,
+                0.846826, 0.86771, 0.87803, 0.888342, 0.898695, 0.908723, 0.91922,
+                0.939802, 0.950378, 0.960776, 0.971377, 0.981843, 0.992312, 1.013125,
+                1.023302, 1.033488, 1.043822, 1.054203, 1.065019, 1.086078, 1.09635,
+                1.106421, 1.117028, 1.127541, 1.138599, 1.159588, 1.170167, 1.180741,
+                1.190794, 1.201112, 1.211355, 1.233278, 1.243477, 1.254957, 1.265227,
+                1.276378, 1.285656, 1.297311, 1.308367, 1.318715, 1.329589, 1.340834,
+                1.352388, 1.375063, 1.385369, 1.396291, 1.408156, 1.418989, 1.429535,
+                1.451141, 1.462205, 1.473011, 1.483844, 1.494311, 1.514761, 1.525336,
+                1.535858, 1.546476, 1.557325, 1.567512, 1.590091, 1.600925, 1.612303,
+                1.622558, 1.633071, 1.643555, 1.66484, 1.675722, 1.685986, 1.696733,
+                1.706895, 1.719102, 1.741295, 1.752144, 1.762688, 1.773713, 1.784052,
+                1.795705, 1.817305, 1.827465, 1.838408, 1.849369, 1.860023, 1.871438,
+                1.89257, 1.90323, 1.914398, 1.924634, 1.934642, 1.945212, 1.966275,
+                1.976294, 1.986422, 1.996652, 2.008005, 2.018309, 2.041139, 2.051221,
+                2.0613, 2.072507, 2.08342, 2.094075, 2.114574, 2.125286, 2.135765,
+                2.146845, 2.157966, 2.169391, 2.190921, 2.200899, 2.212709, 2.222671,
+                2.232908, 2.244001, 2.264898, 2.275703, 2.286885, 2.298115, 2.310186,
+                2.32059, 2.344695, 2.354843, 2.366387, 2.379001, 2.390328, 2.402215,
+                2.423134, 2.433156, 2.444912, 2.457061, 2.468253, 2.478978, 2.499832,
+                2.513223, 2.52561, 2.538429, 2.548659, 2.560809, 2.581308, 2.592816,
+                2.603963, 2.615992, 2.626242, 2.638223, 2.660346, 2.671583, 2.681938,
+                2.69265, 2.70588, 2.716296, 2.740081, 2.75085, 2.761319, 2.772027,
+                2.782659, 2.793531, 2.816194, 2.828031, 2.839243, 2.851443, 2.863884,
+                2.874359, 2.895246, 2.906506, 2.91761, 2.92786, 2.938937, 2.950218,
+                2.973357, 2.98366, 2.994639, 3.005213, 3.01666, 3.02761, 3.050025,
+                3.061713, 3.071828, 3.082787, 3.093422, 3.105289, 3.127231, 3.138982,
+                3.149755, 3.160217, 3.171299, 3.191571, 3.202226, 3.213225, 3.223987,
+                3.234092, 3.244644, 3.265939, 3.276411, 3.286489, 3.297156, 3.307909,
+                3.319018, 3.34064, 3.351107, 3.361683, 3.373136, 3.384768, 3.395457,
+                3.417722, 3.429096, 3.439122, 3.449679, 3.459868, 3.469997, 3.492679,
+                3.503647, 3.514941, 3.525858, 3.538746, 3.550422, 3.572255, 3.58452,
+                3.595367, 3.605736, 3.617401, 3.628324, 3.652523, 3.663679, 3.67378,
+                3.684605, 3.695595, 3.705843, 3.728706, 3.739169, 3.750205, 3.761258,
+                3.771771, 3.781911, 3.804724, 3.81631, 3.826313, 3.837847, 3.85049,
+                3.860999, 3.88262, 3.892937, 3.903053, 3.913656, 3.924698, 3.935126,
+                3.956362, 3.966543, 3.976899, 3.98752, 3.997644, 4.008721, 4.029852,
+                4.040633, 4.051006, 4.06126, 4.071761, 4.083526, 4.10749, 4.117855,
+                4.128661, 4.13934, 4.151117, 4.1624, 4.184736, 4.194826, 4.205098,
+                4.215261, 4.225325, 4.236367, 4.262012, 4.273794, 4.285743, 4.297226,
+                4.308086, 4.318245, 4.340246, 4.351486, 4.363196, 4.374465, 4.387109,
+                4.398635, 4.421101, 4.432135, 4.444666, 4.456226, 4.467413, 4.477804,
+                4.498505, 4.510413, 4.522595, 4.534044, 4.545944, 4.558048, 4.580379,
+                4.59312, 4.605616, 4.618065, 4.631266, 4.644086, 4.667943, 4.67948,
+                4.691266, 4.703019, 4.715923, 4.725932, 4.752312, 4.765224, 4.777128,
+                4.787361, 4.800435, 4.823353, 4.836044, 4.848602, 4.860302, 4.871112,
+                4.882779, 4.904695, 4.914823, 4.927074, 4.938111, 4.949586, 4.960761,
+                4.982911, 4.9942, 5.004246, 5.016296, 5.027215, 5.038043, 5.058885,
+                5.070303, 5.080649, 5.093865, 5.104424, 5.114903, 5.134965, 5.146346,
+                5.15634, 5.168547, 5.179066, 5.191167, 5.214242, 5.224914, 5.237573,
+                5.249537, 5.261586, 5.272517, 5.296154, 5.306348, 5.316773, 5.327153,
+                5.339961, 5.350638, 5.376502, 5.389277, 5.402142, 5.412197, 5.42399,
+                5.434873, 5.458466, 5.470907, 5.482679, 5.493339, 5.50574, 5.516349,
+                5.538897, 5.549552, 5.56083, 5.571879, 5.583764, 5.59509, 5.619028,
+                5.629925, 5.640716, 5.650957, 5.661787, 5.671957, 5.693974, 5.704919,
+                5.717491, 5.731152, 5.744728, 5.755687, 5.778668, 5.791951, 5.80409,
+                5.815697, 5.828482, 5.840501, 5.864145, 5.875704, 5.887893, 5.900147,
+                5.912517, 5.924894, 5.948897, 5.959155, 5.970262, 5.981632, 5.992996,
+                6.00356, 6.027256, 6.038776, 6.050959, 6.061351, 6.071864, 6.082436,
+                6.104054, 6.115602, 6.127623, 6.139058, 6.150639, 6.161323, 6.183013,
+                6.194359, 6.206269, 6.218033, 6.2281, 6.240494, 6.262584, 6.275326,
+                6.287166, 6.298953, 6.310644, 6.321583, 6.345676, 6.356738, 6.366782,
+                6.377931, 6.388519, 6.397159,
+            ],
+            datasets: [
+                {
+                    name: "Voice level",
+                    data: [
+                        13.833, 12.524, 11.441, 10.651, 9.961, 4.566, 4.617, 4.728, 4.823,
+                        4.844, 4.856, 4.87, 4.702, 4.679, 4.674, 4.641, 4.47, 4.688, 4.798,
+                        4.756, 4.903, 4.919, 5.017, 4.938, 4.879, 4.831, 4.623, 3.887, 3.502,
+                        3.083, 3.123, 3.073, 2.922, 2.827, 2.805, 2.605, 2.743, 2.698, 2.513,
+                        2.41, 2.17, 2.288, 2.308, 2.222, 2.183, 2.224, 2.163, 2.223, 2.142,
+                        2.257, 2.015, 1.971, 1.894, 1.848, 1.835, 1.85, 2.036, 1.827, 1.904,
+                        1.803, 1.852, 1.866, 1.906, 1.956, 1.954, 1.734, 1.904, 1.899, 2.001,
+                        1.966, 1.844, 1.879, 1.856, 1.837, 1.827, 1.907, 1.729, 1.74, 1.68,
+                        1.797, 1.811, 1.941, 2.026, 2.217, 2.281, 2.517, 2.673, 2.702, 2.893,
+                        3.016, 3.073, 3.126, 3.283, 3.361, 3.33, 3.465, 3.916, 4.49, 5.074,
+                        5.717, 6.523, 7.012, 6.726, 7.095, 7.471, 7.824, 7.802, 4.441, 4.625,
+                        4.696, 4.861, 4.768, 4.889, 5.281, 5.36, 5.419, 5.137, 5.278, 5.151,
+                        4.934, 4.952, 4.742, 4.666, 4.525, 4.126, 4.228, 4.334, 4.383, 5.287,
+                        5.088, 5.28, 5.274, 5.251, 5.413, 5.365, 5.372, 5.512, 4.839, 5.099,
+                        5.196, 5.219, 5.094, 5.582, 5.91, 5.952, 6.012, 5.854, 5.789, 5.465,
+                        5.525, 5.659, 5.67, 5.173, 5.033, 5.318, 5.289, 5.226, 5.15, 5.106,
+                        4.989, 5.103, 5.288, 5.428, 5.363, 5.026, 5, 4.941, 4.872, 4.751,
+                        4.408, 4.425, 4.301, 4.134, 4.171, 4.272, 4.34, 4.543, 4.826, 5.381,
+                        5.374, 5.433, 5.483, 5.539, 5.869, 6.956, 7.443, 7.654, 8.005, 8.181,
+                        8.386, 9.202, 9.51, 9.66, 9.141, 8.79, 8.747, 8.949, 9.188, 9.625,
+                        10.154, 10.173, 10.361, 11.186, 11.226, 11.091, 10.899, 10.945,
+                        10.892, 9.618, 9.092, 8.465, 7.864, 7.396, 7.076, 7.053, 6.772, 6.958,
+                        7.202, 6.93, 6.857, 7.007, 7.059, 7.099, 7.025, 6.95, 7.116, 6.331,
+                        6.39, 6.571, 6.571, 6.604, 6.407, 6.371, 6.348, 6.348, 5.995, 6.162,
+                        6.287, 6.241, 6.033, 6.083, 6.313, 6.118, 5.78, 5.698, 5.804, 5.743,
+                        5.655, 5.976, 6.005, 6.06, 5.988, 6.021, 6.049, 5.882, 5.296, 5.142,
+                        4.701, 4.701, 4.647, 4.491, 4.48, 4.384, 4.263, 4.515, 4.721, 5.084,
+                        6.225, 6.302, 6.409, 6.52, 6.462, 6.525, 6.816, 6.656, 6.566, 6.34,
+                        6.177, 6.143, 7.462, 7.783, 7.885, 7.998, 8.182, 8.352, 8.32, 8.5,
+                        8.967, 8.474, 8.178, 7.89, 7.436, 7.634, 7.777, 7.628, 7.189, 6.787,
+                        6.048, 6.003, 6.189, 6.216, 6.389, 6.353, 7.341, 7.899, 7.849, 7.757,
+                        7.314, 7.134, 6.858, 6.689, 6.526, 5.909, 5.138, 4.617, 4.339, 4.558,
+                        4.493, 4.545, 4.419, 4.245, 4.468, 5.093, 5.737, 6.215, 6.613, 6.876,
+                        7.566, 7.586, 7.901, 7.736, 7.23, 6.703, 5.896, 5.73, 6.032, 6.263,
+                        6.458, 7.107, 7.766, 7.911, 7.794, 7.776, 7.876, 7.866, 7.462, 7.298,
+                        6.898, 6.62, 6.747, 7.285, 8.139, 8.411, 8.776, 8.946, 9.155, 9.296,
+                        10.15, 9.96, 9.885, 9.99, 10.203, 10.401, 10.935, 11.071, 11.274,
+                        11.566, 11.851, 12.187, 12.363, 12.426, 12.478, 12.486, 12.117,
+                        12.132, 11.791, 11.332, 11.441, 11.38, 11.309, 10.985, 10.627, 10.355,
+                        9.899, 9.833, 9.747, 9.693, 9.514, 9.502, 9.888, 9.98, 10.255, 10.667,
+                        10.531, 10.452, 10.267, 10.2, 10.437, 10.553, 10.577, 10.661, 11.022,
+                        11.213, 11.311, 11.572, 11.708, 11.176, 10.857, 10.754, 10.629,
+                        10.185, 10.052, 10.083, 10.31, 10.478, 10.626, 11.121, 11.141, 11.221,
+                        11.299, 11.435, 11.599, 11.353, 11.299, 11.288, 11.279, 11.208,
+                        11.307, 11.685, 11.58, 11.379, 11.096, 11.144, 10.947, 10.699, 10.881,
+                        10.746, 10.276, 9.994, 9.629, 9.76, 9.749, 10.012, 10.184, 10.336,
+                        10.473, 10.848, 11.349, 11.978, 12.167, 12.327, 12.339, 12.064, 12.09,
+                        12.12, 11.94, 11.562, 11.208, 10.974, 10.948, 10.983, 10.76, 10.694,
+                        10.534, 10.273, 10.364, 10.421, 10.357, 10.316, 10.472, 10.94, 11.314,
+                        11.485, 11.488, 11.606, 11.479, 11.091, 11.288, 11.354, 11.501,
+                        11.302, 10.968, 11.026, 10.944, 11.08, 11.388, 11.504, 11.279, 10.683,
+                        10.533, 10.505, 10.305, 10.146, 10.148, 9.501, 9.366, 9.23, 9.067,
+                        8.956, 8.935,
+                    ],
+                    unit: "db",
+                    type: "line",
+                    valueDecimals: 1,
+                },
+                {
+                    name: "Number of gestures",
+                    data: [
+                        26.857, 27, 27.111, 27.2, 27.272, 30.545, 32.181, 33.818, 35.272,
+                        36.545, 37.818, 41.818, 44.545, 47.272, 48.545, 49.818, 53.545, 61,
+                        64.909, 68.818, 72.727, 75.09, 77.454, 82.181, 84.545, 84.454, 86.181,
+                        87.909, 89.636, 93.09, 96.727, 100.363, 104, 107.636, 111.272,
+                        116.727, 121.09, 125.454, 129.818, 134.181, 136.727, 151.636, 159.09,
+                        166.545, 174, 181.454, 186.363, 201.636, 209.272, 216.909, 222.818,
+                        228.727, 234.636, 249.363, 258.181, 267, 273.09, 279.181, 288.181,
+                        303, 308.818, 314.636, 326.909, 336.272, 345.636, 364.363, 373.727,
+                        380.181, 389.818, 399.454, 409.09, 425.727, 432.727, 439.727, 446.727,
+                        453.727, 460.727, 473.272, 478.818, 484.363, 489.909, 491.636,
+                        493.363, 498.272, 500.727, 503.181, 506.454, 508, 509.545, 512.636,
+                        514.363, 516.09, 517.909, 519.727, 521.545, 525.636, 527.272, 528.909,
+                        529.636, 530.363, 530.909, 531.181, 531.3, 531.444, 530.75, 529.857,
+                        528.666, 521, 521, 521.777, 522.4, 522.909, 522.818, 522.636, 522.545,
+                        522.454, 522.363, 522.272, 522.181, 520.727, 520.545, 521.09, 521.636,
+                        522.181, 523.272, 523.818, 524.363, 524.909, 525.454, 528.09, 532.272,
+                        534.363, 536.454, 537.909, 539.363, 540.818, 543.727, 545.909,
+                        544.818, 543.727, 542.636, 541.545, 540, 539.545, 539.09, 538.636,
+                        537.272, 535.181, 533.363, 532.454, 531.545, 530.636, 529.727,
+                        528.818, 526.272, 525.909, 525.545, 525.181, 524.818, 524.454,
+                        523.727, 522.363, 521, 520, 519, 516.545, 511.636, 510.636, 509.636,
+                        506.909, 504.181, 502.454, 499, 497.272, 497, 496.727, 497.454,
+                        496.727, 493.818, 491.636, 489.454, 487.272, 487.09, 486.909, 486.545,
+                        485.363, 484.181, 484.09, 481.545, 479, 478.181, 477.909, 477.636,
+                        477.363, 477.09, 476.818, 476.363, 481.818, 487.272, 492.727, 493.909,
+                        493.181, 491.727, 491, 490.272, 489.545, 487.636, 485.727, 482.363,
+                        474.454, 468.454, 462.454, 456.454, 450.454, 439.727, 435, 430.272,
+                        425.545, 418.727, 418.363, 418.545, 419.09, 419.636, 420.181, 419.454,
+                        418.727, 413.818, 413, 412.181, 411.363, 409.636, 407.909, 405,
+                        403.818, 397.454, 392.818, 388.181, 383.545, 374.272, 369.636, 365,
+                        358.363, 351.181, 344, 340, 338, 336, 334, 332, 328.636, 323.909,
+                        322.545, 321.181, 319.818, 318.272, 315.181, 313.636, 312.09, 311.909,
+                        311.727, 310.545, 308.181, 307, 306, 305, 302.818, 300.636, 297.545,
+                        296.636, 296.727, 296.181, 295.636, 295.09, 294, 294.636, 293.09,
+                        291.545, 291.545, 291.545, 292.181, 292.818, 293.454, 294.09, 292.545,
+                        291, 292.272, 292.363, 292.454, 292.545, 289.818, 287.09, 281.636,
+                        281.09, 280.545, 277, 273.454, 271.454, 267.454, 265.181, 262.909,
+                        260.636, 258.363, 256.09, 248.909, 246.818, 240.909, 235, 229.09,
+                        226.272, 220.636, 217.818, 215, 215, 211.545, 208.09, 201.181,
+                        197.727, 194.272, 190.818, 187.363, 183.909, 170.818, 173, 175.181,
+                        177.363, 179.545, 181.727, 186.09, 182.727, 179.363, 179.09, 178.818,
+                        173.272, 160.272, 152.818, 145.363, 137.909, 130.454, 126.818,
+                        116.272, 111, 107.363, 101.909, 98.363, 94.818, 87, 82.818, 80.363,
+                        79.545, 78.272, 77, 73, 71.454, 69.636, 67.909, 66.727, 65.454,
+                        62.909, 62.09, 61.272, 60.363, 59.454, 59, 58.545, 58.272, 58.09,
+                        57.909, 57.727, 57.545, 57.272, 57.181, 56.909, 56.636, 56.454,
+                        56.272, 55.909, 55.727, 55.818, 55.545, 55.272, 54.909, 54.818,
+                        54.727, 54.636, 54.545, 54.454, 54, 54, 54, 54, 54, 53.636, 52.909,
+                        52.545, 52.636, 52.727, 52.818, 52.909, 52.636, 52.272, 52.272,
+                        52.272, 52.272, 52.818, 53, 53.09, 53.181, 53.272, 53.818, 54.363,
+                        55.09, 55.454, 55.272, 55.09, 54.909, 54.727, 54.363, 53.727, 53.09,
+                        52.636, 52.181, 51.727, 50.818, 50.363, 50.363, 50.363, 50.363,
+                        50.818, 51.727, 51.272, 50.818, 50.363, 50.636, 50.909, 50.545,
+                        50.363, 50.181, 50, 49.818, 50.818, 52.818, 53.09, 53.363, 53.636,
+                        53.909, 54.181, 53.272, 52.818, 52.09, 51.363, 50.636, 49.909, 47.818,
+                        46.09, 44.363, 43.363, 42.363, 41.363, 39.363, 37.636, 35.909, 35.181,
+                        35.09, 35.363, 35.909, 36.181, 36.545, 36.909, 37.272, 38.363, 39.545,
+                        39.636, 39.727, 39.818, 38.636, 37.454, 34.909, 33.636, 32.363, 31.09,
+                        29.818, 27.181, 21.909, 20.545, 19.181, 17.818, 16.454, 15.09, 10.727,
+                        8.545, 8.636, 8.727, 8.818, 8.909, 9.09, 8.9, 8.666, 9.5, 10.571, 12,
+                    ],
+                    unit: "",
+                    type: "area",
+                    valueDecimals: 0,
+                },
+                {
+                    name: "Heart rate",
+                    data: [
+                        101, 98, 103, 115, 124, 128, 133, 138, 138, 141, 143, 149, 149, 148,
+                        146, 147, 152, 149, 155, 152, 153, 153, 156, 152, 151, 151, 149, 148,
+                        150, 157, 161, 156, 160, 158, 156, 159, 164, 162, 160, 165, 165, 167,
+                        167, 163, 166, 165, 161, 164, 163, 164, 162, 163, 164, 166, 166, 166,
+                        166, 166, 164, 167, 166, 162, 164, 163, 161, 166, 168, 168, 169, 169,
+                        165, 166, 167, 163, 167, 167, 169, 171, 167, 169, 171, 175, 174, 167,
+                        168, 171, 167, 169, 169, 167, 166, 165, 163, 161, 163, 166, 162, 164,
+                        166, 162, 162, 164, 163, 162, 162, 163, 161, 121, 121, 121, 121, 121,
+                        121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121,
+                        121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 121, 113, 117, 121,
+                        119, 117, 120, 121, 124, 125, 127, 125, 129, 130, 131, 135, 135, 135,
+                        135, 134, 136, 139, 142, 142, 145, 145, 150, 153, 155, 156, 157, 157,
+                        154, 153, 152, 148, 130, 123, 123, 120, 123, 119, 115, 114, 114, 115,
+                        115, 113, 112, 111, 113, 113, 113, 113, 110, 110, 109, 110, 110, 109,
+                        108, 108, 109, 107, 107, 107, 109, 109, 111, 111, 111, 111, 111, 112,
+                        112, 112, 112, 112, 114, 113, 113, 113, 113, 113, 113, 112, 111, 114,
+                        118, 124, 127, 128, 128, 129, 131, 133, 131, 130, 133, 130, 136, 135,
+                        135, 136, 136, 135, 136, 135, 134, 135, 137, 138, 139, 138, 134, 130,
+                        130, 129, 129, 132, 132, 131, 130, 133, 132, 132, 128, 128, 132, 132,
+                        128, 128, 129, 130, 130, 130, 130, 131, 133, 134, 132, 132, 130, 131,
+                        129, 133, 133, 130, 130, 133, 133, 131, 130, 130, 130, 129, 129, 129,
+                        126, 128, 126, 129, 129, 124, 125, 120, 120, 123, 125, 125, 124, 124,
+                        125, 125, 126, 126, 126, 127, 126, 130, 134, 135, 126, 123, 124, 123,
+                        127, 130, 130, 132, 133, 133, 133, 133, 130, 130, 129, 128, 124, 123,
+                        124, 124, 127, 135, 139, 139, 134, 134, 133, 130, 130, 127, 129, 126,
+                        126, 126, 129, 129, 123, 123, 128, 128, 125, 125, 125, 123, 123, 122,
+                        122, 122, 125, 125, 125, 126, 126, 128, 128, 129, 129, 124, 125, 125,
+                        125, 129, 131, 131, 131, 131, 131, 131, 131, 129, 129, 126, 126, 126,
+                        126, 126, 125, 125, 126, 126, 126, 125, 126, 127, 130, 130, 130, 130,
+                        132, 132, 132, 132, 132, 132, 129, 130, 132, 133, 132, 132, 129, 128,
+                        128, 132, 133, 135, 137, 138, 139, 139, 142, 142, 141, 143, 144, 144,
+                        143, 145, 145, 147, 150, 153, 158, 159, 160, 159, 160, 160, 160, 162,
+                        162, 163, 162, 161, 161, 162, 161, 164, 166, 166, 165, 162, 162, 159,
+                        157, 160, 159, 160, 160, 161, 161, 162, 162, 163, 163, 165, 166, 166,
+                        164, 164, 166, 165, 166, 163, 162, 162, 161, 159, 159, 159, 159, 159,
+                        156, 154, 153, 152, 152, 151, 154, 153, 151, 151,
+                    ],
+                    unit: "bpm",
+                    type: "area",
+                    valueDecimals: 0,
+                },
+            ],
+        };
+        this.activity = this.TimeChartData;
+    }
+    ngOnInit() {
+        ["mousemove", "touchmove", "touchstart"].forEach(function (eventType) {
+            document
+                .getElementById("container")
+                .addEventListener(eventType, function (e) {
+                var chart, point, i, event;
+                for (i = 0; i < highcharts__WEBPACK_IMPORTED_MODULE_2__["charts"].length; i = i + 1) {
+                    chart = highcharts__WEBPACK_IMPORTED_MODULE_2__["charts"][i];
+                    // Find coordinates within the chart
+                    event = chart.pointer.normalize(e);
+                    // Get the hovered point
+                    point = chart.series[0].searchPoint(event, true);
+                    if (point) {
+                        point.highlight(e);
+                    }
+                }
+            });
+        });
+        function syncExtremes(e) {
+            var thisChart = this.chart;
+            if (e.trigger !== "syncExtremes") {
+                // Prevent feedback loop
+                highcharts__WEBPACK_IMPORTED_MODULE_2__["each"](highcharts__WEBPACK_IMPORTED_MODULE_2__["charts"], function (chart) {
+                    if (chart !== thisChart) {
+                        if (chart.xAxis[0].setExtremes) {
+                            // It is null while updating
+                            chart.xAxis[0].setExtremes(e.min, e.max, undefined, false, {
+                                trigger: "syncExtremes",
+                            });
+                        }
+                    }
+                });
+            }
+        }
+        highcharts__WEBPACK_IMPORTED_MODULE_2__["Pointer"].prototype.reset = function () {
+            return undefined;
+        };
+        highcharts__WEBPACK_IMPORTED_MODULE_2__["Point"].prototype.select = function (event) {
+            event = this.series.chart.pointer.normalize(event);
+            this.onMouseOver(); // Show the hover marker
+            this.series.chart.tooltip.refresh(this); // Show the tooltip
+            this.series.chart.xAxis[0].drawCrosshair(event, this); // Show the crosshair
+        };
+        this.xData = this.activity.xData;
+        let that = this;
+        if (this.activity) {
+            this.activity.datasets.forEach(function (dataset, i) {
+                dataset.data = highcharts__WEBPACK_IMPORTED_MODULE_2__["map"](dataset.data, function (val, j) {
+                    return [that.xData[j], val];
+                });
+                var chartDiv = document.createElement("div");
+                chartDiv.className = "chart";
+                document.getElementById("container").appendChild(chartDiv);
+                highcharts__WEBPACK_IMPORTED_MODULE_2__["chart"](chartDiv, {
+                    chart: {
+                        marginLeft: 40,
+                        spacingTop: 20,
+                        spacingBottom: 20,
+                        height: 230,
+                    },
+                    title: {
+                        text: dataset.name,
+                        align: "left",
+                        margin: 0,
+                        x: 30,
+                    },
+                    subtitle: {
+                        text: "Presentation skills [35], Presentation skills [40]",
+                    },
+                    credits: {
+                        enabled: false,
+                    },
+                    legend: {
+                        enabled: false,
+                    },
+                    xAxis: {
+                        crosshair: true,
+                        events: {
+                            setExtremes: syncExtremes,
+                        },
+                        labels: {
+                            format: "{value} min",
+                        },
+                    },
+                    yAxis: {
+                        title: {
+                            text: null,
+                        },
+                    },
+                    tooltip: {
+                        positioner: function () {
+                            return {
+                                // right aligned
+                                x: this.chart.chartWidth - 200,
+                                y: 10,
+                            };
+                        },
+                        borderWidth: 0,
+                        backgroundColor: "none",
+                        pointFormat: "{point.y}",
+                        headerFormat: "",
+                        shadow: false,
+                        style: {
+                            fontSize: "18px",
+                        },
+                        valueDecimals: dataset.valueDecimals,
+                    },
+                    series: [
+                        {
+                            data: dataset.data,
+                            name: dataset.name,
+                            type: dataset.type,
+                            color: highcharts__WEBPACK_IMPORTED_MODULE_2__["getOptions"]().colors[i],
+                            fillOpacity: 0.3,
+                            tooltip: {
+                                valueSuffix: " " + dataset.unit,
+                            },
+                        },
+                    ],
+                });
+            });
+        }
+    }
+};
+PresentationSkillsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: "app-presentation-skills",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./presentation-skills.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/presentation-skills/presentation-skills.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./presentation-skills.component.css */ "./src/app/charts/presentation-skills/presentation-skills.component.css")).default]
+    })
+], PresentationSkillsComponent);
 
 
 
@@ -4504,45 +4976,46 @@ __webpack_require__.r(__webpack_exports__);
 let ProcrastinationComponent = class ProcrastinationComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        this.chartOptions = {
+        (this.chartOptions = {
             chart: {
-                type: 'scatter',
-                zoomType: 'xy'
+                type: "scatter",
+                zoomType: "xy",
             },
             title: {
-                text: 'Procrastination'
+                text: "Procrastination",
+            },
+            subtitle: {
+                text: "Procrastination [102] Performance [102], Procrastination [107]",
             },
             xAxis: {
                 title: {
                     enabled: true,
-                    text: 'Days until course material access after semester start'
+                    text: "Days until course material access after semester start",
                 },
                 startOnTick: true,
                 endOnTick: true,
-                showLastLabel: true
+                showLastLabel: true,
             },
             yAxis: {
                 title: {
-                    text: 'Score'
+                    text: "Score",
                 },
-                max: 100
+                max: 100,
             },
             legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'top',
+                layout: "vertical",
+                align: "right",
+                verticalAlign: "top",
                 x: 10,
                 y: 90,
                 floating: true,
                 backgroundColor: highcharts__WEBPACK_IMPORTED_MODULE_2__["defaultOptions"].chart.backgroundColor,
-                borderWidth: 1
+                borderWidth: 1,
             },
             plotOptions: {
                 scatter: {
@@ -4551,36 +5024,66 @@ let ProcrastinationComponent = class ProcrastinationComponent {
                         states: {
                             hover: {
                                 enabled: true,
-                                lineColor: 'rgb(100,100,100)'
-                            }
-                        }
+                                lineColor: "rgb(100,100,100)",
+                            },
+                        },
                     },
                     states: {
                         hover: {
                             marker: {
-                                enabled: false
-                            }
-                        }
+                                enabled: false,
+                            },
+                        },
                     },
                     tooltip: {
-                        headerFormat: '<b>{series.name}</b><br>',
-                        pointFormat: '{point.x} days: {point.y} points'
-                    }
-                }
+                        headerFormat: "<b>{series.name}</b><br>",
+                        pointFormat: "{point.x} days: {point.y} points",
+                    },
+                },
             },
-            series: [{
-                    name: 'Student',
-                    color: 'rgba(223, 83, 83, .5)',
-                    data: [[1, 100], [1, 89], [1, 93], [1, 87], [1, 70], [2, 84], [2, 72], [2, 55], [3, 31], [3, 45], [3, 72], [3, 88], [4, 55], [4, 11],
-                        [4, 85], [4, 52], [5, 50], [5, 42], [5, 33], [6, 33], [6, 52], [7, 33], [8, 20], [9, 15], [9, 23], [10, 14], [11, 3], [12, 0]]
-                }]
-        },
+            series: [
+                {
+                    name: "Student",
+                    color: "rgba(223, 83, 83, .5)",
+                    data: [
+                        [1, 100],
+                        [1, 89],
+                        [1, 93],
+                        [1, 87],
+                        [1, 70],
+                        [2, 84],
+                        [2, 72],
+                        [2, 55],
+                        [3, 31],
+                        [3, 45],
+                        [3, 72],
+                        [3, 88],
+                        [4, 55],
+                        [4, 11],
+                        [4, 85],
+                        [4, 52],
+                        [5, 50],
+                        [5, 42],
+                        [5, 33],
+                        [6, 33],
+                        [6, 52],
+                        [7, 33],
+                        [8, 20],
+                        [9, 15],
+                        [9, 23],
+                        [10, 14],
+                        [11, 3],
+                        [12, 0],
+                    ],
+                },
+            ],
+        }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
 };
 ProcrastinationComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-procrastination',
+        selector: "app-procrastination",
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./procrastination.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/charts/procrastination/procrastination.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./procrastination.component.css */ "./src/app/charts/procrastination/procrastination.component.css")).default]
     })
@@ -4623,19 +5126,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const Draggable = __webpack_require__(/*! highcharts/modules/draggable-points.js */ "./node_modules/highcharts/modules/draggable-points.js");
+Draggable(highcharts__WEBPACK_IMPORTED_MODULE_2__);
 let ReadingAnalyticsComponent = class ReadingAnalyticsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         this.chartOptions = {
             title: {
                 text: "Reading analytics",
+            },
+            subtitle: {
+                text: "Reading analytics [134], Performance rating [128] Engagement rating [128] Active reading rating [128] Attendance rating [128], Reading Analytics [114] Ideal reading material [114]",
             },
             xAxis: {
                 categories: [
@@ -4652,6 +5158,17 @@ let ReadingAnalyticsComponent = class ReadingAnalyticsComponent {
                     "Nov",
                     "Dec",
                 ],
+            },
+            plotOptions: {
+                series: {
+                    stickyTracking: false,
+                    dragDrop: {
+                        draggableY: true,
+                    },
+                },
+                spline: {
+                    cursor: "ns-resize",
+                },
             },
             series: [
                 {
@@ -4726,11 +5243,9 @@ highcharts_highcharts_more__WEBPACK_IMPORTED_MODULE_4___default()(highcharts__WE
 let SelfMotivationComponent = class SelfMotivationComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -4740,6 +5255,9 @@ let SelfMotivationComponent = class SelfMotivationComponent {
             },
             title: {
                 text: "Self-motivation, Self-regulated learning",
+            },
+            subtitle: {
+                text: "Self-motivation [139] Self-regulated Learning [139]",
             },
             xAxis: {
                 categories: [
@@ -4764,7 +5282,7 @@ let SelfMotivationComponent = class SelfMotivationComponent {
             },
             tooltip: {
                 shared: true,
-                pointFormat: '<span style="color:{series.color}">{series.name}: <b>${point.y:,.0f}</b><br/>',
+                pointFormat: '<span style="color:{series.color}">{series.name}: <b>{point.y:,.0f}</b><br/>',
             },
             legend: {
                 align: "right",
@@ -4835,36 +5353,20 @@ __webpack_require__.r(__webpack_exports__);
 let SocialAnalysisComponent = class SocialAnalysisComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
-            /*  series: [{
-              type: 'pie',
-              allowPointSelect: true,
-              keys: ['name', 'y', 'selected', 'sliced'],
-              data: [
-                  ['# emails received on social media', 29, false],
-                  ['# emails sent on social media', 71.5, false],
-                  ['# wall posts received', 106.4, false],
-                  ['# status messages posted', 129.2, false],
-                  ['# links shared', 144.0, false],
-                  ['# networks joined', 176.0, false],
-                  ['# friends / connections', 135.6, true, true],
-                  ['# posts written', 148.5, false]
-              ],
-              showInLegend: true
-          }]
-      */
             chart: {
                 type: "bar",
             },
             title: {
                 text: "Social network analysis",
+            },
+            subtitle: {
+                text: "Social Network analysis [63]",
             },
             xAxis: {
                 categories: [
@@ -5042,11 +5544,9 @@ Object(_nodeFormatter__WEBPACK_IMPORTED_MODULE_5__["default"])(highcharts__WEBPA
 let SocialNetworkAnalysisComponent = class SocialNetworkAnalysisComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -5055,6 +5555,9 @@ let SocialNetworkAnalysisComponent = class SocialNetworkAnalysisComponent {
             },
             title: {
                 text: "Social Network Analysis",
+            },
+            subtitle: {
+                text: "Long Term Engagement [90] Social Network Analysis [90], Online Discussion (forum) Behavior [52]",
             },
             plotOptions: {
                 networkgraph: {
@@ -5154,12 +5657,10 @@ __webpack_require__.r(__webpack_exports__);
 let StudentComparisonComponent = class StudentComparisonComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.selectedOption = "Clicks";
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -5169,6 +5670,9 @@ let StudentComparisonComponent = class StudentComparisonComponent {
             },
             title: {
                 text: "Student comparison",
+            },
+            subtitle: {
+                text: "Student comparison [130] Grade prediction [130] Self-motivation [130], Student performance [126] Student comparison [126], Academic performance [129] Learning strategies [129], Performance [25], Performance [50]",
             },
             xAxis: {
                 categories: [
@@ -5284,11 +5788,9 @@ __webpack_require__.r(__webpack_exports__);
 let StudentInteractionPatternsComponent = class StudentInteractionPatternsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
         //Option to allow export of chart
     }
     setData() {
@@ -5299,6 +5801,9 @@ let StudentInteractionPatternsComponent = class StudentInteractionPatternsCompon
             },
             title: {
                 text: "Student interaction patterns",
+            },
+            subtitle: {
+                text: "Student interaction patterns (Relation to performance) [127], Student Interaction Patterns [121]",
             },
             credits: {
                 enabled: false,
@@ -5418,11 +5923,9 @@ __webpack_require__.r(__webpack_exports__);
 let TimeDistributionComponent = class TimeDistributionComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -5431,6 +5934,9 @@ let TimeDistributionComponent = class TimeDistributionComponent {
             },
             title: {
                 text: "Time distribution",
+            },
+            subtitle: {
+                text: "Time Distribution [39] Resource Usage Awareness [39] Self-reflection [39]",
             },
             xAxis: {
                 categories: [
@@ -5531,15 +6037,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const drilldown = __webpack_require__(/*! highcharts/modules/drilldown.js */ "./node_modules/highcharts/modules/drilldown.js");
+drilldown(highcharts__WEBPACK_IMPORTED_MODULE_2__);
 let TimePlanningComponent = class TimePlanningComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         //Set the chart data after we get the indicator and metrics
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -5551,6 +6057,9 @@ let TimePlanningComponent = class TimePlanningComponent {
             },
             title: {
                 text: "Time planning",
+            },
+            subtitle: {
+                text: "Collaborative Learning [47] Time Planning [47], Temporal Analysis [68], Recommendations for successful course completion [125] Self-regulation [125] Timeline (status and goal) [125]",
             },
             tooltip: {
                 pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
@@ -5575,22 +6084,62 @@ let TimePlanningComponent = class TimePlanningComponent {
                     colorByPoint: true,
                     data: [
                         {
-                            name: "time spent on reading",
+                            name: "Time spent on reading",
                             y: 61.41,
                             sliced: true,
                             selected: true,
+                            drilldown: "reading",
                         },
                         {
-                            name: "time spent on planning",
+                            name: "Time spent on planning",
                             y: 11.84,
+                            drilldown: "planning",
                         },
                         {
-                            name: "time spent on discussion forum",
+                            name: "Time spent on discussion forum",
                             y: 10.85,
+                            drilldown: "forum",
                         },
                     ],
                 },
             ],
+            drilldown: {
+                series: [
+                    {
+                        name: "Time spent on reading per day",
+                        id: "reading",
+                        data: [
+                            ["Monday", 22],
+                            ["Tuesday", 15],
+                            ["Wednesday", 10],
+                            ["Thursday", 33],
+                            ["Friday", 20],
+                        ],
+                    },
+                    {
+                        name: "Time spent on planning per day",
+                        id: "planning",
+                        data: [
+                            ["Monday", 38],
+                            ["Tuesday", 22],
+                            ["Wednesday", 8],
+                            ["Thursday", 20],
+                            ["Friday", 12],
+                        ],
+                    },
+                    {
+                        name: "Time spent on forum per day",
+                        id: "forum",
+                        data: [
+                            ["Monday", 29],
+                            ["Tuesday", 30],
+                            ["Wednesday", 15],
+                            ["Thursday", 20],
+                            ["Friday", 6],
+                        ],
+                    },
+                ],
+            },
         }),
             highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
     }
@@ -5643,11 +6192,9 @@ __webpack_require__.r(__webpack_exports__);
 let VideoAnalyticsComponent = class VideoAnalyticsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
@@ -5789,16 +6336,17 @@ __webpack_require__.r(__webpack_exports__);
 let VideoEngagementsComponent = class VideoEngagementsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
         (this.chartOptions = {
             title: {
                 text: "Video engagements",
+            },
+            subtitle: {
+                text: "Video engagements / analytics [138], Video analytics (Self-reflection) [72], Comment Analytics (Youtube Videos) [116]",
             },
             yAxis: {
                 title: {
@@ -5897,73 +6445,731 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! highcharts */ "./node_modules/highcharts/highcharts.js");
 /* harmony import */ var highcharts__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(highcharts__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! highcharts/modules/exporting */ "./node_modules/highcharts/modules/exporting.js");
-/* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3__);
 
 
 
-
+const drilldown = __webpack_require__(/*! highcharts/modules/drilldown.js */ "./node_modules/highcharts/modules/drilldown.js");
+drilldown(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+const heatmap = __webpack_require__(/*! highcharts/modules/heatmap.js */ "./node_modules/highcharts/modules/heatmap.js");
+heatmap(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+const treemap = __webpack_require__(/*! highcharts/modules/treemap.js */ "./node_modules/highcharts/modules/treemap.js");
+treemap(highcharts__WEBPACK_IMPORTED_MODULE_2__);
 let WritingAnalyticsComponent = class WritingAnalyticsComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
-        this.loadChart = false;
     }
     ngOnInit() {
         this.setData();
-        this.loadChart = true;
     }
     setData() {
-        (this.chartOptions = {
+        this.chartOptions = {
             chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: "pie",
-            },
-            title: {
-                text: "Writing analytics",
-            },
-            tooltip: {
-                pointFormat: "{series.name}: <b>{point.percentage:.1f}%</b>",
-            },
-            accessibility: {
-                point: {
-                    valueSuffix: "%",
+                plotBorderWidth: 1,
+                events: {
+                    drilldown: function (e) {
+                        let chart = this;
+                        chart.tooltip.options.enabled = false;
+                        chart.yAxis[0].update({
+                            type: "linear",
+                            categories: false,
+                        });
+                    },
+                    drillup: function (e) {
+                        let chart = this;
+                        chart.tooltip.options.enabled = true;
+                        chart.yAxis[0].update({
+                            this: "category",
+                            categories: [
+                                "Monday",
+                                "Tuesday",
+                                "Wednesday",
+                                "Thursday",
+                                "Friday",
+                            ],
+                        });
+                    },
                 },
             },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: "pointer",
-                    dataLabels: {
-                        enabled: true,
-                        format: "<b>{point.name}</b>: {point.percentage:.1f} %",
-                    },
+            title: {
+                text: "Writing analytics (Group edits per day)",
+            },
+            subtitle: {
+                text: "Writing analytics [61] Collaboration network [61], Writing Engagement [48], Writing Analysis [89] Reflective Writing [89], Affective State [85] Text Analysis [85]",
+            },
+            xAxis: {
+                type: "category",
+            },
+            yAxis: {
+                type: "category",
+                categories: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                title: null,
+            },
+            colorAxis: {
+                min: 0,
+                minColor: "#FFFFFF",
+                maxColor: highcharts__WEBPACK_IMPORTED_MODULE_2__["getOptions"]().colors[0],
+            },
+            legend: {
+                align: "right",
+                layout: "vertical",
+                margin: 0,
+                verticalAlign: "top",
+                y: 25,
+                symbolHeight: 280,
+            },
+            tooltip: {
+                formatter: function () {
+                    return ("The group had " +
+                        "<b>" +
+                        this.point.value +
+                        "</b> edits on <br><b>" +
+                        this.series.yAxis.categories[this.point.y] +
+                        "</b>");
                 },
             },
             series: [
                 {
-                    colorByPoint: true,
+                    type: "heatmap",
+                    name: "Group Edits",
+                    borderWidth: 1,
                     data: [
                         {
-                            name: "document revisions",
-                            sliced: true,
-                            selected: true,
-                            y: 51.84,
+                            x: 0,
+                            y: 0,
+                            name: "Group 1",
+                            value: 10,
+                            drilldown: "group1Monday",
                         },
                         {
-                            name: "student most edits",
-                            y: 10.85,
+                            x: 0,
+                            y: 1,
+                            name: "Group 1",
+                            value: 19,
+                            drilldown: "group1Tuesday",
                         },
                         {
-                            name: "student least edits",
-                            y: 4.67,
+                            x: 0,
+                            y: 2,
+                            name: "Group 1",
+                            value: 8,
+                            drilldown: "group1Wednesday",
+                        },
+                        {
+                            x: 0,
+                            y: 3,
+                            name: "Group 1",
+                            value: 24,
+                            drilldown: "group1Thursday",
+                        },
+                        {
+                            x: 0,
+                            y: 4,
+                            name: "Group 1",
+                            value: 67,
+                            drilldown: "group1Friday",
+                        },
+                        {
+                            x: 1,
+                            y: 0,
+                            name: "Group 2",
+                            value: 92,
+                            drilldown: "group2Monday",
+                        },
+                        {
+                            x: 1,
+                            y: 1,
+                            name: "Group 2",
+                            value: 58,
+                            drilldown: "group2Tuesday",
+                        },
+                        {
+                            x: 1,
+                            y: 2,
+                            name: "Group 2",
+                            value: 78,
+                            drilldown: "group2Wednesday",
+                        },
+                        {
+                            x: 1,
+                            y: 3,
+                            name: "Group 2",
+                            value: 117,
+                            drilldown: "group2Thursday",
+                        },
+                        {
+                            x: 1,
+                            y: 4,
+                            name: "Group 2",
+                            value: 48,
+                            drilldown: "group2Friday",
+                        },
+                        {
+                            x: 2,
+                            y: 0,
+                            name: "Group 3",
+                            value: 35,
+                            drilldown: "group3Monday",
+                        },
+                        {
+                            x: 2,
+                            y: 1,
+                            name: "Group 3",
+                            value: 15,
+                            drilldown: "group3Tuesday",
+                        },
+                        {
+                            x: 2,
+                            y: 2,
+                            name: "Group 3",
+                            value: 123,
+                            drilldown: "group3Wednesday",
+                        },
+                        {
+                            x: 2,
+                            y: 3,
+                            name: "Group 3",
+                            value: 64,
+                            drilldown: "group3Thursday",
+                        },
+                        {
+                            x: 2,
+                            y: 4,
+                            name: "Group 3",
+                            value: 52,
+                            drilldown: "group3Friday",
+                        },
+                        {
+                            x: 3,
+                            y: 0,
+                            name: "Group 4",
+                            value: 72,
+                            drilldown: "group4Monday",
+                        },
+                        {
+                            x: 3,
+                            y: 1,
+                            name: "Group 4",
+                            value: 132,
+                            drilldown: "group4Tuesday",
+                        },
+                        {
+                            x: 3,
+                            y: 2,
+                            name: "Group 4",
+                            value: 116,
+                            drilldown: "group4Wednesday",
+                        },
+                        {
+                            x: 3,
+                            y: 3,
+                            name: "Group 4",
+                            value: 42,
+                            drilldown: "group4Thursday",
+                        },
+                        {
+                            x: 3,
+                            y: 4,
+                            name: "Group 4",
+                            value: 88,
+                            drilldown: "group4Friday",
+                        },
+                        {
+                            x: 4,
+                            y: 0,
+                            name: "Group 5",
+                            value: 38,
+                            drilldown: "group5Monday",
+                        },
+                        {
+                            x: 4,
+                            y: 1,
+                            name: "Group 5",
+                            value: 35,
+                            drilldown: "group5Tuesday",
+                        },
+                        {
+                            x: 4,
+                            y: 2,
+                            name: "Group 5",
+                            value: 58,
+                            drilldown: "group5Wednesday",
+                        },
+                        {
+                            x: 4,
+                            y: 3,
+                            name: "Group 5",
+                            value: 117,
+                            drilldown: "group5Thursday",
+                        },
+                        {
+                            x: 4,
+                            y: 4,
+                            name: "Group 5",
+                            value: 115,
+                            drilldown: "group5Friday",
                         },
                     ],
+                    dataLabels: {
+                        enabled: true,
+                        color: "#000000",
+                    },
                 },
             ],
-        }),
-            highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+            drilldown: {
+                series: [
+                    {
+                        id: "group1Monday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 2,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 3,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 5,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group1Tuesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 10,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 15,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 23,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group1Wednesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 2,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 3,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 3,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group1Thursday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 12,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 6,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 6,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group1Friday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 32,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 15,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 20,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group2Monday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 55,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 20,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 17,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group2Tuesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 12,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 23,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 22,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group2Wednesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 23,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 25,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 29,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group2Thursday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 68,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 32,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 23,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group2Friday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 12,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 20,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 20,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group3Monday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 8,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 17,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 10,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group3Tuesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 1,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 4,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 10,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group3Wednesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 55,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 45,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 23,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group3Thursday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 15,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 25,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 14,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group3Friday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 30,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 17,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 5,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group4Monday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 24,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 24,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 24,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group4Tuesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 30,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 60,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 42,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group4Wednesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 42,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 38,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 34,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group4Thursday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 14,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 14,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 14,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group4Friday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 40,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 20,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 28,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group5Monday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 15,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 20,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 3,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group5Tuesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 15,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 7,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 13,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group5Wednesday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 23,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 20,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 15,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group5Thursday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 55,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 45,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 17,
+                            },
+                        ],
+                    },
+                    {
+                        id: "group5Friday",
+                        type: "bar",
+                        data: [
+                            {
+                                name: "Student 1",
+                                y: 30,
+                            },
+                            {
+                                name: "Student 2",
+                                y: 40,
+                            },
+                            {
+                                name: "Student 3",
+                                y: 45,
+                            },
+                        ],
+                    },
+                ],
+            },
+        };
     }
 };
 WritingAnalyticsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -5987,7 +7193,7 @@ WritingAnalyticsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9hZGQtZGF0YS9hZGQtZGF0YS5jb21wb25lbnQuY3NzIn0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".card {\n\n  background: white;\n  margin: 15px;\n  height: 75%;\n  width: 50%;\n  box-shadow: 1px 1px 2px 2px #888888;\n  padding-bottom: 24px;\n  position: absolute;\n  transform: translate(50%, 50%);\n  bottom: 40%;\n  right: 50%;\n  overflow: auto;\n\n\n}\n\n\n\n#title {\n  text-align: center;\n  font-weight: normal;\n  margin: 24px;\n  padding: 24px;\n  background-color: #3F51B5;\n  color: white;\n}\n\n\n\n#dropdown {\n  margin: 16px;\n  font-weight: bold;\n  font-size: 16px;\n\n\n}\n\n\n\n#dropdown>mat-select {\n  height: 20px;\n  width: 200px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 34px;\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n\n#dropdown>label {\n  padding-right: 40px;\n  padding-left: 40px;\n}\n\n\n\noption {\n  color: white;\n  border: none;\n}\n\n\n\n#activities {\n  margin: 16px;\n  padding-left: 12px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n\n\n#activities>mat-select {\n  height: 20px;\n  width: 200px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 32px;\n\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n\n#activities>label {\n  padding-right: 24px;\n  padding-left: 24px;\n\n}\n\n\n\n#indicators {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n#indicators>label {\n\n  padding-right: 84px;\n  padding-left: 24px;\n\n}\n\n\n\n#indicators>input {\n  font-size: 16px;\n  font-weight: normal;\n\n  margin-left: 32px;\n  width: 300px;\n  height: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n#metrics {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n.metrics {\n\n  padding-right: 140px;\n  padding-left: 24px;\n  font-size: medium;\n  margin-left: 24px;\n\n\n}\n\n\n\n#metrics>input {\n  font-size: 16px;\n  font-weight: normal;\n  background-color: #3F51B5;\n  border: none;\n  border-radius: 4px;\n  width: 400px;\n  height: 30px;\n  color: white;\n}\n\n\n\n.btn {\n  margin-top: 24px;\n  padding-right: 92px;\n  padding-left: 24px;\n  text-align: center;\n}\n\n\n\n#btn1 {\n  margin-left: 12px;\n  margin-right: 24px;\n}\n\n\n\n#btn2 {\n  margin-top: 12px;\n  margin-right: 24px;\n}\n\n\n\n#savebtn {\n\n  margin: 40px;\n  padding-left: 200px;\n}\n\n\n\n.formfield * {\n  vertical-align: middle;\n  margin-top: 16px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2FkZC1kYXRhL2FkZC1kYXRhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixXQUFXO0VBQ1gsVUFBVTtFQUNWLG1DQUFtQztFQUNuQyxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGNBQWM7OztBQUdoQjs7OztBQUlBO0VBQ0Usa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7Ozs7QUFFQTtFQUNFLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTs7O0FBR2pCOzs7O0FBR0E7RUFDRSxZQUFZO0VBQ1osWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFlBQVk7O0FBRWQ7Ozs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixrQkFBa0I7QUFDcEI7Ozs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7Ozs7QUFFQTtFQUNFLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakI7Ozs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixtQkFBbUI7RUFDbkIsaUJBQWlCOztFQUVqQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFlBQVk7O0FBRWQ7Ozs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixrQkFBa0I7O0FBRXBCOzs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlOztBQUVqQjs7OztBQUVBOztFQUVFLG1CQUFtQjtFQUNuQixrQkFBa0I7O0FBRXBCOzs7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsbUJBQW1COztFQUVuQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTs7QUFFakI7Ozs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGVBQWU7O0FBRWpCOzs7O0FBRUE7O0VBRUUsb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsaUJBQWlCOzs7QUFHbkI7Ozs7QUFFQTtFQUNFLGVBQWU7RUFDZixtQkFBbUI7RUFDbkIseUJBQXlCO0VBQ3pCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsWUFBWTtFQUNaLFlBQVk7RUFDWixZQUFZO0FBQ2Q7Ozs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixtQkFBbUI7RUFDbkIsa0JBQWtCO0VBQ2xCLGtCQUFrQjtBQUNwQjs7OztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7OztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7OztBQUVBOztFQUVFLFlBQVk7RUFDWixtQkFBbUI7QUFDckI7Ozs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGVBQWU7O0FBRWpCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50L2FkZC1kYXRhL2FkZC1kYXRhLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY2FyZCB7XG5cbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIG1hcmdpbjogMTVweDtcbiAgaGVpZ2h0OiA3NSU7XG4gIHdpZHRoOiA1MCU7XG4gIGJveC1zaGFkb3c6IDFweCAxcHggMnB4IDJweCAjODg4ODg4O1xuICBwYWRkaW5nLWJvdHRvbTogMjRweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSg1MCUsIDUwJSk7XG4gIGJvdHRvbTogNDAlO1xuICByaWdodDogNTAlO1xuICBvdmVyZmxvdzogYXV0bztcblxuXG59XG5cblxuXG4jdGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIG1hcmdpbjogMjRweDtcbiAgcGFkZGluZzogMjRweDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNGNTFCNTtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4jZHJvcGRvd24ge1xuICBtYXJnaW46IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDE2cHg7XG5cblxufVxuXG5cbiNkcm9wZG93bj5tYXQtc2VsZWN0IHtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMjAwcHg7XG4gIHBhZGRpbmctbGVmdDogMjVweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBtYXJnaW4tbGVmdDogMzRweDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGNvbG9yOiB3aGl0ZTtcblxufVxuXG4jZHJvcGRvd24+bGFiZWwge1xuICBwYWRkaW5nLXJpZ2h0OiA0MHB4O1xuICBwYWRkaW5nLWxlZnQ6IDQwcHg7XG59XG5cbm9wdGlvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4jYWN0aXZpdGllcyB7XG4gIG1hcmdpbjogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4jYWN0aXZpdGllcz5tYXQtc2VsZWN0IHtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMjAwcHg7XG4gIHBhZGRpbmctbGVmdDogMjVweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBtYXJnaW4tbGVmdDogMzJweDtcblxuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgY29sb3I6IHdoaXRlO1xuXG59XG5cbiNhY3Rpdml0aWVzPmxhYmVsIHtcbiAgcGFkZGluZy1yaWdodDogMjRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuXG59XG5cbiNpbmRpY2F0b3JzIHtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbiNpbmRpY2F0b3JzPmxhYmVsIHtcblxuICBwYWRkaW5nLXJpZ2h0OiA4NHB4O1xuICBwYWRkaW5nLWxlZnQ6IDI0cHg7XG5cbn1cblxuI2luZGljYXRvcnM+aW5wdXQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG5cbiAgbWFyZ2luLWxlZnQ6IDMycHg7XG4gIHdpZHRoOiAzMDBweDtcbiAgaGVpZ2h0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbiNtZXRyaWNzIHtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbi5tZXRyaWNzIHtcblxuICBwYWRkaW5nLXJpZ2h0OiAxNDBweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgbWFyZ2luLWxlZnQ6IDI0cHg7XG5cblxufVxuXG4jbWV0cmljcz5pbnB1dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNGNTFCNTtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIHdpZHRoOiA0MDBweDtcbiAgaGVpZ2h0OiAzMHB4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5idG4ge1xuICBtYXJnaW4tdG9wOiAyNHB4O1xuICBwYWRkaW5nLXJpZ2h0OiA5MnB4O1xuICBwYWRkaW5nLWxlZnQ6IDI0cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuI2J0bjEge1xuICBtYXJnaW4tbGVmdDogMTJweDtcbiAgbWFyZ2luLXJpZ2h0OiAyNHB4O1xufVxuXG4jYnRuMiB7XG4gIG1hcmdpbi10b3A6IDEycHg7XG4gIG1hcmdpbi1yaWdodDogMjRweDtcbn1cblxuI3NhdmVidG4ge1xuXG4gIG1hcmdpbjogNDBweDtcbiAgcGFkZGluZy1sZWZ0OiAyMDBweDtcbn1cblxuLmZvcm1maWVsZCAqIHtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcblxufVxuIl19 */");
 
 /***/ }),
 
@@ -6013,17 +7219,23 @@ __webpack_require__.r(__webpack_exports__);
 
 let AddDataComponent = class AddDataComponent {
     constructor(dataService, router, fb) {
+        //// form entries///////
         this.dataService = dataService;
         this.router = router;
         this.fb = fb;
-        //// form entries///////
+        this.options = [];
+        this.selected = [];
+        this.dropdownList = [];
+        this.selectedItems = [];
+        this.fileToUpload = null;
         this.dataEntryForm = this.fb.group({
-            learningEvents: " ",
-            learningActivities: "",
+            learningEvents: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
+            learningActivities: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
             indicator: this.fb.array([this.createIndicator()])
         });
     }
     ngOnInit() {
+        this.fetchdata();
     }
     get indicatorControls() {
         return this.dataEntryForm.get('indicator')['controls'];
@@ -6031,8 +7243,8 @@ let AddDataComponent = class AddDataComponent {
     /// adding new indicator and meterics entry/////////// 
     createIndicator() {
         return this.fb.group({
-            indicatorName: '',
-            metrics: '',
+            indicatorName: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
+            metrics: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
         });
     }
     /// code for add button//////////
@@ -6043,12 +7255,64 @@ let AddDataComponent = class AddDataComponent {
     removeIndicator(i) {
         this.indicator.removeAt(i);
     }
-    addData(learningEvents, learningActivities, indicator, metrics) {
-        this.dataService.addData(this.dataEntryForm.value.learningEvents, this.dataEntryForm.value.learningActivities, this.dataEntryForm.value.indicator, this.dataEntryForm.value.indicator).subscribe(() => {
+    addData() {
+        let indicators = this.dataEntryForm.value.indicator;
+        const indicator = [];
+        const metrics = [];
+        indicators.forEach(element => {
+            const ind = [element.indicatorName];
+            indicator.push(ind);
+        });
+        indicators.forEach(element => {
+            const met = [element.metrics];
+            metrics.push(met);
+        });
+        this.dataService.addData(this.dataEntryForm.value.learningEvents, this.dataEntryForm.value.learningActivities, this.dataEntryForm.value.indicator).subscribe(() => {
             this.router.navigate(['/data']);
         });
         this.dataEntryForm.reset(); // clear from entry
         location.reload(); // reload web page
+    }
+    fetchdata() {
+        this.dataService.getdata().subscribe((data) => {
+            this.data = data;
+            for (var val of this.data) {
+                this.options.push(val["LearningEvents"]);
+            }
+            this.selected.push(this.options);
+        });
+    }
+    learningValueChange(x) {
+        this.selectedevent = x;
+        this.dataService.getdata().subscribe((data) => {
+            this.data = data;
+            let event = this.data.filter(function (obj) {
+                return x.includes(obj.LearningEvents);
+            });
+            this.setLearningActivities(event);
+            if (x != "") {
+                this.data = event;
+            }
+        });
+    }
+    setLearningActivities(event) {
+        this.dropdownList = [];
+        for (let learningEvents of event) {
+            for (let entry of learningEvents.LearningActivities) {
+                this.dropdownList.push(entry.Name);
+            }
+        }
+    }
+    onFileSelected(files) {
+        this.file = files.item(0);
+        console.log(this.file);
+    }
+    upload() {
+        this.dataService.upload(this.file).subscribe(response => {
+            console.log('response recieved', response);
+        }, error => {
+            console.log(error);
+        });
     }
 };
 AddDataComponent.ctorParameters = () => [
@@ -6068,6 +7332,80 @@ AddDataComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
+/***/ "./src/app/component/admin/admin.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/component/admin/admin.component.css ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (".container {\n\n  background: white;\n\n  height: auto;\n  width: auto;\n\n  box-shadow: 1px 1px 2px 2px #888888;\n  padding-bottom: 24px;\n  position: absolute;\n  transform: translate(50%, 50%);\n  bottom: 50%;\n  right: 50%;\n\n\n\n}\n\n#title {\n  text-align: center;\n  font-weight: normal;\n  padding: 24px;\n  background-color: #3F51B5;\n  color: white;\n}\n\n#username {\n  margin: 45px;\n  text-align: center;\n  margin-top: 25px;\n  padding-left: 10px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n#password {\n  margin: 45px;\n  text-align: center;\n  margin-top: 25px;\n  padding-left: 10px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\nlabel {\n  padding-right: 20px;\n  padding-left: 16px;\n}\n\ninput {\n  font-size: 16px;\n  font-weight: normal;\n  background-color: #3F51B5;\n  border: none;\n  border-radius: 4px;\n  width: 180px;\n  height: 28px;\n  color: white;\n\n}\n\n#submit {\n  text-align: center;\n  margin: 40px;\n\n}\n\n#submit>button {\n  background-color: #3F51B5;\n  color: white;\n}\n\n.alert {\n  text-align: center;\n  color: red;\n  font-size: small;\n  margin: 0;\n}\n\n.submitbtn:disabled {\n  cursor: not-allowed;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsaUJBQWlCOztFQUVqQixZQUFZO0VBQ1osV0FBVzs7RUFFWCxtQ0FBbUM7RUFDbkMsb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQiw4QkFBOEI7RUFDOUIsV0FBVztFQUNYLFVBQVU7Ozs7QUFJWjs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixtQkFBbUI7RUFDbkIsYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakI7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOztBQUVBO0VBQ0UsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQix5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7O0FBRWQ7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsWUFBWTs7QUFFZDs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsVUFBVTtFQUNWLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7O0FBRUE7RUFDRSxtQkFBbUI7O0FBRXJCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50L2FkbWluL2FkbWluLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuY29udGFpbmVyIHtcblxuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcblxuICBoZWlnaHQ6IGF1dG87XG4gIHdpZHRoOiBhdXRvO1xuXG4gIGJveC1zaGFkb3c6IDFweCAxcHggMnB4IDJweCAjODg4ODg4O1xuICBwYWRkaW5nLWJvdHRvbTogMjRweDtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSg1MCUsIDUwJSk7XG4gIGJvdHRvbTogNTAlO1xuICByaWdodDogNTAlO1xuXG5cblxufVxuXG4jdGl0bGUge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIHBhZGRpbmc6IDI0cHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzRjUxQjU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuI3VzZXJuYW1lIHtcbiAgbWFyZ2luOiA0NXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDI1cHg7XG4gIHBhZGRpbmctbGVmdDogMTBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuI3Bhc3N3b3JkIHtcbiAgbWFyZ2luOiA0NXB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIG1hcmdpbi10b3A6IDI1cHg7XG4gIHBhZGRpbmctbGVmdDogMTBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxubGFiZWwge1xuICBwYWRkaW5nLXJpZ2h0OiAyMHB4O1xuICBwYWRkaW5nLWxlZnQ6IDE2cHg7XG59XG5cbmlucHV0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjM0Y1MUI1O1xuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgd2lkdGg6IDE4MHB4O1xuICBoZWlnaHQ6IDI4cHg7XG4gIGNvbG9yOiB3aGl0ZTtcblxufVxuXG4jc3VibWl0IHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBtYXJnaW46IDQwcHg7XG5cbn1cblxuI3N1Ym1pdD5idXR0b24ge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjM0Y1MUI1O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5hbGVydCB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgY29sb3I6IHJlZDtcbiAgZm9udC1zaXplOiBzbWFsbDtcbiAgbWFyZ2luOiAwO1xufVxuXG4uc3VibWl0YnRuOmRpc2FibGVkIHtcbiAgY3Vyc29yOiBub3QtYWxsb3dlZDtcblxufVxuIl19 */");
+
+/***/ }),
+
+/***/ "./src/app/component/admin/admin.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/component/admin/admin.component.ts ***!
+  \****************************************************/
+/*! exports provided: AdminComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AdminComponent", function() { return AdminComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../data.service */ "./src/app/data.service.ts");
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
+
+
+
+
+
+let AdminComponent = class AdminComponent {
+    constructor(dataService, router, fb) {
+        this.dataService = dataService;
+        this.router = router;
+        this.fb = fb;
+        this.loginForm = this.fb.group({
+            username: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
+            password: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
+        });
+    }
+    ngOnInit() {
+    }
+    submit() {
+        this.dataService.login(this.loginForm.value.username, this.loginForm.value.password)
+            .subscribe(res => {
+            this.loginForm.reset();
+            this.dataService.loggedIn = true;
+            this.router.navigate(['add/data']);
+        }, err => alert('Log In Fail'));
+    }
+    logout() {
+        this.dataService.loggedIn = false;
+    }
+};
+AdminComponent.ctorParameters = () => [
+    { type: _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"] },
+    { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
+    { type: _angular_forms__WEBPACK_IMPORTED_MODULE_4__["FormBuilder"] }
+];
+AdminComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+        selector: 'app-admin',
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./admin.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/admin/admin.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./admin.component.css */ "./src/app/component/admin/admin.component.css")).default]
+    })
+], AdminComponent);
+
+
+
+/***/ }),
+
 /***/ "./src/app/component/dashboard/dashboard.component.css":
 /*!*************************************************************!*\
   !*** ./src/app/component/dashboard/dashboard.component.css ***!
@@ -6077,7 +7415,7 @@ AddDataComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".downloadCharts {\r\n  margin: 1rem;\r\n  float: right;\r\n}\r\n\r\n.backBtn {\r\n  float: right;\r\n  margin: 1rem;\r\n}\r\n\r\n.footer {\r\n  position: fixed;\r\n  left: 0;\r\n  bottom: 0;\r\n  width: 100%;\r\n  background-color: #f5f5f5;\r\n  color: #b9bdc0;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQVk7RUFDWixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxZQUFZO0VBQ1osWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtFQUNmLE9BQU87RUFDUCxTQUFTO0VBQ1QsV0FBVztFQUNYLHlCQUF5QjtFQUN6QixjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGFBQWE7QUFDZiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9kYXNoYm9hcmQvZGFzaGJvYXJkLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZG93bmxvYWRDaGFydHMge1xyXG4gIG1hcmdpbjogMXJlbTtcclxuICBmbG9hdDogcmlnaHQ7XHJcbn1cclxuXHJcbi5iYWNrQnRuIHtcclxuICBmbG9hdDogcmlnaHQ7XHJcbiAgbWFyZ2luOiAxcmVtO1xyXG59XHJcblxyXG4uZm9vdGVyIHtcclxuICBwb3NpdGlvbjogZml4ZWQ7XHJcbiAgbGVmdDogMDtcclxuICBib3R0b206IDA7XHJcbiAgd2lkdGg6IDEwMCU7XHJcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTtcclxuICBjb2xvcjogI2I5YmRjMDtcclxuICB0ZXh0LWFsaWduOiBjZW50ZXI7XHJcbiAgZGlzcGxheTogbm9uZTtcclxufVxyXG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".footer {\n  position: fixed;\n  left: 0;\n  bottom: 0;\n  width: 100%;\n  background-color: #f5f5f5;\n  color: #b9bdc0;\n  text-align: center;\n  display: none;\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2Rhc2hib2FyZC9kYXNoYm9hcmQuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQWU7RUFDZixPQUFPO0VBQ1AsU0FBUztFQUNULFdBQVc7RUFDWCx5QkFBeUI7RUFDekIsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixhQUFhO0FBQ2YiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnQvZGFzaGJvYXJkL2Rhc2hib2FyZC5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmZvb3RlciB7XG4gIHBvc2l0aW9uOiBmaXhlZDtcbiAgbGVmdDogMDtcbiAgYm90dG9tOiAwO1xuICB3aWR0aDogMTAwJTtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2Y1ZjVmNTtcbiAgY29sb3I6ICNiOWJkYzA7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZGlzcGxheTogbm9uZTtcbn1cbiJdfQ== */");
 
 /***/ }),
 
@@ -6093,62 +7431,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DashboardComponent", function() { return DashboardComponent; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
-/* harmony import */ var src_app_data_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/data.service */ "./src/app/data.service.ts");
-/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm2015/forms.js");
-/* harmony import */ var src_app_chart_helper_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! src/app/chart-helper.service */ "./src/app/chart-helper.service.ts");
-
-
-
 
 
 let DashboardComponent = class DashboardComponent {
-    constructor(dataService, chartHelperService) {
-        this.dataService = dataService;
-        this.chartHelperService = chartHelperService;
-        this.components = [];
-        this.indicators = new _angular_forms__WEBPACK_IMPORTED_MODULE_3__["FormControl"]();
+    constructor() {
+        this.isSticky = false;
     }
-    ngOnInit() {
-        this.dropdownItems = JSON.parse(localStorage.getItem("selectedIndicators"));
-        this.components = this.dropdownItems;
-        console.log(this.components);
-    }
-    downloadPage() {
-        var htmlContent = [document.querySelector("html").innerHTML];
-        var excludeStyle = `
-    <style>
-    .downloadCharts{
-      display: none;
-    }
-
-    .header {
-      display: none;
-    }
-
-    .mat-form-field {
-      display: none;
-    }
-
-    .footer {
-      display: block !important;
-    }
-
-   
-    </style>`;
-        htmlContent = [htmlContent[0].concat(excludeStyle)];
-        var bl = new Blob(htmlContent, { type: "text/html" });
-        var a = document.createElement("a");
-        a.href = URL.createObjectURL(bl);
-        a.download = "Indicator Visualizations.html";
-        a.hidden = true;
-        document.body.appendChild(a);
-        a.click();
-    }
+    ngOnInit() { }
 };
-DashboardComponent.ctorParameters = () => [
-    { type: src_app_data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"] },
-    { type: src_app_chart_helper_service__WEBPACK_IMPORTED_MODULE_4__["ChartHelperService"] }
-];
 DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
         selector: "app-dashboard",
@@ -6170,7 +7460,7 @@ DashboardComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("thead {\n  color: grey;\n  font-size: 0.85em;\n  letter-spacing: 0.1em;\n  text-transform: uppercase;\n}\n\n.activities:nth-child(odd) {\n  background-color: #f1f1f1;\n}\n\n.leraningevents:nth-child(odd) {\n  background-color: #f1f1f1;\n}\n\n.sortable {\n  cursor: pointer;\n}\n\ndiv {\n  display: inline-block;\n  margin: 20px;\n}\n\nbutton {\n  display: inline-block;\n  margin: 30px;\n}\n\nng-multiselect-dropdown {\n  font-size: 15px;\n  color: grey;\n}\n\n.mat-select {\n  display: inline-block;\n  border: 1px solid #adadad;\n  width: 100%;\n  padding: 6px 2px;\n  margin-bottom: 0;\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 1.1;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  background-image: none;\n  border-radius: 4px;\n}\n\n::ng-deep .mat-form-field-underline {\n  display: none;\n}\n\n.mat-form-field {\n  font-size: 13px;\n  padding: 6px 2px;\n  text-align: center;\n  line-height: 2;\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\n  color: grey;\n}\n\n.center {\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n.back-to-top {\n  cursor: pointer;\n  position: fixed;\n  bottom: 40px;\n  right: 40px;\n}\n\n.btn-top {\n  background-color: #3f51b5;\n  color: #fff;\n  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),\n    0 1px 5px 0 rgba(0, 0, 0, 0.12);\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2Rpc3BsYXkvZGlzcGxheS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsV0FBVztFQUNYLGlCQUFpQjtFQUNqQixxQkFBcUI7RUFDckIseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UseUJBQXlCO0FBQzNCOztBQUVBO0VBQ0UsZUFBZTtBQUNqQjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQixZQUFZO0FBQ2Q7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIsWUFBWTtBQUNkOztBQUVBO0VBQ0UsZUFBZTtFQUNmLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHFCQUFxQjtFQUNyQix5QkFBeUI7RUFDekIsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLHNCQUFzQjtFQUN0QixlQUFlO0VBQ2Ysc0JBQXNCO0VBQ3RCLGtCQUFrQjtBQUNwQjs7QUFDQTtFQUNFLGFBQWE7QUFDZjs7QUFDQTtFQUNFLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGNBQWM7RUFDZCxpREFBaUQ7RUFDakQsV0FBVztBQUNiOztBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtBQUNuQjs7QUFFQTtFQUNFLGVBQWU7RUFDZixlQUFlO0VBQ2YsWUFBWTtFQUNaLFdBQVc7QUFDYjs7QUFFQTtFQUNFLHlCQUF5QjtFQUN6QixXQUFXO0VBQ1g7bUNBQ2lDO0FBQ25DIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50L2Rpc3BsYXkvZGlzcGxheS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsidGhlYWQge1xuICBjb2xvcjogZ3JleTtcbiAgZm9udC1zaXplOiAwLjg1ZW07XG4gIGxldHRlci1zcGFjaW5nOiAwLjFlbTtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cblxuLmFjdGl2aXRpZXM6bnRoLWNoaWxkKG9kZCkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjFmMWYxO1xufVxuXG4ubGVyYW5pbmdldmVudHM6bnRoLWNoaWxkKG9kZCkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjFmMWYxO1xufVxuXG4uc29ydGFibGUge1xuICBjdXJzb3I6IHBvaW50ZXI7XG59XG5cbmRpdiB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAyMHB4O1xufVxuXG5idXR0b24ge1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMzBweDtcbn1cblxubmctbXVsdGlzZWxlY3QtZHJvcGRvd24ge1xuICBmb250LXNpemU6IDE1cHg7XG4gIGNvbG9yOiBncmV5O1xufVxuXG4ubWF0LXNlbGVjdCB7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgYm9yZGVyOiAxcHggc29saWQgI2FkYWRhZDtcbiAgd2lkdGg6IDEwMCU7XG4gIHBhZGRpbmc6IDZweCAycHg7XG4gIG1hcmdpbi1ib3R0b206IDA7XG4gIGZvbnQtc2l6ZTogMTJweDtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgbGluZS1oZWlnaHQ6IDEuMTtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICB2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbn1cbjo6bmctZGVlcCAubWF0LWZvcm0tZmllbGQtdW5kZXJsaW5lIHtcbiAgZGlzcGxheTogbm9uZTtcbn1cbi5tYXQtZm9ybS1maWVsZCB7XG4gIGZvbnQtc2l6ZTogMTNweDtcbiAgcGFkZGluZzogNnB4IDJweDtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBsaW5lLWhlaWdodDogMjtcbiAgZm9udC1mYW1pbHk6IFJvYm90bywgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBzYW5zLXNlcmlmO1xuICBjb2xvcjogZ3JleTtcbn1cbi5jZW50ZXIge1xuICBtYXJnaW4tbGVmdDogMTAlO1xuICBtYXJnaW4tcmlnaHQ6IDEwJTtcbn1cblxuLmJhY2stdG8tdG9wIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGJvdHRvbTogNDBweDtcbiAgcmlnaHQ6IDQwcHg7XG59XG5cbi5idG4tdG9wIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNmNTFiNTtcbiAgY29sb3I6ICNmZmY7XG4gIGJveC1zaGFkb3c6IDAgM3B4IDFweCAtMnB4IHJnYmEoMCwgMCwgMCwgMC4yKSwgMCAycHggMnB4IDAgcmdiYSgwLCAwLCAwLCAwLjE0KSxcbiAgICAwIDFweCA1cHggMCByZ2JhKDAsIDAsIDAsIDAuMTIpO1xufVxuIl19 */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n\nthead{\n  \n  color: grey;\n  font-size: .85em;\n  letter-spacing: .1em;\n  text-transform: uppercase;\n}\n\n\n.activities:nth-child(odd) {\n  background-color: #f1f1f1;\n  \n}\n\n\n.leraningevents:nth-child(odd) {\n  background-color: #f1f1f1;\n \n}\n\n\n.sortable {\n  cursor: pointer;\n}\n\n\ndiv {\n  display:inline-block;\n  margin: 20px;\n  \n}\n\n\nbutton {\n  display:inline-block;\n  margin: 30px;\n  \n}\n\n\nng-multiselect-dropdown {\n  \n\n  font-size: 15px;\n  color: grey;\n \n  \n  \n}\n\n\n.mat-select {\n  display: inline-block;\n  border: 1px solid #adadad;\n  width: 100%;\n  padding: 6px 2px;\n  margin-bottom: 0;\n  font-size: 12px;\n  font-weight: 400;\n  line-height: 1.1;\n  text-align: center;\n  vertical-align: middle;\n  cursor: pointer;\n  background-image: none;\n  border-radius: 4px;\n  \n  \n}\n\n\n::ng-deep .mat-form-field-underline {\n  display: none;\n}\n\n\n.mat-form-field {\n  font-size: 13px;\n  padding: 6px 2px;\n  text-align: center;\n  line-height: 2;\n  font-family: Roboto, \"Helvetica Neue\", sans-serif;\n  color: grey;\n}\n\n\n.center {\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n\n.highlightText {\n  background: yellow;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2Rpc3BsYXkvZGlzcGxheS5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7O0FBRUE7O0VBRUUsV0FBVztFQUNYLGdCQUFnQjtFQUNoQixvQkFBb0I7RUFDcEIseUJBQXlCO0FBQzNCOzs7QUFHQTtFQUNFLHlCQUF5Qjs7QUFFM0I7OztBQUVBO0VBQ0UseUJBQXlCOztBQUUzQjs7O0FBRUE7RUFDRSxlQUFlO0FBQ2pCOzs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixZQUFZOztBQUVkOzs7QUFFQTtFQUNFLG9CQUFvQjtFQUNwQixZQUFZOztBQUVkOzs7QUFHQTs7O0VBR0UsZUFBZTtFQUNmLFdBQVc7Ozs7QUFJYjs7O0FBRUE7RUFDRSxxQkFBcUI7RUFDckIseUJBQXlCO0VBQ3pCLFdBQVc7RUFDWCxnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZixnQkFBZ0I7RUFDaEIsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixzQkFBc0I7RUFDdEIsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixrQkFBa0I7OztBQUdwQjs7O0FBQ0E7RUFDRSxhQUFhO0FBQ2Y7OztBQUNBO0VBQ0UsZUFBZTtFQUNmLGdCQUFnQjtFQUNoQixrQkFBa0I7RUFDbEIsY0FBYztFQUNkLGlEQUFpRDtFQUNqRCxXQUFXO0FBQ2I7OztBQUNBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtBQUNuQjs7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnQvZGlzcGxheS9kaXNwbGF5LmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcblxudGhlYWR7XG4gIFxuICBjb2xvcjogZ3JleTtcbiAgZm9udC1zaXplOiAuODVlbTtcbiAgbGV0dGVyLXNwYWNpbmc6IC4xZW07XG4gIHRleHQtdHJhbnNmb3JtOiB1cHBlcmNhc2U7XG59XG5cblxuLmFjdGl2aXRpZXM6bnRoLWNoaWxkKG9kZCkge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjFmMWYxO1xuICBcbn1cblxuLmxlcmFuaW5nZXZlbnRzOm50aC1jaGlsZChvZGQpIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2YxZjFmMTtcbiBcbn1cblxuLnNvcnRhYmxlIHtcbiAgY3Vyc29yOiBwb2ludGVyO1xufVxuXG5kaXYge1xuICBkaXNwbGF5OmlubGluZS1ibG9jaztcbiAgbWFyZ2luOiAyMHB4O1xuICBcbn1cblxuYnV0dG9uIHtcbiAgZGlzcGxheTppbmxpbmUtYmxvY2s7XG4gIG1hcmdpbjogMzBweDtcbiAgXG59XG5cblxubmctbXVsdGlzZWxlY3QtZHJvcGRvd24ge1xuICBcblxuICBmb250LXNpemU6IDE1cHg7XG4gIGNvbG9yOiBncmV5O1xuIFxuICBcbiAgXG59XG5cbi5tYXQtc2VsZWN0IHtcbiAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICBib3JkZXI6IDFweCBzb2xpZCAjYWRhZGFkO1xuICB3aWR0aDogMTAwJTtcbiAgcGFkZGluZzogNnB4IDJweDtcbiAgbWFyZ2luLWJvdHRvbTogMDtcbiAgZm9udC1zaXplOiAxMnB4O1xuICBmb250LXdlaWdodDogNDAwO1xuICBsaW5lLWhlaWdodDogMS4xO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIGN1cnNvcjogcG9pbnRlcjtcbiAgYmFja2dyb3VuZC1pbWFnZTogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBcbiAgXG59XG46Om5nLWRlZXAgLm1hdC1mb3JtLWZpZWxkLXVuZGVybGluZSB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG4ubWF0LWZvcm0tZmllbGQge1xuICBmb250LXNpemU6IDEzcHg7XG4gIHBhZGRpbmc6IDZweCAycHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgbGluZS1oZWlnaHQ6IDI7XG4gIGZvbnQtZmFtaWx5OiBSb2JvdG8sIFwiSGVsdmV0aWNhIE5ldWVcIiwgc2Fucy1zZXJpZjtcbiAgY29sb3I6IGdyZXk7XG59XG4uY2VudGVyIHtcbiAgbWFyZ2luLWxlZnQ6IDEwJTtcbiAgbWFyZ2luLXJpZ2h0OiAxMCU7XG59XG5cbi5oaWdobGlnaHRUZXh0IHtcbiAgYmFja2dyb3VuZDogeWVsbG93O1xufSJdfQ== */");
 
 /***/ }),
 
@@ -6200,11 +7490,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-let DisplayComponent = 
-// @Pipe({
-//   name: 'highlight'
-// })
-class DisplayComponent {
+let DisplayComponent = class DisplayComponent {
     constructor(dataService, chartHelperService, router, snackbar, dialog, sanitizer) {
         this.dataService = dataService;
         this.chartHelperService = chartHelperService;
@@ -6212,10 +7498,10 @@ class DisplayComponent {
         this.snackbar = snackbar;
         this.dialog = dialog;
         this.sanitizer = sanitizer;
-        this.dropdownList = [];
-        this.selectedItems = [];
+        this.dropdownList = []; //learning activities dropdown
+        this.selectedItems = []; //learning activities dropdown
         this.name = [];
-        this.options = [];
+        this.options = []; // learning events options
         this.learningEvents = [];
         this.learningAct = [];
         this.isLoaded = false;
@@ -6223,20 +7509,34 @@ class DisplayComponent {
         this.ind_list = [];
         this.mat_list = [];
         this.element = document.getElementById("header");
-        this.btn = document.getElementById("back-to-top");
         this.getSelectedind = (x) => {
+            const indicator = [];
             let data = x;
-            // Convert the text to BLOB.
-            let textToBLOB = new Blob([JSON.stringify(data)], {
-                type: "application/json",
+            //printing senario
+            console.log("For your particular senario your learning objective(s) is/are ", this.selectedevent[0]);
+            console.log("The learning activities are ", this.selectedItems[0]);
+            console.log("The possible indicators are ", data[0].indicatorName);
+            console.log("and there metrics are ", data[0].metrics);
+            data.forEach((element) => {
+                const o = { [element.indicatorName]: element.metrics.split(",") };
+                indicator.push(o);
+                /// other properties and values
             });
-            let sFileName = "indicator.json"; // The file to save the data.
+            //console.log(indicator);
+            // console.log(new_obj);
+            //     let json_string=JSON.stringify(new_obj);
+            //     let array2 = JSON.parse("[" +  json_string + "]");
+            //    console.log(array2);
+            // Convert the text to BLOB.
+            let textToBLOB = new Blob([
+                JSON.stringify({
+                    indicator: indicator,
+                }),
+            ], { type: "application/json" });
+            let sFileName = "indicators.json"; // The file to save the data.
             let newLink = document.createElement("a");
             newLink.download = sFileName;
-            if (textToBLOB.size == 2) {
-                window.alert("No indicator is selected");
-            }
-            else if (window.webkitURL != null) {
+            if (window.webkitURL != null) {
                 newLink.href = window.webkitURL.createObjectURL(textToBLOB);
             }
             else {
@@ -6246,14 +7546,24 @@ class DisplayComponent {
             }
             newLink.click();
         };
+        /*
+          This function pushes all selected indicators in an array
+          and stores them in localStorage, so the drop down menu in the dashboard page can display the selected indicators even after refreshing the page
+          We also store the "check" property in localStorage so the check marks stay checked when the user returns to the display component
+        */
         this.forwardIndicators = (x) => {
-            this.dataService.selectedIndicators = x;
             let indicators = [];
+            let indicatorReferences = [];
+            let regex = /\[[0-9]+\]/;
             for (const ind of this.ind_list) {
-                indicators.push(ind.replace(/\[\d*\]/g, "").trim());
+                if (!indicators.includes(ind)) {
+                    indicatorReferences.push(ind.match(regex)[0]);
+                    indicators.push(ind);
+                }
             }
             this.chartHelperService.setSettings("selectedIndicators", indicators);
-            if (this.dataService.selectedIndicators.length > 0) {
+            this.chartHelperService.setSettings("referenceNumbers", indicatorReferences);
+            if (indicators.length > 0) {
                 localStorage.setItem("check", JSON.stringify(this.data));
                 this.router.navigate(["/dashboard"]);
             }
@@ -6262,22 +7572,9 @@ class DisplayComponent {
             }
         };
     }
-    loadScript() {
-        let node = document.createElement("script"); // creates the script tag
-        node.src = "assets/js/tooltipJS.js"; // sets the source (insert url in between quotes)
-        node.type = "text/javascript"; // set the script type
-        node.async = true; // makes script run asynchronously
-        node.charset = "utf-8";
-        // append to head of document
-        document.getElementsByTagName("head")[0].appendChild(node);
-    }
     ngOnInit() {
         this.fetchdata();
         this.loadScript();
-        // if (localStorage.getItem("checked")) {
-        //   this.selectedIndicator = JSON.parse(localStorage.getItem("checked"));
-        //   console.log(this.selectedIndicator);
-        // }
         this.dropdownSettings = {
             singleSelection: false,
             idField: "item_id",
@@ -6290,6 +7587,7 @@ class DisplayComponent {
     }
     /////////////// function for learning activities selection /////////////
     onItemSelect(item) {
+        //console.log(item);
         let p = this.selectedevent;
         this.dataService.getdata().subscribe((data) => {
             this.data = data;
@@ -6315,23 +7613,12 @@ class DisplayComponent {
     // function of fetching data from database
     fetchdata() {
         this.dataService.getdata().subscribe((data) => {
-            /*
-            for (let i = 0; i < data.length; i++) {
-              for (let j = 0; j < data[i]["LearningActivities"].length; j++) {
-                //  console.log(data[i]["LearningActivities"][j]["indicator"]);
-                for (
-                  let k = 0;
-                  k < data[i]["LearningActivities"][j]["indicator"].length;
-                  k++
-                ) {
-                  data[i]["LearningActivities"][j]["indicator"][k].checked = false;
-                  //console.log(data[i]["LearningActivities"][j]["indicator"][k]);
-                }
-              }
-            }*/
             this.data = data; /// complete data present in database
             this.isLoaded = true;
+            //After the data is fetched, we check if the localStorage contains the check property (this is to retain the checkbox state)
             if (localStorage.getItem("check")) {
+                //Parse the data with the check property and loop through the indicators and see if the checked property is true
+                //If it's true we push it to the ind_list and mat_list, so the selected indicators from before are displayed at the top
                 this.data = JSON.parse(localStorage.getItem("check"));
                 for (let i = 0; i < this.data.length; i++) {
                     for (let j = 0; j < this.data[i]["LearningActivities"].length; j++) {
@@ -6366,7 +7653,6 @@ class DisplayComponent {
             this.data = data;
             if (localStorage.getItem("check")) {
                 this.data = JSON.parse(localStorage.getItem("check"));
-                console.log("Data", this.data);
             }
             this.isLoaded = true;
             if (p == "Select All") {
@@ -6448,11 +7734,12 @@ class DisplayComponent {
             }
         }
     }
-    ////////////////// function for checkbox to select indicator indicator  //////////////////
+    ////////////////// function for checkbox to select indicator   //////////////////
     Checkbox(event, selectInd) {
         this.ind = selectInd.indicatorName;
         this.met = selectInd;
         if (event.target.checked) {
+            //Set the checked property to true and store it in localStorage so the checkboxes stay checked after reload
             selectInd.checked = true;
             localStorage.setItem("check", JSON.stringify(this.data));
             this.ind_list.push(this.ind);
@@ -6460,6 +7747,7 @@ class DisplayComponent {
         }
         else {
             let index = this.ind_list.indexOf(this.ind);
+            //Set checked to false and reset the localStorage values to keep it updated
             selectInd.checked = false;
             localStorage.setItem("check", JSON.stringify(this.data));
             let index1 = this.mat_list.indexOf(this.met);
@@ -6472,6 +7760,7 @@ class DisplayComponent {
     reset() {
         this.ind_list = [];
         this.mat_list = [];
+        //When the user presses the reset-button the "checked" property of the indicators have to be set to false and the check property in the localstorage is removed
         for (let i = 0; i < this.data.length; i++) {
             for (let j = 0; j < this.data[i]["LearningActivities"].length; j++) {
                 //  console.log(data[i]["LearningActivities"][j]["indicator"]);
@@ -6483,13 +7772,23 @@ class DisplayComponent {
         localStorage.removeItem("check");
         this.uncheckAll();
     }
+    backToTop() {
+        this.element.scrollIntoView({ behavior: "smooth" });
+    }
+    //will solve the issue of comming back from another page
+    loadScript() {
+        let node = document.createElement("script"); // create script tag
+        node.src = "assets/js/tooltipJS.js"; // set source
+        node.type = "text/javascript";
+        node.async = true; // makes script run asynchronously
+        node.charset = "utf-8";
+        // append to head of document
+        document.getElementsByTagName("head")[0].appendChild(node);
+    }
     uncheckAll() {
         this.indicatorCheckboxs.forEach((element) => {
             element.nativeElement.checked = false;
         });
-    }
-    backToTop() {
-        this.element.scrollIntoView({ behavior: "smooth" });
     }
 };
 DisplayComponent.ctorParameters = () => [
@@ -6512,9 +7811,6 @@ DisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./display.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/display/display.component.html")).default,
         styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./display.component.css */ "./src/app/component/display/display.component.css")).default]
     })
-    // @Pipe({
-    //   name: 'highlight'
-    // })
 ], DisplayComponent);
 
 
@@ -6525,33 +7821,44 @@ DisplayComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*!**************************************************!*\
   !*** ./src/app/component/display/filter.pipe.ts ***!
   \**************************************************/
-/*! exports provided: FilterPipe */
+/*! exports provided: SanitizeHtmlPipe */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FilterPipe", function() { return FilterPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SanitizeHtmlPipe", function() { return SanitizeHtmlPipe; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm2015/platform-browser.js");
 
 
-let FilterPipe = class FilterPipe {
-    transform(items, searchText) {
-        if (!items)
-            return [];
-        if (!searchText)
-            return items;
-        searchText = searchText.toLowerCase();
-        return items.filter(it => {
-            return it.toLowerCase().includes(searchText);
-        });
+
+let SanitizeHtmlPipe = class SanitizeHtmlPipe {
+    constructor(_sanitizer) {
+        this._sanitizer = _sanitizer;
+    }
+    transform(text, search) {
+        if (search && text) {
+            let pattern = search.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&');
+            pattern = pattern.split(' ').filter((t) => {
+                return t.length > 0;
+            }).join(' ');
+            const regex = new RegExp(pattern, 'gi');
+            return this._sanitizer.bypassSecurityTrustHtml(text.replace(regex, (match) => `<span style="background-color: yellow;">${match}</span>`));
+        }
+        else {
+            return text;
+        }
     }
 };
-FilterPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+SanitizeHtmlPipe.ctorParameters = () => [
+    { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["DomSanitizer"] }
+];
+SanitizeHtmlPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
-        name: 'filter'
+        name: 'sanitizeHtml'
     })
-], FilterPipe);
+], SanitizeHtmlPipe);
 
 
 
@@ -6719,7 +8026,7 @@ DropdownComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".example-spacer {\n    -webkit-box-flex: 1;\n            flex: 1 1 auto;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLG1CQUFjO1lBQWQsY0FBYztFQUNoQiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1zcGFjZXIge1xuICAgIGZsZXg6IDEgMSBhdXRvO1xuICB9Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".example-spacer {\n    flex: 1 1 auto;\n  }\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7RUFDaEIiLCJmaWxlIjoic3JjL2FwcC9jb21wb25lbnQvaGVhZGVyL2hlYWRlci5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmV4YW1wbGUtc3BhY2VyIHtcbiAgICBmbGV4OiAxIDEgYXV0bztcbiAgfSJdfQ== */");
 
 /***/ }),
 
@@ -6748,9 +8055,12 @@ let HeaderComponent = class HeaderComponent {
     }
     ngOnInit() {
     }
-    referances() {
-        this.router.navigate(['/referance']);
+    references() {
+        this.router.navigate(['/reference']);
         //this.router.navigate([]).then(result => {  window.open( `/referance`, '_blank'); });
+    }
+    admin() {
+        this.router.navigate(['/login']);
     }
     metrics() {
         // this.router.navigate(['/referance'] );
@@ -6773,22 +8083,22 @@ HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/component/referance/referance.component.css":
+/***/ "./src/app/component/reference/referance.component.css":
 /*!*************************************************************!*\
-  !*** ./src/app/component/referance/referance.component.css ***!
+  !*** ./src/app/component/reference/referance.component.css ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9yZWZlcmFuY2UvcmVmZXJhbmNlLmNvbXBvbmVudC5jc3MifQ== */");
+/* harmony default export */ __webpack_exports__["default"] = ("\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9yZWZlcmVuY2UvcmVmZXJhbmNlLmNvbXBvbmVudC5jc3MifQ== */");
 
 /***/ }),
 
-/***/ "./src/app/component/referance/referance.component.ts":
+/***/ "./src/app/component/reference/referance.component.ts":
 /*!************************************************************!*\
-  !*** ./src/app/component/referance/referance.component.ts ***!
+  !*** ./src/app/component/reference/referance.component.ts ***!
   \************************************************************/
 /*! exports provided: ReferanceComponent */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -6801,15 +8111,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let ReferanceComponent = class ReferanceComponent {
-    constructor() { }
-    ngOnInit() {
+    constructor() {
+        this.element = document.getElementById("header");
+    }
+    ngOnInit() { }
+    backToTop() {
+        this.element.scrollIntoView({ behavior: "smooth" });
     }
 };
 ReferanceComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
-        selector: 'app-referance',
-        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./referance.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/referance/referance.component.html")).default,
-        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./referance.component.css */ "./src/app/component/referance/referance.component.css")).default]
+        selector: "app-referance",
+        template: tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! raw-loader!./referance.component.html */ "./node_modules/raw-loader/dist/cjs.js!./src/app/component/reference/referance.component.html")).default,
+        styles: [tslib__WEBPACK_IMPORTED_MODULE_0__["__importDefault"](__webpack_require__(/*! ./referance.component.css */ "./src/app/component/reference/referance.component.css")).default]
     })
 ], ReferanceComponent);
 
@@ -6834,15 +8148,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let DataService = class DataService {
-    //uri='http://localhost:3001';
-    //uri = "https://csspreparation.academy/openlair";
-    //uri2 = 'http://localhost:3001/openlair';
-    //68.65.123.130
+    //uri = 'https://programmingzen.org/openlair'
+    //68.65.123.130    OLD
+    //198.187.29.73
     constructor(http) {
         this.http = http;
-        this.storageName = "values2";
-        //uri='http://localhost:3001/openlair';
-        this.uri = 'https://programmingzen.org/openlair';
+        this.uri = 'http://localhost:3001/openlair';
     }
     getdata() {
         return this.http.get(`${this.uri}/display/data`);
@@ -6850,37 +8161,53 @@ let DataService = class DataService {
     getsearchresult(search) {
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
-                "Content-Type": "text/plain",
-            }),
+                'Content-Type': 'text/plain',
+            })
         };
-        return this.http.post(`${this.uri}/getsearchmetrics`, {
-            search,
-            httpOptions,
-        });
+        return this.http.post(`${this.uri}/getsearchmetrics`, { search, httpOptions });
     }
     getsearchind(search) {
         const httpOptions = {
             headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
-                "Content-Type": "text/plain",
-            }),
+                'Content-Type': 'text/plain',
+            })
         };
-        return this.http.post(`${this.uri}/getsearchindicator`, {
-            search,
-            httpOptions,
-        });
+        return this.http.post(`${this.uri}/getsearchindicator`, { search, httpOptions });
     }
-    addData(LearningEvents, LearningActivities, indicator, metrics) {
+    addData(LearningEvents, LearningActivities, indicator) {
         const data1 = {
             LearningEvents: LearningEvents,
             LearningActivities: {
                 Name: LearningActivities,
-                indicator: {
-                    indicatorName: indicator,
-                    metrics: metrics,
-                },
-            },
+                indicator: indicator,
+            }
         };
         return this.http.post(`${this.uri}/add/data`, data1);
+    }
+    login(username, password) {
+        console.log(username);
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'text/plain',
+            })
+        };
+        return this.http.post(`${this.uri}/login`, { username, password, httpOptions });
+    }
+    isLoggedIn() {
+        return this.loggedIn;
+    }
+    getActivities(searchAct) {
+        const httpOptions = {
+            headers: new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]({
+                'Content-Type': 'text/plain',
+            })
+        };
+        return this.http.post(`${this.uri}/getActivities`, { searchAct, httpOptions });
+    }
+    upload(file) {
+        const formData = new FormData();
+        formData.append('file', file, file.name);
+        return this.http.post(`${this.uri}/upload`, formData);
     }
 };
 DataService.ctorParameters = () => [
@@ -6888,7 +8215,7 @@ DataService.ctorParameters = () => [
 ];
 DataService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
-        providedIn: "root",
+        providedIn: 'root'
     })
 ], DataService);
 
@@ -6964,7 +8291,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\OpenLAIR\frontend\frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! D:\OpenLAIR\frontend\frontend\src\main.ts */"./src/main.ts");
 
 
 /***/ })
