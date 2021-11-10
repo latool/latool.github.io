@@ -9702,14 +9702,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     "./node_modules/@angular/common/fesm2015/http.js");
 
     var DataService = /*#__PURE__*/function () {
-      //uri = 'https://programmingzen.org/openlair'
       //68.65.123.130    OLD
       //198.187.29.73
       function DataService(http) {
         _classCallCheck(this, DataService);
 
         this.http = http;
-        this.uri = 'http://localhost:3001/openlair';
+        this.uri = 'https://programmingzen.org/openlair';
       }
 
       _createClass(DataService, [{
