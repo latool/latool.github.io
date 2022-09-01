@@ -1,7 +1,7 @@
 
     $(document).ready(function(){
       //  $("#myTourBtn").hide();
-       // if($('span').is('.OpenLAIR_Home')){      //  Not run the demo if it is not home page
+       // if($('span').is('.tool_Home')){      //  Not run the demo if it is not home page
         //  setTimeout(function(){  myTour(); }, 1500);
         //  $("#myTourBtn").show();
        // }
@@ -15,7 +15,7 @@
           steps: [
           {
             element: '.step0',
-            intro: 'This guided tour will explain how the [Tool] can be used. <br> You can Exit the tour anytime you want.',
+            intro: 'This guided tour will explain how Open Learning Analytics Indicator Repository (OpenLAIR) can be used. <br> You can Exit the tour anytime you want.',
             position: 'bottom'
           },
           {
@@ -53,11 +53,22 @@
             intro: 'Step 5 (Optional): If you are looking for any specific Metric, here you can search by metrics.',
             position: 'right'
           },
+          
           {
             element: '.stepDownload',
-            intro: "Step 6: After the selection of indicator(s) CLICK here to DOWNLOAD the Indicator(s) as JSON along with their Metrics.",
+            intro: "In case you want the selected indicator(s) in a JSON (.json) format/file. CLICK here to DOWNLOAD the Indicator(s) as JSON along with their Metrics.",
             position: 'bottom'
           },
+          {
+            element: '.stepDownloadText',
+            intro: "In case you want the selected indicator(s) in a TEXT (.txt) format/file. CLICK here to DOWNLOAD the Indicator(s) as TEXT along with their Metrics.",
+            position: 'bottom'
+          },
+          {
+            element: '.stepReset',
+            intro: "In case you want to Deselect the selected indicator(s) and RESET the filters. CLICK here to RESET.",
+            position: 'bottom'
+          },        
           {
             element: '.stepReferences',
             intro: "Here you can see the References for your selected Indicators.",
