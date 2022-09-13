@@ -53,7 +53,11 @@
             intro: 'Step 5 (Optional): If you are looking for any specific Metric, here you can search by metrics.',
             position: 'right'
           },
-          
+          /* {
+            element: '.stepVisualize',
+            intro: "Step 6: After selecting the indicator(s), CLICK here to VISUALIZE the chosen indicator(s).. <br> <br> NOTE: The selected indicators that are similar will be plotted in a single visualization type. <br> <br> For example the selected indicators 'Predict Student Grades [115]' and 'Predict Final Grade [119]' will be plotted in a single visualization type.",
+            position: 'bottom'
+          }, */
           {
             element: '.stepDownload',
             intro: "In case you want the selected indicator(s) in a JSON (.json) format/file. CLICK here to DOWNLOAD the Indicator(s) as JSON along with their Metrics.",
