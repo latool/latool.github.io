@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"buttons\" id=\"btn-menu\" [ngClass]=\"{ 'mat-elevation-z5': true, sticky: isSticky }\">\n  <button class=\"backBtn buttonLaTool\" routerLink=\"/display/data\">\n    Back\n  </button>\n\n  <button class=\"downloadCharts buttonLaTool\" (click)=\"downloadPage()\">\n    Download\n  </button>\n\n  <mat-form-field appearance=\"fill\">\n    <mat-select [formControl]=\"indicators\" multiple placeholder=\"Indicators\" [ngModel]=\"dropdownItems\">\n      <mat-select-trigger>\n        {{ indicators.value ? indicators.value[0] : \"\" }}\n        <span *ngIf=\"indicators.value?.length > 1\" class=\"selection\">\n          (+{{ indicators.value.length - 1 }}\n          {{ indicators.value?.length === 2 ? \"other\" : \"others\" }})\n        </span>\n      </mat-select-trigger>\n      <!-- These are the indicators that are not linked -->\n      <mat-option *ngFor=\"let indicator of dropdownItems\" [value]=\"indicator\" [ngStyle]=\"{\n          color:\n            indicator.includes([73]) ||\n            indicator.includes([57]) ||\n            indicator.includes([75]) ||\n            indicator.includes([135])\n              ? 'red'\n              : ''\n        }\" (onSelectionChange)=\"selectCharts($event, indicator)\">{{ indicator }}</mat-option>\n    </mat-select>\n  </mat-form-field>\n</div>\n\n<div class=\"container\">\n  <!-- componenents on top get rendered first -->\n\n  <!-- Student interaction patterns -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[127]') || referenceNumbers.includes('[121]')\n    \">\n    <app-student-interaction-patterns></app-student-interaction-patterns>\n  </div>\n\n  <!-- Reading Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[134]') ||\n      referenceNumbers.includes('[114]') ||\n      referenceNumbers.includes('[128]')\n    \">\n    <app-reading-analytics></app-reading-analytics>\n  </div>\n\n  <!-- Competency -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[31]') ||\n      referenceNumbers.includes('[46]') ||\n      referenceNumbers.includes('[98]')\n    \">\n    <app-competency></app-competency>\n  </div>\n\n  <!-- Learning progress -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[62]') ||\n      referenceNumbers.includes('[110]') ||\n      referenceNumbers.includes('[51]')\n    \">\n    <app-learning-progress></app-learning-progress>\n  </div>\n\n  <!-- Writing Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[61]') ||\n      referenceNumbers.includes('[48]') ||\n      referenceNumbers.includes('[89]') ||\n      referenceNumbers.includes('[85]')\n    \">\n    <app-writing-analytics></app-writing-analytics>\n  </div>\n\n  <!-- Discourse Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[24]') ||\n      referenceNumbers.includes('[27]') ||\n      referenceNumbers.includes('[49]') ||\n      referenceNumbers.includes('[142]') ||\n      referenceNumbers.includes('[80]') ||\n      referenceNumbers.includes('[88]')\n    \">\n    <app-discussion-quality></app-discussion-quality>\n  </div>\n\n  <!-- Clickstream analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[103]')\">\n    <app-clickstream-analysis></app-clickstream-analysis>\n  </div>\n\n  <!-- Video Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[138]') ||\n      referenceNumbers.includes('[72]') ||\n      referenceNumbers.includes('[116]')\n    \">\n    <app-video-engagements></app-video-engagements>\n  </div>\n\n  <!-- Initiative -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[124]')\">\n    <app-initiative></app-initiative>\n  </div>\n\n  <!-- Social analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[63]')\">\n    <app-social-analysis></app-social-analysis>\n  </div>\n\n  <!--  Predictive analytics (Dropping out )-->\n\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[59]') ||\n      referenceNumbers.includes('[79]') ||\n      referenceNumbers.includes('[99]') ||\n      referenceNumbers.includes('[101]') ||\n      referenceNumbers.includes('[64]') ||\n      referenceNumbers.includes('[71]') ||\n      referenceNumbers.includes('[131]')\n    \">\n    <app-droppingout></app-droppingout>\n  </div>\n  <!-- Time distribution -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[39]')\">\n    <app-time-distribution></app-time-distribution>\n  </div>\n\n  <!-- Time Planning -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[47]') ||\n      referenceNumbers.includes('[68]') ||\n      referenceNumbers.includes('[125]')\n    \">\n    <app-time-planning></app-time-planning>\n  </div>\n\n  <!-- Student comparison -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[130]') ||\n      referenceNumbers.includes('[126]') ||\n      referenceNumbers.includes('[129]') ||\n      referenceNumbers.includes('[25]') ||\n      referenceNumbers.includes('[50]')\n    \">\n    <app-student-comparison></app-student-comparison>\n  </div>\n\n  <!-- Engagement and Performance -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[69]') || referenceNumbers.includes('[86]')\n    \">\n    <app-engagement-performance></app-engagement-performance>\n  </div>\n\n  <!-- Online change detection-->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[137]')\">\n    <app-online-change-detection></app-online-change-detection>\n  </div>\n\n  <!-- Game analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[45]') ||\n      referenceNumbers.includes('[43]') ||\n      referenceNumbers.includes('[104]')\n    \">\n    <app-gamification></app-gamification>\n  </div>\n\n  <!-- Predict course completion -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[70]')\">\n    <app-predict-coursecompletion></app-predict-coursecompletion>\n  </div>\n\n  <!--  Procrastination  -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[102]') || referenceNumbers.includes('[107]')\n    \">\n    <app-procrastination></app-procrastination>\n  </div>\n\n  <!-- Group participation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[30]')\">\n    <app-group-participation></app-group-participation>\n  </div>\n\n  <!-- Clustering -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[66]') ||\n      referenceNumbers.includes('[120]') ||\n      referenceNumbers.includes('[113]') ||\n      referenceNumbers.includes('[29]')\n    \">\n    <app-clustering></app-clustering>\n  </div>\n\n  <!-- Final grade prediction -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[28]') ||\n      referenceNumbers.includes('[83]') ||\n      referenceNumbers.includes('[78]') ||\n      referenceNumbers.includes('[115]') ||\n      referenceNumbers.includes('[60]') ||\n      referenceNumbers.includes('[37]') ||\n      referenceNumbers.includes('[105]') ||\n      referenceNumbers.includes('[81]') ||\n      referenceNumbers.includes('[119]')\n    \">\n    <app-final-grade-prediction></app-final-grade-prediction>\n  </div>\n\n  <!-- Learning behaviour -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[76]')\">\n    <app-learning-behaviour></app-learning-behaviour>\n  </div>\n\n  <!-- Social network analysis -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[90]') || referenceNumbers.includes('[52]')\n    \">\n    <app-social-network-analysis></app-social-network-analysis>\n  </div>\n\n  <!-- Self motivation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[139]')\">\n    <app-self-motivation></app-self-motivation>\n  </div>\n\n  <!-- Learning behaviour patterns -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[111]') ||\n      referenceNumbers.includes('[132]') ||\n      referenceNumbers.includes('[118]')\n    \">\n    <app-learning-behavior-patterns></app-learning-behavior-patterns>\n  </div>\n\n  <!-- Passing rate prediction -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[26]') ||\n      referenceNumbers.includes('[56]') ||\n      referenceNumbers.includes('[96]') ||\n      referenceNumbers.includes('[100]') ||\n      referenceNumbers.includes('[117]') ||\n      referenceNumbers.includes('[143]') ||\n      referenceNumbers.includes('[144]')\n    \">\n    <app-passing-rate-prediction></app-passing-rate-prediction>\n  </div>\n\n  <!--  Feedback (Self-regulation)-->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[41]') || referenceNumbers.includes('[91]')\n    \">\n    <app-feedback></app-feedback>\n  </div>\n\n  <!-- Course assessment -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[55]')\">\n    <app-course-assessment></app-course-assessment>\n  </div>\n\n  <!-- Affective-State -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[32]') ||\n      referenceNumbers.includes('[84]') ||\n      referenceNumbers.includes('[36]') ||\n      referenceNumbers.includes('[87]')\n    \">\n    <app-affective-state></app-affective-state>\n  </div>\n\n  <!-- Course difficulty -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[77]') || referenceNumbers.includes('[133]')\n    \">\n    <app-course-difficulty></app-course-difficulty>\n  </div>\n\n  <!-- Teacher curriculum usage -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[65]') || referenceNumbers.includes('[58]')\n    \">\n    <app-curriculum-usage></app-curriculum-usage>\n  </div>\n\n  <!-- Presentation skills -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[35]') || referenceNumbers.includes('[40]')\n    \">\n    <app-presentation-skills></app-presentation-skills>\n  </div>\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"buttons\" id=\"btn-menu\" [ngClass]=\"{ 'mat-elevation-z5': true, sticky: isSticky }\">\n  <button class=\"backBtn buttonLaTool\" routerLink=\"\">\n    Back\n  </button>\n\n  <button class=\"downloadCharts buttonLaTool\" (click)=\"downloadPage()\">\n    Download\n  </button>\n\n  <mat-form-field appearance=\"fill\">\n    <mat-select [formControl]=\"indicators\" multiple placeholder=\"Indicators\" [ngModel]=\"dropdownItems\">\n      <mat-select-trigger>\n        {{ indicators.value ? indicators.value[0] : \"\" }}\n        <span *ngIf=\"indicators.value?.length > 1\" class=\"selection\">\n          (+{{ indicators.value.length - 1 }}\n          {{ indicators.value?.length === 2 ? \"other\" : \"others\" }})\n        </span>\n      </mat-select-trigger>\n      <!-- These are the indicators that are not linked -->\n      <mat-option *ngFor=\"let indicator of dropdownItems\" [value]=\"indicator\" [ngStyle]=\"{\n          color:\n            indicator.includes([73]) ||\n            indicator.includes([57]) ||\n            indicator.includes([75]) ||\n            indicator.includes([135])\n              ? 'red'\n              : ''\n        }\" (onSelectionChange)=\"selectCharts($event, indicator)\">{{ indicator }}</mat-option>\n    </mat-select>\n  </mat-form-field>\n</div>\n\n<div class=\"container\">\n  <!-- componenents on top get rendered first -->\n\n  <!-- Student interaction patterns -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[127]') || referenceNumbers.includes('[121]')\n    \">\n    <app-student-interaction-patterns></app-student-interaction-patterns>\n  </div>\n\n  <!-- Reading Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[134]') ||\n      referenceNumbers.includes('[114]') ||\n      referenceNumbers.includes('[128]')\n    \">\n    <app-reading-analytics></app-reading-analytics>\n  </div>\n\n  <!-- Competency -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[31]') ||\n      referenceNumbers.includes('[46]') ||\n      referenceNumbers.includes('[98]')\n    \">\n    <app-competency></app-competency>\n  </div>\n\n  <!-- Learning progress -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[62]') ||\n      referenceNumbers.includes('[110]') ||\n      referenceNumbers.includes('[51]')\n    \">\n    <app-learning-progress></app-learning-progress>\n  </div>\n\n  <!-- Writing Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[61]') ||\n      referenceNumbers.includes('[48]') ||\n      referenceNumbers.includes('[89]') ||\n      referenceNumbers.includes('[85]')\n    \">\n    <app-writing-analytics></app-writing-analytics>\n  </div>\n\n  <!-- Discourse Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[24]') ||\n      referenceNumbers.includes('[27]') ||\n      referenceNumbers.includes('[49]') ||\n      referenceNumbers.includes('[142]') ||\n      referenceNumbers.includes('[80]') ||\n      referenceNumbers.includes('[88]')\n    \">\n    <app-discussion-quality></app-discussion-quality>\n  </div>\n\n  <!-- Clickstream analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[103]')\">\n    <app-clickstream-analysis></app-clickstream-analysis>\n  </div>\n\n  <!-- Video Analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[138]') ||\n      referenceNumbers.includes('[72]') ||\n      referenceNumbers.includes('[116]')\n    \">\n    <app-video-engagements></app-video-engagements>\n  </div>\n\n  <!-- Initiative -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[124]')\">\n    <app-initiative></app-initiative>\n  </div>\n\n  <!-- Social analysis -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[63]')\">\n    <app-social-analysis></app-social-analysis>\n  </div>\n\n  <!--  Predictive analytics (Dropping out )-->\n\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[59]') ||\n      referenceNumbers.includes('[79]') ||\n      referenceNumbers.includes('[99]') ||\n      referenceNumbers.includes('[101]') ||\n      referenceNumbers.includes('[64]') ||\n      referenceNumbers.includes('[71]') ||\n      referenceNumbers.includes('[131]')\n    \">\n    <app-droppingout></app-droppingout>\n  </div>\n  <!-- Time distribution -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[39]')\">\n    <app-time-distribution></app-time-distribution>\n  </div>\n\n  <!-- Time Planning -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[47]') ||\n      referenceNumbers.includes('[68]') ||\n      referenceNumbers.includes('[125]')\n    \">\n    <app-time-planning></app-time-planning>\n  </div>\n\n  <!-- Student comparison -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[130]') ||\n      referenceNumbers.includes('[126]') ||\n      referenceNumbers.includes('[129]') ||\n      referenceNumbers.includes('[25]') ||\n      referenceNumbers.includes('[50]')\n    \">\n    <app-student-comparison></app-student-comparison>\n  </div>\n\n  <!-- Engagement and Performance -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[69]') || referenceNumbers.includes('[86]')\n    \">\n    <app-engagement-performance></app-engagement-performance>\n  </div>\n\n  <!-- Online change detection-->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[137]')\">\n    <app-online-change-detection></app-online-change-detection>\n  </div>\n\n  <!-- Game analytics -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[45]') ||\n      referenceNumbers.includes('[43]') ||\n      referenceNumbers.includes('[104]')\n    \">\n    <app-gamification></app-gamification>\n  </div>\n\n  <!-- Predict course completion -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[70]')\">\n    <app-predict-coursecompletion></app-predict-coursecompletion>\n  </div>\n\n  <!--  Procrastination  -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[102]') || referenceNumbers.includes('[107]')\n    \">\n    <app-procrastination></app-procrastination>\n  </div>\n\n  <!-- Group participation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[30]')\">\n    <app-group-participation></app-group-participation>\n  </div>\n\n  <!-- Clustering -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[66]') ||\n      referenceNumbers.includes('[120]') ||\n      referenceNumbers.includes('[113]') ||\n      referenceNumbers.includes('[29]')\n    \">\n    <app-clustering></app-clustering>\n  </div>\n\n  <!-- Final grade prediction -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[28]') ||\n      referenceNumbers.includes('[83]') ||\n      referenceNumbers.includes('[78]') ||\n      referenceNumbers.includes('[115]') ||\n      referenceNumbers.includes('[60]') ||\n      referenceNumbers.includes('[37]') ||\n      referenceNumbers.includes('[105]') ||\n      referenceNumbers.includes('[81]') ||\n      referenceNumbers.includes('[119]')\n    \">\n    <app-final-grade-prediction></app-final-grade-prediction>\n  </div>\n\n  <!-- Learning behaviour -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[76]')\">\n    <app-learning-behaviour></app-learning-behaviour>\n  </div>\n\n  <!-- Social network analysis -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[90]') || referenceNumbers.includes('[52]')\n    \">\n    <app-social-network-analysis></app-social-network-analysis>\n  </div>\n\n  <!-- Self motivation -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[139]')\">\n    <app-self-motivation></app-self-motivation>\n  </div>\n\n  <!-- Learning behaviour patterns -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[111]') ||\n      referenceNumbers.includes('[132]') ||\n      referenceNumbers.includes('[118]')\n    \">\n    <app-learning-behavior-patterns></app-learning-behavior-patterns>\n  </div>\n\n  <!-- Passing rate prediction -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[26]') ||\n      referenceNumbers.includes('[56]') ||\n      referenceNumbers.includes('[96]') ||\n      referenceNumbers.includes('[100]') ||\n      referenceNumbers.includes('[117]') ||\n      referenceNumbers.includes('[143]') ||\n      referenceNumbers.includes('[144]')\n    \">\n    <app-passing-rate-prediction></app-passing-rate-prediction>\n  </div>\n\n  <!--  Feedback (Self-regulation)-->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[41]') || referenceNumbers.includes('[91]')\n    \">\n    <app-feedback></app-feedback>\n  </div>\n\n  <!-- Course assessment -->\n  <div class=\"main-content\" *ngIf=\"referenceNumbers.includes('[55]')\">\n    <app-course-assessment></app-course-assessment>\n  </div>\n\n  <!-- Affective-State -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[32]') ||\n      referenceNumbers.includes('[84]') ||\n      referenceNumbers.includes('[36]') ||\n      referenceNumbers.includes('[87]')\n    \">\n    <app-affective-state></app-affective-state>\n  </div>\n\n  <!-- Course difficulty -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[77]') || referenceNumbers.includes('[133]')\n    \">\n    <app-course-difficulty></app-course-difficulty>\n  </div>\n\n  <!-- Teacher curriculum usage -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[65]') || referenceNumbers.includes('[58]')\n    \">\n    <app-curriculum-usage></app-curriculum-usage>\n  </div>\n\n  <!-- Presentation skills -->\n  <div class=\"main-content\" *ngIf=\"\n      referenceNumbers.includes('[35]') || referenceNumbers.includes('[40]')\n    \">\n    <app-presentation-skills></app-presentation-skills>\n  </div>\n</div>");
 
 /***/ }),
 
@@ -578,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\" id=\"header\">\r\n  <mat-toolbar color=\"primary\"><span class=\"step0\">\r\n      <a><img routerLink=\"display/data\" style=\"height: 58px; padding-top: 8px\"\r\n          src=\"assets/images/logo.png\" /></a></span>\r\n          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a style=\"color: white; font-size: 14px;\" href=\"https://latool.github.io/\"> Click here if the table is empty</a>\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\" id=\"header\">\r\n  <mat-toolbar color=\"primary\"><span class=\"step0\">\r\n      <a><img routerLink=\"\" style=\"height: 58px; padding-top: 8px\"\r\n          src=\"assets/images/logo.png\" /></a></span>\r\n          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \r\n          <button class=\"buttonHead\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> Click here if the table is empty</button>\r\n          \r\n           <!-- <a style=\"color: white; font-size: 14px;\" (click)=\"reset()\"> Click here if the table is empty</a> -->\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>");
 
 /***/ }),
 
@@ -862,10 +862,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm2015/router.js");
+/* harmony import */ var _component_display_display_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./component/display/display.component */ "./src/app/component/display/display.component.ts");
 
 
 
-const routes = [];
+
+const routes = [
+    //{ path: '/display/data/s', redirectTo: '/', pathMatch: 'full' },
+    //{ path: 'display/data', component: DisplayComponent },
+    { path: '', component: _component_display_display_component__WEBPACK_IMPORTED_MODULE_3__["DisplayComponent"] },
+];
 let AppRoutingModule = class AppRoutingModule {
 };
 AppRoutingModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
@@ -5449,58 +5455,6 @@ SocialAnalysisComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 /***/ }),
 
-/***/ "./src/app/charts/social-network-analysis/nodeFormatter.ts":
-/*!*****************************************************************!*\
-  !*** ./src/app/charts/social-network-analysis/nodeFormatter.ts ***!
-  \*****************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
-
-/* harmony default export */ __webpack_exports__["default"] = (function (Highcharts) {
-    // Add the nodes option through an event call. We want to start with the parent
-    // item and apply separate colors to each child element, then the same color to
-    // grandchildren.
-    Highcharts.addEvent(Highcharts.Series, 'afterSetOptions', function (e) {
-        var colors = Highcharts.getOptions().colors, i = 0, nodes = {};
-        if (this instanceof Highcharts.seriesTypes.networkgraph &&
-            e.options.id === 'lang-tree') {
-            e.options.data.forEach(function (link) {
-                if (link[0] === 'User 1') {
-                    nodes['User 1'] = {
-                        id: 'User 1',
-                        marker: {
-                            radius: 20
-                        }
-                    };
-                    nodes[link[1]] = {
-                        id: link[1],
-                        marker: {
-                            radius: 10
-                        },
-                        color: colors[i++]
-                    };
-                }
-                else if (nodes[link[0]] && nodes[link[0]].color) {
-                    nodes[link[1]] = {
-                        id: link[1],
-                        color: nodes[link[0]].color,
-                    };
-                }
-            });
-            e.options.nodes = Object.keys(nodes).map(function (id) {
-                return nodes[id];
-            });
-        }
-    });
-});
-
-
-/***/ }),
-
 /***/ "./src/app/charts/social-network-analysis/social-network-analysis.component.css":
 /*!**************************************************************************************!*\
   !*** ./src/app/charts/social-network-analysis/social-network-analysis.component.css ***!
@@ -5532,15 +5486,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_exporting__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var highcharts_modules_networkgraph__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! highcharts/modules/networkgraph */ "./node_modules/highcharts/modules/networkgraph.js");
 /* harmony import */ var highcharts_modules_networkgraph__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(highcharts_modules_networkgraph__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _nodeFormatter__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./nodeFormatter */ "./src/app/charts/social-network-analysis/nodeFormatter.ts");
 
 
 
 
 
-
+//import nodeFormatter from "./nodeformatter";
 highcharts_modules_networkgraph__WEBPACK_IMPORTED_MODULE_4___default()(highcharts__WEBPACK_IMPORTED_MODULE_2__);
-Object(_nodeFormatter__WEBPACK_IMPORTED_MODULE_5__["default"])(highcharts__WEBPACK_IMPORTED_MODULE_2__);
+nodeFormatter(highcharts__WEBPACK_IMPORTED_MODULE_2__);
 let SocialNetworkAnalysisComponent = class SocialNetworkAnalysisComponent {
     constructor() {
         this.Highcharts = highcharts__WEBPACK_IMPORTED_MODULE_2__;
@@ -5617,6 +5570,43 @@ SocialNetworkAnalysisComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"
     })
 ], SocialNetworkAnalysisComponent);
 
+function nodeFormatter(Highcharts) {
+    // Add the nodes option through an event call. We want to start with the parent
+    // item and apply separate colors to each child element, then the same color to
+    // grandchildren.
+    Highcharts.addEvent(Highcharts.Series, 'afterSetOptions', function (e) {
+        var colors = Highcharts.getOptions().colors, i = 0, nodes = {};
+        if (this instanceof Highcharts.seriesTypes.networkgraph &&
+            e.options.id === 'lang-tree') {
+            e.options.data.forEach(function (link) {
+                if (link[0] === 'User 1') {
+                    nodes['User 1'] = {
+                        id: 'User 1',
+                        marker: {
+                            radius: 20
+                        }
+                    };
+                    nodes[link[1]] = {
+                        id: link[1],
+                        marker: {
+                            radius: 10
+                        },
+                        color: colors[i++]
+                    };
+                }
+                else if (nodes[link[0]] && nodes[link[0]].color) {
+                    nodes[link[1]] = {
+                        id: link[1],
+                        color: nodes[link[0]].color,
+                    };
+                }
+            });
+            e.options.nodes = Object.keys(nodes).map(function (id) {
+                return nodes[id];
+            });
+        }
+    });
+}
 
 
 /***/ }),
@@ -8085,6 +8075,9 @@ let HeaderComponent = class HeaderComponent {
         // this.router.navigate(['/referance'] );
         this.router.navigate([]).then(result => { window.open(`/metrics`, '_blank'); });
     }
+    reset() {
+        location.href = "/";
+    }
 };
 HeaderComponent.ctorParameters = () => [
     { type: _data_service__WEBPACK_IMPORTED_MODULE_2__["DataService"] },
@@ -8167,6 +8160,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let DataService = class DataService {
+    //uri = 'http://localhost:49160/openlair'
     //68.65.123.130    OLD
     //198.187.29.73
     constructor(http) {
@@ -8309,7 +8303,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! D:\OpenLAIR - blinded\frontend\frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\OpenLAIR_Docker\frontend\src\main.ts */"./src/main.ts");
 
 
 /***/ })
