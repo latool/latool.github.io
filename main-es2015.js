@@ -513,7 +513,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<!--Data Entry form -->\n\n<div style=\"margin: auto;\">\n  <form [formGroup]=\"dataEntryForm\" novalidate>\n\n    <div id=\"title\">\n      Data Entry Form\n    </div>\n    <div id=\"dropdown\">\n      <label>Learning Events</label>\n      <mat-select placeholder=\"Learning Events\" (selectionChange)=\"learningValueChange($event.value)\"\n        formControlName=\"learningEvents\">\n        <mat-option *ngFor=\"let learningEvent of options\" [value]=\"learningEvent\">\n          {{ learningEvent }}\n        </mat-option>\n      </mat-select>\n\n\n    </div>\n\n\n    <div id=\"activities\">\n      <label for=\"\">Learning Activities</label>\n\n      <mat-select formControlName=\"learningActivities\" placeholder=\"Learning Activities\">\n\n        <mat-option *ngFor=\"let LearningAct of dropdownList\" [value]=\"LearningAct\">\n          {{ LearningAct}}\n        </mat-option>\n      </mat-select>\n\n\n\n\n\n    </div>\n\n    <div formArrayName=\"indicator\">\n      <div *ngFor=\"let indicator of indicatorControls; let i = index\" [formGroupName]=\"i\">\n\n        <div id=\"indicators\">\n          <label class=\"indicatorName\">Indicators</label>\n          <input type=\"text\" formControlName=\"indicatorName\" required>\n        </div>\n\n\n        <div class=\"formfield\">\n          <label class=\"metrics\">Metrics</label>\n          <textarea class=\"text\" cols=\"30\" rows=\"10\" type=\"text\" formControlName=\"metrics\" required\n            placeholder=\"Metrics must be comma seperated\"></textarea>\n        </div>\n\n      </div>\n      <!-- <div class=\"btn\">\n        <button id=\"btn1\" mat-raised-button color=\"primary\" (click)=\"addIndicator()\"\n          [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\">Add Indicator</button>\n        <button id=\"btn2\" mat-raised-button color=\"warn\" (click)=\"removeIndicator(i)\"\n          [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\"> Delete</button>\n      </div> -->\n\n\n    </div>\n    <div id=\"savebtn\">\n      <button type=\"submit\" class=\"buttonLaTool\"\n        (click)='addData(learningEvents,learningActivities,indicator,metrics)'\n        [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\">Save data</button>\n    </div>\n\n  </form>\n  <div>\n    <label for=\"file\">Choose File</label>\n    <input (change)=\"onFileSelected($event.target.files)\" type=\"file\" id=\"file\">\n\n  </div>\n  <div>\n    <button [disabled]=\"!file\" (click)=\"upload()\">\n      Upload\n    </button>\n  </div>\n\n\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<!--Data Entry form -->\n\n<div style=\"margin: auto;\">\n  <form [formGroup]=\"dataEntryForm\">\n\n    <div id=\"title\">\n      Add NEW Indicators and their Metrics\n    </div>\n   \n    <label *ngIf=\"successfulMessage\" >\n      <input type=\"checkbox\" class=\"alertCheckbox\" autocomplete=\"off\" />\n      <div class=\"alert success\">\n        <span class=\"alertClose\">X</span>\n        <span class=\"alertText\" [innerHTML]=\"successfulMessage\">\n        <br class=\"clear\"/></span>\n      </div>\n    </label>\n\n    <div id=\"dropdown\">\n      <label>Learning Events</label>\n      <mat-select placeholder=\"Learning Events\" (selectionChange)=\"learningValueChange($event.value)\"\n        formControlName=\"learningEvents\">\n        <mat-option *ngFor=\"let learningEvent of options\" [value]=\"learningEvent\">\n          {{ learningEvent }}\n        </mat-option>\n      </mat-select>\n    </div>\n\n    <div id=\"activities\">\n      <label for=\"\">Learning Activities</label>\n      <mat-select formControlName=\"learningActivities\" [(ngModel)]=\"LaOptionValue\" placeholder=\"Learning Activities\" (selectionChange)=\"onActivityValueChange($event.value)\">\n        <mat-option *ngFor=\"let LearningAct of dropdownList\" [value]=\"LearningAct\" >\n          {{ LearningAct}}\n        </mat-option>\n      </mat-select>\n      <div style=\"color: rgb(4, 117, 14); margin-left: 212px; margin-top: 7px;\" *ngIf=\"similarActivityMessage\" [innerHTML]=\"similarActivityMessage\"></div>\n    </div>\n\n    <div formArrayName=\"indicator\">\n      <div *ngFor=\"let indicator of indicatorControls; let i = index\" [formGroupName]=\"i\">\n        <div id=\"indicators\">\n          <label class=\"indicatorName\">Indicators</label>\n          <input type=\"text\" formControlName=\"indicatorName\" placeholder=\"Indicator Name [ref]\" required/>\n        </div>\n\n        <div class=\"formfield\">\n          <label class=\"metrics\">Metrics</label>\n          <textarea class=\"text\" cols=\"30\" rows=\"10\" type=\"text\" formControlName=\"metrics\"\n            placeholder=\"Metrics must be comma seperated\" required></textarea>\n        </div>\n      </div>\n\n    </div>\n    <div id=\"savebtn\">\n      <button type=\"submit\" class=\"buttonLaTool\" \n        (click)='addData(learningEvents,learningActivities,indicator,metrics)'\n        [disabled]=\"dataEntryForm.pristine || dataEntryForm.invalid\">Save</button>\n    </div>\n  </form>\n\n</div>\n");
 
 /***/ }),
 
@@ -539,7 +539,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<app-chart-manager> </app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered with LaTool.</p>\n</div>\n");
+/* harmony default export */ __webpack_exports__["default"] = ("<app-chart-manager> </app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered with [LaTool].</p>\n</div>\n\n\n");
 
 /***/ }),
 
@@ -552,7 +552,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<span class=\"tool_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px\">\n      <strong>Learning Events</strong><br />\n      <span class=\"stepDefine\" style=\"font-size: 14px\" id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n        <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details\n        <span class=\"toolBoxCss\" id=\"contentEvents\">\n          <p style=\"text-align: left\">\n            <strong>Learning Events</strong><br />\n            A learning objective is the desired outcome of a single or multiple\n            learning event and is used to establish learning <br />\n            activities to achieve the overall learning outcome\n            <a target=\"_blank\"\n              href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\">[13]</a>.\n            Learning design literature identified eight learning events:\n            <br />create, explore, practice, imitate, receive, debate,\n            meta-learn/Elf-reflect, and experiment\n            <a target=\"_blank\" href=\"http://www.labset.net/media/prod/8LEM.pdf\">[1]</a>,\n            <a target=\"_blank\" href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\">[2]</a>.\n            <br /><br />\n            <img width=\"800px\" src=\"assets/images/events.png\" />\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field >\n      <mat-select class=\"step1\" placeholder=\"Learning Events\" name=\"Select\" [(ngModel)]=\"selected\" multiple\n        #selectionModel=\"ngModel\" (valueChange)=\"learningValueChange($event)\">\n        <app-select-check-all [model]=\"selectionModel\" [values]=\"options\" (sendCount)=\"learningValueChange($event)\">\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of options\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br />\n    <span style=\"font-size: 14px\" id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentActivites\">\n        <p style=\"text-align: left\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al.\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">[3]</a>\n          took the model of learning events and added learning activities<br />\n          to identify its outcomes in LD. Learning activities are split into\n          in-class methods and tools,<br />\n          and online methods and tools [<a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">3</a>,\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\">9</a>].\n          Examples of in-class methods and tools are exercise, <br />exam,\n          presentation, discussion, demonstration, etc. On the other hand,\n          online methods and <br />tools are blogs, wikis, forums, photo and\n          audio notes, online tests and quizzes, e-portfolios, <br />etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown class=\"step2\" [placeholder]=\"'Learning Activities'\" [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedItems\" [settings]=\"dropdownSettings\" (onSelect)=\"onItemSelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"checkvalue($event)\">\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br />\n    <span style=\"font-size: 14px\" id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <span><img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details</span>\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is\n          the result of the analysis of one<br />\n          or multiple metrics (e.g. number of views, login/logout frequency &\n          time, number of posts, etc.) and gives\n          <br />\n          a more comprehensive picture on a particular (abstract) learner\n          status, e.g. reading comprehension, <br />\n          self-reflection, etc. An indicator covers a particular aspect of an\n          abstract variable (e.g., student engagement)<br />\n          by using relevant (measurable) items.<br /><br />\n          Here is an example of Student Engagement in Moodle. <br />\n          <img src=\"assets/images/engagement.jpg\" />\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"step3\" matInput [(ngModel)]=\"searchInd\" placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\" />\n  </div>\n  <div>\n    <strong>Metrics</strong><br />\n    <span style=\"font-size: 14px\" id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align: left\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction\n          between learners and LMSs.<br />\n          To make sense of these captured data, they need to be categorized in a\n          corresponding unit of<br />\n          measurement (e.g. number of views, login/logout frequency & time,\n          number of posts, etc.). In<br />\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"stepMetrics\" matInput [(ngModel)]=\"searchText\" placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchText)\" />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Seleted Indicator(s)</label>\n    <ul id=\"reset\" style=\"line-height: 15%; font-size: 15px\" *ngFor=\"let selectInd of ind_list\">\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button class=\"stepVisualize buttonLaTool\" (click)=\"forwardIndicators(ind_list)\">\n        <i class=\"fa-solid fa-display\"></i>  &nbsp; Visualize\n      </button>\n      <button class=\"stepDownload buttonLaTool\" (click)=\"getSelectedind(mat_list)\"><i class=\"fa-solid fa-download\"></i> &nbsp;  JSON\n      </button>\n      \n      <button class=\"stepDownloadText buttonLaTool\" (click)=\"download(mat_list, 'text/plain', 'Indicators TEXT.txt')\">\n        <i class=\"fa-solid fa-download\"></i> &nbsp; TEXT\n        </button>\n\n        <button class=\"stepReset buttonRed\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> &nbsp; Reset</button>\n    </span>\n\n   <!-- <button class=\"stepReset buttonLaTool\"  (click)=\"reset()\"><img width=\"70px\" src=\"assets/images/reset.png\"/></button>  -->\n\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events</th>\n      <div>\n        <th style=\"margin-left: 40px\">(Learning) Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\">\n        <th>Indicators</th>\n      </div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n    <tr class=\"activities\" *ngFor=\"let LearningActivities of learningEvents.LearningActivities\">\n      <td style=\"width: 210px\">\n        {{ LearningActivities.Name }}\n      </td>\n      <td class=\"highlightIndicators\">\n        <!-- loop for indicators -->\n    <tr *ngFor=\"let indic of LearningActivities.indicator\">\n      <input class=\"step4\" #indicatorCheckbox type=\"checkbox\" value=\"indic\" [checked]=\"indic.checked\"\n        (change)=\"Checkbox($event, indic)\" />\n\n      <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n        <span [innerHTML]=\"indic.indicatorName | sanitizeHtml: searchInd\">\n          {{ indic.indicatorName }}\n        </span>\n      </a>\n      <td *ngIf=\"searchText\">\n    <tr>\n      <a class=\"sortable\">\n        <span [innerHTML]=\"indic.metrics | sanitizeHtml: searchText\">\n          {{ indic.metrics }}\n        </span>\n      </a>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n  </table>\n\n  <a id=\"back-to-top\" class=\"btn btn-top back-to-top\" role=\"button\" (click)=\"backToTop()\">\n    <i class=\"material-icons\">arrow_upward</i>\n  </a>\n</span>");
+/* harmony default export */ __webpack_exports__["default"] = ("<span class=\"tool_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px\">\n      <strong>Learning Events</strong><br />\n      <span class=\"stepDefine\" style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n        <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more details\n        <span class=\"\" id=\"contentEvents\">\n          <p style=\"text-align: left\">\n            <strong>Learning Events</strong><br />\n            A learning objective is the desired outcome of a single or multiple\n            learning event and is used to establish learning <br />\n            activities to achieve the overall learning outcome\n            <a target=\"_blank\"\n              href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\">[13]</a>.\n            Learning design literature identified eight learning events:\n            <br />create, explore, practice, imitate, receive, debate,\n            meta-learn/Elf-reflect, and experiment\n            <a target=\"_blank\" href=\"http://www.labset.net/media/prod/8LEM.pdf\">[1]</a>,\n            <a target=\"_blank\" href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\">[2]</a>.\n            <br /><br />\n            <img width=\"800px\" src=\"assets/images/events.png\" />\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field>\n      <mat-select class=\"step1\" placeholder=\"Learning Events\" name=\"Select\" [(ngModel)]=\"LearningEvents_mateSelect\" multiple\n        #selectionModel=\"ngModel\" (valueChange)=\"onEventValueChange($event)\">\n        <app-select-check-all [model]=\"selectionModel\" [values]=\"AllLearningEventsOptions\" (sendCount)=\"onEventValueChange($event)\">\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of AllLearningEventsOptions\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"\" id=\"contentActivites\">\n        <p style=\"text-align: left\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al.\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">[3]</a>\n          took the model of learning events and added learning activities<br />\n          to identify its outcomes in LD. Learning activities are split into\n          in-class methods and tools,<br />\n          and online methods and tools [<a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">3</a>,\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\">9</a>].\n          Examples of in-class methods and tools are exercise, <br />exam,\n          presentation, discussion, demonstration, etc. On the other hand,\n          online methods and <br />tools are blogs, wikis, forums, photo and\n          audio notes, online tests and quizzes, e-portfolios, <br />etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown class=\"step2\" [placeholder]=\"'Learning Activities'\" [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedItems\" [settings]=\"dropdownSettings\" (onSelect)=\"onActivitySelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"checkvalue($event)\">\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <span><img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details</span>\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is\n          the result of the analysis of one<br />\n          or multiple metrics (e.g. number of views, login/logout frequency &\n          time, number of posts, etc.) and gives\n          <br />\n          a more comprehensive picture on a particular (abstract) learner\n          status, e.g. reading comprehension, <br />\n          self-reflection, etc. An indicator covers a particular aspect of an\n          abstract variable (e.g., student engagement)<br />\n          by using relevant (measurable) items.<br /><br />\n          Here is an example of Student Engagement in Moodle. <br />\n          <img src=\"assets/images/engagement.jpg\" />\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"step3\" matInput [(ngModel)]=\"searchInd\" placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\" />\n  </div>\n  <div>\n    <strong>Metrics</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align: left\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction\n          between learners and LMSs.<br />\n          To make sense of these captured data, they need to be categorized in a\n          corresponding unit of<br />\n          measurement (e.g. number of views, login/logout frequency & time,\n          number of posts, etc.). In<br />\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"stepMetrics\" matInput [(ngModel)]=\"searchText\" placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchText)\" />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Seleted Indicator(s)</label>\n    <ul id=\"reset\" style=\"line-height: 15%; font-size: 15px\" *ngFor=\"let selectInd of ind_list\">\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button class=\"stepVisualize buttonLaTool\" (click)=\"forwardIndicators(ind_list)\">\n        <i class=\"fa-solid fa-display\"></i>  &nbsp; Visualize\n      </button>\n      <button class=\"stepDownload buttonLaTool\" (click)=\"getSelectedind(mat_list)\"><i class=\"fa-solid fa-download\"></i> &nbsp;  JSON\n      </button>\n      \n      <button class=\"stepDownloadText buttonLaTool\" (click)=\"download(mat_list, 'text/plain', 'Indicators TEXT.txt')\">\n        <i class=\"fa-solid fa-download\"></i> &nbsp; TEXT\n        </button>\n\n        <button class=\"stepReset buttonRed\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> &nbsp; Reset</button>\n    </span>\n\n   <!-- <button class=\"stepReset buttonLaTool\"  (click)=\"reset()\"><img width=\"70px\" src=\"assets/images/reset.png\"/></button>  -->\n\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events</th>\n      <div>\n        <th style=\"margin-left: 40px\">(Learning) Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\">\n        <th>Indicators</th>\n      </div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n    <tr class=\"activities\" *ngFor=\"let LearningActivities of learningEvents.LearningActivities\">\n      <td style=\"width: 210px\">\n        {{ LearningActivities.Name }}\n      </td>\n      <td class=\"highlightIndicators\">\n        <!-- loop for indicators -->\n    <tr *ngFor=\"let indic of LearningActivities.indicator\">\n      <input class=\"step4\" #indicatorCheckbox type=\"checkbox\" value=\"indic\" [checked]=\"indic.checked\"\n        (change)=\"Checkbox($event, indic)\" />\n\n      <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n        <span [innerHTML]=\"indic.indicatorName | sanitizeHtml: searchInd\">\n          {{ indic.indicatorName }}\n        </span>\n      </a>\n      <td *ngIf=\"searchText\">\n    <tr>\n      <a class=\"sortable\">\n        <span [innerHTML]=\"indic.metrics | sanitizeHtml: searchText\">\n          {{ indic.metrics }}\n        </span>\n      </a>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n  </table>\n\n  <a id=\"back-to-top\" class=\"btn back-to-top\" role=\"button\" (click)=\"backToTop()\">\n    <i class=\"material-icons buttonLaTool\">arrow_upward</i>\n  </a>\n</span>");
 
 /***/ }),
 
@@ -578,7 +578,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\" id=\"header\">\r\n  <mat-toolbar color=\"primary\"><span class=\"step0\">\r\n      <a><img routerLink=\"\" style=\"height: 58px; padding-top: 8px\"\r\n          src=\"assets/images/logo.png\" /></a></span>\r\n          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; \r\n          <button class=\"buttonHead\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> Click here if the table is empty</button>\r\n          \r\n           <!-- <a style=\"color: white; font-size: 14px;\" (click)=\"reset()\"> Click here if the table is empty</a> -->\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>");
+/* harmony default export */ __webpack_exports__["default"] = ("<div class=\"header\" id=\"header\">\r\n  <mat-toolbar style=\"height: 72px;\" color=\"primary\">\r\n    <span class=\"step0\" >\r\n      <span id=\"tooltipHeaderLogo\" data-tooltipster='{\"side\":\"right\",\"animation\":\"grow\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'>\r\n        <a><img routerLink=\"/\" class=\"HeaderLogo\"  style=\"height: 66px; padding-top: 9px\" src=\"assets/images/logo.png\" />\r\n          <span id=\"contentHeaderLogo\">\r\n            <p>\r\n              <strong>[LaTool]</strong><br /><br />\r\n              (Acronym Blinded)<br />\r\n            </p>\r\n          </span>\r\n      </a>\r\n    </span>\r\n    </span>\r\n    \r\n\r\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\n    <button class=\"buttonHead\" (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> Click here if the below TABLE is empty</button>\r\n\r\n    <!-- <a style=\"color: white; font-size: 14px;\" (click)=\"reset()\"> Click here if the table is empty</a> -->\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>");
 
 /***/ }),
 
@@ -1278,6 +1278,8 @@ let ChartManagerComponent = class ChartManagerComponent {
       This component renders all the charts.
       Parse all the indicators from local Storage into the dropdownItems variable, referenceNumbers contains only the numbers in brackets.
       The HTML template checks if referenceNumbers includes an indicator number in brackets and renders it.
+  
+      
     */
     ngOnInit() {
         this.dropdownItems = JSON.parse(localStorage.getItem("selectedIndicators")); //For the dropdown menu
@@ -7183,7 +7185,7 @@ WritingAnalyticsComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".card {\n\n  background: white;\n  margin: 15px;\n  height: 75%;\n  width: 50%;\n  box-shadow: 1px 1px 2px 2px #888888;\n  padding-bottom: 24px;\n  position: absolute;\n  transform: translate(50%, 50%);\n  bottom: 40%;\n  right: 50%;\n  overflow: auto;\n\n\n}\n\n\n\n#title {\n  text-align: center;\n  font-weight: normal;\n  margin: 24px;\n  padding: 24px;\n  background-color: #3F51B5;\n  color: white;\n}\n\n\n\n#dropdown {\n  margin: 16px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n\n\n#dropdown>mat-select {\n  height: 20px;\n  width: 300px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 34px;\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n\n#dropdown>label {\n  padding-right: 40px;\n  padding-left: 40px;\n}\n\n\n\noption {\n  color: white;\n  border: none;\n}\n\n\n\n#activities {\n  margin: 16px;\n  padding-left: 12px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n\n\n#activities>mat-select {\n  height: 20px;\n  width: 300px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 32px;\n\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n\n#activities>label {\n  padding-right: 24px;\n  padding-left: 24px;\n\n}\n\n\n\n#indicators {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n#indicators>label {\n\n  padding-right: 84px;\n  padding-left: 24px;\n\n}\n\n\n\n#indicators>input {\n  font-size: 16px;\n  font-weight: normal;\n\n  margin-left: 32px;\n  width: 500px;\n  height: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n#metrics {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n\n.metrics {\n\n  padding-right: 140px;\n  padding-left: 24px;\n  font-size: medium;\n  margin-left: 24px;\n\n\n}\n\n\n\n#metrics>input {\n  font-size: 16px;\n  font-weight: normal;\n  background-color: #3F51B5;\n  border: none;\n  border-radius: 4px;\n  width: 400px;\n  height: 30px;\n  color: white;\n}\n\n\n\n.btn {\n  margin-top: 24px;\n  padding-right: 92px;\n  padding-left: 24px;\n  text-align: center;\n}\n\n\n\n#btn1 {\n  margin-left: 12px;\n  margin-right: 24px;\n}\n\n\n\n#btn2 {\n  margin-top: 12px;\n  margin-right: 24px;\n}\n\n\n\n#savebtn {\n\n  margin: 40px;\n  padding-left: 200px;\n}\n\n\n\n.formfield * {\n  vertical-align: middle;\n  margin-top: 16px;\n  font-weight: bold;\n  font-size: 16px;\n  width: 500px;\n\n}\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2FkZC1kYXRhL2FkZC1kYXRhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7O0VBRUUsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixXQUFXO0VBQ1gsVUFBVTtFQUNWLG1DQUFtQztFQUNuQyxvQkFBb0I7RUFDcEIsa0JBQWtCO0VBQ2xCLDhCQUE4QjtFQUM5QixXQUFXO0VBQ1gsVUFBVTtFQUNWLGNBQWM7OztBQUdoQjs7OztBQUlBO0VBQ0Usa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixZQUFZO0VBQ1osYUFBYTtFQUNiLHlCQUF5QjtFQUN6QixZQUFZO0FBQ2Q7Ozs7QUFFQTtFQUNFLFlBQVk7RUFDWixpQkFBaUI7RUFDakIsZUFBZTtBQUNqQjs7OztBQUdBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZOztBQUVkOzs7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsa0JBQWtCO0FBQ3BCOzs7O0FBRUE7RUFDRSxZQUFZO0VBQ1osWUFBWTtBQUNkOzs7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOzs7O0FBRUE7RUFDRSxZQUFZO0VBQ1osWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLGlCQUFpQjs7RUFFakIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZOztBQUVkOzs7O0FBRUE7RUFDRSxtQkFBbUI7RUFDbkIsa0JBQWtCOztBQUVwQjs7OztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsZUFBZTs7QUFFakI7Ozs7QUFFQTs7RUFFRSxtQkFBbUI7RUFDbkIsa0JBQWtCOztBQUVwQjs7OztBQUVBO0VBQ0UsZUFBZTtFQUNmLG1CQUFtQjs7RUFFbkIsaUJBQWlCO0VBQ2pCLFlBQVk7RUFDWixZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGVBQWU7O0FBRWpCOzs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlOztBQUVqQjs7OztBQUVBOztFQUVFLG9CQUFvQjtFQUNwQixrQkFBa0I7RUFDbEIsaUJBQWlCO0VBQ2pCLGlCQUFpQjs7O0FBR25COzs7O0FBRUE7RUFDRSxlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLHlCQUF5QjtFQUN6QixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixZQUFZO0VBQ1osWUFBWTtBQUNkOzs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7QUFDcEI7Ozs7QUFFQTtFQUNFLGlCQUFpQjtFQUNqQixrQkFBa0I7QUFDcEI7Ozs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixrQkFBa0I7QUFDcEI7Ozs7QUFFQTs7RUFFRSxZQUFZO0VBQ1osbUJBQW1CO0FBQ3JCOzs7O0FBRUE7RUFDRSxzQkFBc0I7RUFDdEIsZ0JBQWdCO0VBQ2hCLGlCQUFpQjtFQUNqQixlQUFlO0VBQ2YsWUFBWTs7QUFFZCIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9hZGQtZGF0YS9hZGQtZGF0YS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xuXG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBtYXJnaW46IDE1cHg7XG4gIGhlaWdodDogNzUlO1xuICB3aWR0aDogNTAlO1xuICBib3gtc2hhZG93OiAxcHggMXB4IDJweCAycHggIzg4ODg4ODtcbiAgcGFkZGluZy1ib3R0b206IDI0cHg7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoNTAlLCA1MCUpO1xuICBib3R0b206IDQwJTtcbiAgcmlnaHQ6IDUwJTtcbiAgb3ZlcmZsb3c6IGF1dG87XG5cblxufVxuXG5cblxuI3RpdGxlIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBtYXJnaW46IDI0cHg7XG4gIHBhZGRpbmc6IDI0cHg7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzRjUxQjU7XG4gIGNvbG9yOiB3aGl0ZTtcbn1cblxuI2Ryb3Bkb3duIHtcbiAgbWFyZ2luOiAxNnB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG5cbiNkcm9wZG93bj5tYXQtc2VsZWN0IHtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMzAwcHg7XG4gIHBhZGRpbmctbGVmdDogMjVweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBtYXJnaW4tbGVmdDogMzRweDtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGNvbG9yOiB3aGl0ZTtcblxufVxuXG4jZHJvcGRvd24+bGFiZWwge1xuICBwYWRkaW5nLXJpZ2h0OiA0MHB4O1xuICBwYWRkaW5nLWxlZnQ6IDQwcHg7XG59XG5cbm9wdGlvbiB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyOiBub25lO1xufVxuXG4jYWN0aXZpdGllcyB7XG4gIG1hcmdpbjogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAxMnB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xufVxuXG4jYWN0aXZpdGllcz5tYXQtc2VsZWN0IHtcbiAgaGVpZ2h0OiAyMHB4O1xuICB3aWR0aDogMzAwcHg7XG4gIHBhZGRpbmctbGVmdDogMjVweDtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuICBtYXJnaW4tbGVmdDogMzJweDtcblxuICBib3JkZXI6IG5vbmU7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgY29sb3I6IHdoaXRlO1xuXG59XG5cbiNhY3Rpdml0aWVzPmxhYmVsIHtcbiAgcGFkZGluZy1yaWdodDogMjRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuXG59XG5cbiNpbmRpY2F0b3JzIHtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbiNpbmRpY2F0b3JzPmxhYmVsIHtcblxuICBwYWRkaW5nLXJpZ2h0OiA4NHB4O1xuICBwYWRkaW5nLWxlZnQ6IDI0cHg7XG5cbn1cblxuI2luZGljYXRvcnM+aW5wdXQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG5cbiAgbWFyZ2luLWxlZnQ6IDMycHg7XG4gIHdpZHRoOiA1MDBweDtcbiAgaGVpZ2h0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbiNtZXRyaWNzIHtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgcGFkZGluZy1sZWZ0OiAzMHB4O1xuICBmb250LXdlaWdodDogYm9sZDtcbiAgZm9udC1zaXplOiAxNnB4O1xuXG59XG5cbi5tZXRyaWNzIHtcblxuICBwYWRkaW5nLXJpZ2h0OiAxNDBweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICBmb250LXNpemU6IG1lZGl1bTtcbiAgbWFyZ2luLWxlZnQ6IDI0cHg7XG5cblxufVxuXG4jbWV0cmljcz5pbnB1dCB7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzNGNTFCNTtcbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIHdpZHRoOiA0MDBweDtcbiAgaGVpZ2h0OiAzMHB4O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbi5idG4ge1xuICBtYXJnaW4tdG9wOiAyNHB4O1xuICBwYWRkaW5nLXJpZ2h0OiA5MnB4O1xuICBwYWRkaW5nLWxlZnQ6IDI0cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuI2J0bjEge1xuICBtYXJnaW4tbGVmdDogMTJweDtcbiAgbWFyZ2luLXJpZ2h0OiAyNHB4O1xufVxuXG4jYnRuMiB7XG4gIG1hcmdpbi10b3A6IDEycHg7XG4gIG1hcmdpbi1yaWdodDogMjRweDtcbn1cblxuI3NhdmVidG4ge1xuXG4gIG1hcmdpbjogNDBweDtcbiAgcGFkZGluZy1sZWZ0OiAyMDBweDtcbn1cblxuLmZvcm1maWVsZCAqIHtcbiAgdmVydGljYWwtYWxpZ246IG1pZGRsZTtcbiAgbWFyZ2luLXRvcDogMTZweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgd2lkdGg6IDUwMHB4O1xuXG59XG4iXX0= */");
+/* harmony default export */ __webpack_exports__["default"] = (".card {\n  background: white;\n  margin: 15px;\n  height: 75%;\n  width: 50%;\n  box-shadow: 1px 1px 2px 2px #888888;\n  padding-bottom: 24px;\n  position: absolute;\n  transform: translate(50%, 50%);\n  bottom: 40%;\n  right: 50%;\n  overflow: auto;\n}\n\n\n#title {\n  text-align: center;\n  font-weight: normal;\n  margin: 24px;\n  padding: 24px;\n  background-color: #3F51B5;\n  color: white;\n}\n\n\n#dropdown {\n  margin: 16px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n\n#dropdown>mat-select {\n  height: 20px;\n  width: 300px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 34px;\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n#dropdown>label {\n  padding-right: 40px;\n  padding-left: 40px;\n}\n\n\noption {\n  color: white;\n  border: none;\n}\n\n\n#activities {\n  margin: 16px;\n  padding-left: 12px;\n  font-weight: bold;\n  font-size: 16px;\n}\n\n\n#activities>mat-select {\n  height: 20px;\n  width: 300px;\n  padding-left: 25px;\n  font-size: 16px;\n  font-weight: normal;\n  margin-left: 32px;\n\n  border: none;\n  border-radius: 4px;\n  color: white;\n\n}\n\n\n#activities>label {\n  padding-right: 24px;\n  padding-left: 24px;\n\n}\n\n\n#indicators {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n#indicators>label {\n\n  padding-right: 84px;\n  padding-left: 24px;\n\n}\n\n\n#indicators>input {\n  font-size: 16px;\n  font-weight: normal;\n\n  margin-left: 32px;\n  width: 500px;\n  height: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n#metrics {\n  margin-top: 16px;\n  padding-left: 30px;\n  font-weight: bold;\n  font-size: 16px;\n\n}\n\n\n.metrics {\n\n  padding-right: 140px;\n  padding-left: 24px;\n  font-size: medium;\n  margin-left: 24px;\n\n\n}\n\n\n#metrics>input {\n  font-size: 16px;\n  font-weight: normal;\n  background-color: #3F51B5;\n  border: none;\n  border-radius: 4px;\n  width: 400px;\n  height: 30px;\n  color: white;\n}\n\n\n.btn {\n  margin-top: 24px;\n  padding-right: 92px;\n  padding-left: 24px;\n  text-align: center;\n}\n\n\n#btn1 {\n  margin-left: 12px;\n  margin-right: 24px;\n}\n\n\n#btn2 {\n  margin-top: 12px;\n  margin-right: 24px;\n}\n\n\n#savebtn {\n\n  margin: 40px;\n  padding-left: 200px;\n}\n\n\n.formfield * {\n  vertical-align: middle;\n  margin-top: 16px;\n  font-weight: bold;\n  font-size: 16px;\n  width: 500px;\n\n}\n\n\n.alert {\n  position: relative;\n  top: 10;\n  left: 0;\n  width: auto;\n  padding: 10px;\n  margin-left: 600px;\n  margin-right: 600px;\n  line-height: 1.8;\n  border-radius: 5px;\n  cursor: hand;\n  cursor: pointer;\n  font-family: sans-serif;\n  font-weight: 400;\n}\n\n\n.alertCheckbox {\n  display: none;\n}\n\n\n:checked + .alert {\n  display: none;\n}\n\n\n.alertText {\n  display: table;\n  margin: 0 auto;\n  text-align: center;\n  font-size: 16px;\n}\n\n\n.alertClose {\n  float: right;\n  padding-top: 5px;\n  font-size: 10px;\n}\n\n\n.clear {\n  clear: both;\n}\n\n\n.success {\n  border: 1px solid rgb(214, 233, 198);\n  background-color: rgb(223, 240, 216);\n  color: rgb(70, 136, 71);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2FkZC1kYXRhL2FkZC1kYXRhLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSxpQkFBaUI7RUFDakIsWUFBWTtFQUNaLFdBQVc7RUFDWCxVQUFVO0VBQ1YsbUNBQW1DO0VBQ25DLG9CQUFvQjtFQUNwQixrQkFBa0I7RUFDbEIsOEJBQThCO0VBQzlCLFdBQVc7RUFDWCxVQUFVO0VBQ1YsY0FBYztBQUNoQjs7O0FBR0E7RUFDRSxrQkFBa0I7RUFDbEIsbUJBQW1CO0VBQ25CLFlBQVk7RUFDWixhQUFhO0VBQ2IseUJBQXlCO0VBQ3pCLFlBQVk7QUFDZDs7O0FBRUE7RUFDRSxZQUFZO0VBQ1osaUJBQWlCO0VBQ2pCLGVBQWU7QUFDakI7OztBQUdBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQixpQkFBaUI7RUFDakIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZOztBQUVkOzs7QUFFQTtFQUNFLG1CQUFtQjtFQUNuQixrQkFBa0I7QUFDcEI7OztBQUVBO0VBQ0UsWUFBWTtFQUNaLFlBQVk7QUFDZDs7O0FBRUE7RUFDRSxZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlO0FBQ2pCOzs7QUFFQTtFQUNFLFlBQVk7RUFDWixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixtQkFBbUI7RUFDbkIsaUJBQWlCOztFQUVqQixZQUFZO0VBQ1osa0JBQWtCO0VBQ2xCLFlBQVk7O0FBRWQ7OztBQUVBO0VBQ0UsbUJBQW1CO0VBQ25CLGtCQUFrQjs7QUFFcEI7OztBQUVBO0VBQ0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsZUFBZTs7QUFFakI7OztBQUVBOztFQUVFLG1CQUFtQjtFQUNuQixrQkFBa0I7O0FBRXBCOzs7QUFFQTtFQUNFLGVBQWU7RUFDZixtQkFBbUI7O0VBRW5CLGlCQUFpQjtFQUNqQixZQUFZO0VBQ1osWUFBWTtFQUNaLGlCQUFpQjtFQUNqQixlQUFlOztBQUVqQjs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixlQUFlOztBQUVqQjs7O0FBRUE7O0VBRUUsb0JBQW9CO0VBQ3BCLGtCQUFrQjtFQUNsQixpQkFBaUI7RUFDakIsaUJBQWlCOzs7QUFHbkI7OztBQUVBO0VBQ0UsZUFBZTtFQUNmLG1CQUFtQjtFQUNuQix5QkFBeUI7RUFDekIsWUFBWTtFQUNaLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osWUFBWTtFQUNaLFlBQVk7QUFDZDs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsbUJBQW1CO0VBQ25CLGtCQUFrQjtFQUNsQixrQkFBa0I7QUFDcEI7OztBQUVBO0VBQ0UsaUJBQWlCO0VBQ2pCLGtCQUFrQjtBQUNwQjs7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsa0JBQWtCO0FBQ3BCOzs7QUFFQTs7RUFFRSxZQUFZO0VBQ1osbUJBQW1CO0FBQ3JCOzs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QixnQkFBZ0I7RUFDaEIsaUJBQWlCO0VBQ2pCLGVBQWU7RUFDZixZQUFZOztBQUVkOzs7QUFFQTtFQUNFLGtCQUFrQjtFQUNsQixPQUFPO0VBQ1AsT0FBTztFQUNQLFdBQVc7RUFDWCxhQUFhO0VBQ2Isa0JBQWtCO0VBQ2xCLG1CQUFtQjtFQUNuQixnQkFBZ0I7RUFDaEIsa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixlQUFlO0VBQ2YsdUJBQXVCO0VBQ3ZCLGdCQUFnQjtBQUNsQjs7O0FBRUE7RUFDRSxhQUFhO0FBQ2Y7OztBQUVBO0VBQ0UsYUFBYTtBQUNmOzs7QUFFQTtFQUNFLGNBQWM7RUFDZCxjQUFjO0VBQ2Qsa0JBQWtCO0VBQ2xCLGVBQWU7QUFDakI7OztBQUVBO0VBQ0UsWUFBWTtFQUNaLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCOzs7QUFFQTtFQUNFLFdBQVc7QUFDYjs7O0FBRUE7RUFDRSxvQ0FBb0M7RUFDcEMsb0NBQW9DO0VBQ3BDLHVCQUF1QjtBQUN6QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9hZGQtZGF0YS9hZGQtZGF0YS5jb21wb25lbnQuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLmNhcmQge1xuICBiYWNrZ3JvdW5kOiB3aGl0ZTtcbiAgbWFyZ2luOiAxNXB4O1xuICBoZWlnaHQ6IDc1JTtcbiAgd2lkdGg6IDUwJTtcbiAgYm94LXNoYWRvdzogMXB4IDFweCAycHggMnB4ICM4ODg4ODg7XG4gIHBhZGRpbmctYm90dG9tOiAyNHB4O1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIHRyYW5zZm9ybTogdHJhbnNsYXRlKDUwJSwgNTAlKTtcbiAgYm90dG9tOiA0MCU7XG4gIHJpZ2h0OiA1MCU7XG4gIG92ZXJmbG93OiBhdXRvO1xufVxuXG5cbiN0aXRsZSB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgbWFyZ2luOiAyNHB4O1xuICBwYWRkaW5nOiAyNHB4O1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjM0Y1MUI1O1xuICBjb2xvcjogd2hpdGU7XG59XG5cbiNkcm9wZG93biB7XG4gIG1hcmdpbjogMTZweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuXG4jZHJvcGRvd24+bWF0LXNlbGVjdCB7XG4gIGhlaWdodDogMjBweDtcbiAgd2lkdGg6IDMwMHB4O1xuICBwYWRkaW5nLWxlZnQ6IDI1cHg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgbWFyZ2luLWxlZnQ6IDM0cHg7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBjb2xvcjogd2hpdGU7XG5cbn1cblxuI2Ryb3Bkb3duPmxhYmVsIHtcbiAgcGFkZGluZy1yaWdodDogNDBweDtcbiAgcGFkZGluZy1sZWZ0OiA0MHB4O1xufVxuXG5vcHRpb24ge1xuICBjb2xvcjogd2hpdGU7XG4gIGJvcmRlcjogbm9uZTtcbn1cblxuI2FjdGl2aXRpZXMge1xuICBtYXJnaW46IDE2cHg7XG4gIHBhZGRpbmctbGVmdDogMTJweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcbn1cblxuI2FjdGl2aXRpZXM+bWF0LXNlbGVjdCB7XG4gIGhlaWdodDogMjBweDtcbiAgd2lkdGg6IDMwMHB4O1xuICBwYWRkaW5nLWxlZnQ6IDI1cHg7XG4gIGZvbnQtc2l6ZTogMTZweDtcbiAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgbWFyZ2luLWxlZnQ6IDMycHg7XG5cbiAgYm9yZGVyOiBub25lO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGNvbG9yOiB3aGl0ZTtcblxufVxuXG4jYWN0aXZpdGllcz5sYWJlbCB7XG4gIHBhZGRpbmctcmlnaHQ6IDI0cHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcblxufVxuXG4jaW5kaWNhdG9ycyB7XG4gIG1hcmdpbi10b3A6IDE2cHg7XG4gIHBhZGRpbmctbGVmdDogMzBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcblxufVxuXG4jaW5kaWNhdG9ycz5sYWJlbCB7XG5cbiAgcGFkZGluZy1yaWdodDogODRweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuXG59XG5cbiNpbmRpY2F0b3JzPmlucHV0IHtcbiAgZm9udC1zaXplOiAxNnB4O1xuICBmb250LXdlaWdodDogbm9ybWFsO1xuXG4gIG1hcmdpbi1sZWZ0OiAzMnB4O1xuICB3aWR0aDogNTAwcHg7XG4gIGhlaWdodDogMzBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcblxufVxuXG4jbWV0cmljcyB7XG4gIG1hcmdpbi10b3A6IDE2cHg7XG4gIHBhZGRpbmctbGVmdDogMzBweDtcbiAgZm9udC13ZWlnaHQ6IGJvbGQ7XG4gIGZvbnQtc2l6ZTogMTZweDtcblxufVxuXG4ubWV0cmljcyB7XG5cbiAgcGFkZGluZy1yaWdodDogMTQwcHg7XG4gIHBhZGRpbmctbGVmdDogMjRweDtcbiAgZm9udC1zaXplOiBtZWRpdW07XG4gIG1hcmdpbi1sZWZ0OiAyNHB4O1xuXG5cbn1cblxuI21ldHJpY3M+aW5wdXQge1xuICBmb250LXNpemU6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBub3JtYWw7XG4gIGJhY2tncm91bmQtY29sb3I6ICMzRjUxQjU7XG4gIGJvcmRlcjogbm9uZTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICB3aWR0aDogNDAwcHg7XG4gIGhlaWdodDogMzBweDtcbiAgY29sb3I6IHdoaXRlO1xufVxuXG4uYnRuIHtcbiAgbWFyZ2luLXRvcDogMjRweDtcbiAgcGFkZGluZy1yaWdodDogOTJweDtcbiAgcGFkZGluZy1sZWZ0OiAyNHB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbiNidG4xIHtcbiAgbWFyZ2luLWxlZnQ6IDEycHg7XG4gIG1hcmdpbi1yaWdodDogMjRweDtcbn1cblxuI2J0bjIge1xuICBtYXJnaW4tdG9wOiAxMnB4O1xuICBtYXJnaW4tcmlnaHQ6IDI0cHg7XG59XG5cbiNzYXZlYnRuIHtcblxuICBtYXJnaW46IDQwcHg7XG4gIHBhZGRpbmctbGVmdDogMjAwcHg7XG59XG5cbi5mb3JtZmllbGQgKiB7XG4gIHZlcnRpY2FsLWFsaWduOiBtaWRkbGU7XG4gIG1hcmdpbi10b3A6IDE2cHg7XG4gIGZvbnQtd2VpZ2h0OiBib2xkO1xuICBmb250LXNpemU6IDE2cHg7XG4gIHdpZHRoOiA1MDBweDtcblxufVxuXG4uYWxlcnQge1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogMTA7XG4gIGxlZnQ6IDA7XG4gIHdpZHRoOiBhdXRvO1xuICBwYWRkaW5nOiAxMHB4O1xuICBtYXJnaW4tbGVmdDogNjAwcHg7XG4gIG1hcmdpbi1yaWdodDogNjAwcHg7XG4gIGxpbmUtaGVpZ2h0OiAxLjg7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgY3Vyc29yOiBoYW5kO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICBmb250LXdlaWdodDogNDAwO1xufVxuXG4uYWxlcnRDaGVja2JveCB7XG4gIGRpc3BsYXk6IG5vbmU7XG59XG5cbjpjaGVja2VkICsgLmFsZXJ0IHtcbiAgZGlzcGxheTogbm9uZTtcbn1cblxuLmFsZXJ0VGV4dCB7XG4gIGRpc3BsYXk6IHRhYmxlO1xuICBtYXJnaW46IDAgYXV0bztcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xuICBmb250LXNpemU6IDE2cHg7XG59XG5cbi5hbGVydENsb3NlIHtcbiAgZmxvYXQ6IHJpZ2h0O1xuICBwYWRkaW5nLXRvcDogNXB4O1xuICBmb250LXNpemU6IDEwcHg7XG59XG5cbi5jbGVhciB7XG4gIGNsZWFyOiBib3RoO1xufVxuXG4uc3VjY2VzcyB7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHJnYigyMTQsIDIzMywgMTk4KTtcbiAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDIyMywgMjQwLCAyMTYpO1xuICBjb2xvcjogcmdiKDcwLCAxMzYsIDcxKTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -7209,7 +7211,6 @@ __webpack_require__.r(__webpack_exports__);
 
 let AddDataComponent = class AddDataComponent {
     constructor(dataService, router, fb) {
-        //// form entries///////
         this.dataService = dataService;
         this.router = router;
         this.fb = fb;
@@ -7218,6 +7219,7 @@ let AddDataComponent = class AddDataComponent {
         this.dropdownList = [];
         this.selectedItems = [];
         this.fileToUpload = null;
+        //// form entries///////
         this.dataEntryForm = this.fb.group({
             learningEvents: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
             learningActivities: ["", _angular_forms__WEBPACK_IMPORTED_MODULE_4__["Validators"].required],
@@ -7238,13 +7240,13 @@ let AddDataComponent = class AddDataComponent {
         });
     }
     /// code for add button//////////
-    addIndicator() {
-        this.indicator = this.dataEntryForm.get('indicator');
-        this.indicator.push(this.createIndicator());
-    }
-    removeIndicator(i) {
-        this.indicator.removeAt(i);
-    }
+    // addIndicator(): void {
+    //   this.indicator = this.dataEntryForm.get('indicator') as FormArray;
+    //   this.indicator.push(this.createIndicator());
+    // }
+    // removeIndicator(i: number) {
+    //   this.indicator.removeAt(i);
+    // }
     addData() {
         let indicators = this.dataEntryForm.value.indicator;
         const indicator = [];
@@ -7260,9 +7262,11 @@ let AddDataComponent = class AddDataComponent {
         this.dataService.addData(this.dataEntryForm.value.learningEvents, this.dataEntryForm.value.learningActivities, this.dataEntryForm.value.indicator).subscribe(() => {
             this.router.navigate(['/data']);
         });
-        //this.dataEntryForm.reset(); // clear from entry
-        //location.reload(); // reload web page
-        window.alert("Indicator added successfully!");
+        this.dataEntryForm.reset(); // clear from entry
+        this.similarActivityMessage = false;
+        // location.reload(); // reload web page
+        this.successfulMessage = "<b>Indicator and their Metrics added successfully!</b>";
+        //window.alert("");
     }
     fetchdata() {
         this.dataService.getdata().subscribe((data) => {
@@ -7274,7 +7278,9 @@ let AddDataComponent = class AddDataComponent {
         });
     }
     learningValueChange(x) {
+        this.successfulMessage = false; //to hide the success message
         this.selectedevent = x;
+        //console.log("Event: ", x);
         this.dataService.getdata().subscribe((data) => {
             this.data = data;
             let event = this.data.filter(function (obj) {
@@ -7294,16 +7300,30 @@ let AddDataComponent = class AddDataComponent {
             }
         }
     }
-    onFileSelected(files) {
-        this.file = files.item(0);
-        console.log(this.file);
-    }
-    upload() {
-        this.dataService.upload(this.file).subscribe(response => {
-            console.log('response recieved', response);
-        }, error => {
-            console.log(error);
-        });
+    onActivityValueChange(activityValue) {
+        let value = activityValue;
+        console.log("ActValue: ", activityValue);
+        if (activityValue == "Group Work") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Group Work\"</em> lies under the learning events <em>\"Create, Practice and Debate\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Group Work\"</em> activity in the mentioned learning events.";
+        }
+        else if (activityValue == "Review/Study") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Review/Study\"</em> lies under the learning events <em>\"Receive, Meta-learn or Self-reflect and Debate\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Review/Study\"</em> activity in the mentioned learning events.";
+        }
+        else if (activityValue == "Presentation") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Presentation\"</em> lies under the learning events <em>\"Receive, Imitate and Debate\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Presentation\"</em> activity in the mentioned learning events.";
+        }
+        else if (activityValue == "Exercise (Training)") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Exercise (Training)\"</em> lies under the learning events <em>\"Imitate, Experiment and Practice\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Exercise (Training)\"</em> activity in the mentioned learning events.";
+        }
+        else if (activityValue == "Question (Query/Inquiry)") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Question (Query/Inquiry)\"</em> lies under the learning events <em>\"Practice and Debate\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Question (Query/Inquiry)\"</em> activity in the mentioned learning events.";
+        }
+        else if (activityValue == "Survey (Questionnaire)") {
+            this.similarActivityMessage = "The selected learning activity <em>\"Survey (Questionnaire)\"</em> lies under the learning events <em>\"Explore, Practice and Debate\"</em>.<br>Therefore, the Indicator and Metrics you want to add will also be added automatically under the <em>\"Survey (Questionnaire)\"</em> activity in the mentioned learning events.";
+        }
+        else {
+            this.similarActivityMessage = false;
+        }
     }
 };
 AddDataComponent.ctorParameters = () => [
@@ -7493,10 +7513,11 @@ let DisplayComponent = class DisplayComponent {
         this.selectedItems = []; //learning activities dropdown
         this.name = [];
         this.options = []; // learning events options
+        this.AllLearningEventsOptions = [];
         this.learningEvents = [];
         this.learningAct = [];
         this.isLoaded = false;
-        this.selected = [];
+        this.LearningEvents_mateSelect = [];
         this.ind_list = [];
         this.mat_list = [];
         this.element = document.getElementById("header");
@@ -7536,17 +7557,21 @@ let DisplayComponent = class DisplayComponent {
           This function pushes all selected indicators in an array
           and stores them in localStorage, so the drop down menu in the dashboard page can display the selected indicators even after refreshing the page
           We also store the "check" property in localStorage so the check marks stay checked when the user returns to the display component
-        */
+          */
         this.forwardIndicators = (x) => {
             let indicators = [];
             let indicatorReferences = [];
+            let selectedLearningEvents = [];
             let regex = /\[[0-9]+\]/;
             for (const ind of this.ind_list) {
+                //console.log(this.ind_list);
+                //console.log(this.options);
                 if (!indicators.includes(ind)) {
                     indicatorReferences.push(ind.match(regex)[0]);
                     indicators.push(ind);
                 }
             }
+            //this.chartHelperService.setSettings("selectedLearningEvents", selectedLearningEvents);
             this.chartHelperService.setSettings("selectedIndicators", indicators);
             this.chartHelperService.setSettings("referenceNumbers", indicatorReferences);
             if (indicators.length > 0) {
@@ -7571,12 +7596,75 @@ let DisplayComponent = class DisplayComponent {
             allowSearchFilter: true,
         };
     }
-    /////////////// function for learning activities selection /////////////
-    onItemSelect(item) {
-        //console.log(item);
-        let p = this.selectedevent;
+    // function of fetching data from database
+    fetchdata() {
+        console.log("fetchdata: ");
+        this.dataService.getdata().subscribe((data) => {
+            this.data = data; /// complete data present in database
+            //retrive all learning events and PUSH all to the Dropdown and below I PUSH only those WAS checked before going to Dashboard
+            for (var val of this.data) {
+                this.AllLearningEventsOptions.push(val["LearningEvents"]);
+            }
+            this.isLoaded = true;
+            //After the data is fetched, we check if the localStorage contains the check property (this is to retain the checkbox state)
+            if (localStorage.getItem("check")) {
+                //Parse the data with the check property and loop through the indicators and see if the checked property is true
+                //If it's true we push it to the ind_list and mat_list, so the selected indicators from before are displayed at the top
+                this.data = JSON.parse(localStorage.getItem("check"));
+                for (let i = 0; i < this.data.length; i++) {
+                    for (let j = 0; j < this.data[i]["LearningActivities"].length; j++) {
+                        //console.log(data[i]["LearningActivities"][j]["indicator"]);
+                        for (let k = 0; k < this.data[i]["LearningActivities"][j]["indicator"].length; k++) {
+                            if (this.data[i]["LearningActivities"][j]["indicator"][k].checked) {
+                                this.ind_list.push(this.data[i]["LearningActivities"][j]["indicator"][k]["indicatorName"]);
+                                this.mat_list.push(this.data[i]["LearningActivities"][j]["indicator"][k]);
+                            }
+                        }
+                    }
+                }
+            }
+            //to retrive the Checked learningEvents after coming from the Dashboard
+            for (var val of this.data) {
+                this.options.push(val["LearningEvents"]);
+            }
+            //this.LearningEvents_mateSelect.push(this.AllLearningEventsOptions);
+            this.LearningEvents_mateSelect = this.options; //to retain the current and previous state
+            this.selectedevent = this.options; // to keep the object filled becasue people can select Activity instead of Event first
+            //this.onEventValueChange("Select All");
+            this.setLearningActivities(this.data);
+        });
+    }
+    onEventValueChange(eventValue) {
+        this.selectedevent = eventValue;
+        //console.log("onEventValueChange:", p);
+        this.ind_list = []; //empty the seleted list of indicators after event an Event change
         this.dataService.getdata().subscribe((data) => {
             this.data = data;
+            //console.log("data: ", this.data);
+            //  if (localStorage.getItem("check")) {this.data = JSON.parse(localStorage.getItem("check"));
+            //console.log("localStorage.inside: ", JSON.parse(localStorage.getItem("check")));//  }
+            this.isLoaded = true;
+            //if (eventValue == "Select All") { } else {
+            let event = this.data.filter(function (obj) {
+                //console.log("inside else: ", obj.LearningEvents);
+                return eventValue.includes(obj.LearningEvents);
+            });
+            this.setLearningActivities(event); //to update the DD of LA
+            if (eventValue != "") {
+                this.data = event;
+                //console.log("inside p IF: ", event);
+            }
+            //}
+        });
+    }
+    /////////////// function for learning activities selection /////////////
+    onActivitySelect(item) {
+        let p = this.selectedevent;
+        //console.log("item: ", item);
+        //console.log("this.selectedevent: ", p);
+        this.dataService.getdata().subscribe((data) => {
+            this.data = data;
+            //console.log("onActivitySelect: ", p);
             this.isLoaded = true;
             let event = this.data.filter(function (obj) {
                 return p.includes(obj.LearningEvents);
@@ -7594,37 +7682,37 @@ let DisplayComponent = class DisplayComponent {
         });
     }
     onSelectAll(items) {
-        this.learningValueChange(this.selectedevent);
+        this.onActivitySelect(items);
+        //console.log("onSelectAll: ", items);
+        //console.log("onSelectAll: ", this.selectedItems);
+        // this.onActivitySelect(items);
     }
-    // function of fetching data from database
-    fetchdata() {
-        this.dataService.getdata().subscribe((data) => {
-            this.data = data; /// complete data present in database
-            this.isLoaded = true;
-            //After the data is fetched, we check if the localStorage contains the check property (this is to retain the checkbox state)
-            if (localStorage.getItem("check")) {
-                //Parse the data with the check property and loop through the indicators and see if the checked property is true
-                //If it's true we push it to the ind_list and mat_list, so the selected indicators from before are displayed at the top
-                this.data = JSON.parse(localStorage.getItem("check"));
-                for (let i = 0; i < this.data.length; i++) {
-                    for (let j = 0; j < this.data[i]["LearningActivities"].length; j++) {
-                        //  console.log(data[i]["LearningActivities"][j]["indicator"]);
-                        for (let k = 0; k < this.data[i]["LearningActivities"][j]["indicator"].length; k++) {
-                            if (this.data[i]["LearningActivities"][j]["indicator"][k].checked) {
-                                this.ind_list.push(this.data[i]["LearningActivities"][j]["indicator"][k]["indicatorName"]);
-                                this.mat_list.push(this.data[i]["LearningActivities"][j]["indicator"][k]);
-                            }
-                        }
-                    }
+    checkvalue(event) {
+        if (this.selectedItems.length == 0) {
+            //this.onEventValueChange(this.selectedevent);
+        }
+        else {
+            let index = this.selectedItems.length;
+            if (index !== -1) {
+                this.selectedItems.splice(index, 1);
+                this.onActivitySelect(this.selectedItems);
+            }
+        }
+    }
+    /////////////// display learning activities ////////////////////
+    setLearningActivities(events) {
+        this.dropdownList = [];
+        this.name = [];
+        for (let learningEvents of events) {
+            //console.log("setLearningActivities learningEvents: ", learningEvents);
+            for (let entry of learningEvents.LearningActivities) {
+                //console.log("setLearningActivities - entry- learningEvents.LearningActivities", entry);
+                this.dropdownList.push(entry.Name);
+                for (let ind1 of entry.indicator) {
+                    this.name.push(ind1.metrics);
                 }
             }
-            for (var val of this.data) {
-                this.options.push(val["LearningEvents"]);
-            }
-            this.selected.push(this.options);
-            this.learningValueChange("Select All");
-            this.setLearningActivities(this.data);
-        });
+        }
     }
     ////////////////pop up by click Indicator to show meterics ///////////
     getMeterics(indic) {
@@ -7632,40 +7720,6 @@ let DisplayComponent = class DisplayComponent {
         let res = this.mat;
         this.sp = res.split(",");
         this.dialog.open(this.secondDialog);
-    }
-    learningValueChange(p) {
-        this.selectedevent = p;
-        this.dataService.getdata().subscribe((data) => {
-            this.data = data;
-            if (localStorage.getItem("check")) {
-                this.data = JSON.parse(localStorage.getItem("check"));
-            }
-            this.isLoaded = true;
-            if (p == "Select All") {
-            }
-            else {
-                let event = this.data.filter(function (obj) {
-                    return p.includes(obj.LearningEvents);
-                });
-                this.setLearningActivities(event);
-                if (p != "") {
-                    this.data = event;
-                }
-            }
-        });
-    }
-    /////////////// display learning activities ////////////////////
-    setLearningActivities(events) {
-        this.dropdownList = [];
-        this.name = [];
-        for (let learningEvents of events) {
-            for (let entry of learningEvents.LearningActivities) {
-                this.dropdownList.push(entry.Name);
-                for (let ind1 of entry.indicator) {
-                    this.name.push(ind1.metrics);
-                }
-            }
-        }
     }
     ///////////////////   search by metrics ///////////////
     learningEventsChangeOnSearch(search) {
@@ -7675,7 +7729,8 @@ let DisplayComponent = class DisplayComponent {
             });
         }
         else {
-            this.fetchdata();
+            console.log("learningEventsChangeOnSearch: ");
+            // this.fetchdata();
         }
     }
     ///////////////////   search by indicator ///////////////
@@ -7686,44 +7741,16 @@ let DisplayComponent = class DisplayComponent {
             });
         }
         else {
-            this.fetchdata();
-        }
-    }
-    /////////////
-    // transform(value: any, args: any): any {
-    //   if (!args) {
-    //     return value;
-    //   }
-    //   // Match in a case insensitive maneer
-    //   const re = new RegExp(args, 'gi');
-    //   const match = value.match(re);
-    //   // If there's no match, just return the original value.
-    //   if (!match) {
-    //     return value;
-    //   }
-    //   const replacedValue = value.replace(re, "<mark>" + match[0] + "</mark>")
-    //   return this.sanitizer.bypassSecurityTrustHtml(replacedValue)
-    // }
-    // searchTerm: string;
-    // updateSearch(e) {
-    //   this.searchTerm = e.target.value
-    // }
-    checkvalue(event) {
-        if (this.selectedItems.length == 0) {
-            this.learningValueChange(this.selectedevent);
-        }
-        else {
-            let index = this.selectedItems.length;
-            if (index !== -1) {
-                this.selectedItems.splice(index, 1);
-                this.onItemSelect(this.selectedItems);
-            }
+            console.log("searchIndicator: ");
+            //this.fetchdata();
         }
     }
     ////////////////// function for checkbox to select indicator   //////////////////
     Checkbox(event, selectInd) {
         this.ind = selectInd.indicatorName;
         this.met = selectInd;
+        //console.log("CheckboxFun event", event);
+        //console.log("CheckboxFun selectInd", selectInd);
         if (event.target.checked) {
             //Set the checked property to true and store it in localStorage so the checkboxes stay checked after reload
             selectInd.checked = true;
@@ -8035,7 +8062,7 @@ DropdownComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (".example-spacer {\n    flex: 1 1 auto;\n  }\n  \n\n.buttonHead {\n  padding: 13px 26px;\n  text-align: center;\n  transition: 1s;\n  background-size: 1051% auto;\n  color: white;\n  border-radius: 4px;\n  display: inline-block;\n  border: 0px;\n  background-image: linear-gradient(45deg, #3f51b5 10%, #a1bcde 51%, #3f51b5 100%);\n  cursor: pointer;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  font-size: 15px;\n}\n  \n\n.buttonHead:hover {\n  background-position: right center;\n  /* change the direction of the change here */\n  color: #fff;\n  text-decoration: none;\n}\n  \n\n.buttonHead:active {\n  transform: scale(0.80);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7RUFDaEI7OztBQUdGO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixjQUFjO0VBQ2QsMkJBQTJCO0VBQzNCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxnRkFBZ0Y7RUFDaEYsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIsaUJBQWlCO0VBQ2pCLHlCQUF5QjtFQUN6QiwwQkFBMEI7RUFDMUIsZUFBZTtBQUNqQjs7O0FBRUE7RUFDRSxpQ0FBaUM7RUFDakMsNENBQTRDO0VBQzVDLFdBQVc7RUFDWCxxQkFBcUI7QUFDdkI7OztBQUVBO0VBQ0Usc0JBQXNCO0FBQ3hCIiwiZmlsZSI6InNyYy9hcHAvY29tcG9uZW50L2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5leGFtcGxlLXNwYWNlciB7XG4gICAgZmxleDogMSAxIGF1dG87XG4gIH1cbiAgXG5cbi5idXR0b25IZWFkIHtcbiAgcGFkZGluZzogMTNweCAyNnB4O1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIHRyYW5zaXRpb246IDFzO1xuICBiYWNrZ3JvdW5kLXNpemU6IDEwNTElIGF1dG87XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYm9yZGVyLXJhZGl1czogNHB4O1xuICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gIGJvcmRlcjogMHB4O1xuICBiYWNrZ3JvdW5kLWltYWdlOiBsaW5lYXItZ3JhZGllbnQoNDVkZWcsICMzZjUxYjUgMTAlLCAjYTFiY2RlIDUxJSwgIzNmNTFiNSAxMDAlKTtcbiAgY3Vyc29yOiBwb2ludGVyO1xuICAtbW96LXVzZXItc2VsZWN0OiBub25lO1xuICAtbXMtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHVzZXItc2VsZWN0OiBub25lO1xuICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lO1xuICB0b3VjaC1hY3Rpb246IG1hbmlwdWxhdGlvbjtcbiAgZm9udC1zaXplOiAxNXB4O1xufVxuXG4uYnV0dG9uSGVhZDpob3ZlciB7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IHJpZ2h0IGNlbnRlcjtcbiAgLyogY2hhbmdlIHRoZSBkaXJlY3Rpb24gb2YgdGhlIGNoYW5nZSBoZXJlICovXG4gIGNvbG9yOiAjZmZmO1xuICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG59XG5cbi5idXR0b25IZWFkOmFjdGl2ZSB7XG4gIHRyYW5zZm9ybTogc2NhbGUoMC44MCk7XG59Il19 */");
+/* harmony default export */ __webpack_exports__["default"] = (".example-spacer {\n    flex: 1 1 auto;\n  }\n  \n  .HeaderLogo {\n    cursor: pointer;\n  }\n  \n  .buttonHead {\n  padding: 13px 26px;\n  text-align: center;\n  transition: 1s;\n  background-size: 1051% auto;\n  color: white;\n  border-radius: 4px;\n  display: inline-block;\n  border: 0px;\n  background-image: linear-gradient(45deg, #3f51b5 10%, #a1bcde 51%, #3f51b5 100%);\n  cursor: pointer;\n  -moz-user-select: none;\n  -ms-user-select: none;\n  user-select: none;\n  -webkit-user-select: none;\n  touch-action: manipulation;\n  font-size: 15px;\n}\n  \n  .buttonHead:hover {\n  background-position: right center;\n  /* change the direction of the change here */\n  color: #fff;\n  text-decoration: none;\n}\n  \n  .buttonHead:active {\n  transform: scale(0.80);\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvY29tcG9uZW50L2hlYWRlci9oZWFkZXIuY29tcG9uZW50LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtJQUNJLGNBQWM7RUFDaEI7O0VBRUE7SUFDRSxlQUFlO0VBQ2pCOztFQUdGO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFrQjtFQUNsQixjQUFjO0VBQ2QsMkJBQTJCO0VBQzNCLFlBQVk7RUFDWixrQkFBa0I7RUFDbEIscUJBQXFCO0VBQ3JCLFdBQVc7RUFDWCxnRkFBZ0Y7RUFDaEYsZUFBZTtFQUNmLHNCQUFzQjtFQUN0QixxQkFBcUI7RUFDckIsaUJBQWlCO0VBQ2pCLHlCQUF5QjtFQUN6QiwwQkFBMEI7RUFDMUIsZUFBZTtBQUNqQjs7RUFFQTtFQUNFLGlDQUFpQztFQUNqQyw0Q0FBNEM7RUFDNUMsV0FBVztFQUNYLHFCQUFxQjtBQUN2Qjs7RUFFQTtFQUNFLHNCQUFzQjtBQUN4QiIsImZpbGUiOiJzcmMvYXBwL2NvbXBvbmVudC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZXhhbXBsZS1zcGFjZXIge1xuICAgIGZsZXg6IDEgMSBhdXRvO1xuICB9XG4gIFxuICAuSGVhZGVyTG9nbyB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICB9XG5cblxuLmJ1dHRvbkhlYWQge1xuICBwYWRkaW5nOiAxM3B4IDI2cHg7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgdHJhbnNpdGlvbjogMXM7XG4gIGJhY2tncm91bmQtc2l6ZTogMTA1MSUgYXV0bztcbiAgY29sb3I6IHdoaXRlO1xuICBib3JkZXItcmFkaXVzOiA0cHg7XG4gIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgYm9yZGVyOiAwcHg7XG4gIGJhY2tncm91bmQtaW1hZ2U6IGxpbmVhci1ncmFkaWVudCg0NWRlZywgIzNmNTFiNSAxMCUsICNhMWJjZGUgNTElLCAjM2Y1MWI1IDEwMCUpO1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC1tcy11c2VyLXNlbGVjdDogbm9uZTtcbiAgdXNlci1zZWxlY3Q6IG5vbmU7XG4gIC13ZWJraXQtdXNlci1zZWxlY3Q6IG5vbmU7XG4gIHRvdWNoLWFjdGlvbjogbWFuaXB1bGF0aW9uO1xuICBmb250LXNpemU6IDE1cHg7XG59XG5cbi5idXR0b25IZWFkOmhvdmVyIHtcbiAgYmFja2dyb3VuZC1wb3NpdGlvbjogcmlnaHQgY2VudGVyO1xuICAvKiBjaGFuZ2UgdGhlIGRpcmVjdGlvbiBvZiB0aGUgY2hhbmdlIGhlcmUgKi9cbiAgY29sb3I6ICNmZmY7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbn1cblxuLmJ1dHRvbkhlYWQ6YWN0aXZlIHtcbiAgdHJhbnNmb3JtOiBzY2FsZSgwLjgwKTtcbn0iXX0= */");
 
 /***/ }),
 
@@ -8160,7 +8187,8 @@ __webpack_require__.r(__webpack_exports__);
 
 
 let DataService = class DataService {
-    //uri = 'http://localhost:49160/openlair'
+    //uri = 'http://localhost:49160/openlair';
+    //uri = 'http://localhost:3001/openlair';
     //68.65.123.130    OLD
     //198.187.29.73
     constructor(http) {
@@ -8194,6 +8222,7 @@ let DataService = class DataService {
                 indicator: indicator,
             }
         };
+        console.log("addData:", data1);
         return this.http.post(`${this.uri}/add/data`, data1);
     }
     login(username, password) {
@@ -8303,7 +8332,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_3__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! E:\OpenLAIR_Docker\frontend\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! E:\OpenLAIR_Docker (blinded)\frontend\src\main.ts */"./src/main.ts");
 
 
 /***/ })

@@ -98,4 +98,29 @@ $(document).ready(function() {
       
   });
 
+  $('#tooltipHeaderLogo').tooltipster({   
+    'theme': 'tooltipster-shadow',
+  'interactive': true,
+  'contentAsHTML': true,
+  //'autoClose': true,
+  'trigger': 'hover',
+  functionInit: function(instance, helper){
+        var $origin = $(helper.origin);
+      var content = $origin.find('#contentHeaderLogo').detach();
+        instance.content(content);
+      
+      var data = $origin.attr('data-tooltipster');
+      if(data){			
+          data = JSON.parse(data);
+          $.each(data, function(name, option){
+              instance.option(name, option);
+          });
+      };            
+  },
+  functionPosition: function(instance, helper, position){
+  
+  },
+  
+});
+
 });
