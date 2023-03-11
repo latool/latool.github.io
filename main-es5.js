@@ -511,7 +511,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<app-chart-manager> </app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered with [LaTool].</p>\n</div>\n\n\n";
+    __webpack_exports__["default"] = "<app-chart-manager> </app-chart-manager>\n\n<div class=\"footer\">\n  <p>Dashboard is rendered with [LA_Tool].</p>\n</div>\n\n<a id=\"back-to-top\" class=\"btn back-to-top\" role=\"button\" (click)=\"backToTop()\">\n  <i class=\"material-icons buttonLaTool\">arrow_upward</i>\n</a>\n";
     /***/
   },
 
@@ -523,7 +523,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<span class=\"tool_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px\">\n      <strong>Learning Events</strong><br />\n      <span class=\"stepDefine\" style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n        <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more details\n        <span class=\"\" id=\"contentEvents\">\n          <p style=\"text-align: left\">\n            <strong>Learning Events</strong><br />\n            A learning objective is the desired outcome of a single or multiple\n            learning event and is used to establish learning <br />\n            activities to achieve the overall learning outcome\n            <a target=\"_blank\"\n              href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\">[13]</a>.\n            Learning design literature identified eight learning events:\n            <br />create, explore, practice, imitate, receive, debate,\n            meta-learn/Elf-reflect, and experiment\n            <a target=\"_blank\" href=\"http://www.labset.net/media/prod/8LEM.pdf\">[1]</a>,\n            <a target=\"_blank\" href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\">[2]</a>.\n            <br /><br />\n            <img width=\"800px\" src=\"assets/images/events.png\" />\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field>\n      <mat-select class=\"step1\" placeholder=\"Learning Events\" name=\"Select\" [(ngModel)]=\"LearningEvents_mateSelect\" multiple\n        #selectionModel=\"ngModel\" (valueChange)=\"onEventValueChange($event)\">\n        <app-select-check-all [model]=\"selectionModel\" [values]=\"AllLearningEventsOptions\" (sendCount)=\"onEventValueChange($event)\">\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of AllLearningEventsOptions\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"\" id=\"contentActivites\">\n        <p style=\"text-align: left\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al.\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">[3]</a>\n          took the model of learning events and added learning activities<br />\n          to identify its outcomes in LD. Learning activities are split into\n          in-class methods and tools,<br />\n          and online methods and tools [<a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">3</a>,\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\">9</a>].\n          Examples of in-class methods and tools are exercise, <br />exam,\n          presentation, discussion, demonstration, etc. On the other hand,\n          online methods and <br />tools are blogs, wikis, forums, photo and\n          audio notes, online tests and quizzes, e-portfolios, <br />etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown class=\"step2\" [placeholder]=\"'Learning Activities'\" [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedItems\" [settings]=\"dropdownSettings\" (onSelect)=\"onActivitySelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"checkvalue($event)\">\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <span><img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details</span>\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is\n          the result of the analysis of one<br />\n          or multiple metrics (e.g. number of views, login/logout frequency &\n          time, number of posts, etc.) and gives\n          <br />\n          a more comprehensive picture on a particular (abstract) learner\n          status, e.g. reading comprehension, <br />\n          self-reflection, etc. An indicator covers a particular aspect of an\n          abstract variable (e.g., student engagement)<br />\n          by using relevant (measurable) items.<br /><br />\n          Here is an example of Student Engagement in Moodle. <br />\n          <img src=\"assets/images/engagement.jpg\" />\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"step3\" matInput [(ngModel)]=\"searchInd\" placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\" />\n  </div>\n  <div>\n    <strong>Metrics</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align: left\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction\n          between learners and LMSs.<br />\n          To make sense of these captured data, they need to be categorized in a\n          corresponding unit of<br />\n          measurement (e.g. number of views, login/logout frequency & time,\n          number of posts, etc.). In<br />\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"stepMetrics\" matInput [(ngModel)]=\"searchText\" placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchText)\" />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Seleted Indicator(s)</label>\n    <ul id=\"reset\" style=\"line-height: 15%; font-size: 15px\" *ngFor=\"let selectInd of ind_list\">\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button class=\"stepVisualize buttonLaTool\" (click)=\"forwardIndicators(ind_list)\">\n        <i class=\"fa-solid fa-display\"></i>  &nbsp; Visualize\n      </button>\n      <button class=\"stepDownload buttonLaTool\" (click)=\"getSelectedind(mat_list)\"><i class=\"fa-solid fa-download\"></i> &nbsp;  JSON\n      </button>\n      \n      <button class=\"stepDownloadText buttonLaTool\" (click)=\"download(mat_list, 'text/plain', 'Indicators TEXT.txt')\">\n        <i class=\"fa-solid fa-download\"></i> &nbsp; TEXT\n        </button>\n\n        <button class=\"stepReset buttonRed\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> &nbsp; Reset</button>\n    </span>\n\n   <!-- <button class=\"stepReset buttonLaTool\"  (click)=\"reset()\"><img width=\"70px\" src=\"assets/images/reset.png\"/></button>  -->\n\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events</th>\n      <div>\n        <th style=\"margin-left: 40px\">(Learning) Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\">\n        <th>Indicators</th>\n      </div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n    <tr class=\"activities\" *ngFor=\"let LearningActivities of learningEvents.LearningActivities\">\n      <td style=\"width: 210px\">\n        {{ LearningActivities.Name }}\n      </td>\n      <td class=\"highlightIndicators\">\n        <!-- loop for indicators -->\n    <tr *ngFor=\"let indic of LearningActivities.indicator\">\n      <input class=\"step4\" #indicatorCheckbox type=\"checkbox\" value=\"indic\" [checked]=\"indic.checked\"\n        (change)=\"Checkbox($event, indic)\" />\n\n      <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n        <span [innerHTML]=\"indic.indicatorName | sanitizeHtml: searchInd\">\n          {{ indic.indicatorName }}\n        </span>\n      </a>\n      <td *ngIf=\"searchText\">\n    <tr>\n      <a class=\"sortable\">\n        <span [innerHTML]=\"indic.metrics | sanitizeHtml: searchText\">\n          {{ indic.metrics }}\n        </span>\n      </a>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n  </table>\n\n  <a id=\"back-to-top\" class=\"btn back-to-top\" role=\"button\" (click)=\"backToTop()\">\n    <i class=\"material-icons buttonLaTool\">arrow_upward</i>\n  </a>\n</span>";
+    __webpack_exports__["default"] = "<span class=\"tool_Home\">\n  <!-- Not run the demo if it is not home page -->\n  <div>\n    <span style=\"padding-bottom: 2px\">\n      <strong>Learning Events</strong><br />\n      <span class=\"stepDefine\" style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipEvents\"\n        data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n        <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more details\n        <span class=\"\" id=\"contentEvents\">\n          <p style=\"text-align: left\">\n            <strong>Learning Events</strong><br />\n            A learning objective is the desired outcome of a single or multiple\n            learning event and is used to establish learning <br />\n            activities to achieve the overall learning outcome\n            <a target=\"_blank\"\n              href=\"https://research.tue.nl/en/publications/teacher-learning-in-the-context-of-educational-innovation-learnin\">[13]</a>.\n            Learning design literature identified eight learning events:\n            <br />create, explore, practice, imitate, receive, debate,\n            meta-learn/Elf-reflect, and experiment\n            <a target=\"_blank\" href=\"http://www.labset.net/media/prod/8LEM.pdf\">[1]</a>,\n            <a target=\"_blank\" href=\"https://www.tandfonline.com/doi/abs/10.1080/10494820701343694\">[2]</a>.\n            <br /><br />\n            <img width=\"800px\" src=\"assets/images/events.png\" />\n          </p>\n        </span>\n      </span>\n    </span>\n    <br />\n    <mat-form-field>\n      <mat-select class=\"step1\" placeholder=\"Learning Events\" name=\"Select\" [(ngModel)]=\"LearningEvents_mateSelect\" multiple\n        #selectionModel=\"ngModel\" (valueChange)=\"onEventValueChange($event)\">\n        <app-select-check-all [model]=\"selectionModel\" [values]=\"AllLearningEventsOptions\" (sendCount)=\"onEventValueChange($event)\">\n        </app-select-check-all>\n        <mat-option *ngFor=\"let option of AllLearningEventsOptions\" [value]=\"option\">\n          {{ option }}\n        </mat-option>\n      </mat-select>\n    </mat-form-field>\n  </div>\n  <div>\n    <strong>Learning Activites</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipActivites\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"\" id=\"contentActivites\">\n        <p style=\"text-align: left\">\n          <strong>Learning Activites</strong><br />\n          A study by Gruber et al.\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">[3]</a>\n          took the model of learning events and added learning activities<br />\n          to identify its outcomes in LD. Learning activities are split into\n          in-class methods and tools,<br />\n          and online methods and tools [<a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/334170760_Design_Thinking_for_Technology_Enhanced_Learning\">3</a>,\n          <a target=\"_blank\"\n            href=\"https://www.researchgate.net/publication/222945649_Factors_affecting_teachers'_participation_in_professional_learning_activities\">9</a>].\n          Examples of in-class methods and tools are exercise, <br />exam,\n          presentation, discussion, demonstration, etc. On the other hand,\n          online methods and <br />tools are blogs, wikis, forums, photo and\n          audio notes, online tests and quizzes, e-portfolios, <br />etc.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <ng-multiselect-dropdown class=\"step2\" [placeholder]=\"'Learning Activities'\" [data]=\"dropdownList\"\n      [(ngModel)]=\"selectedActivityItems\" [settings]=\"dropdownSettings\" (onSelect)=\"onActivitySelect($event)\"\n      (onSelectAll)=\"onSelectAll($event)\" (onDeSelect)=\"checkvalue($event)\">\n    </ng-multiselect-dropdown>\n  </div>\n  <div>\n    <strong>Indicators</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipIndicators\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <span><img width=\"16px\" src=\"assets/images/question.png\" /> Click here for\n        more details</span>\n      <span class=\"toolBoxCss\" id=\"contentIndicators\">\n        <p style=\"height: 572px\">\n          <strong>Indicators</strong><br />\n          Metrics (measurements) are used to create indicators; an indicator is\n          the result of the analysis of one<br />\n          or multiple metrics (e.g. number of views, login/logout frequency &\n          time, number of posts, etc.) and gives\n          <br />\n          a more comprehensive picture on a particular (abstract) learner\n          status, e.g. reading comprehension, <br />\n          self-reflection, etc. An indicator covers a particular aspect of an\n          abstract variable (e.g., student engagement)<br />\n          by using relevant (measurable) items.<br /><br />\n          Here is an example of Student Engagement in Moodle. <br />\n          <img src=\"assets/images/engagement.jpg\" />\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"step3\" matInput [(ngModel)]=\"searchInd\" placeholder=\"Search Indicator\"\n      (change)=\"searchIndicator(searchInd)\" />\n  </div>\n  <div>\n    <strong>Metrics</strong><br />\n    <span style=\"font-size: 14px; cursor: pointer;\" id=\"tooltipMetrics\"\n      data-tooltipster='{\"side\":\"bottom\",\"animation\":\"fall\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}' title=\"\">\n      <img width=\"16px\" src=\"assets/images/question.png\" /> Click here for more\n      details\n      <span class=\"toolBoxCss\" id=\"contentMetrics\">\n        <p style=\"text-align: left\">\n          <strong>Metrics</strong><br />\n          Learning analytics applications collect data from the interaction\n          between learners and LMSs.<br />\n          To make sense of these captured data, they need to be categorized in a\n          corresponding unit of<br />\n          measurement (e.g. number of views, login/logout frequency & time,\n          number of posts, etc.). In<br />\n          this paper, we refer to the units of measurements as metrics.\n        </p>\n      </span>\n    </span>\n    <br /><br />\n    <input class=\"stepMetrics\" matInput [(ngModel)]=\"searchMat\" placeholder=\"Search Metrics\"\n      (change)=\"learningEventsChangeOnSearch(searchMat)\" />\n  </div>\n\n  <div style=\"margin-left: 50px\">\n    <label style=\"color: gray; font-size: 15px\"> Seleted Indicator(s)</label>\n    <ul id=\"reset\" style=\"line-height: 15%; font-size: 15px\" *ngFor=\"let selectInd of ind_list\">\n      <li>\n        {{ selectInd }}\n      </li>\n    </ul>\n    <span style=\"padding-top: 16px; padding-bottom: 16px\">\n      <button class=\"stepVisualize buttonLaTool\" (click)=\"forwardIndicators(ind_list)\">\n        <i class=\"fa-solid fa-display\"></i>  &nbsp; Visualize\n      </button>\n      <button class=\"stepDownload buttonLaTool\" (click)=\"getSelectedind(mat_list)\"><i class=\"fa-solid fa-download\"></i> &nbsp;  JSON\n      </button>\n      \n      <button class=\"stepDownloadText buttonLaTool\" (click)=\"download(mat_list, 'text/plain', 'Indicators TEXT.txt')\">\n        <i class=\"fa-solid fa-download\"></i> &nbsp; TEXT\n        </button>\n\n        <button class=\"stepReset buttonRed\"  (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> &nbsp; Reset</button>\n    </span>\n\n   <!-- <button class=\"stepReset buttonLaTool\"  (click)=\"reset()\"><img width=\"70px\" src=\"assets/images/reset.png\"/></button>  -->\n\n  </div>\n\n  <ng-template #secondDialog>\n    <h2 matDialogTitle>Metrics</h2>\n    <mat-dialog-content>\n      <ul *ngFor=\"let mat of sp\">\n        <!-- style=\"line-height: 20%\" -->\n        <li>{{ mat }}</li>\n      </ul>\n    </mat-dialog-content>\n    <button mat-button mat-dialog-close>Close</button>\n  </ng-template>\n\n  <table style=\"margin-left: 10px\">\n    <thead>\n      <th>Learning Events</th>\n      <div>\n        <th style=\"margin-left: 40px\">(Learning) Activities</th>\n      </div>\n      <div style=\"margin-left: 80px\">\n        <th>Indicators</th>\n      </div>\n    </thead>\n\n    <!-- for loop for learning events -->\n    <tr *ngFor=\"let learningEvents of data\">\n      <td style=\"width: 15\" class=\"leraningevents\">\n        {{ learningEvents.LearningEvents }}\n      </td>\n      <td>\n    <tr class=\"activities\" *ngFor=\"let LearningActivities of learningEvents.LearningActivities\">\n      <td style=\"width: 210px\">\n        {{ LearningActivities.Name }}\n      </td>\n      <td class=\"highlightIndicators\">\n        <!-- loop for indicators -->\n    <tr *ngFor=\"let indic of LearningActivities.indicator\">\n      <input class=\"step4\" #indicatorCheckbox type=\"checkbox\" value=\"indic\" [checked]=\"indic.checked\"\n        (change)=\"Checkbox($event, indic)\" />\n\n      <a class=\"sortable stepViewMetrics\" (click)=\"getMeterics(indic)\">\n        <span [innerHTML]=\"indic.indicatorName | sanitizeHtml: searchInd\">\n          {{ indic.indicatorName }}\n        </span>\n      </a>\n      <td *ngIf=\"searchText\">\n    <tr>\n      <a class=\"sortable\">\n        <span [innerHTML]=\"indic.metrics | sanitizeHtml: searchText\">\n          {{ indic.metrics }}\n        </span>\n      </a>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n    </td>\n    </tr>\n  </table>\n\n  <a id=\"back-to-top\" class=\"btn back-to-top\" role=\"button\" (click)=\"backToTop()\">\n    <i class=\"material-icons buttonLaTool\">arrow_upward</i>\n  </a>\n</span>";
     /***/
   },
 
@@ -547,7 +547,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /* harmony default export */
 
 
-    __webpack_exports__["default"] = "<div class=\"header\" id=\"header\">\r\n  <mat-toolbar style=\"height: 72px;\" color=\"primary\">\r\n    <span class=\"step0\" >\r\n      <span id=\"tooltipHeaderLogo\" data-tooltipster='{\"side\":\"right\",\"animation\":\"grow\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'>\r\n        <a><img routerLink=\"/\" class=\"HeaderLogo\"  style=\"height: 66px; padding-top: 9px\" src=\"assets/images/logo.png\" />\r\n          <span id=\"contentHeaderLogo\">\r\n            <p>\r\n              <strong>[LaTool]</strong><br /><br />\r\n              (Acronym Blinded)<br />\r\n            </p>\r\n          </span>\r\n      </a>\r\n    </span>\r\n    </span>\r\n    \r\n\r\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\n    <button class=\"buttonHead\" (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> Click here if the below TABLE is empty</button>\r\n\r\n    <!-- <a style=\"color: white; font-size: 14px;\" (click)=\"reset()\"> Click here if the table is empty</a> -->\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>";
+    __webpack_exports__["default"] = "<div class=\"header\" id=\"header\">\r\n  <mat-toolbar style=\"height: 72px;\" color=\"primary\">\r\n    <span class=\"step0\" >\r\n      <span id=\"tooltipHeaderLogo\" data-tooltipster='{\"side\":\"right\",\"animation\":\"grow\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'>\r\n        <a><img routerLink=\"/\" class=\"HeaderLogo\"  style=\"height: 66px; padding-top: 9px\" src=\"assets/images/logoBlinded.png\" />\r\n          <span id=\"contentHeaderLogo\">\r\n            <p>\r\n              <strong>[LA_Tool]</strong><br /><br />\r\n              Acronym [Blinded]<br />\r\n            </p>\r\n          </span>\r\n      </a>\r\n    </span>\r\n    </span>\r\n    \r\n    \r\n    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;\r\n    <span id=\"tooltipHeaderLogo2\" data-tooltipster='{\"side\":\"right\",\"animation\":\"grow\", \"delay\":\"200\", \"theme\":\"tooltipster-shadow\"}'>\r\n      <button class=\"buttonHead\" (click)=\"reset()\"><i class=\"fa-solid fa-arrow-rotate-right\"></i> Click here if the below TABLE is empty\r\n        <span id=\"contentHeaderLogo2\" >\r\n          <p>\r\n            Please wait for 10 seconds; sometimes, the server responds LATE for some reason. <br />\r\n            We apologize and are working to solve the issue.\r\n          </p>\r\n        </span>\r\n\r\n      </button>\r\n    </span>\r\n    \r\n\r\n    <!-- <a style=\"color: white; font-size: 14px;\" (click)=\"reset()\"> Click here if the table is empty</a>           reset()-->\r\n    <span class=\"example-spacer\"></span>\r\n\r\n    <!-- <a href=\"#\" onclick=\"myTour()\">Start Tour</a> -->\r\n    <button class=\"stepReferences buttonHead\" (click)='references()'><img style=\"width: 14px;\"\r\n        src=\"assets/images/ref.png\" />&nbsp; References</button>\r\n    <!-- <a mat-button class=\"stepReferences\" (click)='admin()'>Login</a> -->\r\n    <!-- <a mat-button class=\"stepReferences\" href=\"https://atezaz.github.io/references.html\" target=\"_blank\">References</a> -->\r\n    <button class=\"stepStartTour buttonHead\" id=\"myTourBtn\">\r\n      <i class=\"fa-solid fa-flag\"></i>&nbsp; Start Tour\r\n    </button>\r\n  </mat-toolbar>\r\n</div>";
     /***/
   },
 
@@ -8694,11 +8694,19 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         _classCallCheck(this, DashboardComponent);
 
         this.isSticky = false;
+        this.element = document.getElementById("header");
       }
 
       _createClass(DashboardComponent, [{
         key: "ngOnInit",
         value: function ngOnInit() {}
+      }, {
+        key: "backToTop",
+        value: function backToTop() {
+          this.element.scrollIntoView({
+            behavior: "smooth"
+          });
+        }
       }]);
 
       return DashboardComponent;
@@ -8802,10 +8810,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         this.sanitizer = sanitizer;
         this.dropdownList = []; //learning activities dropdown
 
-        this.selectedItems = []; //learning activities dropdown
+        this.selectedActivityItems = []; //learning activities dropdown
 
         this.name = [];
         this.options = []; // learning events options
+
+        this.optionsActivities = []; // learning Activities options
+
+        this.AllActivities = []; // learning Activities options
 
         this.AllLearningEventsOptions = [];
         this.learningEvents = [];
@@ -8859,6 +8871,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var indicators = [];
           var indicatorReferences = [];
           var selectedLearningEvents = [];
+          var p = _this5.selectedevent;
           var regex = /\[[0-9]+\]/;
 
           var _iterator4 = _createForOfIteratorHelper(_this5.ind_list),
@@ -8887,7 +8900,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _this5.chartHelperService.setSettings("referenceNumbers", indicatorReferences);
 
           if (indicators.length > 0) {
-            localStorage.setItem("check", JSON.stringify(_this5.data));
+            var eventList = _this5.data.filter(function (obj) {
+              return p.includes(obj.LearningEvents);
+            });
+
+            localStorage.setItem("check", JSON.stringify(eventList));
 
             _this5.router.navigate(["/dashboard"]);
           } else {
@@ -8917,10 +8934,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function fetchdata() {
           var _this6 = this;
 
-          console.log("fetchdata: ");
+          //console.log("fetchdata: ");
           this.dataService.getdata().subscribe(function (data) {
             _this6.data = data; /// complete data present in database
-            //retrive all learning events and PUSH all to the Dropdown and below I PUSH only those WAS checked before going to Dashboard
+
+            var allEventActivities = data; //for pushing all the activities under selected events that are not selected Mainly for maintaing history
 
             var _iterator5 = _createForOfIteratorHelper(_this6.data),
                 _step5;
@@ -8929,7 +8947,9 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               for (_iterator5.s(); !(_step5 = _iterator5.n()).done;) {
                 var val = _step5.value;
 
-                _this6.AllLearningEventsOptions.push(val["LearningEvents"]);
+                //retrive all learning events and PUSH all to the Dropdown and below I PUSH only those WAS checked before going to Dashboard
+                _this6.AllLearningEventsOptions.push(val["LearningEvents"]); //here it pushes all the Events
+
               }
             } catch (err) {
               _iterator5.e(err);
@@ -8937,9 +8957,23 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               _iterator5.f();
             }
 
+            if (!localStorage.getItem("check")) {
+              //retrive all learning Activities and PUSH all to the Dropdown for the first time
+              var eventCount = Object.keys(_this6.data).length;
+
+              for (var k = 0; k < eventCount; k++) {
+                var activitiesCount = Object.keys(_this6.data[k].LearningActivities).length;
+
+                for (var l = 0; l < activitiesCount; l++) {
+                  _this6.AllActivities.push(_this6.data[k].LearningActivities[l].Name);
+                }
+              }
+            }
+
             _this6.isLoaded = true; //After the data is fetched, we check if the localStorage contains the check property (this is to retain the checkbox state)
 
             if (localStorage.getItem("check")) {
+              //console.log("localStorage.getItem(): ", localStorage.getItem("check"));
               //Parse the data with the check property and loop through the indicators and see if the checked property is true
               //If it's true we push it to the ind_list and mat_list, so the selected indicators from before are displayed at the top
               _this6.data = JSON.parse(localStorage.getItem("check"));
@@ -8947,40 +8981,75 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               for (var i = 0; i < _this6.data.length; i++) {
                 for (var j = 0; j < _this6.data[i]["LearningActivities"].length; j++) {
                   //console.log(data[i]["LearningActivities"][j]["indicator"]);
-                  for (var k = 0; k < _this6.data[i]["LearningActivities"][j]["indicator"].length; k++) {
-                    if (_this6.data[i]["LearningActivities"][j]["indicator"][k].checked) {
-                      _this6.ind_list.push(_this6.data[i]["LearningActivities"][j]["indicator"][k]["indicatorName"]);
+                  for (var _k = 0; _k < _this6.data[i]["LearningActivities"][j]["indicator"].length; _k++) {
+                    if (_this6.data[i]["LearningActivities"][j]["indicator"][_k].checked) {
+                      _this6.ind_list.push(_this6.data[i]["LearningActivities"][j]["indicator"][_k]["indicatorName"]);
 
-                      _this6.mat_list.push(_this6.data[i]["LearningActivities"][j]["indicator"][k]);
+                      _this6.mat_list.push(_this6.data[i]["LearningActivities"][j]["indicator"][_k]);
                     }
                   }
                 }
+              } // }
+              // if (localStorage.getItem("check"))
+              // {
+              //to retrive the Checked learningEvents after coming from the Dashboard
+
+
+              var _iterator6 = _createForOfIteratorHelper(_this6.data),
+                  _step6;
+
+              try {
+                for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
+                  var val = _step6.value;
+
+                  _this6.options.push(val["LearningEvents"]);
+                }
+              } catch (err) {
+                _iterator6.e(err);
+              } finally {
+                _iterator6.f();
               }
-            } //to retrive the Checked learningEvents after coming from the Dashboard
+
+              var _eventCount = Object.keys(_this6.data).length; //let activitiesCount = Object.keys(this.data.LearningActivities).length;
+              //to retrive the Checked learningActivities after coming from the Dashboard
+
+              for (var _k2 = 0; _k2 < _eventCount; _k2++) {
+                var _activitiesCount = Object.keys(_this6.data[_k2].LearningActivities).length;
+
+                for (var _l = 0; _l < _activitiesCount; _l++) {
+                  _this6.optionsActivities.push(_this6.data[_k2].LearningActivities[_l].Name);
+                }
+              } // this.dropdownList
+              //this.LearningEvents_mateSelect.push(this.AllLearningEventsOptions);
 
 
-            var _iterator6 = _createForOfIteratorHelper(_this6.data),
-                _step6;
+              _this6.LearningEvents_mateSelect = _this6.options; //to retain the current and previous state
 
-            try {
-              for (_iterator6.s(); !(_step6 = _iterator6.n()).done;) {
-                var val = _step6.value;
+              _this6.selectedevent = _this6.options; // to keep the object filled becasue people can select Activity instead of Event first
 
-                _this6.options.push(val["LearningEvents"]);
-              } //this.LearningEvents_mateSelect.push(this.AllLearningEventsOptions);
+              var op = _this6.options;
+              var otherActivities = allEventActivities.filter(function (obj) {
+                return op.includes(obj.LearningEvents);
+              }); // let Count = Object.keys(otherActivities).length;
+              //   for (let k = 0; k < Count; k++) {
+              //     let activityCount = Object.keys(otherActivities[k].LearningActivities).length;
+              //     for (let l = 0; l < activityCount; l++) {
+              //       this.AllActivities.push(otherActivities[k].LearningActivities[l].Name);
+              //     }
+              //   }
 
-            } catch (err) {
-              _iterator6.e(err);
-            } finally {
-              _iterator6.f();
+              _this6.setLearningActivities(otherActivities); //this will run for pushing all activities (into the LA Dropdown) under SelectedEvents for maintaining the history otherwise the else will run
+
+
+              _this6.selectedActivityItems = _this6.optionsActivities; // first the DD will be populated with activities then these will be selected
+            } else {
+              _this6.setLearningActivities(_this6.data);
+
+              _this6.LearningEvents_mateSelect = _this6.AllLearningEventsOptions; // to keep the object filled becasue people can select Activity instead of Event first
+
+              _this6.selectedevent = _this6.AllLearningEventsOptions;
+              _this6.selectedActivityItems = _this6.AllActivities;
             }
-
-            _this6.LearningEvents_mateSelect = _this6.options; //to retain the current and previous state
-
-            _this6.selectedevent = _this6.options; // to keep the object filled becasue people can select Activity instead of Event first
-            //this.onEventValueChange("Select All");
-
-            _this6.setLearningActivities(_this6.data);
           });
         }
       }, {
@@ -8991,6 +9060,12 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           this.selectedevent = eventValue; //console.log("onEventValueChange:", p);
 
           this.ind_list = []; //empty the seleted list of indicators after event an Event change
+
+          this.selectedActivityItems = []; //empty the seleted list of Activities after event change
+
+          this.searchInd = ""; //empty
+
+          this.searchMat = ""; //empty
 
           this.dataService.getdata().subscribe(function (data) {
             _this7.data = data; //console.log("data: ", this.data);
@@ -9019,7 +9094,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         value: function onActivitySelect(item) {
           var _this8 = this;
 
-          var p = this.selectedevent; //console.log("item: ", item);
+          var p = this.selectedevent;
+          this.ind_list = []; //empty the seleted list of indicators after event an Event change
+
+          this.searchInd = ""; //empty
+
+          this.searchMat = ""; //empty
+          //console.log("item: ", item);
           //console.log("this.selectedevent: ", p);
 
           this.dataService.getdata().subscribe(function (data) {
@@ -9031,13 +9112,14 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
               return p.includes(obj.LearningEvents);
             });
 
-            _this8.setLearningActivities(event);
+            _this8.setLearningActivities(event); //console.log("onActivitySelect event: ", event);
 
-            if (p = "") {
+
+            if (p != "") {
               _this8.data = event;
             }
 
-            var newArray = _this8.selectedItems;
+            var newArray = _this8.selectedActivityItems;
 
             _this8.data.filter(function (obj) {
               obj.LearningActivities = obj.LearningActivities.filter(function (obj2) {
@@ -9056,13 +9138,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "checkvalue",
         value: function checkvalue(event) {
-          if (this.selectedItems.length == 0) {//this.onEventValueChange(this.selectedevent);
+          if (this.selectedActivityItems.length == 0) {//this.onEventValueChange(this.selectedevent);
           } else {
-            var index = this.selectedItems.length;
+            var index = this.selectedActivityItems.length;
 
             if (index !== -1) {
-              this.selectedItems.splice(index, 1);
-              this.onActivitySelect(this.selectedItems);
+              this.selectedActivityItems.splice(index, 1);
+              this.onActivitySelect(this.selectedActivityItems);
             }
           }
         } /////////////// display learning activities ////////////////////
@@ -9070,6 +9152,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }, {
         key: "setLearningActivities",
         value: function setLearningActivities(events) {
+          //console.log("setLearningActivities event: ", events);
           this.dropdownList = [];
           this.name = [];
 
@@ -9078,10 +9161,10 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
           try {
             for (_iterator7.s(); !(_step7 = _iterator7.n()).done;) {
-              var learningEvents = _step7.value;
+              var learningEvent = _step7.value;
 
               //console.log("setLearningActivities learningEvents: ", learningEvents);
-              var _iterator8 = _createForOfIteratorHelper(learningEvents.LearningActivities),
+              var _iterator8 = _createForOfIteratorHelper(learningEvent.LearningActivities),
                   _step8;
 
               try {
@@ -9124,33 +9207,61 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           var res = this.mat;
           this.sp = res.split(",");
           this.dialog.open(this.secondDialog);
-        } ///////////////////   search by metrics ///////////////
-
-      }, {
-        key: "learningEventsChangeOnSearch",
-        value: function learningEventsChangeOnSearch(search) {
-          var _this9 = this;
-
-          if (search) {
-            this.dataService.getsearchresult(search).subscribe(function (data) {
-              _this9.data = data;
-            });
-          } else {
-            console.log("learningEventsChangeOnSearch: "); // this.fetchdata();
-          }
         } ///////////////////   search by indicator ///////////////
 
       }, {
         key: "searchIndicator",
         value: function searchIndicator(search) {
+          var _this9 = this;
+
+          if (search || search == '') {
+            if (this.selectedevent) {
+              this.dataService.getsearchind(search).subscribe(function (data) {
+                var op = _this9.selectedevent;
+                var filterNonSelEvents = data.filter(function (obj) {
+                  return op.includes(obj.LearningEvents);
+                });
+                _this9.data = filterNonSelEvents;
+              });
+            } else {
+              this.dataService.getsearchind(search).subscribe(function (data) {
+                _this9.data = data;
+              });
+            }
+          } else {
+            console.log("searchIndicator: ");
+          }
+        } ///////////////////   search by metrics ///////////////
+
+      }, {
+        key: "learningEventsChangeOnSearch",
+        value: function learningEventsChangeOnSearch(search) {
           var _this10 = this;
 
-          if (search) {
-            this.dataService.getsearchind(search).subscribe(function (data) {
-              _this10.data = data;
-            });
+          // if (search) {
+          //   this.dataService.getsearchresult(search).subscribe((data: data[]) => {
+          //     this.data = data;
+          //   });
+          // } else {
+          //   console.log("learningEventsChangeOnSearch: ");
+          //  // this.fetchdata();
+          // }
+          if (search || search == '') {
+            if (this.selectedevent) {
+              this.dataService.getsearchresult(search).subscribe(function (data) {
+                var op = _this10.selectedevent;
+                var filterNonSelEvents = data.filter(function (obj) {
+                  return op.includes(obj.LearningEvents);
+                });
+                _this10.data = filterNonSelEvents;
+              });
+            } else {
+              this.dataService.getsearchresult(search).subscribe(function (data) {
+                _this10.data = data;
+              });
+            }
           } else {
-            console.log("searchIndicator: "); //this.fetchdata();
+            console.log("searchMatrics: ");
           }
         } ////////////////// function for checkbox to select indicator   //////////////////
 
@@ -9948,7 +10059,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
   /***/
   0: function _(module, exports, __webpack_require__) {
     module.exports = __webpack_require__(
-    /*! E:\OpenLAIR_Docker (blinded)\frontend\src\main.ts */
+    /*! E:\OpenLAIR_Docker\frontend\src\main.ts */
     "./src/main.ts");
     /***/
   }
