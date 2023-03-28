@@ -15,7 +15,7 @@
           steps: [
           {
             element: '.step0',
-            intro: 'This guided tour will explain how Learning Analytics indicators archive [LA_Tool] can be used. <br> You can Exit the tour anytime you want.',
+            intro: 'This guided tour will explain how Learning Analytics indicators archive [LaTool] can be used. <br> You can Exit the tour anytime you want.',
             position: 'bottom'
           },
           {
